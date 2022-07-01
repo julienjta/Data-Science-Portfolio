@@ -31,7 +31,7 @@ Repository containing portfolio of data science projects completed for academic,
 
 ## Others
 
-- **Project 8 - Online Resume**: --- *(to do)*
-- **Project 9 - Accounting App**: --- *(to do)*
+- **Project 8 - Online Resume**: HTML, CSS, PHP, Javascript *(to do)*
+- **Project 9 - Accounting App**: C++, Qt *(to do)*
 
 
