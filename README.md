@@ -13,7 +13,7 @@ Repository containing portfolio of data science projects completed for academic,
 ## Machine Learning
 
 - **Project 1 - [Flight Price Prediction](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%201 "Flight Price Prediction")**: EDA, LinearRegression, KNeighborsRegressor, XGBRegressor
-- **Project 2 - Broadband Customer Base Churn Classification**: LogisticRegression, Pipeline, Data Cleaning *(in progress)*
+- **Project 2 - [Broadband Customer Base Churn Classification](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%202 "Broadband Customer Base Churn Classification")**: LogisticRegression, Pipeline, Data Cleaning *(in progress)*
 - **Project 3 - UK Retail Customer Segmentation**: RFM Analysis, KMeans Clustering *(to do)*
 - **Project 4 - Traffic Jam Analysis NYC**: Anomalie Detection, Time Series, ADTK *(to do)*
 
