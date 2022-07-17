@@ -21,7 +21,7 @@ Repository containing portfolio of data science projects completed for academic,
 ## Deep Learning
 
 - **Project 5 - Detection of Brain Tumor**: Keras *(to do)*
-- **Project 6 - Predictive Maintenance using Accoustic Emissions**: Time Series, Wavelet Transform, Convolutional Neural Network, Scaleograms *(to do)*
+- **Project 6 - Predictive Maintenance using Accoustic Emissions**: Time Series, Wavelet Transform, Convolutional Neural Network, Scaleograms *(to add)*
 
 
 ## Natural Language Processing
@@ -31,8 +31,8 @@ Repository containing portfolio of data science projects completed for academic,
 
 ## Others
 
-- **Project 8 - Database for an Online Payment App**: SQL
+- **Project 8 - Database for an Online Payment App**: SQL *(to add)*
 - **Project 9 - Online Resume**: HTML, CSS, PHP, Javascript *(to do)*
-- **Project 10 - Accounting App**: C++, Qt *(to do)*
+- **Project 10 - Accounting App**: C++, Qt *(to add)*
 
 
