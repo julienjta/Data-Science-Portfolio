@@ -1,4 +1,6 @@
-The objective of our project is to realize an exchange platform at the UTC.
+# Clarification Note
+
+### The objective of our project is to realize an exchange platform at the UTC.
 - The project will integrate goods and services.
 - The project will integrate actions of donations, exchanges or sales as well as a management of an internal currency without going into the details of a currency.
 - Users will be able to post offers or requests.
@@ -7,7 +9,7 @@ The objective of our project is to realize an exchange platform at the UTC.
 
 
 
-An ad will be composed of :
+An **ad** will be composed of :
 
     - Id : String in UNIQUE
     - Date Submitted : timestamp
@@ -16,7 +18,7 @@ An ad will be composed of :
     - Description : String
     - status valider : boolean
 
-Thus a user will be represented in this way:
+Thus a **user** will be represented in this way:
 
     - Username : String in UNIQUE
     - Name : String in NOT NULL
@@ -31,7 +33,7 @@ Thus a user will be represented in this way:
     
 As we don't manage deliveries, knowing the city alone is enough.
 
-Characteristic of a good or object :
+Characteristic of a **good or object** :
 
     - Reference : Integer in UNIQUE
     - Name : String
@@ -40,17 +42,17 @@ Characteristic of a good or object :
     - Year : numeric(4,0)
     - Description : String
  
- An ad can concern a sale (with a price), a service (with a price per hour) or an auction.
+ An **ad** can concern a **sale** (with a price), a **service** (with a price per hour) or an **auction**.
  
- An auction is composed of :
+ An **auction** is composed of :
 
     - Start_price : Float
     - Duration : Integer (in days)
     - End_Date : Function (Date_Depot + Duration)
     - Current_Price
     
-A sale is composed only of the attributes of the ad.
-A service, in addition to the attributes of the ad is described by a service type.
+A **sale** is composed only of the attributes of the ad.
+A **service**, in addition to the attributes of the ad is described by a service type.
 
 A **field** will be a way to classify the ads and thus be able to search them:
 
