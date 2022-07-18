@@ -1,12 +1,18 @@
 # Data-Science-Portfolio
 Repository containing portfolio of data science projects completed for academic, self learning, and professional purposes. Presented in the form of Jupyter Notebooks.
 
-**Tools used**
+## About me
+
+Young Data Scientist just graduated from the University of Technology of Compiègne as a computer engineer specialized in data science and artificial intelligence.
+
+Always looking for performance, improvement and new knowledge in the data environment, this portfolio gathers some projects on which I had the opportunity to think and work either in collaboration with other students or independently.
+
+### Tools used
 
 - *Visualisation*: NumPy, Pandas, Seaborn, Matplotlib, Ploty, Yellowbrick.
 - *Machine Learning*: Scikit-Learn, XGBoost.
 
-**Symbols**
+### Symbols
 
 - ✅: Project done
 - ⌛️: Project in progress (working on it right now)
