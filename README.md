@@ -43,7 +43,7 @@ Repository containing portfolio of data science projects completed for academic,
 ## Others
 
 - **Project 9 - [Database for an Online Payment App](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%209 "Database for an Online Payment App")**: SQL, Neo4J, MongoDB ⌛️🎓
-- **Project 10 - Online Resume**: HTML, CSS, PHP, Javascript *(to do)*
+- **Project 10 - Website for Proof of Concept for Mass Customization**: HTML, CSS, PHP, Javascript 📥🎓
 - **Project 11 - Accounting App**: C++, Qt 📥🎓
 
 
