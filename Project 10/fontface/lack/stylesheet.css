@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'lackregular';
+    src: url('lack-regular-webfont.eot');
+    src: url('lack-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lack-regular-webfont.woff2') format('woff2'),
+         url('lack-regular-webfont.woff') format('woff'),
+         url('lack-regular-webfont.ttf') format('truetype'),
+         url('lack-regular-webfont.svg#lackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

@@ -1,0 +1,762 @@
+/*DOCUMENT REGROUPANT L'ENSEMBLE DU CSS DU SITE*/
+
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position:relative;
+}
+
+/*STYLE POUR LA PAGE DE LOGIN*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page { /* Le bloc de connexion + les messages en cas d'erreur */
+  width: 360px;
+  padding: 30px 0 0;
+  margin: auto;
+}
+
+.form-login { /* Le bloc pour saisir login + mdp */
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 50px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form-login input { /* Les champs de saisie */
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form-login button { /* Le bouton pour se connecter */
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #aaa;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form-login button:hover,.form button:active,.form button:focus { /* Quand on passe la souris sur le bouton */
+  background: #43A047;
+}
+
+.form-login form {
+  margin-bottom: 5px;
+}
+
+.errmsg { /* Les messages d'erreur */
+    font-weight: bold;
+    font-size: 0.9em;
+    color: red;
+}
+
+.btn-logout { /* Bouton de déconnection */
+  position : absolute;
+  right : 10px;
+}
+
+.form-btn { /* Texte du bouton de déconnection */
+  font-family: "Roboto", sans-serif;
+  background: #aaa;
+  border: 0;
+  padding: 5px 20px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form-btn:hover,.form-btn:active,.form-btn:focus { /* Quand on passe la souris sur le bouton */
+  background: #43A047;
+}
+
+
+
+/*STYLE POUR LE HEADER*/
+
+header
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:black;
+  position:fixed;
+  float:top;
+  width: 100%;
+  overflow: hidden;
+  height:150px;
+  z-index: 1;
+}
+
+nav /* Le bloc pour changer la langue*/
+{
+    display: flex;
+    justify-content: right;
+    margin-top:10px;
+    margin-right:20px;
+}
+
+.change /* Le texte "Changer de langue"*/
+{
+  color:white;
+  margin-right:15px;
+  text-transform: uppercase;
+  font-size:12px;
+  font-family: 'lackregular';
+  letter-spacing:3px;
+}
+
+.gear /* L'image d'engrenage*/
+{ 
+  opacity: 0.2;
+  margin:0px;
+  position: absolute;
+  right:70px;
+  top:50px;
+}
+
+.logo /* L'ensemble logo + titre */
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 60%;
+    text-align:left;
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 60px;
+}
+
+.logo img
+{
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-right:40px;
+}
+
+h1
+{
+    font-family: 'yantramanavlight';
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    font-size:2.2em;
+    letter-spacing:5px;
+}
+
+
+
+
+/*STYLE POUR LE CORPS DE L'INDEX*/
+
+body
+{
+  font-family: Verdana;
+  text-align:justify;
+  margin:0px;
+}
+
+.parallax1 /* Effet "parallax" */
+{
+  /* L'image utilisée */
+  background-image: url("../images/bg1.jpg");
+
+  /* Spécifier une hauteur */
+  min-height: 300px; 
+
+  /* Créé l'effet parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  vertical-align: middle;
+}
+
+.parallax2 {
+  background-image: url("../images/bg2.jpg");
+
+  min-height: 300px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax3 {
+  background-image: url("../images/bg3.jpg");
+
+  min-height: 300px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+@font-face { /* Définition d'une nouvelle police nommée lackregular*/
+    font-family: 'lackregular';
+    src: url('../fontface/lack/lack-regular-webfont.eot');
+    src: url('../fontface/lack/lack-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontface/lack/lack-regular-webfont.woff') format('woff'),
+         url('../fontface/lack/lack-regular-webfont.ttf') format('truetype'),
+         url('../fontface/lack/lack-regular-webfont.svg#lackregular') format('svg');
+}
+
+@font-face { /* Définition d'une nouvelle police nommée yantramanavlight*/
+    font-family: 'yantramanavlight';
+    src: url('../fontface/yantramanav/yantramanav-light-webfont.eot');
+    src: url('../fontface/yantramanav/yantramanav-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontface/yantramanav/yantramanav-light-webfont.woff2') format('woff2'),
+         url('../fontface/yantramanav/yantramanav-light-webfont.woff') format('woff'),
+         url('../fontface/yantramanav/yantramanav-light-webfont.ttf') format('truetype'),
+         url('../fontface/yantramanav/yantramanav-light-webfont.svg#yantramanavlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 /*Les sous-titres sur les images*/
+{
+    font-family: 'lackregular';
+    text-transform: uppercase;
+    text-align: center;
+    color:black;
+    padding: 0px;
+    font-size:30px;
+    margin:0px;
+    position:relative;
+    top:120px;
+}
+
+section /*Le corps de la page (hors header et footer) */
+{
+  position: relative;
+  min-height:100%;
+  padding-bottom:130px;
+  padding-top:150px;
+}
+
+section p /* Les paragraphes dans le corps*/
+{
+    padding-right:100px;
+    padding-left:100px;
+    margin-top:50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+.container
+{
+  margin-top:50px;
+  margin-bottom:40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.contenu
+{
+  text-align: justify;
+  display: inline-block;
+  width:70%;
+}
+.contenu p
+{
+  padding:0;
+}
+
+
+.contenu ul
+{
+  list-style-image: url("/images/ul.jpg");
+  margin-left:50px;
+}
+
+.contenu a
+{
+  text-decoration: none;
+}
+
+.contenu a:visited, .contenu a:active {
+  color: #43A047;
+  text-decoration: none;
+}
+
+.contenu a:hover,.contenu a:focus {
+  color: #aaa;
+  text-decoration: underline;
+}
+
+.questions
+{
+    color:grey;
+    display:flex;
+    flex-wrap: column;
+    vertical-align:middle;
+    font-style: italic;
+    height:50px;
+    margin:0;
+    justify-content: left;
+}
+
+.questions img, .questions span
+{
+  margin:auto;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.questions img
+{
+  margin-right:20px;
+}
+
+/*STYLE POUR LE FOOTER*/
+
+footer
+{
+    background-color:black;
+    width: 100%;
+    height:150px;
+    z-index: 2;
+    color:white;
+    margin:0px;
+    display: flex;
+    position:relative;
+    bottom:0px;
+    flex-wrap: column;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+section {position: relative;}
+footer {position: absolute; bottom: 0; left: 0; right: 0}
+
+footer ul {
+  position: relative;
+list-style-type: none;
+width:20%;
+top:10px;
+}
+
+footer ul li {
+
+  margin-bottom:5px;
+
+}
+
+footer ul a
+{
+  
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+  justify-content: left;
+  padding-right:0px;
+  margin-bottom:10px;
+}
+
+footer ul img
+{
+  margin-right:10px;
+}
+
+
+
+footer ul a:hover {
+
+  font-weight: bold;
+}
+
+.gear2 /* L'image d'engrenage*/
+{ 
+  opacity: 0.2;
+  margin:0px;
+  position: relative;
+  z-index: 1;
+  bottom:250px;
+  left: -20%;
+  float:left;
+}
+
+.logo2 /* L'image de la chaussure*/
+{ 
+  position: relative;
+  top:35px;
+  right:50px;
+  z-index: 1;
+}
+
+
+/* Code pour le lien vers le quizz*/
+
+.link {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #43A047;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 18px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+
+  display:flex;
+  flex-wrap: column;
+
+  position:fixed;
+  top: 250px;
+  right: 0;
+  padding: 1em;
+  width: 17%;
+  z-index:1;
+  border-radius: 15px 0px 0 15px;
+  border-left: solid darkgreen 6px;
+  height:50px;
+}
+
+.link:visited, .link:active {
+  background: #43A047;
+}
+.link:hover,.link:focus {
+  background: #aaa;
+  border-left: solid #838383 6px;
+}
+
+.link img, .link p{ /* Bouton lancement du quiz */
+    margin:auto
+ }
+
+ .link p{ /* Bouton lancement du quiz */
+    margin-left: 5px;
+    font-size: 1em;
+ }
+
+
+/*STYLE POUR LE QUIZZ*/
+
+.corps /*page entiere sauf header et footer*/
+{
+  padding:0;
+  margin:0;
+  padding-bottom:180px;
+  padding-top:180px; /* pas de chevauchement avec le header*/
+  width: 100%;
+}
+
+.stepper {
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin:auto;
+  border: 1px solid grey;
+  margin-bottom:20px;
+}
+
+.step--1,
+.step--2,
+.step--3 {
+  width: 5rem;
+  padding: 0.5rem;
+  background: white;
+  color: #303030;
+  text-align: center;
+}
+.step--1,
+.step--2 {
+  border-right: 1px solid grey ;
+}
+
+.step-active {
+  background: #666; /*grey*/
+  color: white ;
+  border: 1px solid #666;
+}
+
+ .formq {
+  background: #fff; /* BLANC*/
+  text-align: center; /*texte au centre form */
+  position: relative; 
+  width: 80%; /*largeur */
+  box-shadow: 0.1rem 0.3rem 1rem rgba(0,40,0, 0.7); /* bordure */
+  display: none ; /*cache les steps 2 et 3 */
+  border-radius: 1rem; /* coins arrondis*/
+  overflow: hidden;
+  margin:auto;
+}
+.form--header-container {
+  background-image: linear-gradient(to right, #004000 5%, #008000 60%); /* degrade couleur */
+  color: white; /*ecriture*/
+  height: 6rem; 
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+}
+
+.form--header-title { /*titre formulaie actif*/
+  font-size: 1.4rem;
+}
+
+.form--header-text { /*sous titre*/
+  padding: 0.5rem 0; 
+}
+
+.form__btn {
+  background: linear-gradient(to right, darkgreen, green); 
+  color: white; /*ecriture*/
+  padding: 0.5rem 0.7rem; /*marge au-dessus et en-dessous ecriture dans bouton */
+  width: 7rem;
+  margin: 1rem auto; /* conserver espace en dessous bouton**/
+  border-radius: 0.9rem; /*bords arrondis*/
+  text-transform: uppercase; /*Lettres en majuscules*/
+  font-weight: 700; /*bold*/
+  cursor: pointer;
+}
+
+h3 { /*titre questions*/
+  color: green;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+
+}
+h4 { /*titre questions*/
+  color:  grey;
+  font-weight: 530;
+  letter-spacing: 1.5px;
+}
+
+.form-active {
+  z-index: 0; /* pas de chevauchement header */
+  display: block;
+}
+.form-active-animate {
+  animation: moveRight 0.5s; /*le form s'en va à droite*/
+}
+.form-inactive {
+  display: block;
+  animation: moveLeft 0.5s;
+}
+
+
+@keyframes moveRight {   /*precedent */
+  0% {
+    transform: translateX(-27rem) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeft { /* avancer */
+
+  0% {
+
+    transform: translateX(0rem) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(27rem) scale(0.9);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.runner1,
+.runner2,
+.runner3,
+.run1,
+.run2 {
+  display: flex;   /* utilisation flexbox pour chaque question pour alignement horizontal*/
+  justify-content: center; /* centre formulaire*/
+}
+
+.elem
+{
+    display: flex;
+    flex-direction: column; /*alignement icone et sa description*/
+    margin: 30px; /*marge entre chaque icone*/
+    align-items: center;   
+}
+
+.elem p
+{
+  display:inline;
+     border:solid 2px;
+  border-radius:72px;
+  width:140px;
+  height:140px;
+  line-height:140px;
+  overflow:hidden;
+}
+
+.elem p:hover
+{
+     border: solid 2px green;
+}
+
+.elem img
+{
+  vertical-align:middle;
+}
+
+input[type="checkbox"] {
+  visibility:hidden;
+} 
+
+input[type="radio"] {
+  visibility:hidden;
+} 
+
+label:before {
+  border:solid;
+  border-radius:3px;
+  padding: 0 0.15em;
+}
+
+.options input:checked + label  {
+  color: black;
+  font-weight: bold; /*le texte de l'icone selectionnée devient gras */
+}
+
+
+.options input:checked + label:before {
+  content:'✓';
+}
+
+.options label {
+  color: grey;
+}
+
+.options label:hover {
+  color: black;
+}
+ .options label
+ {
+
+  cursor: pointer;
+ 
+ }
+
+.slider {
+  display: inline-block;
+  width: 200px;
+  padding: 0;
+}
+
+#check1, #check2, #check3
+{
+  border-radius:30px;
+  margin-right:60px;
+  margin-left:60px;
+
+}
+#check1text, #check2text,#check3text
+{
+  display:none;
+
+}
+
+
+
+
+@media only screen and (max-device-width: 1366px) { /*Pour l'accessibilité aux mobiles*/
+  .parallax1 {
+    background-attachment: scroll; /* Supprime l'effet parallax*/
+  }
+  .parallax2 {
+    background-attachment: scroll;
+  }
+  .parallax3 {
+    background-attachment: scroll;
+  }
+  .change
+  {
+    visibility:hidden; /* Cache la langue*/
+  }
+  .elem /* Réduit la distance entre les icônes*/
+{
+    margin: 10px; /*marge entre chaque icone*/
+
+}
+}
+
+.shoe3,.shoe2
+{
+  display:flex;
+  flex-wrap: column;
+  justify-content: center;
+}
+
+.shoe3 p,.shoe2 p
+{
+  margin-left:20px;
+  margin-right:20px;
+  font-size:20px;
+  color:grey;
+}
+
+
+
+
+
+.contenu .style-more
+{
+    color:black;
+    display:flex;
+    flex-wrap: column;
+    vertical-align:middle;
+    font-style: normal;
+    height:50px;
+    margin:0;
+    justify-content: left;
+}
+
+.style-more img, .style-more span
+{
+  margin:auto;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.style-more img
+{
+  margin-right:20px;
+}

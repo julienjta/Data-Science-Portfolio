@@ -1,0 +1,1077 @@
+/*DOCUMENT REGROUPANT L'ENSEMBLE DU CSS DU SITE*/
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position:relative;
+}
+
+/*STYLE POUR LA PAGE DE LOGIN*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page { /* Le bloc de connexion + les messages en cas d'erreur */
+  width: 360px;
+  padding: 30px 0 0;
+  margin: auto;
+}
+
+.form-login { /* Le bloc pour saisir login + mdp */
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 50px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form-login input { /* Les champs de saisie */
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form-login button { /* Le bouton pour se connecter */
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #aaa;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form-login button:hover,.form button:active,.form button:focus { /* Quand on passe la souris sur le bouton */
+  background: #43A047;
+}
+
+.form-login form {
+  margin-bottom: 5px;
+}
+
+.errmsg { /* Les messages d'erreur */
+    font-weight: bold;
+    font-size: 0.9em;
+    color: red;
+}
+
+.btn-logout { /* Bouton de déconnection */
+  position : absolute;
+  right : 10px;
+}
+
+.form-btn { /* Texte du bouton de déconnection */
+  font-family: "Roboto", sans-serif;
+  background: #aaa;
+  border: 0;
+  padding: 5px 20px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form-btn:hover,.form-btn:active,.form-btn:focus { /* Quand on passe la souris sur le bouton */
+  background: #43A047;
+}
+
+
+
+/*STYLE POUR LE HEADER*/
+
+header
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:black;
+  position:fixed;
+  float:top;
+  width: 100%;
+  overflow: hidden;
+  height:150px;
+  z-index: 1;
+}
+
+nav /* Le bloc pour changer la langue*/
+{
+    display: flex;
+    justify-content: right;
+    margin-top:10px;
+    margin-right:20px;
+}
+
+.change /* Le texte "Changer de langue"*/
+{
+  color:white;
+  margin-right:15px;
+  text-transform: uppercase;
+  font-size:12px;
+  font-family: 'lackregular';
+  letter-spacing:3px;
+}
+
+.gear /* L'image d'engrenage*/
+{ 
+  opacity: 0.2;
+  margin:0px;
+  position: absolute;
+  right:70px;
+  top:50px;
+}
+
+.logo /* L'ensemble logo + titre */
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 60%;
+    text-align:left;
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 60px;
+}
+
+.logo img
+{
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-right:40px;
+}
+
+h1
+{
+    font-family: 'yantramanavlight';
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    font-size:2.2em;
+    letter-spacing:5px;
+}
+
+
+
+
+/*STYLE POUR LE CORPS DE L'INDEX*/
+
+body
+{
+  font-family: Verdana;
+  text-align:justify;
+  margin:0px;
+}
+
+.parallax1 /* Effet "parallax" */
+{
+  /* L'image utilisée */
+  background-image: url("../images/bg1.jpg");
+
+  /* Spécifier une hauteur */
+  min-height: 300px; 
+
+  /* Créé l'effet parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  vertical-align: middle;
+}
+
+.parallax2 {
+  background-image: url("../images/bg2.jpg");
+
+  min-height: 300px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax3 {
+  background-image: url("../images/bg3.jpg");
+
+  min-height: 300px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+@font-face { /* Définition d'une nouvelle police nommée lackregular*/
+    font-family: 'lackregular';
+    src: url('../fontface/lack/lack-regular-webfont.eot');
+    src: url('../fontface/lack/lack-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontface/lack/lack-regular-webfont.woff') format('woff'),
+         url('../fontface/lack/lack-regular-webfont.ttf') format('truetype'),
+         url('../fontface/lack/lack-regular-webfont.svg#lackregular') format('svg');
+}
+
+h2 /*Les sous-titres sur les images*/
+{
+    font-family: 'lackregular';
+    text-transform: uppercase;
+    text-align: center;
+    color:black;
+    padding: 30px;
+    font-size:30px;
+    margin:0px;
+    position: relative;
+    padding-top:100px;
+}
+#phrase_fin /*titre de la page fin*/
+{
+    font-family: 'lackregular';
+    text-transform: uppercase;
+    color:#002400;
+    font-size:27px;
+    margin:10px;
+}
+
+#image_fin 
+{
+  margin:10px;
+}
+
+.end 
+{
+  display: flex;
+  flex-wrap: column;
+  justify-content: center;
+  vertical-align:middle;
+  align-items: center;
+  margin-top:20px;
+
+}
+
+section /*Le corps de la page (hors header et footer) */
+{
+  position: relative;
+  min-height:100%;
+  padding-bottom:130px;
+  padding-top:150px;
+}
+
+section p /* Les paragraphes dans le corps*/
+{
+    padding-right:100px;
+    padding-left:100px;
+    margin-top:50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+.container
+{
+  margin-top:50px;
+  margin-bottom:40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.contenu
+{
+  text-align: justify;
+  display: inline-block;
+  width:70%;
+}
+.contenu p
+{
+  padding:0;
+}
+
+
+.contenu ul
+{
+  list-style-image: url("/images/ul.jpg");
+  margin-left:50px;
+}
+
+.contenu a
+{
+  text-decoration: none;
+}
+
+.contenu a:visited, .contenu a:active {
+  color: #43A047;
+  text-decoration: none;
+}
+
+.contenu a:hover,.contenu a:focus {
+  color: #aaa;
+  text-decoration: underline;
+}
+
+.questions
+{
+    color:grey;
+    display:flex;
+    flex-wrap: column;
+    vertical-align:middle;
+    font-style: italic;
+    height:50px;
+    margin:0;
+    justify-content: left;
+}
+
+.questions img, .questions span
+{
+  margin:auto;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.questions img
+{
+  margin-right:20px;
+}
+
+/*STYLE POUR LE FOOTER*/
+
+footer
+{
+    background-color:black;
+    width: 100%;
+    height:150px;
+    z-index: 2;
+    color:white;
+    margin:0px;
+    display: flex;
+    position:relative;
+    bottom:0px;
+    flex-wrap: column;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+section {position: relative;}
+footer {position: absolute; bottom: 0; left: 0; right: 0}
+
+footer ul {
+  position: relative;
+list-style-type: none;
+width:20%;
+top:10px;
+}
+
+footer ul li {
+
+  margin-bottom:5px;
+
+}
+
+footer ul a
+{
+  
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+  justify-content: left;
+  padding-right:0px;
+  margin-bottom:10px;
+}
+
+footer ul img
+{
+  margin-right:10px;
+}
+
+
+
+footer ul a:hover {
+
+  font-weight: bold;
+}
+
+.gear2 /* L'image d'engrenage*/
+{ 
+  opacity: 0.2;
+  margin:0px;
+  position: relative;
+  z-index: 1;
+  bottom:250px;
+  left: -20%;
+  float:left;
+}
+
+.logo2 /* L'image de la chaussure*/
+{ 
+  position: relative;
+  top:35px;
+  right:50px;
+  z-index: 1;
+}
+
+
+/* Code pour le lien vers le quizz*/
+
+.link {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #43A047;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 18px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+
+  display:flex;
+  flex-wrap: column;
+
+  position:fixed;
+  top: 250px;
+  right: 0;
+  padding: 1em;
+  width: 17%;
+  z-index:1;
+  border-radius: 15px 0px 0 15px;
+  border-left: solid darkgreen 6px;
+  height:50px;
+}
+
+.link:visited, .link:active {
+  background: #43A047;
+}
+.link:hover,.link:focus {
+  background: #aaa;
+  border-left: solid #838383 6px;
+}
+
+.link img, .link p{ /* Bouton lancement du quiz */
+    margin:auto
+ }
+
+ .link p{ /* Bouton lancement du quiz */
+    margin-left: 5px;
+    font-size: 1em;
+ }
+
+
+/*STYLE FOR THE QUIZ*/
+
+.corps /*whole page except header and footer*/
+{
+  padding:0;
+  margin:0;
+  padding-bottom:180px;/*no overlap with footer*/
+  padding-top:180px; /*no overlap with header*/
+  width: 100%;
+}
+
+.stepper {
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* under the header and above the form*/
+  margin:auto;
+  border: 1px solid grey;
+  margin-bottom:20px;
+}
+
+.step--1,
+.step--2,
+.step--3 {
+  width: 5rem;
+  padding: 0.5rem;
+  background: white; /*white if step not active*/
+  color: #303030; 
+  text-align: center;
+}
+.step--1,
+.step--2 {
+  border-right: 1px solid grey ;
+}
+
+.step-active {
+  background: #666; /*grey if step active*/
+  color: white ;
+  border: 1px solid #666;
+}
+
+ .formq { /* active form*/
+  background: white;
+  text-align: center; 
+  position: relative; /*under the stepper and above the footer*/
+  width: 80%; 
+  box-shadow: 0.1rem 0.3rem 1rem rgba(0,40,0, 0.7); /*edge colors*/
+  display: none ; /*hide steps 2 and 3 */
+  border-radius: 1rem; /* coins arrondis*/
+  overflow: hidden;
+  margin:auto;
+}
+.form--header-container {
+  background-image: linear-gradient(to right, #004000 5%, #008000 60%); /*green gradation*/
+  color: white; /*writing*/
+  height: 6rem; 
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+}
+
+.form--header-title { /*active form title*/
+  font-size: 1.4rem;
+}
+
+.form--header-text { /*active form subtitle*/
+  padding: 0.5rem 0; 
+}
+
+.form__btn {
+  background: linear-gradient(to right, darkgreen, green); /*green gradation*/
+  color: white; /*writing*/
+  padding: 0.5rem 0.7rem; /*margin above and under the writing in the button*/
+  width: 7rem;
+  margin: 1rem auto; /*space under the button*/
+  border-radius: 0.9rem; /*round edges*/
+  text-transform: uppercase; 
+  font-weight: 700; /*bold*/
+  cursor: pointer;
+}
+
+h3 { /*Titles questions*/
+  color: green;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+
+}
+h4 { /*indicate several options are possible*/
+  color:  grey;
+  font-weight: 530;
+  letter-spacing: 1.5px;
+}
+
+.form-active {
+  z-index: 0; /*no overlap with header*/
+  display: block;
+}
+.form-active-animate {
+  animation: moveRight 0.5s; /*form go to the right*/
+  z-index: 0; 
+}
+.form-inactive {
+  display: block;
+  animation: moveLeft 0.5s; /*form go to the left*/
+  z-index: 0;
+}
+
+
+@keyframes moveRight {   /*button next*/
+  0% {
+    transform: translateX(-27rem) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeft { /*button previous*/
+
+  0% {
+
+    transform: translateX(0rem) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(27rem) scale(0.9);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.elem
+{
+    display: flex;
+    flex-direction: column; /*icon and its description alignment (vertical)*/
+    margin: 30px; /*margin between each icon*/
+    align-items: center;   
+}
+
+.runner1,
+.runner2,
+.runner3,
+.run1,
+.run2 {
+  display: flex;   /* use of flexbox for each question (horizontal alignment)*/
+  justify-content: center; /*at the center of the form*/
+}
+
+
+
+.elem p
+{
+  display:inline;
+     border:solid 2px;
+  border-radius:72px;
+  width:140px;
+  height:140px;
+  line-height:140px;
+  overflow:hidden;
+}
+
+.elem p:hover
+{
+     border: solid 2px green;
+}
+
+.elem img
+{
+  vertical-align:middle;
+}
+
+.elem input[type="checkbox"], .options input[type="checkbox"] { 
+  visibility:hidden;
+} 
+
+.elem input[type="radio"] {
+  visibility:hidden;
+} 
+
+.elem label:before {
+  border:solid;
+  border-radius:3px;
+  padding: 0 0.15em;
+}
+
+.options input:checked + label  { /*form 3, Q1*/
+  color: black;
+  font-weight: bold; /*selected icon text becomes bold*/
+}
+
+.options input:checked + label:before {/*form 3, Q1*/
+  content:'✓'; /*symbol before each icon selected*/
+}
+
+.options label:hover { /*form 3, Q1*/
+  color: black;
+}
+.options label { /*form 3, Q1*/
+  color: grey;
+  cursor: pointer;
+}
+
+
+.slider { /*form 3, Q2 and Q3*/
+  display: inline-block;
+  width: 200px;
+  padding: 0;
+}
+
+.slidder { /*form 3, Q2 and Q3*/
+  display: inline-block;
+  width: 400px;
+  padding: 0;
+}
+
+#check1, #check2, #check3
+{
+  border-radius:30px;
+  margin-right:60px;
+  margin-left:60px;
+
+}
+#check1text, #check2text,#check3text
+{
+  display:none;
+
+}
+
+
+
+
+@media only screen and (max-device-width: 1366px) { /*Pour l'accessibilité aux mobiles*/
+  .parallax1 {
+    background-attachment: scroll; /* Supprime l'effet parallax*/
+  }
+  .parallax2 {
+    background-attachment: scroll;
+  }
+  .parallax3 {
+    background-attachment: scroll;
+  }
+  .change
+  {
+    visibility:hidden; /* Cache la langue*/
+  }
+  .elem /* Réduit la distance entre les icônes*/
+{
+    margin: 10px; /*marge entre chaque icone*/
+
+}
+}
+
+.shoe3,.shoe2
+{
+  display:flex;
+  flex-wrap: column;
+  justify-content: center;
+}
+
+.shoe3 p,.shoe2 p
+{
+  margin-left:20px;
+  margin-right:20px;
+  font-size:20px;
+  color:grey;
+}
+
+
+
+
+
+.contenu .style-more
+{
+    color:black;
+    display:flex;
+    flex-wrap: column;
+    vertical-align:middle;
+    font-style: normal;
+    height:50px;
+    margin:0;
+    justify-content: left;
+}
+
+.style-more img, .style-more span
+{
+  margin:auto;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.style-more img
+{
+  margin-right:20px;
+}
+
+.questionnaire {
+margin-top:20px;
+}
+
+.questionnaire input[type="radio"]
+{
+      visibility:visible;
+  
+}
+
+.questionnaire p /* Les paragraphes dans le corps*/
+{
+    padding-right:100px;
+    padding-left:100px;
+    margin-top:0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+.questionnaire span /* Les paragraphes dans le corps*/
+{
+    font-style: italic;
+    color:grey;
+}
+
+.questionnaire h4 /* Les paragraphes dans le corps*/
+{
+  margin:0;
+    margin-left:75px;
+    margin-right:75px;
+    font-family: Verdana;
+    font-size: 1.4rem;
+    color:black;
+    letter-spacing: 0px;
+    font-style: italic;
+    display:inline-block;
+   border-bottom: 4px solid black;
+   padding-left:5px;
+   padding-right:20px;
+}
+
+.titre_questionnaire{ /*Title picture*/
+  display:flex;
+  flex-wrap: column;
+  color: black;
+}
+
+.titre_questionnaire h3 { /*Titles questions*/
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+	font-weight: lighter;
+  font-size:35px;
+padding:0px;
+}
+
+.titre_questionnaire p { /*Title picture*/
+display:flex;
+  padding:0px;
+  margin:auto;
+  margin-left:100px;
+  margin-right:10px;
+  font-size: 1.5rem;
+}
+
+h5
+{
+  margin-left:100px;
+  margin-right:100px;
+  margin-top:0px;`
+   margin-bottom:0px;
+  color:grey;
+  font-style:italic;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.fleche
+{
+  position:relative;
+  top:-7px;
+  left:20px;
+  padding:0;
+  height:30px;
+}
+
+.slider_avis
+{
+  display:flex;
+  flex-wrap: column;
+  justify-content: center;
+  text-align:left;
+  width:500px;
+  margin-left:100px;
+}
+
+.slider_avis p
+{
+  padding:0;
+  padding-left:10px;
+  padding-right:10px;
+  font-size:20px;
+  color:grey;
+}
+
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #000031;
+  border: 1px solid #00001E;
+  height: 19px;
+  width: 26px;
+  border-radius: 18px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  border: 2px solid grey;
+  border-radius: 5px;
+  font-size:15px;
+}
+
+.questionnaire button[type=submit]{
+ margin-left:5px;
+ border:2px solid black;
+ border-radius: 4px;
+ cursor:pointer;
+ text-transform: uppercase;
+ letter-spacing: 4px;
+  font-weight: bold;
+ 
+  color: white;
+  background-color:black;
+  font-size:20px;
+ }
+
+ .questionnaire button[type=submit]:hover{
+   color: black;
+   background-color:white;
+ }
+
+ .questionnaire button[type=submit]:focus{
+   color: black;
+   background-color:white;
+   border:4px solid black;
+ }
+
+/* COMMON RADIO AND CHECKBOX STYLES  */
+#form_couleur input[type=radio],
+#form_couleur input[type=checkbox]{
+  /* Hide original inputs */
+  visibility: hidden;
+  position: absolute;
+}
+#form_couleur input[type=radio] + label:before,
+#form_couleur input[type=checkbox] + label:before{
+  height:20px;
+  width:20px;
+  margin-right: 2px;
+  content: " ";
+  display:inline-block;
+  vertical-align: baseline;
+  border:1px solid #777;
+  cursor:pointer;
+  background:red;
+}
+
+#form_couleur input[type=radio]:checked + label:before,
+#form_couleur input[type=checkbox]:checked + label:before{
+  background:gold;
+  border:2px solid black;
+}
+
+/* CUSTOM RADIO AND CHECKBOX STYLES */
+#form_couleur input[type=radio] + label:before{
+  border-radius:50%;
+}
+#form_couleur input[type=checkbox] + label:before{
+  border-radius:2px;
+}
+
+
+#form_couleur div
+{
+  display:inline;
+}
+
+
+#form_couleur .blanc input[type=radio] + label:before,
+#form_couleur .blanc input[type=checkbox] + label:before{
+  background:white;
+}
+
+#form_couleur .blanc input[type=radio]:checked + label:before,
+#form_couleur .blanc input[type=checkbox]:checked + label:before{
+  background:white;
+}
+
+#form_couleur .noir input[type=radio] + label:before,
+#form_couleur .noir input[type=checkbox] + label:before{
+  background:black;
+}
+
+#form_couleur .noir input[type=radio]:checked + label:before,
+#form_couleur .noir input[type=checkbox]:checked + label:before{
+  background:black;
+}
+
+#form_couleur .jaune input[type=radio] + label:before,
+#form_couleur .jaune input[type=checkbox] + label:before{
+  background:#FEFAA8  ;
+}
+
+#form_couleur .jaune input[type=radio]:checked + label:before,
+#form_couleur .jaune input[type=checkbox]:checked + label:before{
+  background:#F4E903 ;
+}
+
+#form_couleur .orange input[type=radio] + label:before,
+#form_couleur .orange input[type=checkbox] + label:before{
+  background:#FFCF85  ;
+}
+
+#form_couleur .orange input[type=radio]:checked + label:before,
+#form_couleur .orange input[type=checkbox]:checked + label:before{
+  background:#FF9D07 ;
+}
+
+#form_couleur .rouge input[type=radio] + label:before,
+#form_couleur .rouge input[type=checkbox] + label:before{
+  background:#FF8A75  ;
+}
+
+#form_couleur .rouge input[type=radio]:checked + label:before,
+#form_couleur .rouge input[type=checkbox]:checked + label:before{
+  background:#FF2700 ;
+}
+
+#form_couleur .bleu input[type=radio] + label:before,
+#form_couleur .bleu input[type=checkbox] + label:before{
+  background:#93CCFF  ;
+}
+
+#form_couleur .bleu input[type=radio]:checked + label:before,
+#form_couleur .bleu input[type=checkbox]:checked + label:before{
+  background:#1A91FA ;
+}
+
+#form_couleur .vert input[type=radio] + label:before,
+#form_couleur .vert input[type=checkbox] + label:before{
+  background:#9CDD8E  ;
+}
+
+#form_couleur .vert input[type=radio]:checked + label:before,
+#form_couleur .vert input[type=checkbox]:checked + label:before{
+  background:#21C400 ;
+}
+
+hr
+{
+  height: 2px; color: darkgrey; background-color: darkgrey;  border: none; width:100%;margin:0;
+}
+
+#modele
+{
+  text-align:center;
+}
+
+.group-modele
+{display:flex;flex-wrap: column;
+  justify-content: center;}
+
+.group-modele button[type=submit]{
+
+ border:2px solid black;
+ border-radius: 4px;
+ cursor:pointer;
+ text-transform: uppercase;
+ letter-spacing: 4px;
+ display:inline;
+  color: white;
+  background-color:black;
+  font-size:20px;
+  padding:15px;
+ }
+
+ .group-modele button[type=submit]:hover{
+ background-color: white;
+ color:black;
+}
+
+
+#rectangle{
+    width:300px;
+    height:210px;
+    background-size: 300px;
+/*background: url("../images/models/white.png") no-repeat ;*/
+}

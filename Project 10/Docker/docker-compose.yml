@@ -1,0 +1,11 @@
+version: "3"
+services:
+  app:
+    container_name: "shoecustomisatorapi"
+    build: .
+    ports:
+      - "9236:80"
+    environment:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+      TZ: Europe/Paris
