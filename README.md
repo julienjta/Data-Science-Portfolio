@@ -7,12 +7,12 @@ Young Data Scientist just graduated from the University of Technology of Compiè
 
 Always looking for performance, improvement and new knowledge in the data environment, this portfolio gathers some projects on which I had the opportunity to think and work either in collaboration with other students or independently.
 
-### Tools used
+## Tools used
 
 - *Visualisation*: NumPy, Pandas, Seaborn, Matplotlib, Ploty, Yellowbrick.
 - *Machine Learning*: Scikit-Learn, XGBoost.
 
-### Symbols
+## Symbols
 
 - ✅: Project done
 - ⌛️: Project in progress (working on it right now)
