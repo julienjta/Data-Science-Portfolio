@@ -38,12 +38,12 @@ Repository containing portfolio of data science projects completed for academic,
 
 ## Logic Programming
 
-- **Project 8 - Minesweeper Game Solver**: --- 📥🎓
+- **Project 8 - Minesweeper Game Solver**: Python, Gophersat 📥🎓
 
 ## Others
 
-- **Project 9 - [Database for an Online Payment App](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%209 "Database for an Online Payment App")**: SQL, Neo4J, MongoDB *(in progress)* ⌛️🎓
+- **Project 9 - [Database for an Online Payment App](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%209 "Database for an Online Payment App")**: SQL, Neo4J, MongoDB ⌛️🎓
 - **Project 10 - Online Resume**: HTML, CSS, PHP, Javascript *(to do)*
-- **Project 11 - Accounting App**: C++, Qt *(to add)* 📥🎓
+- **Project 11 - Accounting App**: C++, Qt 📥🎓
 
 
