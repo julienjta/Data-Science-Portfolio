@@ -1,121 +1,6 @@
-CREATE TABLE Rubrique(
-	nom varchar primary key
-);
-
-Create table Administrateur (
-	pseudo varchar(30) primary key
-);
-
-CREATE TABLE Utilisateur(
-  pseudo varchar(30) PRIMARY KEY,
-  nom varchar(30) NOT NULL,
-  prenom varchar(30) NOT NULL,
-  date_naissance DATE NOT NULL,
-  tel  numeric(10,0) UNIQUE,
-  mail varchar(50) UNIQUE NOT NULL,
-  ville varchar(30),
-  code_postal numeric(5,0),
-  montant_porte_feuille numeric(6,2) check (montant_porte_feuille >= 0)
-); 
-
-CREATE TABLE Annonce (
-  id varchar primary key,
-  date_depot timestamp NOT NULL,
-  titre varchar(50) NOT NULL,
-  photo1 varchar,
-  photo2 varchar,
-  photo3 varchar,
-  description varchar(250),
-  deposeur varchar(30) references Utilisateur(pseudo) NOT NULL,
-  validation bool NOT NULL,
-  administrateur varchar(30) references Administrateur(pseudo),
-  check (case
-        	when validation = 'f' then administrateur is NULL
-        	when validation = 't' then administrateur is NOT NULL
-        end)
-);
-
-CREATE TABLE Service(
-  id_serv varchar primary key,
-  prix_heure float,
-  rubrique varchar,
-  foreign key(id_serv) references Annonce(id),
-  foreign key(rubrique) references Rubrique(nom)
-); 
-
-CREATE TABLE Transaction(
-	annonce varchar primary key,
-  date_transaction date,
-  utilisateur varchar(30),
-  foreign key(annonce) references Annonce (id),
-  foreign key(utilisateur) references Utilisateur(pseudo),
-  note integer,
-  commentaire varchar,
-  CHECK ((note IS NULL and commentaire IS NULL) OR (note IS NOT NULL and commentaire IS NOT NULL))
-);
-
-CREATE TABLE Bien(
-	reference varchar primary key,
-  nom varchar NOT NULL,
-  etat varchar,
-  taille varchar,
-  annee numeric(4,0),
-  description varchar,
-  rubrique varchar,
-  foreign key(rubrique) references Rubrique(nom),
-	CHECK (etat in ('neuf', 'bon', 'moyen', 'mauvais')),
-  CHECK (taille in ('petit', 'moyen', 'grand', 'très grand'))
-);
-
-CREATE TABLE Enchere(
-  annonce varchar UNIQUE,
-  bien varchar UNIQUE,
-  PRIMARY KEY (annonce,bien),
-  prix_depart float NOT NULL,
-  duree_jours integer NOT NULL,
-	foreign key(annonce) references Annonce(id),
-  foreign key(bien) references Bien(reference)
-);
-
-CREATE TABLE Encherit(
-  enchere varchar,
-  encherisseur varchar,
-  montant float,
-  date_enchere timestamp,
-	foreign key(enchere) references Enchere (annonce),
-  foreign key(encherisseur) references Utilisateur(pseudo)
-);
-
-CREATE TABLE Vente_Directe(
-	annonce varchar,
-  bien varchar,
-  prix float NOT NULL,
-  primary key(annonce, bien),
-  foreign key(annonce) references Annonce(id),
-  foreign key(bien) references Bien(reference)
-);
-
-Create table Message (
-reference varchar primary key,
-contenu_message varchar(250),
-heure_message timestamp NOT NULL,
-statut varchar NOT NULL,
-destinateur varchar NOT NULL,
-destinataire varchar NOT NULL,
-foreign key(destinateur) references Utilisateur(pseudo),
-foreign key (destinataire) references Utilisateur(pseudo),
-CHECK (statut in ('envoyé', 'reçu', 'lu'))
-);
-
-
-create table Mot_cle(
-	mot_cle varchar(30),
-  annonce varchar references Annonce (id),
-  primary key (mot_cle,annonce) 
-);
-
-
------REMPLISSAGE DE LA BASE-----
+---------------------------------------
+-------------DATABASE FILL-------------
+---------------------------------------
 
 
 INSERT INTO Rubrique(nom) VALUES ('Maison');
@@ -132,21 +17,21 @@ INSERT INTO Rubrique(nom) VALUES ('Mode');
 INSERT INTO Rubrique(nom) VALUES ('Education');
 
 INSERT INTO Utilisateur(pseudo, nom, prenom, date_naissance, tel, mail, ville, code_postal, montant_porte_feuille)
-VALUES ('juju', 'Justine', 'Tigoutte', to_date('20001225', 'YYYYMMDD'), 0612345678, 'Justine.Tigoutte@hotmail.fr', 'Compiègne', 60200, 50.50);
+VALUES ('juju', 'Justine', 'Tigoutte', to_date('20001225', 'YYYYMMDD'), 0612345678, 'Justine.Tigoutte@hotmail.fr', typAdresse('Rue de Paris','754','Compiegne','60200'), 50.50);
 INSERT INTO Utilisateur(pseudo, nom, prenom, date_naissance, tel, mail, ville, code_postal, montant_porte_feuille)
-VALUES ('yvon', 'Yves', 'Egée',to_date('19570401','YYYYMMDD'), 0612345680, 'Yves.Egée@hotmail.com', 'Paris', 75001, 0.00);
+VALUES ('yvon', 'Yves', 'Egée',to_date('19570401','YYYYMMDD'), 0612345680, 'Yves.Egée@hotmail.com', typAdresse('Rue de Bouvines','17','Compiegne','60200'), 0.00);
 INSERT INTO Utilisateur(pseudo, nom, prenom, date_naissance, tel, mail, ville, code_postal, montant_porte_feuille)
-VALUES ('kim', 'Kimberley', 'Tartine',to_date('19801021','YYYYMMDD'), 0600000102, 'Kimberley.tartine@hotmail.com', 'Paris', 75018, 1000.00);
+VALUES ('kim', 'Kimberley', 'Tartine',to_date('19801021','YYYYMMDD'), 0600000102, 'Kimberley.tartine@hotmail.com', typAdresse('Boulevard Magenta','28','Paris','75001'), 1000.00);
 INSERT INTO Utilisateur(pseudo, nom, prenom, date_naissance, tel, mail, ville, code_postal, montant_porte_feuille)
-VALUES ('Purporc', 'Sophie', 'Sonsek',to_date('20050506','YYYYMMDD'), NULL, 'Justin.bridon@gmail.com', 'Compiègne', 60200, 123.45);
+VALUES ('Purporc', 'Sophie', 'Sonsek',to_date('20050506','YYYYMMDD'), NULL, 'Justin.bridon@gmail.com', typAdresse('Avenue des Champs Elysée','12','Paris','75005'), 123.45);
 INSERT INTO Utilisateur(pseudo, nom, prenom, date_naissance, tel, mail, ville, code_postal, montant_porte_feuille)
-VALUES ('Outch', 'Oussama', 'Faitmal',to_date('20010911','YYYYMMDD'), 0701020304, 'Oussama.Faitmal@gmail.com', 'Marseille', 13000, 12.00);
+VALUES ('Outch', 'Oussama', 'Faitmal',to_date('20010911','YYYYMMDD'), 0701020304, 'Oussama.Faitmal@gmail.com', typAdresse('Rue Monceau','349','Marseille','13000'), 12.00);
 INSERT INTO Utilisateur(pseudo, nom, prenom, date_naissance, tel, mail, ville, code_postal, montant_porte_feuille)
-VALUES ('toutouille', 'Sacha', 'Touille',to_date('19450508','YYYYMMDD'), 0743215678, 'Sacha.Touille@gmail.com', 'Compiègne', 60200, 0.00);
+VALUES ('toutouille', 'Sacha', 'Touille',to_date('19450508','YYYYMMDD'), 0743215678, 'Sacha.Touille@gmail.com', typAdresse('Rue Foche','13','Compiegne','60200'), 0.00);
 INSERT INTO Utilisateur(pseudo, nom, prenom, date_naissance, tel, mail, ville, code_postal, montant_porte_feuille)
-VALUES ('gentleman', 'Arsene', 'Lupin',to_date('18740101','YYYYMMDD'), NULL, 'Arsene.Lupin@hotmail.fr', 'Paris', 75010, 9999.99);
+VALUES ('gentleman', 'Arsene', 'Lupin',to_date('18740101','YYYYMMDD'), NULL, 'Arsene.Lupin@hotmail.fr', typAdresse('Rue de la Paix','12','Paris','75001'), 9999.99);
 INSERT INTO Utilisateur(pseudo, nom, prenom, date_naissance, tel, mail, ville, code_postal, montant_porte_feuille)
-VALUES ('jujubis', 'Justine', 'Tigoutte',to_date('20001225','YYYYMMDD'), 0612345679, 'Justinebis.Tigoutte@hotmail.fr', 'Compiègne', 60200, 50.50);
+VALUES ('jujubis', 'Justine', 'Tigoutte',to_date('20001225','YYYYMMDD'), 0612345679, 'Justinebis.Tigoutte@hotmail.fr', typAdresse('Rue Antoinette','21','Compiegne','60200'), 60200, 50.50);
 
 INSERT INTO Message VALUES ('mss1', 'salut','2018-10-25 14:15:21', 'envoyé', 'jujubis','gentleman');
 INSERT INTO Message VALUES ('mss2', 'J''aime le piment d''Espelette', '2018-10-25 14:15:41', 'lu', 'kim','Outch');
