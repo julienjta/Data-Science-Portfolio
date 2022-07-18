@@ -28,11 +28,14 @@ Repository containing portfolio of data science projects completed for academic,
 
 - **Project 7 - Fake News Detection**: --- *(to do)*
 
+## Logic Programming
+
+- **Project 8 - Minesweeper Game Solver**: --- *(to add)*
 
 ## Others
 
-- **Project 8 - Database for an Online Payment App**: SQL *(to add)*
-- **Project 9 - Online Resume**: HTML, CSS, PHP, Javascript *(to do)*
-- **Project 10 - Accounting App**: C++, Qt *(to add)*
+- **Project 9 - Database for an Online Payment App**: SQL *(to add)*
+- **Project 10 - Online Resume**: HTML, CSS, PHP, Javascript *(to do)*
+- **Project 11 - Accounting App**: C++, Qt *(to add)*
 
 
