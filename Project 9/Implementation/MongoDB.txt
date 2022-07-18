@@ -1,0 +1,60 @@
+use na17
+
+db.utilisateur.drop()
+
+db.utilisateur.insert(
+	{
+    "pseudo":"juju",
+    "prenom":"Justine",
+    "nom":"Tigoutte",
+    "naissance":"2000-12-25",
+    "tel":0607454717,
+    "mail":"jstine.tigoutte@gmail.com",
+    "adresse":
+    [
+      {
+      "rue":"Rue de Paris",
+      "Ville":"Compiègne",
+      "numero":78
+      }
+    ],
+    "montant_porte_feuille":38
+  })
+
+db.utilisateur.insert(
+  	{
+    "pseudo":"toto",
+    "prenom":"Yves",
+    "nom":"Egée",
+    "naissance":"1987-12-15",
+    "tel":0607765417,
+    "mail":"toto.toto@gmail.com",
+  	"adresse":[
+      {
+        "rue":"Rue Victor Hugo",
+        "Ville":"Paris",
+        "numero":12
+      }
+    ],
+    "montant_porte_feuille":11
+  })
+
+db.utilisateur.insert(
+  	{
+    "pseudo":"Arlu",
+    "prenom":"Arsène",
+    "nom":"Lupin",
+    "naissance":"1957-07-10",
+    "tel":0607111717,
+    "mail":"arsenelupin@gmail.com",
+    "adresse":[
+      {
+        "rue":"Rue du Général De Gaulle",
+        "Ville":"Lille",
+        "numero":4
+      }
+    ],
+    "montant_porte_feuille":543
+  })
+
+db.utilisateur.find().pretty()

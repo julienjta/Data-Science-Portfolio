@@ -1,0 +1,25 @@
+CREATE OR REPLACE TYPE typAdresse AS OBJECT (
+rue varchar(25),
+numero number(3),
+ville varchar(25),
+code_postal number(5)
+);
+/
+
+
+CREATE TABLE tUtilisateur (
+pkpseudo varchar2(20) PRIMARY KEY,
+nom varchar2(20) NOT NULL,
+prenom varchar2(20) NOT NULL,
+date_naissance date,
+mail varchar2(20) UNIQUE NOT NULL,
+adresse typAdresse
+);
+
+
+
+INSERT INTO tUtilisateur 
+VALUES ('juju','Druant','Justine','20-12-1988','justine@gmail.com',typAdresse('Rue de Paris','754','Compiegne','60200'));
+
+INSERT INTO tUtilisateur 
+VALUES ('jm','Druant','Jean-Michel','25-05-1961','jm-dr@gmail.com',typAdresse('Rue Victor Hugo','123','Paris','75006'));

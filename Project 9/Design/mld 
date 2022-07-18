@@ -1,0 +1,40 @@
+Utilisateur (#pseudo : varchar(30), nom : varchar(30), prénom : varchar(30), date_naissance : date, tel : numeric(10,0), mail : varchar, moyenne_note : float, résidence => Residence.Ville, CP => Residence.code_postal, montant_porte_feuille : float(.2), administrateur=>Administrateur)
+WITH nom, prénom, date_naissance NOT NULL, mail UNIQUE NOT NULL, montant_porte_feuille NOT NULL
+
+Administrateur(#pseudo : varchar(30))
+
+Residence (#ville : varchar, #code_postal : integer(5))
+
+Transaction (#annonce=>Annonce.id, date : date, utilisateur=> Utilisateur.pseudo, note : integer, commentaire : varchar(250))
+WITH (note IN (0,1,2,3,4,5))
+
+
+Message (#référence : varchar, contenu_message : varchar(250), heure_message : timestamp, statut : varchar, Destinateur => Utilisateur, Destinataire => Utilisateur)
+WITH (statut in ("envoyé, "reçu", "lu"))
+
+Annonce (#id : varchar, date_dépôt : timestamp, titre : varchar(50), photo1 : varchar, photo2 : varchar, photo3 : varchar, description : varchar(250), annonceur => Utilisateur.pseudo NOT NULL, utilisateur_réponse => Utilisateur.pseudo, validation : bool, administrateur=>Administrateur.pseudo)
+WITH ((validation==0 and administrateur IS NULL) xor (validation==1 and administrateur IS NOT NULL))
+
+Mots_clés(#mot : varchar, #annonce=>Annonce.id)
+
+Vente_Directe(#annonce=>Annonce.id, #bien=>Bien.référence, prix : float)
+WITH prix NOT NULL
+
+Enchère(#annonce => Annonce.id, #bien=>Bien.référence, prix_départ : money, durée_jours : integer)
+
+Enchérit(#enchère => Enchère.annonce, #enchérisseur => Utilisateur.pseudo, #montant : money)
+
+Bien(#référence varchar, nom : varchar, état : varchar, année : integer(4), taille : varchar, description : varchar, rubrique=>Rubrique.nom NOT NULL)
+WITH (état in ("neuf", "bon", "moyen", "mauvais")) and (type in ("petit", "moyen", "grand", "très grand"))
+
+Rubrique(#nom)
+
+Service(#id_serv=>Annonce.id, prix_heure : float(0.2), rubrique=>Rubrique.nom NOT NULL) 
+
+
+Contraintes :
+Intersection(Projection(Administrateur, pseudo), Projection(Utilisateur, pseudo))={}
+
+
+Recherches :
+Recherche_par_motclé=Projection(Restriction(Mots_clés, mot=’mot clé’), annonce)

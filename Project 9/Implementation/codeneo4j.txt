@@ -1,0 +1,116 @@
+CREATE (
+  kevin:Utilisateur
+  {
+    pseudo:"KevKev",
+    nom:"Duroy",
+    prenom:"Kevin",
+    adresse:"3 rue Victor Hugo, Paris",
+    date_naiss:"09/10:1990",
+    tel:"0623461709",
+    mail:"kevdu13@gmail.com",
+    valide:1
+  })
+
+CREATE (
+  Jean:Utilisateur
+ {
+   pseudo:"Darkiller",
+   nom:"Dupont",
+   prenom:"Jean",
+   adresse:"3 rue Jules Vernes, Paris",
+   date_naiss:"09/10:1980",
+   tel:"0623461708",
+   mail:"darkiller78@gmail.com",
+   valide:1
+ })
+
+CREATE (
+  Juliette:Utilisateur
+ {
+   pseudo:"juju",
+   nom:"Legrand",
+   prenom:"Juliette",
+   adresse:"3 rue général Leclerc, Paris",
+   date_naiss:"07/10/2000",
+   tel:"0623461720",
+   mail:"juju@gmail.com",
+   valide:1
+ })
+
+CREATE (
+  a1:Annonce 
+ {
+   titre:"Vend ours en peluche",
+   date_depot:"08/09/2019",
+   desciption:"Je vend l'ours en pelche de ma fille, bon état.",
+   valide:1
+ })
+
+CREATE (
+  a2:Annonce 
+ {
+   titre:"Vend telephone",
+   date_depot:"08/10/2019",
+   desciption:"Iphone 6S, bon état, me contacter par MP, no noob no arnak",
+   valide:1
+ })
+
+CREATE (
+  b1:Bien 
+ {
+   nom:"Iphone 6S",
+   annee:"2016",
+   etat:"passable",
+   prix:"100"
+ })
+
+CREATE (
+  b2:Bien 
+ {
+   nom:"Ours en peluche",
+   annee:"2006",
+   etat:"bon état",
+   prix:"15"
+ })
+                    
+CREATE (
+  b3:Bien 
+ {
+   nom:"ecocup",
+   annee:"2016",
+   etat:"colector",
+   prix:"3"
+ })
+          
+
+MATCH (
+  a1:Utilisateur 
+ {pseudo:"KevKev"}),(b1:Annonce {titre:"Vend ours en peluche"}) MERGE (a1)-[c1:Deposer]->(b1)
+
+MATCH (
+   a2:Utilisateur 
+ {pseudo:"KevKev"}),(b2:Annonce {titre:"Vend telephone"}) MERGE (a2)-[c2:Deposer]->(b2)
+
+MATCH (
+   a3:Annonce 
+ {titre:"Vend telephone"}),(b3:Bien {nom:"Iphone 6S"}) MERGE (a3)-[c3:Concerne]->(b3)
+
+MATCH (
+   a4:Annonce 
+ {titre:"Vend ours en peluche"}),(b4:Bien {nom:"Ours en peluche"}) MERGE (a4)-[c4:Concerne]->(b4)
+
+MATCH (
+   a5:Utilisateur 
+ {pseudo:"Darkiller"}),(b5:Utilisateur {pseudo:"KevKev"}) MERGE (a5)-[c5:Message {date:"31/10/2019",heure:"21:03:29",contenu:"Bonjour, je suis intéréssé par votre iphone 6S", prix:"150"}]->(b5)
+
+MATCH (
+   a6:Utilisateur 
+ {pseudo:"KevKev"}),(b6:Utilisateur {pseudo:"Darkiller"}) MERGE (a6)-[c6:Message {date:"31/10/2019",heure:"21:19:54",contenu:"Bonsoir, je peux vous le faire a 200€"}]->(b6)
+
+MATCH (
+   a7:Utilisateur 
+ {pseudo:"juju"}),(b7:Utilisateur {pseudo:"KevKev"}) MERGE (a7)-[c7:Message {date:"11/09/2019",heure:"12:13:27",contenu:"Bonjour, l'ours est-t-il tjrs dispo ? Cdt"}]->(b7)
+
+MATCH (
+   a8:Utilisateur
+ {pseudo:"Merovingien"}),(b1:Bien {nom:"Iphone 6S"}) MERGE (a8)-[c8:Transaction {date:"12/09/2019",heure:"12:14:27",contenu:"151"}]->(b8)
