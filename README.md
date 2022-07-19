@@ -49,7 +49,5 @@ Always looking for performance, improvement and new knowledge in the data enviro
 ## Others
 
 - **Project 9 - [Database for an Online Payment App](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%209 "Database for an Online Payment App")**: SQL, Neo4J, MongoDB ⌛️🎓
-- **Project 10 - Website for Proof of Concept for Mass Customization**: HTML, CSS, PHP, Javascript 📥🎓
+- **Project 10 - [Website for POC for Mass Customization](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%2010)**: HTML, CSS, PHP, Javascript, JSON 🎓✅
 - **Project 11 - Accounting App**: C++, Qt 📥🎓
-
-
