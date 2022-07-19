@@ -35,7 +35,7 @@ Always looking for performance, improvement and new knowledge in the data enviro
 ## Deep Learning
 
 - **Project 5 - Detection of Brain Tumor**: Keras 📌
-- **Project 6 - Predictive Maintenance using Accoustic Emissions**: Time Series, Wavelet Transform, Convolutional Neural Network, Scaleograms 📥🎓
+- **Project 6 - Predictive Maintenance using Accoustic Emissions**: Time Series, Wavelet Transform, Convolutional Neural Network, Scaleograms 🎓📥
 
 
 ## Natural Language Processing
@@ -44,10 +44,10 @@ Always looking for performance, improvement and new knowledge in the data enviro
 
 ## Logic Programming
 
-- **Project 8 - Minesweeper Game Solver**: Python, Gophersat 📥🎓
+- **Project 8 - Minesweeper Game Solver**: Python, Gophersat 🎓📥
 
 ## Others
 
-- **Project 9 - [Database for an Online Payment App](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%209 "Database for an Online Payment App")**: SQL, Neo4J, MongoDB ⌛️🎓
+- **Project 9 - [Database for an Online Payment App](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%209 "Database for an Online Payment App")**: SQL, Neo4J, MongoDB 🎓⌛️
 - **Project 10 - [Website for POC for Mass Customization](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%2010)**: HTML, CSS, PHP, Javascript, JSON 🎓✅
-- **Project 11 - Accounting App**: C++, Qt 📥🎓
+- **Project 11 - Accounting App**: C++, Qt, UML, Doxygen 🎓✅
