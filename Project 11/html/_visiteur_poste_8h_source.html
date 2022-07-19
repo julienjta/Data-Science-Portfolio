@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/VisiteurPoste.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">VisiteurPoste.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_visiteur_poste_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef VISITEURPOSTE_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define VISITEURPOSTE_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../header/Visiteur.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_visiteur_poste.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_visiteur_poste.html">VisiteurPoste</a> : <span class="keyword">public</span> <a class="code" href="class_visiteur.html">Visiteur</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">friend</span> <a class="code" href="class_compte_manager.html">CompteManager</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visiteur_poste.html#ad3a0fa464581b0c9c469364d1957a20c">visiter</a>(<a class="code" href="class_compte_reel.html">CompteReel</a>&amp; _c) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visiteur_poste.html#ad3a0fa464581b0c9c469364d1957a20c">visiter</a>(<a class="code" href="class_compte_virtuel.html">CompteVirtuel</a>&amp; _c) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_visiteur_poste.html#a349c2cbc7a655e2dce2e8bcd1520981d">   43</a></span>&#160;    std::list&lt;CompteHierarchie*&gt; <a class="code" href="class_visiteur_poste.html#a349c2cbc7a655e2dce2e8bcd1520981d">getResultat</a>() const noexcept {<span class="keywordflow">return</span> <a class="code" href="class_visiteur_poste.html#a68b89b7072a17d8b85a5a10b51a3903a">resultat</a>;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_visiteur_poste.html#aacd4e5236885c55da5a4c54671c75d0e">   49</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visiteur_poste.html#aacd4e5236885c55da5a4c54671c75d0e">changePoste</a>(<a class="code" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a> _p) noexcept {p = _p; <a class="code" href="class_visiteur_poste.html#a68b89b7072a17d8b85a5a10b51a3903a">resultat</a>.clear();}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a> p;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_visiteur_poste.html#a68b89b7072a17d8b85a5a10b51a3903a">   61</a></span>&#160;    std::list&lt;CompteHierarchie*&gt; <a class="code" href="class_visiteur_poste.html#a68b89b7072a17d8b85a5a10b51a3903a">resultat</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_visiteur_poste.html">VisiteurPoste</a>(<a class="code" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a> _p) noexcept : p(_p){}</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_visiteur_poste.html#a2deca76c3d9ce38cf445c1a18bc57992">   73</a></span>&#160;    <a class="code" href="class_visiteur_poste.html#a2deca76c3d9ce38cf445c1a18bc57992">VisiteurPoste</a>(<span class="keyword">const</span> <a class="code" href="class_visiteur_poste.html">VisiteurPoste</a>&amp; _v) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_visiteur_poste.html#ab951ad7510584fdcf8bca1bbdd158729">   80</a></span>&#160;    <a class="code" href="class_visiteur_poste.html">VisiteurPoste</a>&amp; <a class="code" href="class_visiteur_poste.html#ab951ad7510584fdcf8bca1bbdd158729">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_visiteur_poste.html">VisiteurPoste</a>&amp; _v) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif // VISITEURPOSTE_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_visiteur_poste_html_ab951ad7510584fdcf8bca1bbdd158729"><div class="ttname"><a href="class_visiteur_poste.html#ab951ad7510584fdcf8bca1bbdd158729">VisiteurPoste::operator=</a></div><div class="ttdeci">VisiteurPoste &amp; operator=(const VisiteurPoste &amp;_v)=delete</div><div class="ttdoc">Suprresion surcharge de l'opérateur d'affectation privé</div></div>
+<div class="ttc" id="aclass_visiteur_html"><div class="ttname"><a href="class_visiteur.html">Visiteur</a></div><div class="ttdoc">Classe mères des différents visiteurs. Les visiteurs permettent de parcourir la hiérarchie des compte...</div><div class="ttdef"><b>Definition:</b> Visiteur.h:21</div></div>
+<div class="ttc" id="a_poste_compte_8h_html_ad3978d0aab216bc237be1dcd14aa0644"><div class="ttname"><a href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a></div><div class="ttdeci">Poste</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:21</div></div>
+<div class="ttc" id="aclass_visiteur_poste_html"><div class="ttname"><a href="class_visiteur_poste.html">VisiteurPoste</a></div><div class="ttdoc">VisiteurPoste est un visiteur qui permet de récupérer une liste de tous les comptes réels d'un poste.</div><div class="ttdef"><b>Definition:</b> VisiteurPoste.h:21</div></div>
+<div class="ttc" id="aclass_compte_manager_html"><div class="ttname"><a href="class_compte_manager.html">CompteManager</a></div><div class="ttdoc">CompteManager gère l'ensemble des Comptes.</div><div class="ttdef"><b>Definition:</b> CompteManager.h:21</div></div>
+<div class="ttc" id="aclass_visiteur_poste_html_a68b89b7072a17d8b85a5a10b51a3903a"><div class="ttname"><a href="class_visiteur_poste.html#a68b89b7072a17d8b85a5a10b51a3903a">VisiteurPoste::resultat</a></div><div class="ttdeci">std::list&lt; CompteHierarchie * &gt; resultat</div><div class="ttdoc">Liste des comptes correspondants.</div><div class="ttdef"><b>Definition:</b> VisiteurPoste.h:61</div></div>
+<div class="ttc" id="aclass_visiteur_poste_html_a2deca76c3d9ce38cf445c1a18bc57992"><div class="ttname"><a href="class_visiteur_poste.html#a2deca76c3d9ce38cf445c1a18bc57992">VisiteurPoste::VisiteurPoste</a></div><div class="ttdeci">VisiteurPoste(const VisiteurPoste &amp;_v)=default</div><div class="ttdoc">Constructeur par recopie privé</div></div>
+<div class="ttc" id="aclass_visiteur_poste_html_ad3a0fa464581b0c9c469364d1957a20c"><div class="ttname"><a href="class_visiteur_poste.html#ad3a0fa464581b0c9c469364d1957a20c">VisiteurPoste::visiter</a></div><div class="ttdeci">void visiter(CompteReel &amp;_c) noexcept override</div><div class="ttdoc">Méthode qui permet de vérifier si un CompteReel est du poste recherché</div><div class="ttdef"><b>Definition:</b> VisiteurPoste.cpp:13</div></div>
+<div class="ttc" id="aclass_visiteur_poste_html_aacd4e5236885c55da5a4c54671c75d0e"><div class="ttname"><a href="class_visiteur_poste.html#aacd4e5236885c55da5a4c54671c75d0e">VisiteurPoste::changePoste</a></div><div class="ttdeci">void changePoste(Poste _p) noexcept</div><div class="ttdoc">Permet de changer le poste recherché.</div><div class="ttdef"><b>Definition:</b> VisiteurPoste.h:49</div></div>
+<div class="ttc" id="aclass_visiteur_poste_html_a349c2cbc7a655e2dce2e8bcd1520981d"><div class="ttname"><a href="class_visiteur_poste.html#a349c2cbc7a655e2dce2e8bcd1520981d">VisiteurPoste::getResultat</a></div><div class="ttdeci">std::list&lt; CompteHierarchie * &gt; getResultat() const noexcept</div><div class="ttdoc">Méthode qui permet d'obtenir la liste des comptes de ce poste.</div><div class="ttdef"><b>Definition:</b> VisiteurPoste.h:43</div></div>
+<div class="ttc" id="aclass_compte_reel_html"><div class="ttname"><a href="class_compte_reel.html">CompteReel</a></div><div class="ttdoc">CompteReel représente les compte réels (les comptes sur lequels auront lieu les opérations).</div><div class="ttdef"><b>Definition:</b> CompteReel.h:25</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html"><div class="ttname"><a href="class_compte_virtuel.html">CompteVirtuel</a></div><div class="ttdoc">CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.h:21</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

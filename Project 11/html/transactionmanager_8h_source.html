@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Transaction/header/transactionmanager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_475f985914df16eb84a0448a3dd2e2bd.html">Transaction</a></li><li class="navelem"><a class="el" href="dir_bdecd92138e73e6359b4ce189ff2232d.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">transactionmanager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="transactionmanager_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TRANSACTIONMANAGER_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TRANSACTIONMANAGER_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../../Compte/header/HierarchieBuilder.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_transaction_manager.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_transaction_manager.html">TransactionManager</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_transaction_manager.html">TransactionManager</a>&amp; <a class="code" href="class_transaction_manager.html#aa771919ae89cb769e14763f9c0337461">getInstance</a>() noexcept;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        list&lt;Transaction*&gt; <a class="code" href="class_transaction_manager.html#a2353034058f3d36295aab54ead084cf5">getListeTransactions</a>() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_transaction.html">Transaction</a>* <a class="code" href="class_transaction_manager.html#ab38c2ea3acdeb9445aa556da88d077b8">getTransaction</a>(<span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _ref) noexcept;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> affiche(QTableWidget* <span class="keyword">const</span> _tableau, QString <span class="keyword">const</span>&amp; _devise, QString <span class="keyword">const</span>&amp; _format) noexcept;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">void</span> affiche(QTableWidget* <span class="keyword">const</span> _tableau,<a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>* _compte, QString <span class="keyword">const</span>&amp; _devise, QString <span class="keyword">const</span>&amp; _format); <span class="comment">//exception de getListeTransactionsParCompte</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        list&lt;Transaction*&gt; <a class="code" href="class_transaction_manager.html#a58c3d81d985bb9ffdb12ae3da0c3dcfe">getListeTransactionsParCompte</a>(<span class="keywordtype">int</span> <span class="keyword">const</span>&amp; _id_compte);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="class_transaction.html">Transaction</a>* <a class="code" href="class_transaction_manager.html#a369e62fe56fed59b9a0c34639112b016">getTransactionParReference</a>(<span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _ref);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_transaction_manager.html#a7ec948afdfda2a71a933a18e907c70f6">emptyTransactionsParCompte</a>(<span class="keywordtype">int</span> <span class="keyword">const</span>&amp; _id_compte) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        list&lt;Transaction*&gt; <a class="code" href="class_transaction_manager.html#a3ff9caf265bd6eeca0f07f50e9b19c8d">getListeTransactionsParValide</a>(<span class="keywordtype">int</span> <span class="keyword">const</span>&amp; _id_compte, <span class="keywordtype">bool</span> <span class="keyword">const</span>&amp; _valide);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_transaction_manager.html#a437873e6d519fc9be856451de37ae1d2">ajouterOperation</a>(list&lt;Operation*&gt;* _liste,<a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>* <span class="keyword">const</span> _compte,<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; _debit, <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; _credit);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_transaction_manager.html#ad7316714c313b5159c43a95b56c1cd87">ajouterTransaction</a>(time_t <span class="keyword">const</span>&amp; _date, <span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _ref, <span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _memo, list&lt;Operation*&gt; <span class="keyword">const</span>&amp; _listOperations);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_transaction_manager.html#a00dc86b516e03c74a8c4c8012cb1117d">editerTransaction</a>(<span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _ancienne_ref, time_t <span class="keyword">const</span>&amp; _date, <span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _ref, <span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _memo, list&lt;Operation*&gt; <span class="keyword">const</span>&amp; _listOperations);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_transaction_manager.html#a07b237010fe84d39b3214be293c7d42b">supprimerTransaction</a>(<span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _ref);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_transaction_manager.html#aa2bbd1caeb40a596a16208ef256f5de6">charger</a>(<span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _path);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_transaction_manager.html#ae890cad4405fe391a19a81b76f4ae489">sauver</a>(QXmlStreamWriter* <span class="keyword">const</span> _xml);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="comment">//methodes=========================</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"></span>        <a class="code" href="class_transaction_manager.html#ac5ced818a8f63f5981ab0e1e2dbf2e5c">TransactionManager</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="class_transaction_manager.html#ab48dc6bf966c5c98e0734e1b1d819ef9">~TransactionManager</a>();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="comment">//attributs========================</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="class_transaction_manager.html#ade2806f0f4e222ea72ee2296ab25f98e">  178</a></span>&#160;<span class="comment"></span>        <span class="keyword">static</span> <a class="code" href="class_transaction_manager.html">TransactionManager</a> <a class="code" href="class_transaction_manager.html#ade2806f0f4e222ea72ee2296ab25f98e">instance</a>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="class_transaction_manager.html#a50a747d182dceba9adf01fd5721c03c9">  183</a></span>&#160;        <span class="keyword">static</span> list&lt;Transaction*&gt; <a class="code" href="class_transaction_manager.html#a50a747d182dceba9adf01fd5721c03c9">transactions</a>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;};</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#endif // TRANSACTIONMANAGER_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_transaction_manager_html_ab48dc6bf966c5c98e0734e1b1d819ef9"><div class="ttname"><a href="class_transaction_manager.html#ab48dc6bf966c5c98e0734e1b1d819ef9">TransactionManager::~TransactionManager</a></div><div class="ttdeci">~TransactionManager()</div><div class="ttdoc">Destructeur.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:22</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_a2353034058f3d36295aab54ead084cf5"><div class="ttname"><a href="class_transaction_manager.html#a2353034058f3d36295aab54ead084cf5">TransactionManager::getListeTransactions</a></div><div class="ttdeci">list&lt; Transaction * &gt; getListeTransactions() const noexcept</div><div class="ttdoc">Méthode qui permet d'obtenir la liste de toute les transactions.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:41</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_a50a747d182dceba9adf01fd5721c03c9"><div class="ttname"><a href="class_transaction_manager.html#a50a747d182dceba9adf01fd5721c03c9">TransactionManager::transactions</a></div><div class="ttdeci">static list&lt; Transaction * &gt; transactions</div><div class="ttdoc">ensemble des transactions existantes</div><div class="ttdef"><b>Definition:</b> transactionmanager.h:183</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_a00dc86b516e03c74a8c4c8012cb1117d"><div class="ttname"><a href="class_transaction_manager.html#a00dc86b516e03c74a8c4c8012cb1117d">TransactionManager::editerTransaction</a></div><div class="ttdeci">void editerTransaction(string const &amp;_ancienne_ref, time_t const &amp;_date, string const &amp;_ref, string const &amp;_memo, list&lt; Operation * &gt; const &amp;_listOperations)</div><div class="ttdoc">Méthode qui permet d'editer une transaction existante.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:204</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_a369e62fe56fed59b9a0c34639112b016"><div class="ttname"><a href="class_transaction_manager.html#a369e62fe56fed59b9a0c34639112b016">TransactionManager::getTransactionParReference</a></div><div class="ttdeci">Transaction * getTransactionParReference(string const &amp;_ref)</div><div class="ttdoc">Méthode qui permet de trouver une transaction grâce à sa référence.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:130</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_a07b237010fe84d39b3214be293c7d42b"><div class="ttname"><a href="class_transaction_manager.html#a07b237010fe84d39b3214be293c7d42b">TransactionManager::supprimerTransaction</a></div><div class="ttdeci">void supprimerTransaction(string const &amp;_ref)</div><div class="ttdoc">Méthode qui permet de supprimer une transaction.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:252</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_ade2806f0f4e222ea72ee2296ab25f98e"><div class="ttname"><a href="class_transaction_manager.html#ade2806f0f4e222ea72ee2296ab25f98e">TransactionManager::instance</a></div><div class="ttdeci">static TransactionManager instance</div><div class="ttdoc">l'instance du manager</div><div class="ttdef"><b>Definition:</b> transactionmanager.h:178</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_a437873e6d519fc9be856451de37ae1d2"><div class="ttname"><a href="class_transaction_manager.html#a437873e6d519fc9be856451de37ae1d2">TransactionManager::ajouterOperation</a></div><div class="ttdeci">void ajouterOperation(list&lt; Operation * &gt; *_liste, CompteHierarchie *const _compte, double const &amp;_debit, double const &amp;_credit)</div><div class="ttdoc">Méthode qui permet d'ajouter une nouvelle opération à une liste d'opération.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:172</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_ab38c2ea3acdeb9445aa556da88d077b8"><div class="ttname"><a href="class_transaction_manager.html#ab38c2ea3acdeb9445aa556da88d077b8">TransactionManager::getTransaction</a></div><div class="ttdeci">Transaction * getTransaction(string const &amp;_ref) noexcept</div><div class="ttdoc">Méthode qui permet d'accéder à une transaction depuis sa référence.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:46</div></div>
+<div class="ttc" id="aclass_transaction_html"><div class="ttname"><a href="class_transaction.html">Transaction</a></div><div class="ttdoc">La transaction représente un ensemble d'opérations équilibrées effectuées à une même date entre plusi...</div><div class="ttdef"><b>Definition:</b> transaction.h:24</div></div>
+<div class="ttc" id="aclass_transaction_manager_html"><div class="ttname"><a href="class_transaction_manager.html">TransactionManager</a></div><div class="ttdoc">Le transaction managager permet de gérer les transactions. Elle est basée sur les pattern Manager et ...</div><div class="ttdef"><b>Definition:</b> transactionmanager.h:23</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_ac5ced818a8f63f5981ab0e1e2dbf2e5c"><div class="ttname"><a href="class_transaction_manager.html#ac5ced818a8f63f5981ab0e1e2dbf2e5c">TransactionManager::TransactionManager</a></div><div class="ttdeci">TransactionManager()</div><div class="ttdoc">Constructeur, en tant que singleton ce dernier est privé</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:17</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_a58c3d81d985bb9ffdb12ae3da0c3dcfe"><div class="ttname"><a href="class_transaction_manager.html#a58c3d81d985bb9ffdb12ae3da0c3dcfe">TransactionManager::getListeTransactionsParCompte</a></div><div class="ttdeci">list&lt; Transaction * &gt; getListeTransactionsParCompte(int const &amp;_id_compte)</div><div class="ttdoc">Méthode qui permet d'obtenir une liste des transactions correspondantes à un même compte.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:99</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_a3ff9caf265bd6eeca0f07f50e9b19c8d"><div class="ttname"><a href="class_transaction_manager.html#a3ff9caf265bd6eeca0f07f50e9b19c8d">TransactionManager::getListeTransactionsParValide</a></div><div class="ttdeci">list&lt; Transaction * &gt; getListeTransactionsParValide(int const &amp;_id_compte, bool const &amp;_valide)</div><div class="ttdoc">Méthode qui permet d'obtenir une liste des transactions valide ou non correspondantes à un même compt...</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:65</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_a7ec948afdfda2a71a933a18e907c70f6"><div class="ttname"><a href="class_transaction_manager.html#a7ec948afdfda2a71a933a18e907c70f6">TransactionManager::emptyTransactionsParCompte</a></div><div class="ttdeci">bool emptyTransactionsParCompte(int const &amp;_id_compte) const noexcept</div><div class="ttdoc">Méthode qui permet de verifier si un compte n'a plus de transaction.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:147</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_ae890cad4405fe391a19a81b76f4ae489"><div class="ttname"><a href="class_transaction_manager.html#ae890cad4405fe391a19a81b76f4ae489">TransactionManager::sauver</a></div><div class="ttdeci">void sauver(QXmlStreamWriter *const _xml)</div><div class="ttdoc">Méthode qui permet de sauvegarder un fichier.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:288</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_ad7316714c313b5159c43a95b56c1cd87"><div class="ttname"><a href="class_transaction_manager.html#ad7316714c313b5159c43a95b56c1cd87">TransactionManager::ajouterTransaction</a></div><div class="ttdeci">void ajouterTransaction(time_t const &amp;_date, string const &amp;_ref, string const &amp;_memo, list&lt; Operation * &gt; const &amp;_listOperations)</div><div class="ttdoc">Méthode qui permet d'ajouter une nouvelle transaction.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:177</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html"><div class="ttname"><a href="class_compte_hierarchie.html">CompteHierarchie</a></div><div class="ttdoc">CompteHierarchie est la classe mère pour les éléments de la hiérarchie des comptes qui permet de mani...</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:35</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_aa2bbd1caeb40a596a16208ef256f5de6"><div class="ttname"><a href="class_transaction_manager.html#aa2bbd1caeb40a596a16208ef256f5de6">TransactionManager::charger</a></div><div class="ttdeci">void charger(string const &amp;_path)</div><div class="ttdoc">Méthode qui permet de charger un fichier.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:283</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_aa771919ae89cb769e14763f9c0337461"><div class="ttname"><a href="class_transaction_manager.html#aa771919ae89cb769e14763f9c0337461">TransactionManager::getInstance</a></div><div class="ttdeci">static TransactionManager &amp; getInstance() noexcept</div><div class="ttdoc">Méthode qui permet d'accéder à l'instance du singleton.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:36</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

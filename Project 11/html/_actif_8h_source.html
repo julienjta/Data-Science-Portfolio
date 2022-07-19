@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/Actif.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Actif.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_actif_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ACTIF_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ACTIF_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../header/Passif.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_actif.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_actif.html">Actif</a>: <span class="keyword">public</span> <a class="code" href="class_poste_a_d.html">PosteAD</a>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_actif.html#a4d8bca8fb0116c1d6d6ef4f20dca5202">   31</a></span>&#160;    <a class="code" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a> <a class="code" href="class_actif.html#a4d8bca8fb0116c1d6d6ef4f20dca5202">getPoste</a>() const noexcept<span class="keyword"> override </span>{<span class="keywordflow">return</span> ACTIF;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_actif.html#a078e473c3edad6077d7946c32998b89f">   37</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_actif.html#a078e473c3edad6077d7946c32998b89f">getLetter</a>() const noexcept<span class="keyword"> override </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;A&quot;</span>;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_actif.html#ac345166c23ea6a4e05952f4c3d3604b2">   43</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_poste_compte.html">PosteCompte</a>&amp; <a class="code" href="class_actif.html#ac345166c23ea6a4e05952f4c3d3604b2">getInstance</a>() noexcept {<span class="keywordflow">return</span> <a class="code" href="class_actif.html#ae8d3dbe24f88fefd5873f723933fcf71">instance</a>;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//attribut</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_actif.html#ae8d3dbe24f88fefd5873f723933fcf71">   50</a></span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <a class="code" href="class_actif.html">Actif</a> <a class="code" href="class_actif.html#ae8d3dbe24f88fefd5873f723933fcf71">instance</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//méthodes</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_actif.html#a8fa99ff4f733c99c17617ad9ce87cbd9">   57</a></span>&#160;<span class="comment"></span>    <a class="code" href="class_actif.html#a8fa99ff4f733c99c17617ad9ce87cbd9">Actif</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_actif.html#a90bad63c2e31792f9f56fb6aadf83ff7">   62</a></span>&#160;    <a class="code" href="class_actif.html#a90bad63c2e31792f9f56fb6aadf83ff7">~Actif</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_actif.html#aeaa5001294a180d85a81377dedddaed3">   68</a></span>&#160;    <a class="code" href="class_actif.html#aeaa5001294a180d85a81377dedddaed3">Actif</a> (<span class="keyword">const</span> <a class="code" href="class_actif.html">Actif</a>&amp; _a) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_actif.html#a9750bb91a6bbfd8b4796bf2fa70cb0f7">   75</a></span>&#160;    <a class="code" href="class_actif.html">Actif</a>&amp; <a class="code" href="class_actif.html#a9750bb91a6bbfd8b4796bf2fa70cb0f7">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_actif.html">Actif</a>&amp; _a) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif // ACTIF_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_poste_compte_html"><div class="ttname"><a href="class_poste_compte.html">PosteCompte</a></div><div class="ttdoc">PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:38</div></div>
+<div class="ttc" id="a_poste_compte_8h_html_ad3978d0aab216bc237be1dcd14aa0644"><div class="ttname"><a href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a></div><div class="ttdeci">Poste</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:21</div></div>
+<div class="ttc" id="aclass_actif_html_a4d8bca8fb0116c1d6d6ef4f20dca5202"><div class="ttname"><a href="class_actif.html#a4d8bca8fb0116c1d6d6ef4f20dca5202">Actif::getPoste</a></div><div class="ttdeci">Poste getPoste() const noexcept override</div><div class="ttdoc">Redéfinition de la méthode virtuelle getPoste de PosteCompte. Cette méthode retourne le nom du poste ...</div><div class="ttdef"><b>Definition:</b> Actif.h:31</div></div>
+<div class="ttc" id="aclass_actif_html_a9750bb91a6bbfd8b4796bf2fa70cb0f7"><div class="ttname"><a href="class_actif.html#a9750bb91a6bbfd8b4796bf2fa70cb0f7">Actif::operator=</a></div><div class="ttdeci">Actif &amp; operator=(const Actif &amp;_a)=default</div><div class="ttdoc">Surcharge de l'opérateur d'affectation privé.</div></div>
+<div class="ttc" id="aclass_actif_html_a8fa99ff4f733c99c17617ad9ce87cbd9"><div class="ttname"><a href="class_actif.html#a8fa99ff4f733c99c17617ad9ce87cbd9">Actif::Actif</a></div><div class="ttdeci">Actif()=default</div><div class="ttdoc">Constructeur privé.</div></div>
+<div class="ttc" id="aclass_actif_html_ae8d3dbe24f88fefd5873f723933fcf71"><div class="ttname"><a href="class_actif.html#ae8d3dbe24f88fefd5873f723933fcf71">Actif::instance</a></div><div class="ttdeci">static Actif instance</div><div class="ttdoc">instance Actif</div><div class="ttdef"><b>Definition:</b> Actif.h:50</div></div>
+<div class="ttc" id="aclass_actif_html_ac345166c23ea6a4e05952f4c3d3604b2"><div class="ttname"><a href="class_actif.html#ac345166c23ea6a4e05952f4c3d3604b2">Actif::getInstance</a></div><div class="ttdeci">static const PosteCompte &amp; getInstance() noexcept</div><div class="ttdoc">Méthode qui permet d'obtenir l'instance Actif.</div><div class="ttdef"><b>Definition:</b> Actif.h:43</div></div>
+<div class="ttc" id="aclass_actif_html"><div class="ttname"><a href="class_actif.html">Actif</a></div><div class="ttdoc">Actif permet de représenter les propriétés des comptes de poste Actif.</div><div class="ttdef"><b>Definition:</b> Actif.h:24</div></div>
+<div class="ttc" id="aclass_actif_html_a078e473c3edad6077d7946c32998b89f"><div class="ttname"><a href="class_actif.html#a078e473c3edad6077d7946c32998b89f">Actif::getLetter</a></div><div class="ttdeci">string getLetter() const noexcept override</div><div class="ttdoc">Redéfinition de la méthode virtuelle getLetter de PosteCompte. Cette méthode renvoie la premiére lett...</div><div class="ttdef"><b>Definition:</b> Actif.h:37</div></div>
+<div class="ttc" id="aclass_actif_html_a90bad63c2e31792f9f56fb6aadf83ff7"><div class="ttname"><a href="class_actif.html#a90bad63c2e31792f9f56fb6aadf83ff7">Actif::~Actif</a></div><div class="ttdeci">~Actif()=default</div><div class="ttdoc">Destructeur privé.</div></div>
+<div class="ttc" id="aclass_poste_a_d_html"><div class="ttname"><a href="class_poste_a_d.html">PosteAD</a></div><div class="ttdoc">PosteAD est la classe mère des postes de compte : Actif et Depense. Elle a pour but de définir les mé...</div><div class="ttdef"><b>Definition:</b> PosteAD.h:23</div></div>
+<div class="ttc" id="aclass_actif_html_aeaa5001294a180d85a81377dedddaed3"><div class="ttname"><a href="class_actif.html#aeaa5001294a180d85a81377dedddaed3">Actif::Actif</a></div><div class="ttdeci">Actif(const Actif &amp;_a)=default</div><div class="ttdoc">Constructeur par recopie privé.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/ExceptionCompte.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ExceptionCompte.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_exception_compte_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EXCEPTIONCOMPTE_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EXCEPTIONCOMPTE_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_exception_8h.html">Exception.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_exception_hierarchie.html">ExceptionHierarchie</a> : <span class="keyword">public</span> <a class="code" href="class_exception.html">Exception</a>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2">   26</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2">CodeExcepHierarchie</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a62aa7ca75fdb4d1e7e6e3c5c74c0ed9f">   31</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a62aa7ca75fdb4d1e7e6e3c5c74c0ed9f">UKWN_EXC_H</a> = 0,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a5bcd85cbd14c23332b89f9181913f870">   36</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a5bcd85cbd14c23332b89f9181913f870">TYPE_EXC_H</a> = 1,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a5eaf4240bf60d5decbad85a6e22e2daf">   41</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a5eaf4240bf60d5decbad85a6e22e2daf">POSTE_EXC_H</a> = 2,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a77f97974465db3f89e68808802134809">   46</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a77f97974465db3f89e68808802134809">RULE_EXC_H</a> = 3,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2ae1063016fe681539d3cd38252b98f6a0">   51</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2ae1063016fe681539d3cd38252b98f6a0">IDNF_EXC_H</a> = 4,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a55e6f3215ce1358a146f7f4eb78da8c4">   56</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a55e6f3215ce1358a146f7f4eb78da8c4">FLSR_EXC_H</a> = 5,</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2acaf9ad0144fff66d19223f4647b160dd">   60</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2acaf9ad0144fff66d19223f4647b160dd">COMPT_EXC_H</a> = 6,</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2ad1b5b32679cf1ef8e9a59f247b1d7aa3">   64</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2ad1b5b32679cf1ef8e9a59f247b1d7aa3">CAPP_EXC_H</a> = 7,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a237c6a7bd397e7d005f7dfa167ae1841">   69</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a237c6a7bd397e7d005f7dfa167ae1841">CLOT_EXC_H</a> = 8,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a056bc9c0b87a40c537baee056fc57482">   74</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a056bc9c0b87a40c537baee056fc57482">EXCE_EXC_H</a> = 9,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2ac65804aa53dc31f59a24f259a52db247">   79</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2ac65804aa53dc31f59a24f259a52db247">DEFI_EXC_H</a> = 10,</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2aad7118c0d3125b33e04dbbc54d53b1ee">   83</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2aad7118c0d3125b33e04dbbc54d53b1ee">DSON_EXC_H</a> = 11,</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a51a1c517498e76828d5619bbe8646940">   87</a></span>&#160;        <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a51a1c517498e76828d5619bbe8646940">DSELF_EXC_H</a> = 12,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    };</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_exception_hierarchie.html#af7b681ee3a5e7159dc79a6597d483980">   94</a></span>&#160;    <a class="code" href="class_exception_hierarchie.html#af7b681ee3a5e7159dc79a6597d483980">ExceptionHierarchie</a>(<span class="keywordtype">string</span> _s, <a class="code" href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2">CodeExcepHierarchie</a> _code_erreur = CodeExcepHierarchie::UKWN_EXC_H) noexcept : <a class="code" href="class_exception.html#a4ab23ce305229a7e9317280abb54c078">Exception</a>(_s, _code_erreur){}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_exception_comptabilite.html">  101</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_exception_comptabilite.html">ExceptionComptabilite</a>  : <span class="keyword">public</span> <a class="code" href="class_exception.html">Exception</a>{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ad">  107</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ad">CodeExcepComptabilite</a></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ada36aa105b18c53c32dfd1ba65f3c36742">  112</a></span>&#160;        <a class="code" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ada36aa105b18c53c32dfd1ba65f3c36742">UKWN_EXC_C</a> = 20,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635adaf0aeba24b59d278367620f65e507425a">  117</a></span>&#160;        <a class="code" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635adaf0aeba24b59d278367620f65e507425a">MEMV_EXC_C</a> = 21,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635adae99f4a74180ec58382e0370fc50d17e1">  122</a></span>&#160;        <a class="code" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635adae99f4a74180ec58382e0370fc50d17e1">ROOT_EXC_C</a> = 22,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635adaaf156f151709fbbc66ba1505c800973f">  127</a></span>&#160;        <a class="code" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635adaaf156f151709fbbc66ba1505c800973f">SUPVIR_EXC_C</a>=23,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ada617dd99260f21c083eee1343b07a1e6b">  132</a></span>&#160;        <a class="code" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ada617dd99260f21c083eee1343b07a1e6b">SUPREL_EXC_C</a>=24,</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ada5b5b75f86462e38405de4b94b49b95d4">RELEV_EXC_C</a> = 25</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ada5b5b75f86462e38405de4b94b49b95d4">  137</a></span>&#160;    };</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="class_exception_comptabilite.html#a0e8200d180ffa2a77ca1ef2903151242">  142</a></span>&#160;    <a class="code" href="class_exception_comptabilite.html#a0e8200d180ffa2a77ca1ef2903151242">ExceptionComptabilite</a>(<span class="keywordtype">string</span> _s, <a class="code" href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ad">CodeExcepComptabilite</a> _code_erreur = CodeExcepComptabilite::UKWN_EXC_C) noexcept : <a class="code" href="class_exception.html#a4ab23ce305229a7e9317280abb54c078">Exception</a>(_s, _code_erreur){}</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;};</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif // EXCEPTIONCOMPTE_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_exception_comptabilite_html_a0e8200d180ffa2a77ca1ef2903151242"><div class="ttname"><a href="class_exception_comptabilite.html#a0e8200d180ffa2a77ca1ef2903151242">ExceptionComptabilite::ExceptionComptabilite</a></div><div class="ttdeci">ExceptionComptabilite(string _s, CodeExcepComptabilite _code_erreur=CodeExcepComptabilite::UKWN_EXC_C) noexcept</div><div class="ttdoc">Constructeur à partir d'un message d'erreur.</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:142</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2">ExceptionHierarchie::CodeExcepHierarchie</a></div><div class="ttdeci">CodeExcepHierarchie</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:27</div></div>
+<div class="ttc" id="aclass_exception_comptabilite_html"><div class="ttname"><a href="class_exception_comptabilite.html">ExceptionComptabilite</a></div><div class="ttdoc">ExceptionComptabilite est créée lors d'une opération de comptabilité illégale.</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:101</div></div>
+<div class="ttc" id="aclass_exception_comptabilite_html_a5d20d806fe8aa236ff75bf6d2e1635adaf0aeba24b59d278367620f65e507425a"><div class="ttname"><a href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635adaf0aeba24b59d278367620f65e507425a">ExceptionComptabilite::MEMV_EXC_C</a></div><div class="ttdeci">@ MEMV_EXC_C</div><div class="ttdoc">21 : Tentative de manipuler les mementos d'un CompteVirtuel.</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:117</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2a5bcd85cbd14c23332b89f9181913f870"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a5bcd85cbd14c23332b89f9181913f870">ExceptionHierarchie::TYPE_EXC_H</a></div><div class="ttdeci">@ TYPE_EXC_H</div><div class="ttdoc">1 : Un type de Compte inconnue</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:36</div></div>
+<div class="ttc" id="aclass_exception_comptabilite_html_a5d20d806fe8aa236ff75bf6d2e1635adae99f4a74180ec58382e0370fc50d17e1"><div class="ttname"><a href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635adae99f4a74180ec58382e0370fc50d17e1">ExceptionComptabilite::ROOT_EXC_C</a></div><div class="ttdeci">@ ROOT_EXC_C</div><div class="ttdoc">22 : Tentative de manipulation du solde sur la racine</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:122</div></div>
+<div class="ttc" id="aclass_exception_comptabilite_html_a5d20d806fe8aa236ff75bf6d2e1635adaaf156f151709fbbc66ba1505c800973f"><div class="ttname"><a href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635adaaf156f151709fbbc66ba1505c800973f">ExceptionComptabilite::SUPVIR_EXC_C</a></div><div class="ttdeci">@ SUPVIR_EXC_C</div><div class="ttdoc">23 : Tentative de suppression d'un compte virtuel qui a des fils</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:127</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2a77f97974465db3f89e68808802134809"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a77f97974465db3f89e68808802134809">ExceptionHierarchie::RULE_EXC_H</a></div><div class="ttdeci">@ RULE_EXC_H</div><div class="ttdoc">3 : Ne respecte par les régles de création d'un compte : un père virtuel et doit être de même poste q...</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:46</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2ae1063016fe681539d3cd38252b98f6a0"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2ae1063016fe681539d3cd38252b98f6a0">ExceptionHierarchie::IDNF_EXC_H</a></div><div class="ttdeci">@ IDNF_EXC_H</div><div class="ttdoc">4 : Tentative d'accés à un compte non présent dans la hiérarchie.</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:51</div></div>
+<div class="ttc" id="aclass_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">Exception permet de gérer une erreur ainsi que son message.</div><div class="ttdef"><b>Definition:</b> Exception.h:20</div></div>
+<div class="ttc" id="aclass_exception_html_a4ab23ce305229a7e9317280abb54c078"><div class="ttname"><a href="class_exception.html#a4ab23ce305229a7e9317280abb54c078">Exception::Exception</a></div><div class="ttdeci">Exception(string _s, int _code_erreur) noexcept</div><div class="ttdoc">Constructeur.</div><div class="ttdef"><b>Definition:</b> Exception.h:51</div></div>
+<div class="ttc" id="aclass_exception_comptabilite_html_a5d20d806fe8aa236ff75bf6d2e1635ada617dd99260f21c083eee1343b07a1e6b"><div class="ttname"><a href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ada617dd99260f21c083eee1343b07a1e6b">ExceptionComptabilite::SUPREL_EXC_C</a></div><div class="ttdeci">@ SUPREL_EXC_C</div><div class="ttdoc">24 : Tentative de suppression d'un compte reel qui a des transactions</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:132</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html"><div class="ttname"><a href="class_exception_hierarchie.html">ExceptionHierarchie</a></div><div class="ttdoc">ExceptionHierarchie est créée lors d'une opération illégale sur la hiérarchie de comptes.</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:20</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2a5eaf4240bf60d5decbad85a6e22e2daf"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a5eaf4240bf60d5decbad85a6e22e2daf">ExceptionHierarchie::POSTE_EXC_H</a></div><div class="ttdeci">@ POSTE_EXC_H</div><div class="ttdoc">2 : Un compte de Poste inconnu</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:41</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2a55e6f3215ce1358a146f7f4eb78da8c4"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a55e6f3215ce1358a146f7f4eb78da8c4">ExceptionHierarchie::FLSR_EXC_H</a></div><div class="ttdeci">@ FLSR_EXC_H</div><div class="ttdoc">5 : Tentative d'accéder ou manipuler les fils d'un compte réel</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:56</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2a62aa7ca75fdb4d1e7e6e3c5c74c0ed9f"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a62aa7ca75fdb4d1e7e6e3c5c74c0ed9f">ExceptionHierarchie::UKWN_EXC_H</a></div><div class="ttdeci">@ UKWN_EXC_H</div><div class="ttdoc">0 : une exception inconnue</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:31</div></div>
+<div class="ttc" id="aclass_exception_comptabilite_html_a5d20d806fe8aa236ff75bf6d2e1635ada36aa105b18c53c32dfd1ba65f3c36742"><div class="ttname"><a href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ada36aa105b18c53c32dfd1ba65f3c36742">ExceptionComptabilite::UKWN_EXC_C</a></div><div class="ttdeci">@ UKWN_EXC_C</div><div class="ttdoc">20 : une exception inconnue</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:112</div></div>
+<div class="ttc" id="aclass_exception_comptabilite_html_a5d20d806fe8aa236ff75bf6d2e1635ada5b5b75f86462e38405de4b94b49b95d4"><div class="ttname"><a href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ada5b5b75f86462e38405de4b94b49b95d4">ExceptionComptabilite::RELEV_EXC_C</a></div><div class="ttdeci">@ RELEV_EXC_C</div><div class="ttdoc">25 : Relevé date saisie incorrects</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:136</div></div>
+<div class="ttc" id="aclass_exception_comptabilite_html_a5d20d806fe8aa236ff75bf6d2e1635ad"><div class="ttname"><a href="class_exception_comptabilite.html#a5d20d806fe8aa236ff75bf6d2e1635ad">ExceptionComptabilite::CodeExcepComptabilite</a></div><div class="ttdeci">CodeExcepComptabilite</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:108</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2a237c6a7bd397e7d005f7dfa167ae1841"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a237c6a7bd397e7d005f7dfa167ae1841">ExceptionHierarchie::CLOT_EXC_H</a></div><div class="ttdeci">@ CLOT_EXC_H</div><div class="ttdoc">8 : Compte ne respecte pas les caractéristiques d'un compte de Cloture</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:69</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_af7b681ee3a5e7159dc79a6597d483980"><div class="ttname"><a href="class_exception_hierarchie.html#af7b681ee3a5e7159dc79a6597d483980">ExceptionHierarchie::ExceptionHierarchie</a></div><div class="ttdeci">ExceptionHierarchie(string _s, CodeExcepHierarchie _code_erreur=CodeExcepHierarchie::UKWN_EXC_H) noexcept</div><div class="ttdoc">Constructeur à partir d'un message d'erreur.</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:94</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2ac65804aa53dc31f59a24f259a52db247"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2ac65804aa53dc31f59a24f259a52db247">ExceptionHierarchie::DEFI_EXC_H</a></div><div class="ttdeci">@ DEFI_EXC_H</div><div class="ttdoc">10 : Compte ne respecte pas caractéristiques d'un compte Deficit</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:79</div></div>
+<div class="ttc" id="a_exception_8h_html"><div class="ttname"><a href="_exception_8h.html">Exception.h</a></div><div class="ttdoc">Classe mère de toutes les exceptions.</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2aad7118c0d3125b33e04dbbc54d53b1ee"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2aad7118c0d3125b33e04dbbc54d53b1ee">ExceptionHierarchie::DSON_EXC_H</a></div><div class="ttdeci">@ DSON_EXC_H</div><div class="ttdoc">11 : Tentative de déplacer un compte sous un de ses fils.</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:83</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2acaf9ad0144fff66d19223f4647b160dd"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2acaf9ad0144fff66d19223f4647b160dd">ExceptionHierarchie::COMPT_EXC_H</a></div><div class="ttdeci">@ COMPT_EXC_H</div><div class="ttdoc">6 : Compte n'existe pas</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:60</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2a51a1c517498e76828d5619bbe8646940"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a51a1c517498e76828d5619bbe8646940">ExceptionHierarchie::DSELF_EXC_H</a></div><div class="ttdeci">@ DSELF_EXC_H</div><div class="ttdoc">12 : Tentative de déplacer un compte sous lui-même.</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:87</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2a056bc9c0b87a40c537baee056fc57482"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2a056bc9c0b87a40c537baee056fc57482">ExceptionHierarchie::EXCE_EXC_H</a></div><div class="ttdeci">@ EXCE_EXC_H</div><div class="ttdoc">9 : Compte ne respecte pas caractéristiques d'un compte Excedent</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:74</div></div>
+<div class="ttc" id="aclass_exception_hierarchie_html_a02fb6576219a18dc4d9e6f6fbec220f2ad1b5b32679cf1ef8e9a59f247b1d7aa3"><div class="ttname"><a href="class_exception_hierarchie.html#a02fb6576219a18dc4d9e6f6fbec220f2ad1b5b32679cf1ef8e9a59f247b1d7aa3">ExceptionHierarchie::CAPP_EXC_H</a></div><div class="ttdeci">@ CAPP_EXC_H</div><div class="ttdoc">7 : Compte ne respecte pas les caractéristiques d'un compte de Capitaux Propre</div><div class="ttdef"><b>Definition:</b> ExceptionCompte.h:64</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

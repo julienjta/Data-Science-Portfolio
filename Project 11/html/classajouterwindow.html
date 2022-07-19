@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app: Référence de la classe ajouterwindow</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Signaux</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-slots">Connecteurs privés</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="classajouterwindow-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe ajouterwindow</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ajouterwindow permet de gérer la fenêtre graphique utilisée pour ajouter des comptes.  
+ <a href="classajouterwindow.html#details">Plus de détails...</a></p>
+
+<p><code>#include &quot;<a class="el" href="ajouterwindow_8h_source.html">ajouterwindow.h</a>&quot;</code></p>
+
+<p>Est dérivée de QDialog.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:a2b26315e4f30596e0c13e734ca881455"><td class="memItemLeft" align="right" valign="top"><a id="a2b26315e4f30596e0c13e734ca881455"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classajouterwindow.html#a2b26315e4f30596e0c13e734ca881455">ajout</a> ()</td></tr>
+<tr class="memdesc:a2b26315e4f30596e0c13e734ca881455"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajout est un signal qui est émis lorsqu'un compte a été ajouté. Il sera capté par la classe <a class="el" href="class_main_window.html" title="Définit le comportement de la fenêtre principale.">MainWindow</a> afin de mettre à jour le QTree (représentant la hiérarchie des comptes) et le tableau de transactions. <br /></td></tr>
+<tr class="separator:a2b26315e4f30596e0c13e734ca881455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a16eea24661927e1815e0d3dc6a8c6a67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classajouterwindow.html#a16eea24661927e1815e0d3dc6a8c6a67">ajouterwindow</a> (std::list&lt; int &gt; const _liste_id, QTreeWidgetItem *_compte_selectionne, <a class="el" href="class_main_window.html">MainWindow</a> *parent)</td></tr>
+<tr class="memdesc:a16eea24661927e1815e0d3dc6a8c6a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la fenêtre graphique permettant d'ajouter des comptes.  <a href="classajouterwindow.html#a16eea24661927e1815e0d3dc6a8c6a67">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a16eea24661927e1815e0d3dc6a8c6a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17aa9c7f573d03cea9c300416204b5b4"><td class="memItemLeft" align="right" valign="top"><a id="a17aa9c7f573d03cea9c300416204b5b4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classajouterwindow.html#a17aa9c7f573d03cea9c300416204b5b4">~ajouterwindow</a> ()</td></tr>
+<tr class="memdesc:a17aa9c7f573d03cea9c300416204b5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur de la fenêtre graphique permettant d'ajouter des comptes. <br /></td></tr>
+<tr class="separator:a17aa9c7f573d03cea9c300416204b5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Connecteurs privés</h2></td></tr>
+<tr class="memitem:a9a61884be7b3c2e77385cf1b61dcd1ee"><td class="memItemLeft" align="right" valign="top"><a id="a9a61884be7b3c2e77385cf1b61dcd1ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classajouterwindow.html#a9a61884be7b3c2e77385cf1b61dcd1ee">ajouterCompte</a> ()</td></tr>
+<tr class="memdesc:a9a61884be7b3c2e77385cf1b61dcd1ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ce slot est appelé lorsque l'utilisateur clique sur le bouton "OK". Il permet de vérifier les informations saisies par l'utilisateur et d'ajouter un compte à la hiérarchie des comptes si ces dernières sont exactes. <br /></td></tr>
+<tr class="separator:a9a61884be7b3c2e77385cf1b61dcd1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e3ed1a36785faa9004ada322d41c54"><td class="memItemLeft" align="right" valign="top"><a id="a64e3ed1a36785faa9004ada322d41c54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classajouterwindow.html#a64e3ed1a36785faa9004ada322d41c54">capitauxpropre</a> ()</td></tr>
+<tr class="memdesc:a64e3ed1a36785faa9004ada322d41c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ce slot est appelé lorsque l'utilisateur modifie la valeur courante des listes déroulantes permettant de choisir le type et le poste du nouveau compte. Lorsque le type du nouveau compte est REEL (compte) et le poste <a class="el" href="class_actif.html" title="Actif permet de représenter les propriétés des comptes de poste Actif.">Actif</a> ou <a class="el" href="class_passif.html" title="Passif permet de représenter les propriétés des comptes de poste Passif.">Passif</a>, alors le formulaire permettant de saisir un compte de capitaux propre est affiché. <br /></td></tr>
+<tr class="separator:a64e3ed1a36785faa9004ada322d41c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bef8bf2f883521390537082b81d1e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classajouterwindow.html#a5bef8bf2f883521390537082b81d1e4a">nvcapitauxpropre</a> (const QString &amp;text)</td></tr>
+<tr class="memdesc:a5bef8bf2f883521390537082b81d1e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ce slot est appelé lorsque l'utilisateur modifie la valeur courante des listes déroulantes permettant de choisir le compte de capitaux propre. Lorsque le texte courant vaut "Nouveau", le formulaire permettant de créer un nouveau compte de capitaux propre est affiché.  <a href="classajouterwindow.html#a5bef8bf2f883521390537082b81d1e4a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5bef8bf2f883521390537082b81d1e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a109379e8bac6eb3e4533640eb328e798"><td class="memItemLeft" align="right" valign="top"><a id="a109379e8bac6eb3e4533640eb328e798"></a>
+<a class="el" href="class_compte_manager.html">CompteManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classajouterwindow.html#a109379e8bac6eb3e4533640eb328e798">cm</a></td></tr>
+<tr class="memdesc:a109379e8bac6eb3e4533640eb328e798"><td class="mdescLeft">&#160;</td><td class="mdescRight">cm représente le <a class="el" href="class_compte_manager.html" title="CompteManager gère l&#39;ensemble des Comptes.">CompteManager</a>. <br /></td></tr>
+<tr class="separator:a109379e8bac6eb3e4533640eb328e798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa084223df65cb31e4eb256e654c6177"><td class="memItemLeft" align="right" valign="top"><a id="afa084223df65cb31e4eb256e654c6177"></a>
+std::list&lt; int &gt; const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classajouterwindow.html#afa084223df65cb31e4eb256e654c6177">liste_id</a></td></tr>
+<tr class="memdesc:afa084223df65cb31e4eb256e654c6177"><td class="mdescLeft">&#160;</td><td class="mdescRight">liste_id représente la liste des ids des comptes de la hierarchie. <br /></td></tr>
+<tr class="separator:afa084223df65cb31e4eb256e654c6177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da760d12276cfcb74b30c4303accf4f"><td class="memItemLeft" align="right" valign="top"><a id="a6da760d12276cfcb74b30c4303accf4f"></a>
+QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classajouterwindow.html#a6da760d12276cfcb74b30c4303accf4f">selecteurs</a></td></tr>
+<tr class="memdesc:a6da760d12276cfcb74b30c4303accf4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">liste déroulante permettant de choisir le père du nouveau compte. <br /></td></tr>
+<tr class="separator:a6da760d12276cfcb74b30c4303accf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0ee397309cd23d424e28a9938abf3a"><td class="memItemLeft" align="right" valign="top"><a id="a3c0ee397309cd23d424e28a9938abf3a"></a>
+<a class="el" href="class_ui_1_1fenetre_ajouter_compte.html">Ui::fenetreAjouterCompte</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classajouterwindow.html#a3c0ee397309cd23d424e28a9938abf3a">design</a></td></tr>
+<tr class="memdesc:a3c0ee397309cd23d424e28a9938abf3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">design représente la fenêtre graphique réalisée sur QTDesginer pour ajouter des compte <br /></td></tr>
+<tr class="separator:a3c0ee397309cd23d424e28a9938abf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>ajouterwindow permet de gérer la fenêtre graphique utilisée pour ajouter des comptes. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a16eea24661927e1815e0d3dc6a8c6a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16eea24661927e1815e0d3dc6a8c6a67">&#9670;&nbsp;</a></span>ajouterwindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ajouterwindow::ajouterwindow </td>
+          <td>(</td>
+          <td class="paramtype">std::list&lt; int &gt; const&#160;</td>
+          <td class="paramname"><em>_liste_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QTreeWidgetItem *&#160;</td>
+          <td class="paramname"><em>_compte_selectionne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_main_window.html">MainWindow</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructeur de la fenêtre graphique permettant d'ajouter des comptes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_liste_id</td><td>: std::list&lt;int&gt; liste des ids des comptes de la hierarchie </td></tr>
+    <tr><td class="paramname">_compte_selectionne</td><td>QTreeWidgetItem *, compte sélectionné dans le QTree </td></tr>
+    <tr><td class="paramname">parent</td><td>: MainWindow*, fenêtre parent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a5bef8bf2f883521390537082b81d1e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bef8bf2f883521390537082b81d1e4a">&#9670;&nbsp;</a></span>nvcapitauxpropre</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ajouterwindow::nvcapitauxpropre </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ce slot est appelé lorsque l'utilisateur modifie la valeur courante des listes déroulantes permettant de choisir le compte de capitaux propre. Lorsque le texte courant vaut "Nouveau", le formulaire permettant de créer un nouveau compte de capitaux propre est affiché. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>: const QString&amp;, texte courant de la liste déroulante permettant de choisir le compte de capitaux propre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>lo21_projet/test_interface/<a class="el" href="ajouterwindow_8h_source.html">ajouterwindow.h</a></li>
+<li>lo21_projet/build-test_interface-Desktop_Qt_5_14_2_MinGW_32_bit-Debug/debug/moc_ajouterwindow.cpp</li>
+<li>lo21_projet/test_interface/<a class="el" href="ajouterwindow_8cpp.html">ajouterwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/HierarchieBuilder.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">HierarchieBuilder.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_hierarchie_builder_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HIERARCHIEBUILDER_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define HIERARCHIEBUILDER_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../../Transaction/header/transactionbuilder.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_hierarchie_builder.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hierarchie_builder.html">HierarchieBuilder</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_compte_manager.html">CompteManager</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classajouterwindow.html">ajouterwindow</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classcloture.html">cloture</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>* <a class="code" href="class_hierarchie_builder.html#aa850ab342597577660fe63a8fdf17f7b">creerEmpty</a>() noexcept;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>* <a class="code" href="class_hierarchie_builder.html#a0aad0e96a12e03df5f235412b9757d9b">creerFils</a>(<span class="keywordtype">string</span> _nom, <a class="code" href="_compte_hierarchie_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> _t, <a class="code" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a> _p);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>* <a class="code" href="class_hierarchie_builder.html#a99ca20d9556965d7455c677e6fd0be03">creerAvecFichier</a>(<span class="keywordtype">string</span> _path);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">//attribut</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> idcompte;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // HIERARCHIEBUILDER_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_poste_compte_8h_html_ad3978d0aab216bc237be1dcd14aa0644"><div class="ttname"><a href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a></div><div class="ttdeci">Poste</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:21</div></div>
+<div class="ttc" id="aclass_hierarchie_builder_html"><div class="ttname"><a href="class_hierarchie_builder.html">HierarchieBuilder</a></div><div class="ttdoc">HierarchieBuilder gère la création de la hiérarchie des comptes.</div><div class="ttdef"><b>Definition:</b> HierarchieBuilder.h:22</div></div>
+<div class="ttc" id="aclass_hierarchie_builder_html_aa850ab342597577660fe63a8fdf17f7b"><div class="ttname"><a href="class_hierarchie_builder.html#aa850ab342597577660fe63a8fdf17f7b">HierarchieBuilder::creerEmpty</a></div><div class="ttdeci">static CompteHierarchie * creerEmpty() noexcept</div><div class="ttdoc">Méthode qui permet d'initialiser une hiérarchie de comptes vide : crée le compte racine.</div><div class="ttdef"><b>Definition:</b> HierarchieBuilder.cpp:15</div></div>
+<div class="ttc" id="aclass_hierarchie_builder_html_a0aad0e96a12e03df5f235412b9757d9b"><div class="ttname"><a href="class_hierarchie_builder.html#a0aad0e96a12e03df5f235412b9757d9b">HierarchieBuilder::creerFils</a></div><div class="ttdeci">static CompteHierarchie * creerFils(string _nom, Type _t, Poste _p)</div><div class="ttdoc">Méthode qui permet de créer un nouveau compte.</div><div class="ttdef"><b>Definition:</b> HierarchieBuilder.cpp:22</div></div>
+<div class="ttc" id="a_compte_hierarchie_8h_html_a1d1cfd8ffb84e947f82999c682b666a7"><div class="ttname"><a href="_compte_hierarchie_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">représente les deux types de Compte : Virtuel (c'est-à-dire un compte qui n'est destiné qu'à regroupe...</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:22</div></div>
+<div class="ttc" id="aclass_hierarchie_builder_html_a99ca20d9556965d7455c677e6fd0be03"><div class="ttname"><a href="class_hierarchie_builder.html#a99ca20d9556965d7455c677e6fd0be03">HierarchieBuilder::creerAvecFichier</a></div><div class="ttdeci">static CompteHierarchie * creerAvecFichier(string _path)</div><div class="ttdoc">Méthode qui permet de créer une hiérarchie à partir d'un fichier.</div><div class="ttdef"><b>Definition:</b> HierarchieBuilder.cpp:61</div></div>
+<div class="ttc" id="aclass_compte_manager_html"><div class="ttname"><a href="class_compte_manager.html">CompteManager</a></div><div class="ttdoc">CompteManager gère l'ensemble des Comptes.</div><div class="ttdef"><b>Definition:</b> CompteManager.h:21</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html"><div class="ttname"><a href="class_compte_hierarchie.html">CompteHierarchie</a></div><div class="ttdoc">CompteHierarchie est la classe mère pour les éléments de la hiérarchie des comptes qui permet de mani...</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:35</div></div>
+<div class="ttc" id="aclassajouterwindow_html"><div class="ttname"><a href="classajouterwindow.html">ajouterwindow</a></div><div class="ttdoc">ajouterwindow permet de gérer la fenêtre graphique utilisée pour ajouter des comptes.</div><div class="ttdef"><b>Definition:</b> ajouterwindow.h:38</div></div>
+<div class="ttc" id="aclasscloture_html"><div class="ttname"><a href="classcloture.html">cloture</a></div><div class="ttdoc">cloture permet de gérer la fenêtre graphique utilisée pour charger effectuer une cloture.</div><div class="ttdef"><b>Definition:</b> cloture.h:34</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/test_interface/ajoutertransactionwindows.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_1974810d7ac75a80196ba3776e74e58c.html">test_interface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ajoutertransactionwindows.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ajoutertransactionwindows_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AJOUTERTRANSACTIONWINDOWS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define AJOUTERTRANSACTIONWINDOWS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QtWidgets&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../Compte/header/CompteManager.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>fenetreAjouterTransaction;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classajoutertransactionwindows.html">ajoutertransactionwindows</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classajoutertransactionwindows.html#a8cb16a2714c1ca8ae8698bb4c73cb517">ajoutertransactionwindows</a>(QStringList <span class="keyword">const</span> _comptes, std::list&lt;int&gt; <span class="keyword">const</span> <a class="code" href="classajoutertransactionwindows.html#a788e98665d2e2c45a7bc8f27c75988fa">liste_id</a>, <a class="code" href="class_main_window.html">MainWindow</a> *parent);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classajoutertransactionwindows.html#a6588f0c365918c767e1c895ffe665fa8">~ajoutertransactionwindows</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;signals:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classajoutertransactionwindows.html#a1b4a6a1536c6f0a852783c7bb8c18ebf">signalDone</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classajoutertransactionwindows.html#aa109c5b7d49c95c579cba93c0af50a1b">ajouterOperation</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> suppressionDernier();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classajoutertransactionwindows.html#adf3574c1fe7df2f2af32d4793c379fa5">verifier</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#a28ec10a42175d4556e4b6585baa2d56e">   89</a></span>&#160;    <a class="code" href="class_compte_manager.html">CompteManager</a>&amp; <a class="code" href="classajoutertransactionwindows.html#a28ec10a42175d4556e4b6585baa2d56e">cm</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#ac68a4cc819ec681b92696c8a050516ad">   95</a></span>&#160;    <a class="code" href="class_transaction_manager.html">TransactionManager</a>&amp; <a class="code" href="classajoutertransactionwindows.html#ac68a4cc819ec681b92696c8a050516ad">tm</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#ab86a1b6705e0036fd4550a1a3edf3cbd">  101</a></span>&#160;    QStringList <span class="keyword">const</span> <a class="code" href="classajoutertransactionwindows.html#ab86a1b6705e0036fd4550a1a3edf3cbd">comptes</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#a788e98665d2e2c45a7bc8f27c75988fa">  107</a></span>&#160;    std::list&lt;int&gt; <span class="keyword">const</span> <a class="code" href="classajoutertransactionwindows.html#a788e98665d2e2c45a7bc8f27c75988fa">liste_id</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#a56547126643e9db1514e6045582fb652">  113</a></span>&#160;    QString <a class="code" href="classajoutertransactionwindows.html#a56547126643e9db1514e6045582fb652">devise</a>  = QString(<span class="stringliteral">&quot;€&quot;</span>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#a5bfbeabaae422043b7e90722f6ab824f">  119</a></span>&#160;    QDateEdit *<a class="code" href="classajoutertransactionwindows.html#a5bfbeabaae422043b7e90722f6ab824f">qdate</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#ad79b8eb2de5679bf475ee5095cd0af9d">  125</a></span>&#160;    QTimeEdit *<a class="code" href="classajoutertransactionwindows.html#ad79b8eb2de5679bf475ee5095cd0af9d">qtime</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#a84063d786b23f5547194c29a2286afa5">  131</a></span>&#160;    QList&lt;QComboBox*&gt; <a class="code" href="classajoutertransactionwindows.html#a84063d786b23f5547194c29a2286afa5">selecteurs</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#aa3a7f23438c6f7989ed7b8f0adb43160">  137</a></span>&#160;    QList&lt;QDoubleSpinBox*&gt; <a class="code" href="classajoutertransactionwindows.html#aa3a7f23438c6f7989ed7b8f0adb43160">credits</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#a0332f05ada62258378bac5d267140dee">  143</a></span>&#160;    QList&lt;QDoubleSpinBox*&gt; <a class="code" href="classajoutertransactionwindows.html#a0332f05ada62258378bac5d267140dee">debits</a>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#ab6f614b472546ab0ba747ed801a4efee">  149</a></span>&#160;    QList&lt;QPushButton*&gt; <a class="code" href="classajoutertransactionwindows.html#ab6f614b472546ab0ba747ed801a4efee">supprimers</a>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classajoutertransactionwindows.html#a700fffd54dca1bd9be1531e16d2cf05c">  155</a></span>&#160;    <a class="code" href="class_ui_1_1fenetre_ajouter_transaction.html">Ui::fenetreAjouterTransaction</a> *<a class="code" href="classajoutertransactionwindows.html#a700fffd54dca1bd9be1531e16d2cf05c">design</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;};</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#endif // AJOUTERTRANSACTIONWINDOWS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassajoutertransactionwindows_html_ab86a1b6705e0036fd4550a1a3edf3cbd"><div class="ttname"><a href="classajoutertransactionwindows.html#ab86a1b6705e0036fd4550a1a3edf3cbd">ajoutertransactionwindows::comptes</a></div><div class="ttdeci">QStringList const comptes</div><div class="ttdoc">compte représente la liste des comptes réels de la hierarchie.</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:101</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_ab6f614b472546ab0ba747ed801a4efee"><div class="ttname"><a href="classajoutertransactionwindows.html#ab6f614b472546ab0ba747ed801a4efee">ajoutertransactionwindows::supprimers</a></div><div class="ttdeci">QList&lt; QPushButton * &gt; supprimers</div><div class="ttdoc">supprimers est une liste de QPushButton*. Chaque QPushButton* correspond au boutton supprimer à la fi...</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:149</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_a28ec10a42175d4556e4b6585baa2d56e"><div class="ttname"><a href="classajoutertransactionwindows.html#a28ec10a42175d4556e4b6585baa2d56e">ajoutertransactionwindows::cm</a></div><div class="ttdeci">CompteManager &amp; cm</div><div class="ttdoc">cm représente le CompteManager.</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:89</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_aa109c5b7d49c95c579cba93c0af50a1b"><div class="ttname"><a href="classajoutertransactionwindows.html#aa109c5b7d49c95c579cba93c0af50a1b">ajoutertransactionwindows::ajouterOperation</a></div><div class="ttdeci">void ajouterOperation()</div><div class="ttdoc">Ce slot est appelé lorsque l'utilisateur clique sur le bouton &quot;ajouter une opération&quot;....</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.cpp:90</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_a700fffd54dca1bd9be1531e16d2cf05c"><div class="ttname"><a href="classajoutertransactionwindows.html#a700fffd54dca1bd9be1531e16d2cf05c">ajoutertransactionwindows::design</a></div><div class="ttdeci">Ui::fenetreAjouterTransaction * design</div><div class="ttdoc">design représente la fenêtre graphique réalisée sur QTDesginer pour ajouter des transactions</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:155</div></div>
+<div class="ttc" id="aclass_transaction_manager_html"><div class="ttname"><a href="class_transaction_manager.html">TransactionManager</a></div><div class="ttdoc">Le transaction managager permet de gérer les transactions. Elle est basée sur les pattern Manager et ...</div><div class="ttdef"><b>Definition:</b> transactionmanager.h:23</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_aa3a7f23438c6f7989ed7b8f0adb43160"><div class="ttname"><a href="classajoutertransactionwindows.html#aa3a7f23438c6f7989ed7b8f0adb43160">ajoutertransactionwindows::credits</a></div><div class="ttdeci">QList&lt; QDoubleSpinBox * &gt; credits</div><div class="ttdoc">credits est une liste de QDoubleSpinBox*. Chaque QDoubleSpinBox correspond au crédit d'une opération....</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:137</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_a84063d786b23f5547194c29a2286afa5"><div class="ttname"><a href="classajoutertransactionwindows.html#a84063d786b23f5547194c29a2286afa5">ajoutertransactionwindows::selecteurs</a></div><div class="ttdeci">QList&lt; QComboBox * &gt; selecteurs</div><div class="ttdoc">selecteur est une liste de QComboBox*. Chaque QComboBox contient la liste des comptes auxquels ont pe...</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:131</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_a788e98665d2e2c45a7bc8f27c75988fa"><div class="ttname"><a href="classajoutertransactionwindows.html#a788e98665d2e2c45a7bc8f27c75988fa">ajoutertransactionwindows::liste_id</a></div><div class="ttdeci">std::list&lt; int &gt; const liste_id</div><div class="ttdoc">liste_id représente la liste des ids des comptes réels de la hierarchie correspondant aux compte : co...</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:107</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_a0332f05ada62258378bac5d267140dee"><div class="ttname"><a href="classajoutertransactionwindows.html#a0332f05ada62258378bac5d267140dee">ajoutertransactionwindows::debits</a></div><div class="ttdeci">QList&lt; QDoubleSpinBox * &gt; debits</div><div class="ttdoc">debits est une liste de QDoubleSpinBox*. Chaque QDoubleSpinBox correspond au débit d'une opération....</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:143</div></div>
+<div class="ttc" id="aclass_ui_1_1fenetre_ajouter_transaction_html"><div class="ttname"><a href="class_ui_1_1fenetre_ajouter_transaction.html">Ui::fenetreAjouterTransaction</a></div><div class="ttdoc">Classe qui représente la fenêtre graphique réalisée sur QTDesginer pour ajouter des transactions.</div><div class="ttdef"><b>Definition:</b> ui_ajoutertransactionwindows.h:158</div></div>
+<div class="ttc" id="aclass_compte_manager_html"><div class="ttname"><a href="class_compte_manager.html">CompteManager</a></div><div class="ttdoc">CompteManager gère l'ensemble des Comptes.</div><div class="ttdef"><b>Definition:</b> CompteManager.h:21</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html"><div class="ttname"><a href="classajoutertransactionwindows.html">ajoutertransactionwindows</a></div><div class="ttdoc">ajoutertransactionwindows permet de gérer la fenêtre graphique utilisée pour ajouter des transactions...</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:41</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_ac68a4cc819ec681b92696c8a050516ad"><div class="ttname"><a href="classajoutertransactionwindows.html#ac68a4cc819ec681b92696c8a050516ad">ajoutertransactionwindows::tm</a></div><div class="ttdeci">TransactionManager &amp; tm</div><div class="ttdoc">tm représente le TransactionManager.</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:95</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_a56547126643e9db1514e6045582fb652"><div class="ttname"><a href="classajoutertransactionwindows.html#a56547126643e9db1514e6045582fb652">ajoutertransactionwindows::devise</a></div><div class="ttdeci">QString devise</div><div class="ttdoc">devise représente la devise (€,$,...).</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:113</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_a8cb16a2714c1ca8ae8698bb4c73cb517"><div class="ttname"><a href="classajoutertransactionwindows.html#a8cb16a2714c1ca8ae8698bb4c73cb517">ajoutertransactionwindows::ajoutertransactionwindows</a></div><div class="ttdeci">ajoutertransactionwindows(QStringList const _comptes, std::list&lt; int &gt; const liste_id, MainWindow *parent)</div><div class="ttdoc">Constructeur de la fenêtre graphique permettant d'ajouter des transactions.</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.cpp:18</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_adf3574c1fe7df2f2af32d4793c379fa5"><div class="ttname"><a href="classajoutertransactionwindows.html#adf3574c1fe7df2f2af32d4793c379fa5">ajoutertransactionwindows::verifier</a></div><div class="ttdeci">void verifier()</div><div class="ttdoc">Ce slot est appelé lorsque l'utilisateur clique sur le bouton &quot;OK&quot;. Il permet de vérifier les informa...</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.cpp:134</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_ad79b8eb2de5679bf475ee5095cd0af9d"><div class="ttname"><a href="classajoutertransactionwindows.html#ad79b8eb2de5679bf475ee5095cd0af9d">ajoutertransactionwindows::qtime</a></div><div class="ttdeci">QTimeEdit * qtime</div><div class="ttdoc">qtime est un widget qui permettra à l'utilisateur d'entrer l'heure de la transaction.</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:125</div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdoc">Définit le comportement de la fenêtre principale.</div><div class="ttdef"><b>Definition:</b> mainwindow.h:87</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_a1b4a6a1536c6f0a852783c7bb8c18ebf"><div class="ttname"><a href="classajoutertransactionwindows.html#a1b4a6a1536c6f0a852783c7bb8c18ebf">ajoutertransactionwindows::signalDone</a></div><div class="ttdeci">void signalDone()</div><div class="ttdoc">signalDone est un signal qui est émis lorsqu'une transaction a été ajoutée. Il sera capté par la clas...</div><div class="ttdef"><b>Definition:</b> moc_ajoutertransactionwindows.cpp:147</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_a5bfbeabaae422043b7e90722f6ab824f"><div class="ttname"><a href="classajoutertransactionwindows.html#a5bfbeabaae422043b7e90722f6ab824f">ajoutertransactionwindows::qdate</a></div><div class="ttdeci">QDateEdit * qdate</div><div class="ttdoc">qdate est un widget qui permettra à l'utilisateur d'entrer la date de la transaction.</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.h:119</div></div>
+<div class="ttc" id="aclassajoutertransactionwindows_html_a6588f0c365918c767e1c895ffe665fa8"><div class="ttname"><a href="classajoutertransactionwindows.html#a6588f0c365918c767e1c895ffe665fa8">ajoutertransactionwindows::~ajoutertransactionwindows</a></div><div class="ttdeci">~ajoutertransactionwindows()</div><div class="ttdoc">Destructeur de la fenêtre graphique permettant d'ajouter des transactions.</div><div class="ttdef"><b>Definition:</b> ajoutertransactionwindows.cpp:218</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

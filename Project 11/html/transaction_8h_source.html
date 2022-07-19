@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Transaction/header/transaction.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_475f985914df16eb84a0448a3dd2e2bd.html">Transaction</a></li><li class="navelem"><a class="el" href="dir_bdecd92138e73e6359b4ce189ff2232d.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">transaction.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="transaction_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TRANSACTION_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TRANSACTION_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../header/operation.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_transaction.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_transaction.html">Transaction</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">friend</span> <a class="code" href="class_transaction_builder.html">TransactionBuilder</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">friend</span> <a class="code" href="class_compte_manager.html">CompteManager</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_transaction.html#a8909f8939b7fe9e37495561780533b7c">   33</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_transaction.html#a8909f8939b7fe9e37495561780533b7c">operator&lt;</a>(<a class="code" href="class_transaction.html">Transaction</a>* _transaction_2) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        time_t <a class="code" href="class_transaction.html#a329bbf83ef5f1ccd7234e22d760f00c2">getDate</a>() const noexcept;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">string</span> <a class="code" href="class_transaction.html#aa78ec08b419c0dd75d53b6cf87e45142">getStringDate</a>(<span class="keywordtype">string</span> const&amp; format) const noexcept;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">string</span> <a class="code" href="class_transaction.html#a3d509c85d99fbaa6a01bef695171420d">getReference</a>() const noexcept;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">string</span> <a class="code" href="class_transaction.html#aca0ac4acdfa2b32917a180c4a2a0960e">getMemo</a>() const noexcept;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_transaction.html#a4ebb63ddd3e3911ee777cd39b7f10b29">getValide</a>() const noexcept;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;         list&lt;<a class="code" href="class_operation.html">Operation</a>*&gt; const <a class="code" href="class_transaction.html#a0284243794292029bebefd5367a2b5b5">getListeOperations</a>() const noexcept;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    private:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">//methodes=========================</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_transaction.html#a0c8031bed6e7a45eda7bc2ca8f40e851">   78</a></span>&#160;<span class="comment"></span>        <a class="code" href="class_transaction.html">Transaction</a>() = default;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        explicit <a class="code" href="class_transaction.html">Transaction</a>(time_t const&amp; _date, <span class="keywordtype">string</span> const&amp; _ref, <span class="keywordtype">string</span> const&amp; _memo, <span class="keywordtype">bool</span> const&amp; _valide, list&lt;<a class="code" href="class_operation.html">Operation</a>*&gt; const&amp; _listOperations);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        ~<a class="code" href="class_transaction.html">Transaction</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_transaction.html#ab7615b4d092b05280b46df2b53488e72">setValide</a>(<span class="keywordtype">bool</span> _valide) noexcept;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">//attributs========================</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_transaction.html#aec17cbb501bed17fde83e247fee80402">  108</a></span>&#160;<span class="comment"></span>        time_t <a class="code" href="class_transaction.html#aec17cbb501bed17fde83e247fee80402">date</a> = 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_transaction.html#a3f3cb238cf1ba2382f9454f332fec2ed">  113</a></span>&#160;        <span class="keywordtype">string</span> <a class="code" href="class_transaction.html#a3f3cb238cf1ba2382f9454f332fec2ed">reference_transaction</a> = &quot;&quot;; <span class="comment">// les mots ref et reference sont des mots-clés c++</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_transaction.html#a6f223acd5c31835aff3dc978dd5d7e8a">  118</a></span>&#160;<span class="comment"></span>        <span class="keywordtype">string</span> <a class="code" href="class_transaction.html#a6f223acd5c31835aff3dc978dd5d7e8a">memo</a> = &quot;&quot;;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_transaction.html#a0680bb98e6d9d3e1baa3e0d8125fd686">  123</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_transaction.html#a0680bb98e6d9d3e1baa3e0d8125fd686">valide</a> = false;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_transaction.html#aa86f7220d0596b20bb46b5a6c12c831d">  128</a></span>&#160;        list&lt;<a class="code" href="class_operation.html">Operation</a>*&gt; <a class="code" href="class_transaction.html#aa86f7220d0596b20bb46b5a6c12c831d">operations</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="transaction_8h.html#a00504f03372ccf8049372b9bd553fbf1">compare</a>(<a class="code" href="class_transaction.html">Transaction</a>* const _transaction_1, <a class="code" href="class_transaction.html">Transaction</a>* const _transaction_2) noexcept;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif // TRANSACTION_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_transaction_html_aec17cbb501bed17fde83e247fee80402"><div class="ttname"><a href="class_transaction.html#aec17cbb501bed17fde83e247fee80402">Transaction::date</a></div><div class="ttdeci">time_t date</div><div class="ttdoc">la date de la transaction.</div><div class="ttdef"><b>Definition:</b> transaction.h:108</div></div>
+<div class="ttc" id="aclass_transaction_html"><div class="ttname"><a href="class_transaction.html">Transaction</a></div><div class="ttdoc">La transaction représente un ensemble d'opérations équilibrées effectuées à une même date entre plusi...</div><div class="ttdef"><b>Definition:</b> transaction.h:24</div></div>
+<div class="ttc" id="aclass_transaction_html_a3f3cb238cf1ba2382f9454f332fec2ed"><div class="ttname"><a href="class_transaction.html#a3f3cb238cf1ba2382f9454f332fec2ed">Transaction::reference_transaction</a></div><div class="ttdeci">string reference_transaction</div><div class="ttdoc">la reference unique de la transaction.</div><div class="ttdef"><b>Definition:</b> transaction.h:113</div></div>
+<div class="ttc" id="aclass_transaction_html_a3d509c85d99fbaa6a01bef695171420d"><div class="ttname"><a href="class_transaction.html#a3d509c85d99fbaa6a01bef695171420d">Transaction::getReference</a></div><div class="ttdeci">string getReference() const noexcept</div><div class="ttdoc">Méthode pour obtenir la référence de la transaction.</div><div class="ttdef"><b>Definition:</b> transaction.cpp:39</div></div>
+<div class="ttc" id="aclass_transaction_html_a6f223acd5c31835aff3dc978dd5d7e8a"><div class="ttname"><a href="class_transaction.html#a6f223acd5c31835aff3dc978dd5d7e8a">Transaction::memo</a></div><div class="ttdeci">string memo</div><div class="ttdoc">le memo de la transaction.</div><div class="ttdef"><b>Definition:</b> transaction.h:118</div></div>
+<div class="ttc" id="aclass_transaction_html_a0284243794292029bebefd5367a2b5b5"><div class="ttname"><a href="class_transaction.html#a0284243794292029bebefd5367a2b5b5">Transaction::getListeOperations</a></div><div class="ttdeci">list&lt; Operation * &gt; const getListeOperations() const noexcept</div><div class="ttdoc">Méthode pour obtenir la liste des opérations de la transaction.</div><div class="ttdef"><b>Definition:</b> transaction.cpp:59</div></div>
+<div class="ttc" id="aclass_transaction_builder_html"><div class="ttname"><a href="class_transaction_builder.html">TransactionBuilder</a></div><div class="ttdoc">Le transaction builder permet de construire les transactions. Il utilise le pattern builder et single...</div><div class="ttdef"><b>Definition:</b> transactionbuilder.h:22</div></div>
+<div class="ttc" id="aclass_transaction_html_a8909f8939b7fe9e37495561780533b7c"><div class="ttname"><a href="class_transaction.html#a8909f8939b7fe9e37495561780533b7c">Transaction::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(Transaction *_transaction_2) const noexcept</div><div class="ttdoc">surchage de l'opérateur &lt;, pour comprarer deux transactions : test sur la date.</div></div>
+<div class="ttc" id="aclass_transaction_html_aa86f7220d0596b20bb46b5a6c12c831d"><div class="ttname"><a href="class_transaction.html#aa86f7220d0596b20bb46b5a6c12c831d">Transaction::operations</a></div><div class="ttdeci">list&lt; Operation * &gt; operations</div><div class="ttdoc">la liste des operations composant la transaction.</div><div class="ttdef"><b>Definition:</b> transaction.h:128</div></div>
+<div class="ttc" id="atransaction_8h_html_a00504f03372ccf8049372b9bd553fbf1"><div class="ttname"><a href="transaction_8h.html#a00504f03372ccf8049372b9bd553fbf1">compare</a></div><div class="ttdeci">bool compare(Transaction *const _transaction_1, Transaction *const _transaction_2) noexcept</div><div class="ttdoc">compare deux pointeurs sur des transactions par rapport à leur date</div><div class="ttdef"><b>Definition:</b> transaction.cpp:87</div></div>
+<div class="ttc" id="aclass_compte_manager_html"><div class="ttname"><a href="class_compte_manager.html">CompteManager</a></div><div class="ttdoc">CompteManager gère l'ensemble des Comptes.</div><div class="ttdef"><b>Definition:</b> CompteManager.h:21</div></div>
+<div class="ttc" id="aclass_transaction_html_a4ebb63ddd3e3911ee777cd39b7f10b29"><div class="ttname"><a href="class_transaction.html#a4ebb63ddd3e3911ee777cd39b7f10b29">Transaction::getValide</a></div><div class="ttdeci">bool getValide() const noexcept</div><div class="ttdoc">vérifie si la transaction est rapprochée.</div><div class="ttdef"><b>Definition:</b> transaction.cpp:49</div></div>
+<div class="ttc" id="aclass_transaction_html_aca0ac4acdfa2b32917a180c4a2a0960e"><div class="ttname"><a href="class_transaction.html#aca0ac4acdfa2b32917a180c4a2a0960e">Transaction::getMemo</a></div><div class="ttdeci">string getMemo() const noexcept</div><div class="ttdoc">Méthode pour obtenir le memo de la transaction.</div><div class="ttdef"><b>Definition:</b> transaction.cpp:44</div></div>
+<div class="ttc" id="aclass_operation_html"><div class="ttname"><a href="class_operation.html">Operation</a></div><div class="ttdoc">Objet représentant une opération comptable.</div><div class="ttdef"><b>Definition:</b> operation.h:22</div></div>
+<div class="ttc" id="aclass_transaction_html_a329bbf83ef5f1ccd7234e22d760f00c2"><div class="ttname"><a href="class_transaction.html#a329bbf83ef5f1ccd7234e22d760f00c2">Transaction::getDate</a></div><div class="ttdeci">time_t getDate() const noexcept</div><div class="ttdoc">Méthode pour obtenir la date de la transaction.</div><div class="ttdef"><b>Definition:</b> transaction.cpp:14</div></div>
+<div class="ttc" id="aclass_transaction_html_ab7615b4d092b05280b46df2b53488e72"><div class="ttname"><a href="class_transaction.html#ab7615b4d092b05280b46df2b53488e72">Transaction::setValide</a></div><div class="ttdeci">void setValide(bool _valide) noexcept</div><div class="ttdoc">modifieur de l'attribut valide.</div><div class="ttdef"><b>Definition:</b> transaction.cpp:54</div></div>
+<div class="ttc" id="aclass_transaction_html_a0680bb98e6d9d3e1baa3e0d8125fd686"><div class="ttname"><a href="class_transaction.html#a0680bb98e6d9d3e1baa3e0d8125fd686">Transaction::valide</a></div><div class="ttdeci">bool valide</div><div class="ttdoc">le marqueur de rapprochement de la transaction. Vaut true si rapprochée, sinon false.</div><div class="ttdef"><b>Definition:</b> transaction.h:123</div></div>
+<div class="ttc" id="aclass_transaction_html_aa78ec08b419c0dd75d53b6cf87e45142"><div class="ttname"><a href="class_transaction.html#aa78ec08b419c0dd75d53b6cf87e45142">Transaction::getStringDate</a></div><div class="ttdeci">string getStringDate(string const &amp;format) const noexcept</div><div class="ttdoc">Méthode pour obtenir la date de la transaction au format string?</div><div class="ttdef"><b>Definition:</b> transaction.cpp:19</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

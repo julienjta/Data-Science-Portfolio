@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/Visiteur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Visiteur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_visiteur_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef VISITEUR_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define VISITEUR_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../header/CompteHierarchie.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_visiteur.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_visiteur.html">Visiteur</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_visiteur.html#a88cbef17851e0ccde549033e96644542">   28</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_visiteur.html#a88cbef17851e0ccde549033e96644542">visiter</a>(<a class="code" href="class_compte_reel.html">CompteReel</a>&amp; _c) noexcept = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_visiteur.html#af06d16d174208e07e0e3d6ac58d909ad">   34</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_visiteur.html#af06d16d174208e07e0e3d6ac58d909ad">visiter</a>(<a class="code" href="class_compte_virtuel.html">CompteVirtuel</a>&amp; _c) noexcept = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif // VISITEUR_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_visiteur_html"><div class="ttname"><a href="class_visiteur.html">Visiteur</a></div><div class="ttdoc">Classe mères des différents visiteurs. Les visiteurs permettent de parcourir la hiérarchie des compte...</div><div class="ttdef"><b>Definition:</b> Visiteur.h:21</div></div>
+<div class="ttc" id="aclass_visiteur_html_af06d16d174208e07e0e3d6ac58d909ad"><div class="ttname"><a href="class_visiteur.html#af06d16d174208e07e0e3d6ac58d909ad">Visiteur::visiter</a></div><div class="ttdeci">virtual void visiter(CompteVirtuel &amp;_c) noexcept=0</div><div class="ttdoc">Méthode qui permet au visiteur de visiter un CompteVirtuel.</div></div>
+<div class="ttc" id="aclass_visiteur_html_a88cbef17851e0ccde549033e96644542"><div class="ttname"><a href="class_visiteur.html#a88cbef17851e0ccde549033e96644542">Visiteur::visiter</a></div><div class="ttdeci">virtual void visiter(CompteReel &amp;_c) noexcept=0</div><div class="ttdoc">Méthode qui permet au visiteur de visiter un CompteReel.</div></div>
+<div class="ttc" id="aclass_compte_reel_html"><div class="ttname"><a href="class_compte_reel.html">CompteReel</a></div><div class="ttdoc">CompteReel représente les compte réels (les comptes sur lequels auront lieu les opérations).</div><div class="ttdef"><b>Definition:</b> CompteReel.h:25</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html"><div class="ttname"><a href="class_compte_virtuel.html">CompteVirtuel</a></div><div class="ttdoc">CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.h:21</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

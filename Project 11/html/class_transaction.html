@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app: Référence de la classe Transaction</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_transaction-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Transaction</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>La transaction représente un ensemble d'opérations équilibrées effectuées à une même date entre plusieurs comptes.  
+ <a href="class_transaction.html#details">Plus de détails...</a></p>
+
+<p><code>#include &quot;<a class="el" href="transaction_8h_source.html">transaction.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a8909f8939b7fe9e37495561780533b7c"><td class="memItemLeft" align="right" valign="top"><a id="a8909f8939b7fe9e37495561780533b7c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#a8909f8939b7fe9e37495561780533b7c">operator&lt;</a> (<a class="el" href="class_transaction.html">Transaction</a> *_transaction_2) const noexcept</td></tr>
+<tr class="memdesc:a8909f8939b7fe9e37495561780533b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">surchage de l'opérateur &lt;, pour comprarer deux transactions : test sur la date. <br /></td></tr>
+<tr class="separator:a8909f8939b7fe9e37495561780533b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329bbf83ef5f1ccd7234e22d760f00c2"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#a329bbf83ef5f1ccd7234e22d760f00c2">getDate</a> () const noexcept</td></tr>
+<tr class="memdesc:a329bbf83ef5f1ccd7234e22d760f00c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode pour obtenir la date de la transaction.  <a href="class_transaction.html#a329bbf83ef5f1ccd7234e22d760f00c2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a329bbf83ef5f1ccd7234e22d760f00c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78ec08b419c0dd75d53b6cf87e45142"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#aa78ec08b419c0dd75d53b6cf87e45142">getStringDate</a> (string const &amp;format) const noexcept</td></tr>
+<tr class="memdesc:aa78ec08b419c0dd75d53b6cf87e45142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode pour obtenir la date de la transaction au format string?  <a href="class_transaction.html#aa78ec08b419c0dd75d53b6cf87e45142">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa78ec08b419c0dd75d53b6cf87e45142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d509c85d99fbaa6a01bef695171420d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#a3d509c85d99fbaa6a01bef695171420d">getReference</a> () const noexcept</td></tr>
+<tr class="memdesc:a3d509c85d99fbaa6a01bef695171420d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode pour obtenir la référence de la transaction.  <a href="class_transaction.html#a3d509c85d99fbaa6a01bef695171420d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3d509c85d99fbaa6a01bef695171420d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0ac4acdfa2b32917a180c4a2a0960e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#aca0ac4acdfa2b32917a180c4a2a0960e">getMemo</a> () const noexcept</td></tr>
+<tr class="memdesc:aca0ac4acdfa2b32917a180c4a2a0960e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode pour obtenir le memo de la transaction.  <a href="class_transaction.html#aca0ac4acdfa2b32917a180c4a2a0960e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aca0ac4acdfa2b32917a180c4a2a0960e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebb63ddd3e3911ee777cd39b7f10b29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#a4ebb63ddd3e3911ee777cd39b7f10b29">getValide</a> () const noexcept</td></tr>
+<tr class="memdesc:a4ebb63ddd3e3911ee777cd39b7f10b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">vérifie si la transaction est rapprochée.  <a href="class_transaction.html#a4ebb63ddd3e3911ee777cd39b7f10b29">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4ebb63ddd3e3911ee777cd39b7f10b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0284243794292029bebefd5367a2b5b5"><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="class_operation.html">Operation</a> * &gt; const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#a0284243794292029bebefd5367a2b5b5">getListeOperations</a> () const noexcept</td></tr>
+<tr class="memdesc:a0284243794292029bebefd5367a2b5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode pour obtenir la liste des opérations de la transaction.  <a href="class_transaction.html#a0284243794292029bebefd5367a2b5b5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0284243794292029bebefd5367a2b5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a0c8031bed6e7a45eda7bc2ca8f40e851"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#a0c8031bed6e7a45eda7bc2ca8f40e851">Transaction</a> ()=default</td></tr>
+<tr class="memdesc:a0c8031bed6e7a45eda7bc2ca8f40e851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par défaut.  <a href="class_transaction.html#a0c8031bed6e7a45eda7bc2ca8f40e851">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0c8031bed6e7a45eda7bc2ca8f40e851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb39df64a8d9941c56564e53cad1ff0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#acb39df64a8d9941c56564e53cad1ff0c">Transaction</a> (time_t const &amp;_date, string const &amp;_ref, string const &amp;_memo, bool const &amp;_valide, list&lt; <a class="el" href="class_operation.html">Operation</a> * &gt; const &amp;_listOperations)</td></tr>
+<tr class="memdesc:acb39df64a8d9941c56564e53cad1ff0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur.  <a href="class_transaction.html#acb39df64a8d9941c56564e53cad1ff0c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acb39df64a8d9941c56564e53cad1ff0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7615b4d092b05280b46df2b53488e72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#ab7615b4d092b05280b46df2b53488e72">setValide</a> (bool _valide) noexcept</td></tr>
+<tr class="memdesc:ab7615b4d092b05280b46df2b53488e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">modifieur de l'attribut valide.  <a href="class_transaction.html#ab7615b4d092b05280b46df2b53488e72">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab7615b4d092b05280b46df2b53488e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a6fa9bced67367f84cfb188139c2d01ae"><td class="memItemLeft" align="right" valign="top"><a id="a6fa9bced67367f84cfb188139c2d01ae"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>TransactionBuilder</b></td></tr>
+<tr class="separator:a6fa9bced67367f84cfb188139c2d01ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b04232938a31c6ac9a188c926fd908"><td class="memItemLeft" align="right" valign="top"><a id="a25b04232938a31c6ac9a188c926fd908"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>CompteManager</b></td></tr>
+<tr class="separator:a25b04232938a31c6ac9a188c926fd908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec17cbb501bed17fde83e247fee80402"><td class="memItemLeft" align="right" valign="top"><a id="aec17cbb501bed17fde83e247fee80402"></a>
+time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#aec17cbb501bed17fde83e247fee80402">date</a> = 0</td></tr>
+<tr class="memdesc:aec17cbb501bed17fde83e247fee80402"><td class="mdescLeft">&#160;</td><td class="mdescRight">la date de la transaction. <br /></td></tr>
+<tr class="separator:aec17cbb501bed17fde83e247fee80402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3cb238cf1ba2382f9454f332fec2ed"><td class="memItemLeft" align="right" valign="top"><a id="a3f3cb238cf1ba2382f9454f332fec2ed"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#a3f3cb238cf1ba2382f9454f332fec2ed">reference_transaction</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a3f3cb238cf1ba2382f9454f332fec2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">la reference unique de la transaction. <br /></td></tr>
+<tr class="separator:a3f3cb238cf1ba2382f9454f332fec2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f223acd5c31835aff3dc978dd5d7e8a"><td class="memItemLeft" align="right" valign="top"><a id="a6f223acd5c31835aff3dc978dd5d7e8a"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#a6f223acd5c31835aff3dc978dd5d7e8a">memo</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a6f223acd5c31835aff3dc978dd5d7e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">le memo de la transaction. <br /></td></tr>
+<tr class="separator:a6f223acd5c31835aff3dc978dd5d7e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0680bb98e6d9d3e1baa3e0d8125fd686"><td class="memItemLeft" align="right" valign="top"><a id="a0680bb98e6d9d3e1baa3e0d8125fd686"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#a0680bb98e6d9d3e1baa3e0d8125fd686">valide</a> = false</td></tr>
+<tr class="memdesc:a0680bb98e6d9d3e1baa3e0d8125fd686"><td class="mdescLeft">&#160;</td><td class="mdescRight">le marqueur de rapprochement de la transaction. Vaut true si rapprochée, sinon false. <br /></td></tr>
+<tr class="separator:a0680bb98e6d9d3e1baa3e0d8125fd686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86f7220d0596b20bb46b5a6c12c831d"><td class="memItemLeft" align="right" valign="top"><a id="aa86f7220d0596b20bb46b5a6c12c831d"></a>
+list&lt; <a class="el" href="class_operation.html">Operation</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transaction.html#aa86f7220d0596b20bb46b5a6c12c831d">operations</a></td></tr>
+<tr class="memdesc:aa86f7220d0596b20bb46b5a6c12c831d"><td class="mdescLeft">&#160;</td><td class="mdescRight">la liste des operations composant la transaction. <br /></td></tr>
+<tr class="separator:aa86f7220d0596b20bb46b5a6c12c831d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>La transaction représente un ensemble d'opérations équilibrées effectuées à une même date entre plusieurs comptes. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a0c8031bed6e7a45eda7bc2ca8f40e851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8031bed6e7a45eda7bc2ca8f40e851">&#9670;&nbsp;</a></span>Transaction() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transaction::Transaction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructeur par défaut. </p>
+<p>Destructeur. </p>
+
+</div>
+</div>
+<a id="acb39df64a8d9941c56564e53cad1ff0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb39df64a8d9941c56564e53cad1ff0c">&#9670;&nbsp;</a></span>Transaction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transaction::Transaction </td>
+          <td>(</td>
+          <td class="paramtype">time_t const &amp;&#160;</td>
+          <td class="paramname"><em>_date</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string const &amp;&#160;</td>
+          <td class="paramname"><em>_ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string const &amp;&#160;</td>
+          <td class="paramname"><em>_memo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool const &amp;&#160;</td>
+          <td class="paramname"><em>_valide</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list&lt; <a class="el" href="class_operation.html">Operation</a> * &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>_listOperations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructeur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_date</td><td>: time_t, la nouvelle date de la transaction </td></tr>
+    <tr><td class="paramname">_ref</td><td>: string, la nouvelle référence de la transaction </td></tr>
+    <tr><td class="paramname">_memo</td><td>: string, le nouveau mémo de la transaction </td></tr>
+    <tr><td class="paramname">_valide</td><td>: bool, marqueur de rapprochement de la transaction </td></tr>
+    <tr><td class="paramname">_listOperations</td><td>: list&lt;Operation*&gt;, le nouvel ensemble des opérations formant la transaction </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RULE_EXC_T</td><td>non-équilibre des opérations </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a329bbf83ef5f1ccd7234e22d760f00c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329bbf83ef5f1ccd7234e22d760f00c2">&#9670;&nbsp;</a></span>getDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t Transaction::getDate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode pour obtenir la date de la transaction. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>la date de la transaction </dd></dl>
+
+</div>
+</div>
+<a id="a0284243794292029bebefd5367a2b5b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0284243794292029bebefd5367a2b5b5">&#9670;&nbsp;</a></span>getListeOperations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt; <a class="el" href="class_operation.html">Operation</a> * &gt; const Transaction::getListeOperations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode pour obtenir la liste des opérations de la transaction. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>la liste des opérations de la transaction </dd></dl>
+
+</div>
+</div>
+<a id="aca0ac4acdfa2b32917a180c4a2a0960e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0ac4acdfa2b32917a180c4a2a0960e">&#9670;&nbsp;</a></span>getMemo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Transaction::getMemo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode pour obtenir le memo de la transaction. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>le memo de la transaction </dd></dl>
+
+</div>
+</div>
+<a id="a3d509c85d99fbaa6a01bef695171420d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d509c85d99fbaa6a01bef695171420d">&#9670;&nbsp;</a></span>getReference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Transaction::getReference </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode pour obtenir la référence de la transaction. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>la référence de la transaction </dd></dl>
+
+</div>
+</div>
+<a id="aa78ec08b419c0dd75d53b6cf87e45142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78ec08b419c0dd75d53b6cf87e45142">&#9670;&nbsp;</a></span>getStringDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Transaction::getStringDate </td>
+          <td>(</td>
+          <td class="paramtype">string const &amp;&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode pour obtenir la date de la transaction au format string? </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>: string const&amp;, format de souhaité pour la date </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la date de la transaction au format indiqué </dd></dl>
+
+</div>
+</div>
+<a id="a4ebb63ddd3e3911ee777cd39b7f10b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ebb63ddd3e3911ee777cd39b7f10b29">&#9670;&nbsp;</a></span>getValide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Transaction::getValide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>vérifie si la transaction est rapprochée. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true si la transaction est rapprochée, sinon false </dd></dl>
+
+</div>
+</div>
+<a id="ab7615b4d092b05280b46df2b53488e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7615b4d092b05280b46df2b53488e72">&#9670;&nbsp;</a></span>setValide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transaction::setValide </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_valide</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>modifieur de l'attribut valide. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_valide</td><td>: bool, nouvelle valeur de l'attribut valide </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>lo21_projet/Transaction/header/<a class="el" href="transaction_8h_source.html">transaction.h</a></li>
+<li>lo21_projet/Transaction/source/<a class="el" href="transaction_8cpp.html">transaction.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

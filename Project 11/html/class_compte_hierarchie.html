@@ -1,0 +1,786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app: Référence de la classe CompteHierarchie</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="#friends">Amis</a> &#124;
+<a href="class_compte_hierarchie-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe CompteHierarchie<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="class_compte_hierarchie.html" title="CompteHierarchie est la classe mère pour les éléments de la hiérarchie des comptes qui permet de mani...">CompteHierarchie</a> est la classe mère pour les éléments de la hiérarchie des comptes qui permet de manipuler tous les comptes via la même interface.  
+ <a href="class_compte_hierarchie.html#details">Plus de détails...</a></p>
+
+<p><code>#include &quot;<a class="el" href="_compte_hierarchie_8h_source.html">CompteHierarchie.h</a>&quot;</code></p>
+
+<p>Dérivée par <a class="el" href="class_compte_reel.html">CompteReel</a>, et <a class="el" href="class_compte_virtuel.html">CompteVirtuel</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a0978827105042b99d7d9b365a8438739"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a0978827105042b99d7d9b365a8438739">toString</a> () const noexcept</td></tr>
+<tr class="memdesc:a0978827105042b99d7d9b365a8438739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode virtuelle qui retournera des informations sur les comptes.  <a href="class_compte_hierarchie.html#a0978827105042b99d7d9b365a8438739">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0978827105042b99d7d9b365a8438739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e2a9e07d2aa6d7a58439b51366b1ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a54e2a9e07d2aa6d7a58439b51366b1ab">accepte</a> (<a class="el" href="class_visiteur.html">Visiteur</a> &amp;_v) noexcept=0</td></tr>
+<tr class="memdesc:a54e2a9e07d2aa6d7a58439b51366b1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode pour les visiteurs.  <a href="class_compte_hierarchie.html#a54e2a9e07d2aa6d7a58439b51366b1ab">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a54e2a9e07d2aa6d7a58439b51366b1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e05d8df20c8cc1fdff55b249f25893"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a06e05d8df20c8cc1fdff55b249f25893">getNom</a> () const noexcept</td></tr>
+<tr class="memdesc:a06e05d8df20c8cc1fdff55b249f25893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode qui permet d'obtenir le nom du compte.  <a href="class_compte_hierarchie.html#a06e05d8df20c8cc1fdff55b249f25893">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a06e05d8df20c8cc1fdff55b249f25893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d2b4126b14c5ad29cb0e42d3ca1cfac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a1d2b4126b14c5ad29cb0e42d3ca1cfac">getPoste</a> () const noexcept</td></tr>
+<tr class="memdesc:a1d2b4126b14c5ad29cb0e42d3ca1cfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui retourne le poste d'un compte.  <a href="class_compte_hierarchie.html#a1d2b4126b14c5ad29cb0e42d3ca1cfac">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1d2b4126b14c5ad29cb0e42d3ca1cfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587889d7f6700cf469ccf72980a0a694"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_poste_compte.html">PosteCompte</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a587889d7f6700cf469ccf72980a0a694">getPosteCompte</a> () const noexcept</td></tr>
+<tr class="memdesc:a587889d7f6700cf469ccf72980a0a694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui retourne une réference const sur le <a class="el" href="class_poste_compte.html" title="PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...">PosteCompte</a> d'un compte.  <a href="class_compte_hierarchie.html#a587889d7f6700cf469ccf72980a0a694">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a587889d7f6700cf469ccf72980a0a694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2627a2b9d647aea47874276bcd9c7afc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_compte_hierarchie_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a2627a2b9d647aea47874276bcd9c7afc">getType</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a2627a2b9d647aea47874276bcd9c7afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui retourne le type d'un Compte.  <a href="class_compte_hierarchie.html#a2627a2b9d647aea47874276bcd9c7afc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2627a2b9d647aea47874276bcd9c7afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa429d374b21ca65b388fcba203ff678f"><td class="memItemLeft" align="right" valign="top">virtual const set&lt; <a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#aa429d374b21ca65b388fcba203ff678f">getFils</a> () const =0</td></tr>
+<tr class="memdesc:aa429d374b21ca65b388fcba203ff678f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui permet d'obtenir les fils d'un compte.  <a href="class_compte_hierarchie.html#aa429d374b21ca65b388fcba203ff678f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa429d374b21ca65b388fcba203ff678f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8250f86a8e5cd552450bd7eafb4c41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a3c8250f86a8e5cd552450bd7eafb4c41">ajouterFils</a> (<a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> *_c)=0</td></tr>
+<tr class="memdesc:a3c8250f86a8e5cd552450bd7eafb4c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui sera redéfinie. Elle permettra d'ajouter un fils à un <a class="el" href="class_compte_virtuel.html" title="CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...">CompteVirtuel</a>.  <a href="class_compte_hierarchie.html#a3c8250f86a8e5cd552450bd7eafb4c41">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3c8250f86a8e5cd552450bd7eafb4c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e65245336fb02af593a25f6ef19308"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a65e65245336fb02af593a25f6ef19308">supprimerFils</a> (<a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> *_c)=0</td></tr>
+<tr class="memdesc:a65e65245336fb02af593a25f6ef19308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui sera redéfinie. Elle permettra de retirer un fils à un <a class="el" href="class_compte_virtuel.html" title="CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...">CompteVirtuel</a>.  <a href="class_compte_hierarchie.html#a65e65245336fb02af593a25f6ef19308">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a65e65245336fb02af593a25f6ef19308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a642064dccd829f10e489aa454e768bbe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a642064dccd829f10e489aa454e768bbe">supprimerCompte</a> ()=0</td></tr>
+<tr class="memdesc:a642064dccd829f10e489aa454e768bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode virtuelle qui permet à l'utilisateur de supprimer le compte.  <a href="class_compte_hierarchie.html#a642064dccd829f10e489aa454e768bbe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a642064dccd829f10e489aa454e768bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add63a1f81032dfa0e1e7baa15ebcc046"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#add63a1f81032dfa0e1e7baa15ebcc046">undo</a> (<a class="el" href="class_originator.html">Originator</a> *_o)=0</td></tr>
+<tr class="memdesc:add63a1f81032dfa0e1e7baa15ebcc046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode virtuelle qui permettra de restaurer un memento antérieur dans un compte réel.  <a href="class_compte_hierarchie.html#add63a1f81032dfa0e1e7baa15ebcc046">Plus de détails...</a><br /></td></tr>
+<tr class="separator:add63a1f81032dfa0e1e7baa15ebcc046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f720bd5674aa64c99d34d4fd2e5492"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a64f720bd5674aa64c99d34d4fd2e5492">saveState</a> (<a class="el" href="class_originator.html">Originator</a> _o)=0</td></tr>
+<tr class="memdesc:a64f720bd5674aa64c99d34d4fd2e5492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode virtuelle qui permettra d'ajouter un memento à la liste de memento d'un compte reel.  <a href="class_compte_hierarchie.html#a64f720bd5674aa64c99d34d4fd2e5492">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a64f720bd5674aa64c99d34d4fd2e5492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f3eea2eb9c54fa3c34a1296deca0d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#aa9f3eea2eb9c54fa3c34a1296deca0d2">getId</a> () const noexcept</td></tr>
+<tr class="memdesc:aa9f3eea2eb9c54fa3c34a1296deca0d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode qui permet de retourner l'identifiant d'un compte.  <a href="class_compte_hierarchie.html#aa9f3eea2eb9c54fa3c34a1296deca0d2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa9f3eea2eb9c54fa3c34a1296deca0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dee8c1d5ef414055e067ec9d106c6e4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_memento.html">Memento</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a9dee8c1d5ef414055e067ec9d106c6e4">getDernierMemento</a> ()=0</td></tr>
+<tr class="memdesc:a9dee8c1d5ef414055e067ec9d106c6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode virtuelle qui permettra de retourner de retourner le dernier <a class="el" href="class_memento.html" title="Le Memento permet de sauvegarder la date et le solde du dernier rapprochement.">Memento</a> enregistré d'un <a class="el" href="class_compte_reel.html" title="CompteReel représente les compte réels (les comptes sur lequels auront lieu les opérations).">CompteReel</a> (le solde actuel)  <a href="class_compte_hierarchie.html#a9dee8c1d5ef414055e067ec9d106c6e4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9dee8c1d5ef414055e067ec9d106c6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc87afadec4874775886ebfcd7a43638"><td class="memItemLeft" align="right" valign="top">virtual const list&lt; <a class="el" href="class_memento.html">Memento</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#afc87afadec4874775886ebfcd7a43638">getMementos</a> () const =0</td></tr>
+<tr class="memdesc:afc87afadec4874775886ebfcd7a43638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode virtuelle qui permettra de récupérer la liste de tous les Mementos.  <a href="class_compte_hierarchie.html#afc87afadec4874775886ebfcd7a43638">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afc87afadec4874775886ebfcd7a43638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:a14fe85c816def5863f864b16019cd8c5"><td class="memItemLeft" align="right" valign="top"><a id="a14fe85c816def5863f864b16019cd8c5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CompteHierarchie</b> (const string &amp;_nom, const int _id) noexcept</td></tr>
+<tr class="separator:a14fe85c816def5863f864b16019cd8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9bf1995692d1f6f304f441cb508f85"><td class="memItemLeft" align="right" valign="top"><a id="a1f9bf1995692d1f6f304f441cb508f85"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a1f9bf1995692d1f6f304f441cb508f85">~CompteHierarchie</a> ()</td></tr>
+<tr class="memdesc:a1f9bf1995692d1f6f304f441cb508f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur. <br /></td></tr>
+<tr class="separator:a1f9bf1995692d1f6f304f441cb508f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:a73cd1c71f4aef82d0f8818865fdbeb91"><td class="memItemLeft" align="right" valign="top"><a id="a73cd1c71f4aef82d0f8818865fdbeb91"></a>
+const <a class="el" href="class_poste_compte.html">PosteCompte</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a73cd1c71f4aef82d0f8818865fdbeb91">poste</a></td></tr>
+<tr class="memdesc:a73cd1c71f4aef82d0f8818865fdbeb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointeur sur un <a class="el" href="class_poste_compte.html" title="PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...">PosteCompte</a> : <a class="el" href="class_racine.html" title="Racine permet de représenter le comportement d&#39;un compte Racine, c&#39;est-à-dire celui qui contient tous...">Racine</a>, <a class="el" href="class_passif.html" title="Passif permet de représenter les propriétés des comptes de poste Passif.">Passif</a>,<a class="el" href="class_recette.html" title="Recette permet de représenter le comportement des comptes de poste Recette.">Recette</a>, <a class="el" href="class_depense.html" title="Depense permet de représenter les propriétés des comptes de poste Depense.">Depense</a> ou <a class="el" href="class_actif.html" title="Actif permet de représenter les propriétés des comptes de poste Actif.">Actif</a>. <br /></td></tr>
+<tr class="separator:a73cd1c71f4aef82d0f8818865fdbeb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a48913a34b9156703bb9e9ab0a381d574"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a48913a34b9156703bb9e9ab0a381d574">CompteHierarchie</a> (const <a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> &amp;_c)=delete</td></tr>
+<tr class="memdesc:a48913a34b9156703bb9e9ab0a381d574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supression constructeur par recopie privé.  <a href="class_compte_hierarchie.html#a48913a34b9156703bb9e9ab0a381d574">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a48913a34b9156703bb9e9ab0a381d574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623c9c0b42f45144a6b85e337ce5412c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#a623c9c0b42f45144a6b85e337ce5412c">operator=</a> (const <a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> &amp;_c)=delete</td></tr>
+<tr class="memdesc:a623c9c0b42f45144a6b85e337ce5412c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supression surcharge de l'opérateur d'affectation privé.  <a href="class_compte_hierarchie.html#a623c9c0b42f45144a6b85e337ce5412c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a623c9c0b42f45144a6b85e337ce5412c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:accf6354e8ddcc236cdc6d4db80367100"><td class="memItemLeft" align="right" valign="top"><a id="accf6354e8ddcc236cdc6d4db80367100"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#accf6354e8ddcc236cdc6d4db80367100">nom</a></td></tr>
+<tr class="memdesc:accf6354e8ddcc236cdc6d4db80367100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nom d'un Compte. <br /></td></tr>
+<tr class="separator:accf6354e8ddcc236cdc6d4db80367100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4dc04083f3018ea8de1367bcc800c3"><td class="memItemLeft" align="right" valign="top"><a id="aeb4dc04083f3018ea8de1367bcc800c3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_compte_hierarchie.html#aeb4dc04083f3018ea8de1367bcc800c3">id</a></td></tr>
+<tr class="memdesc:aeb4dc04083f3018ea8de1367bcc800c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">L'id d'un compte. Il est unique et est géré automatiquement par <a class="el" href="class_hierarchie_builder.html" title="HierarchieBuilder gère la création de la hiérarchie des comptes.">HierarchieBuilder</a>. <br /></td></tr>
+<tr class="separator:aeb4dc04083f3018ea8de1367bcc800c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amis</h2></td></tr>
+<tr class="memitem:a90079a9c0aea37d5079525d3ee5b8135"><td class="memItemLeft" align="right" valign="top"><a id="a90079a9c0aea37d5079525d3ee5b8135"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>HierarchieBuilder</b></td></tr>
+<tr class="separator:a90079a9c0aea37d5079525d3ee5b8135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40680b58f7735137d542c47fc2c2fb21"><td class="memItemLeft" align="right" valign="top"><a id="a40680b58f7735137d542c47fc2c2fb21"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>CompteManager</b></td></tr>
+<tr class="separator:a40680b58f7735137d542c47fc2c2fb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bab946ab4cfd0cd4179af53f3d234a"><td class="memItemLeft" align="right" valign="top"><a id="ae1bab946ab4cfd0cd4179af53f3d234a"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>VisiteurFree</b></td></tr>
+<tr class="separator:ae1bab946ab4cfd0cd4179af53f3d234a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="class_compte_hierarchie.html" title="CompteHierarchie est la classe mère pour les éléments de la hiérarchie des comptes qui permet de mani...">CompteHierarchie</a> est la classe mère pour les éléments de la hiérarchie des comptes qui permet de manipuler tous les comptes via la même interface. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a48913a34b9156703bb9e9ab0a381d574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48913a34b9156703bb9e9ab0a381d574">&#9670;&nbsp;</a></span>CompteHierarchie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CompteHierarchie::CompteHierarchie </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> &amp;&#160;</td>
+          <td class="paramname"><em>_c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Supression constructeur par recopie privé. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_c</td><td>: const <a class="el" href="class_compte_hierarchie.html" title="CompteHierarchie est la classe mère pour les éléments de la hiérarchie des comptes qui permet de mani...">CompteHierarchie</a>&amp;: référence constante sur le compte à recopier. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a54e2a9e07d2aa6d7a58439b51366b1ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e2a9e07d2aa6d7a58439b51366b1ab">&#9670;&nbsp;</a></span>accepte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CompteHierarchie::accepte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_visiteur.html">Visiteur</a> &amp;&#160;</td>
+          <td class="paramname"><em>_v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode pour les visiteurs. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_v</td><td>: <a class="el" href="class_visiteur.html" title="Classe mères des différents visiteurs. Les visiteurs permettent de parcourir la hiérarchie des compte...">Visiteur</a> &amp;, visiteur à accepter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémenté dans <a class="el" href="class_compte_reel.html#a353d99c5b8c0447e846465f947fb60a5">CompteReel</a>, et <a class="el" href="class_compte_virtuel.html#a22d50a82b0c5f6fab56d215dd1199d8a">CompteVirtuel</a>.</p>
+
+</div>
+</div>
+<a id="a3c8250f86a8e5cd552450bd7eafb4c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8250f86a8e5cd552450bd7eafb4c41">&#9670;&nbsp;</a></span>ajouterFils()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CompteHierarchie::ajouterFils </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> *&#160;</td>
+          <td class="paramname"><em>_c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Methode qui sera redéfinie. Elle permettra d'ajouter un fils à un <a class="el" href="class_compte_virtuel.html" title="CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...">CompteVirtuel</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_c</td><td>: CompteHierarchie*, pointeur sur le compte à ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FLSR_EXC_H</td><td>: impossible d'ajouter un fils à un compte réel. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémenté dans <a class="el" href="class_compte_reel.html#a701d781d6992659371e886303cc2af44">CompteReel</a>, et <a class="el" href="class_compte_virtuel.html#aea3021c42fa1b9cf34b0445f9a7d337d">CompteVirtuel</a>.</p>
+
+</div>
+</div>
+<a id="a9dee8c1d5ef414055e067ec9d106c6e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dee8c1d5ef414055e067ec9d106c6e4">&#9670;&nbsp;</a></span>getDernierMemento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_memento.html">Memento</a> * CompteHierarchie::getDernierMemento </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode virtuelle qui permettra de retourner de retourner le dernier <a class="el" href="class_memento.html" title="Le Memento permet de sauvegarder la date et le solde du dernier rapprochement.">Memento</a> enregistré d'un <a class="el" href="class_compte_reel.html" title="CompteReel représente les compte réels (les comptes sur lequels auront lieu les opérations).">CompteReel</a> (le solde actuel) </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MEMV_EXC_C</td><td>: Tentative d'utiliser un memento sur un compte virtuel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Une pointeur sur le dernier memento de la liste </dd></dl>
+
+<p>Implémenté dans <a class="el" href="class_compte_virtuel.html#a1e4e4dbd99507a52af20bee3a4998f38">CompteVirtuel</a>, et <a class="el" href="class_compte_reel.html#a1358cb5efd18f7ad318fbaeb59046b41">CompteReel</a>.</p>
+
+</div>
+</div>
+<a id="aa429d374b21ca65b388fcba203ff678f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa429d374b21ca65b388fcba203ff678f">&#9670;&nbsp;</a></span>getFils()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const set&lt; <a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> * &gt; CompteHierarchie::getFils </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Methode qui permet d'obtenir les fils d'un compte. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Ensemble des fils d'un compte. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FLSR_EXC_H</td><td>: impossible de récupérer les fils d'un compte réel. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémenté dans <a class="el" href="class_compte_reel.html#aa547ac9c1496a206d9d74896f5fe37c3">CompteReel</a>, et <a class="el" href="class_compte_virtuel.html#ac65f246a9d2188d9ead93b4ea4a863b8">CompteVirtuel</a>.</p>
+
+</div>
+</div>
+<a id="aa9f3eea2eb9c54fa3c34a1296deca0d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f3eea2eb9c54fa3c34a1296deca0d2">&#9670;&nbsp;</a></span>getId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CompteHierarchie::getId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode qui permet de retourner l'identifiant d'un compte. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>l'identifiant du compte </dd></dl>
+
+</div>
+</div>
+<a id="afc87afadec4874775886ebfcd7a43638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc87afadec4874775886ebfcd7a43638">&#9670;&nbsp;</a></span>getMementos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const list&lt; <a class="el" href="class_memento.html">Memento</a> * &gt; CompteHierarchie::getMementos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode virtuelle qui permettra de récupérer la liste de tous les Mementos. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MEMV_EXC_C</td><td>: Tentative d'utiliser un memento sur un compte virtuel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Une liste non-modifiable de Mementos. </dd></dl>
+
+<p>Implémenté dans <a class="el" href="class_compte_virtuel.html#a3184e530d62dd4672e8c329564be1c6d">CompteVirtuel</a>, et <a class="el" href="class_compte_reel.html#aa1be9e020fba617a0873ec37ec74ce43">CompteReel</a>.</p>
+
+</div>
+</div>
+<a id="a06e05d8df20c8cc1fdff55b249f25893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06e05d8df20c8cc1fdff55b249f25893">&#9670;&nbsp;</a></span>getNom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CompteHierarchie::getNom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode qui permet d'obtenir le nom du compte. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nom du compte. </dd></dl>
+
+</div>
+</div>
+<a id="a1d2b4126b14c5ad29cb0e42d3ca1cfac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d2b4126b14c5ad29cb0e42d3ca1cfac">&#9670;&nbsp;</a></span>getPoste()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a> CompteHierarchie::getPoste </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Methode qui retourne le poste d'un compte. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>RACINE ou DEPENSE ou RECETTE ou ACTIF ou PASSIF. </dd></dl>
+
+</div>
+</div>
+<a id="a587889d7f6700cf469ccf72980a0a694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587889d7f6700cf469ccf72980a0a694">&#9670;&nbsp;</a></span>getPosteCompte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a> CompteHierarchie::getPosteCompte </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Methode qui retourne une réference const sur le <a class="el" href="class_poste_compte.html" title="PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...">PosteCompte</a> d'un compte. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Une référence constante sur le <a class="el" href="class_poste_compte.html" title="PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...">PosteCompte</a> du compte (<a class="el" href="class_racine.html" title="Racine permet de représenter le comportement d&#39;un compte Racine, c&#39;est-à-dire celui qui contient tous...">Racine</a>, <a class="el" href="class_passif.html" title="Passif permet de représenter les propriétés des comptes de poste Passif.">Passif</a>,<a class="el" href="class_recette.html" title="Recette permet de représenter le comportement des comptes de poste Recette.">Recette</a>, <a class="el" href="class_depense.html" title="Depense permet de représenter les propriétés des comptes de poste Depense.">Depense</a> ou <a class="el" href="class_actif.html" title="Actif permet de représenter les propriétés des comptes de poste Actif.">Actif</a>) </dd></dl>
+
+</div>
+</div>
+<a id="a2627a2b9d647aea47874276bcd9c7afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2627a2b9d647aea47874276bcd9c7afc">&#9670;&nbsp;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_compte_hierarchie_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> CompteHierarchie::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Methode qui retourne le type d'un Compte. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>VIRTUEL si <a class="el" href="class_compte_virtuel.html" title="CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...">CompteVirtuel</a>, REEL si <a class="el" href="class_compte_reel.html" title="CompteReel représente les compte réels (les comptes sur lequels auront lieu les opérations).">CompteReel</a>. </dd></dl>
+
+<p>Implémenté dans <a class="el" href="class_compte_reel.html#a0aca83b5eadae395ea1087048552b648">CompteReel</a>, et <a class="el" href="class_compte_virtuel.html#a82cecbd02ac8f3e1670d83d9f654077d">CompteVirtuel</a>.</p>
+
+</div>
+</div>
+<a id="a623c9c0b42f45144a6b85e337ce5412c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a623c9c0b42f45144a6b85e337ce5412c">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> &amp; CompteHierarchie::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> &amp;&#160;</td>
+          <td class="paramname"><em>_c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Supression surcharge de l'opérateur d'affectation privé. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_c</td><td>: const <a class="el" href="class_compte_hierarchie.html" title="CompteHierarchie est la classe mère pour les éléments de la hiérarchie des comptes qui permet de mani...">CompteHierarchie</a> : référence constante sur le compte à affecter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64f720bd5674aa64c99d34d4fd2e5492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f720bd5674aa64c99d34d4fd2e5492">&#9670;&nbsp;</a></span>saveState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CompteHierarchie::saveState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_originator.html">Originator</a>&#160;</td>
+          <td class="paramname"><em>_o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode virtuelle qui permettra d'ajouter un memento à la liste de memento d'un compte reel. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_o</td><td>: Originator*, pointeur sur un originator qui va nous permettre de sauver le memento. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MEMV_EXC_C</td><td>: Tentative d'utiliser un memento sur un compte virtuel </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémenté dans <a class="el" href="class_compte_virtuel.html#a48bba2ddd0d5fd82c5b1fe4c47f9ba44">CompteVirtuel</a>, et <a class="el" href="class_compte_reel.html#a7583fbb5a811cd424e6078dd44a3f305">CompteReel</a>.</p>
+
+</div>
+</div>
+<a id="a642064dccd829f10e489aa454e768bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a642064dccd829f10e489aa454e768bbe">&#9670;&nbsp;</a></span>supprimerCompte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CompteHierarchie::supprimerCompte </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode virtuelle qui permet à l'utilisateur de supprimer le compte. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SUPREL_EXC_C</td><td>le compte a des transactions il ne peut être supprimé (pour un <a class="el" href="class_compte_reel.html" title="CompteReel représente les compte réels (les comptes sur lequels auront lieu les opérations).">CompteReel</a>) </td></tr>
+    <tr><td class="paramname">SUPVIR_EXC_C</td><td>les fils du compte n'ont pas été supprimés (pour un <a class="el" href="class_compte_virtuel.html" title="CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...">CompteVirtuel</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémenté dans <a class="el" href="class_compte_reel.html#ad1908e1ab312e969f0dbb7157c87b380">CompteReel</a>, et <a class="el" href="class_compte_virtuel.html#a63b71c2c3251e1adce0620aa9e1ab6dd">CompteVirtuel</a>.</p>
+
+</div>
+</div>
+<a id="a65e65245336fb02af593a25f6ef19308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e65245336fb02af593a25f6ef19308">&#9670;&nbsp;</a></span>supprimerFils()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CompteHierarchie::supprimerFils </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_compte_hierarchie.html">CompteHierarchie</a> *&#160;</td>
+          <td class="paramname"><em>_c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Methode qui sera redéfinie. Elle permettra de retirer un fils à un <a class="el" href="class_compte_virtuel.html" title="CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...">CompteVirtuel</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_c</td><td>: CompteHierarchie*, pointeur sur le compte à retirer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FLSR_EXC_H</td><td>: impossible de retirer un fils à un compte réel. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémenté dans <a class="el" href="class_compte_reel.html#a9c706712c158ff38a655926a5134183e">CompteReel</a>, et <a class="el" href="class_compte_virtuel.html#a9172b8f3bb9025e42055a372a1cc6f18">CompteVirtuel</a>.</p>
+
+</div>
+</div>
+<a id="a0978827105042b99d7d9b365a8438739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0978827105042b99d7d9b365a8438739">&#9670;&nbsp;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CompteHierarchie::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode virtuelle qui retournera des informations sur les comptes. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>La première lettre du nom du poste du compte suivie du nom du compte. </dd></dl>
+
+</div>
+</div>
+<a id="add63a1f81032dfa0e1e7baa15ebcc046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add63a1f81032dfa0e1e7baa15ebcc046">&#9670;&nbsp;</a></span>undo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CompteHierarchie::undo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_originator.html">Originator</a> *&#160;</td>
+          <td class="paramname"><em>_o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode virtuelle qui permettra de restaurer un memento antérieur dans un compte réel. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_o</td><td>: Originator*, pointeur sur un originator qui va nous permettre de manipuler le memento. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MEMV_EXC_C</td><td>: Tentative d'utiliser un memento sur un compte virtuel </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémenté dans <a class="el" href="class_compte_virtuel.html#af8de540421e981f1f0a27e9188e3072f">CompteVirtuel</a>, et <a class="el" href="class_compte_reel.html#ab2a853ace6df14b478c27ecb91c9036f">CompteReel</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>lo21_projet/Compte/header/<a class="el" href="_compte_hierarchie_8h_source.html">CompteHierarchie.h</a></li>
+<li>lo21_projet/Compte/source/<a class="el" href="_compte_hierarchie_8cpp.html">CompteHierarchie.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

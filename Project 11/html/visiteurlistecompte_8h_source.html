@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/visiteurlistecompte.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">visiteurlistecompte.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="visiteurlistecompte_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef VISITEURLISTECOMPTE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define VISITEURLISTECOMPTE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../header/VisiteurGetSolde.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_visiteur_liste_compte.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_visiteur_liste_compte.html">VisiteurListeCompte</a> : <span class="keyword">public</span> <a class="code" href="class_visiteur.html">Visiteur</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">friend</span> <a class="code" href="class_compte_manager.html">CompteManager</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visiteur_liste_compte.html#ac6e7f3b82fd7b18559f9e60dafeb3bdb">visiter</a>(<a class="code" href="class_compte_reel.html">CompteReel</a>&amp; _c) noexcept;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visiteur_liste_compte.html#ac6e7f3b82fd7b18559f9e60dafeb3bdb">visiter</a>(<a class="code" href="class_compte_virtuel.html">CompteVirtuel</a>&amp; _c) noexcept;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> fillListe(<a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>&amp; _c) noexcept;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_visiteur_liste_compte.html">VisiteurListeCompte</a>(QStringList* _liste,list&lt;int&gt;* _liste_id, <span class="keywordtype">int</span> _seul_reel = 1) : <a class="code" href="class_visiteur_liste_compte.html#ae7103d33ab8ad832ccba08d31890080e">liste</a>(_liste),<a class="code" href="class_visiteur_liste_compte.html#a604faeb93f6a896cc3d4a5ca3fc4cf7c">liste_id</a>(_liste_id),<a class="code" href="class_visiteur_liste_compte.html#ae03ed8a0b5b19f6726e52bb64d30bb1e">seul_reel</a>(_seul_reel) {}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_visiteur_liste_compte.html#a63a31e830015926641830859e14faafa">   60</a></span>&#160;    <a class="code" href="class_visiteur_liste_compte.html#a63a31e830015926641830859e14faafa">VisiteurListeCompte</a> (<span class="keyword">const</span> <a class="code" href="class_visiteur_liste_compte.html">VisiteurListeCompte</a>&amp; _v) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_visiteur_liste_compte.html#ae9f8a26c3256d345ca483d78324d3e69">   67</a></span>&#160;    <a class="code" href="class_visiteur_liste_compte.html">VisiteurListeCompte</a>&amp; <a class="code" href="class_visiteur_liste_compte.html#ae9f8a26c3256d345ca483d78324d3e69">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_visiteur_liste_compte.html">VisiteurListeCompte</a>&amp; _v) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_visiteur_liste_compte.html#a6a74f79a17a17fb0db34f3ec805573e0">   73</a></span>&#160;    <a class="code" href="class_visiteur_liste_compte.html#a6a74f79a17a17fb0db34f3ec805573e0">~VisiteurListeCompte</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//attributs</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_visiteur_liste_compte.html#ae7103d33ab8ad832ccba08d31890080e">   80</a></span>&#160;<span class="comment"></span>    QStringList* <a class="code" href="class_visiteur_liste_compte.html#ae7103d33ab8ad832ccba08d31890080e">liste</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_visiteur_liste_compte.html#a604faeb93f6a896cc3d4a5ca3fc4cf7c">   85</a></span>&#160;    list&lt;int&gt;* <a class="code" href="class_visiteur_liste_compte.html#a604faeb93f6a896cc3d4a5ca3fc4cf7c">liste_id</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_visiteur_liste_compte.html#ae03ed8a0b5b19f6726e52bb64d30bb1e">   90</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_visiteur_liste_compte.html#ae03ed8a0b5b19f6726e52bb64d30bb1e">seul_reel</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif // VISITEURLISTECOMPTE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_visiteur_html"><div class="ttname"><a href="class_visiteur.html">Visiteur</a></div><div class="ttdoc">Classe mères des différents visiteurs. Les visiteurs permettent de parcourir la hiérarchie des compte...</div><div class="ttdef"><b>Definition:</b> Visiteur.h:21</div></div>
+<div class="ttc" id="aclass_visiteur_liste_compte_html_a6a74f79a17a17fb0db34f3ec805573e0"><div class="ttname"><a href="class_visiteur_liste_compte.html#a6a74f79a17a17fb0db34f3ec805573e0">VisiteurListeCompte::~VisiteurListeCompte</a></div><div class="ttdeci">~VisiteurListeCompte()=default</div><div class="ttdoc">Destructeur privé</div></div>
+<div class="ttc" id="aclass_visiteur_liste_compte_html_a63a31e830015926641830859e14faafa"><div class="ttname"><a href="class_visiteur_liste_compte.html#a63a31e830015926641830859e14faafa">VisiteurListeCompte::VisiteurListeCompte</a></div><div class="ttdeci">VisiteurListeCompte(const VisiteurListeCompte &amp;_v)=default</div><div class="ttdoc">Constructeur par recopie privé.</div></div>
+<div class="ttc" id="aclass_visiteur_liste_compte_html"><div class="ttname"><a href="class_visiteur_liste_compte.html">VisiteurListeCompte</a></div><div class="ttdoc">VisiteurListeCompte est un visiteur qui permet de recueillir la liste des comptes.</div><div class="ttdef"><b>Definition:</b> visiteurlistecompte.h:22</div></div>
+<div class="ttc" id="aclass_visiteur_liste_compte_html_ac6e7f3b82fd7b18559f9e60dafeb3bdb"><div class="ttname"><a href="class_visiteur_liste_compte.html#ac6e7f3b82fd7b18559f9e60dafeb3bdb">VisiteurListeCompte::visiter</a></div><div class="ttdeci">void visiter(CompteReel &amp;_c) noexcept</div><div class="ttdoc">Méthode qui permet de parcourir un CompteReel.</div><div class="ttdef"><b>Definition:</b> visiteurlistecompte.cpp:13</div></div>
+<div class="ttc" id="aclass_compte_manager_html"><div class="ttname"><a href="class_compte_manager.html">CompteManager</a></div><div class="ttdoc">CompteManager gère l'ensemble des Comptes.</div><div class="ttdef"><b>Definition:</b> CompteManager.h:21</div></div>
+<div class="ttc" id="aclass_visiteur_liste_compte_html_a604faeb93f6a896cc3d4a5ca3fc4cf7c"><div class="ttname"><a href="class_visiteur_liste_compte.html#a604faeb93f6a896cc3d4a5ca3fc4cf7c">VisiteurListeCompte::liste_id</a></div><div class="ttdeci">list&lt; int &gt; * liste_id</div><div class="ttdoc">Liste des ids comptes de la hierarchie.</div><div class="ttdef"><b>Definition:</b> visiteurlistecompte.h:85</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html"><div class="ttname"><a href="class_compte_hierarchie.html">CompteHierarchie</a></div><div class="ttdoc">CompteHierarchie est la classe mère pour les éléments de la hiérarchie des comptes qui permet de mani...</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:35</div></div>
+<div class="ttc" id="aclass_visiteur_liste_compte_html_ae7103d33ab8ad832ccba08d31890080e"><div class="ttname"><a href="class_visiteur_liste_compte.html#ae7103d33ab8ad832ccba08d31890080e">VisiteurListeCompte::liste</a></div><div class="ttdeci">QStringList * liste</div><div class="ttdoc">Liste des comptes de la hierarchie.</div><div class="ttdef"><b>Definition:</b> visiteurlistecompte.h:80</div></div>
+<div class="ttc" id="aclass_visiteur_liste_compte_html_ae03ed8a0b5b19f6726e52bb64d30bb1e"><div class="ttname"><a href="class_visiteur_liste_compte.html#ae03ed8a0b5b19f6726e52bb64d30bb1e">VisiteurListeCompte::seul_reel</a></div><div class="ttdeci">int seul_reel</div><div class="ttdoc">Repésente le type des comptes de la hierarchie auquel on s'interresse 0, seulement les virtuels,...</div><div class="ttdef"><b>Definition:</b> visiteurlistecompte.h:90</div></div>
+<div class="ttc" id="aclass_visiteur_liste_compte_html_ae9f8a26c3256d345ca483d78324d3e69"><div class="ttname"><a href="class_visiteur_liste_compte.html#ae9f8a26c3256d345ca483d78324d3e69">VisiteurListeCompte::operator=</a></div><div class="ttdeci">VisiteurListeCompte &amp; operator=(const VisiteurListeCompte &amp;_v)=delete</div><div class="ttdoc">Supression Surcharge de l'opérateur d'affectation privé.</div></div>
+<div class="ttc" id="aclass_compte_reel_html"><div class="ttname"><a href="class_compte_reel.html">CompteReel</a></div><div class="ttdoc">CompteReel représente les compte réels (les comptes sur lequels auront lieu les opérations).</div><div class="ttdef"><b>Definition:</b> CompteReel.h:25</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html"><div class="ttname"><a href="class_compte_virtuel.html">CompteVirtuel</a></div><div class="ttdoc">CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.h:21</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

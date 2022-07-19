@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/VisiteurFree.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">VisiteurFree.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_visiteur_free_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef VISITEURFREE_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define VISITEURFREE_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../header/VisiteurPoste.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_visiteur_free.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_visiteur_free.html">VisiteurFree</a> : <span class="keyword">public</span> <a class="code" href="class_visiteur.html">Visiteur</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">friend</span> <a class="code" href="class_compte_manager.html">CompteManager</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visiteur_free.html#a0539ee5ed0f26664d0bea9518433b827">visiter</a>(<a class="code" href="class_compte_reel.html">CompteReel</a>&amp; _c) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_visiteur_free.html#a0539ee5ed0f26664d0bea9518433b827">visiter</a>(<a class="code" href="class_compte_virtuel.html">CompteVirtuel</a>&amp; _c) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_visiteur_free.html#a04a5b47726630f3fe02c1af1616e4b8d">   44</a></span>&#160;    <a class="code" href="class_visiteur_free.html#a04a5b47726630f3fe02c1af1616e4b8d">VisiteurFree</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_visiteur_free.html#acac88dd444f1912b7b02cb6133dd9fba">   51</a></span>&#160;    <a class="code" href="class_visiteur_free.html#acac88dd444f1912b7b02cb6133dd9fba">VisiteurFree</a> (<span class="keyword">const</span> <a class="code" href="class_visiteur_free.html">VisiteurFree</a>&amp; _v) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_visiteur_free.html#a0313d61ac253aaaf648e762ddeaf4e4a">   58</a></span>&#160;    <a class="code" href="class_visiteur_free.html">VisiteurFree</a>&amp; <a class="code" href="class_visiteur_free.html#a0313d61ac253aaaf648e762ddeaf4e4a">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_visiteur_free.html">VisiteurFree</a>&amp; _v) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // VISITEURFREE_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_visiteur_html"><div class="ttname"><a href="class_visiteur.html">Visiteur</a></div><div class="ttdoc">Classe mères des différents visiteurs. Les visiteurs permettent de parcourir la hiérarchie des compte...</div><div class="ttdef"><b>Definition:</b> Visiteur.h:21</div></div>
+<div class="ttc" id="aclass_visiteur_free_html"><div class="ttname"><a href="class_visiteur_free.html">VisiteurFree</a></div><div class="ttdoc">VisiteurFree est un visiteur qui permet de libérer la mémoire dans des comptes.</div><div class="ttdef"><b>Definition:</b> VisiteurFree.h:22</div></div>
+<div class="ttc" id="aclass_visiteur_free_html_a04a5b47726630f3fe02c1af1616e4b8d"><div class="ttname"><a href="class_visiteur_free.html#a04a5b47726630f3fe02c1af1616e4b8d">VisiteurFree::VisiteurFree</a></div><div class="ttdeci">VisiteurFree()=default</div><div class="ttdoc">Constructeur privé</div></div>
+<div class="ttc" id="aclass_visiteur_free_html_a0539ee5ed0f26664d0bea9518433b827"><div class="ttname"><a href="class_visiteur_free.html#a0539ee5ed0f26664d0bea9518433b827">VisiteurFree::visiter</a></div><div class="ttdeci">void visiter(CompteReel &amp;_c) noexcept override</div><div class="ttdoc">Méthode qui permet de libérer la mémoire associée à un CompteReel.</div><div class="ttdef"><b>Definition:</b> VisiteurFree.cpp:13</div></div>
+<div class="ttc" id="aclass_visiteur_free_html_acac88dd444f1912b7b02cb6133dd9fba"><div class="ttname"><a href="class_visiteur_free.html#acac88dd444f1912b7b02cb6133dd9fba">VisiteurFree::VisiteurFree</a></div><div class="ttdeci">VisiteurFree(const VisiteurFree &amp;_v)=default</div><div class="ttdoc">Constructeur par recopie privé.</div></div>
+<div class="ttc" id="aclass_compte_manager_html"><div class="ttname"><a href="class_compte_manager.html">CompteManager</a></div><div class="ttdoc">CompteManager gère l'ensemble des Comptes.</div><div class="ttdef"><b>Definition:</b> CompteManager.h:21</div></div>
+<div class="ttc" id="aclass_visiteur_free_html_a0313d61ac253aaaf648e762ddeaf4e4a"><div class="ttname"><a href="class_visiteur_free.html#a0313d61ac253aaaf648e762ddeaf4e4a">VisiteurFree::operator=</a></div><div class="ttdeci">VisiteurFree &amp; operator=(const VisiteurFree &amp;_v)=delete</div><div class="ttdoc">Suprresion de surcharge de l'opérateur d'affectation privé.</div></div>
+<div class="ttc" id="aclass_compte_reel_html"><div class="ttname"><a href="class_compte_reel.html">CompteReel</a></div><div class="ttdoc">CompteReel représente les compte réels (les comptes sur lequels auront lieu les opérations).</div><div class="ttdef"><b>Definition:</b> CompteReel.h:25</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html"><div class="ttname"><a href="class_compte_virtuel.html">CompteVirtuel</a></div><div class="ttdoc">CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.h:21</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

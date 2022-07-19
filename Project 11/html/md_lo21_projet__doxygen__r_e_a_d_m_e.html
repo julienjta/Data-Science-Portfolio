@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app: Doxygen</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Doxygen </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Il s'agit de commentaires de documentation permettant de génération facilement une documentation pdf et/ou html. Ces commentaires s'écrivent :</p>
+<div class="fragment"><div class="line"> {C++}</div>
+<div class="line">//! sur une ligne pour documenter ce qui suit</div>
+<div class="line"> </div>
+<div class="line">/*!</div>
+<div class="line">  sur plusieurs lignes pour documenter ce qui suit</div>
+<div class="line">*/</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">  sur plusieurs lignes pour documenter ce qui suit</div>
+<div class="line">*/</div>
+<div class="line"> </div>
+<div class="line">//!&lt; sur une ligne pour documenter ce qui precede</div>
+<div class="line"> </div>
+<div class="line">/*!&lt;</div>
+<div class="line">  sur plusieurs lignes pour documenter ce qui precede</div>
+<div class="line">*/</div>
+<div class="line"> </div>
+<div class="line">/**&lt;</div>
+<div class="line">  sur plusieurs lignes pour documenter ce qui precede</div>
+<div class="line">*/</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md1"></a>
+Balises</h1>
+<p>Dans un commentaire de documention, les balises commencent toutes par <code>@</code> ou <code>\</code>.</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Balises d'en-tête de document</h2>
+<ul>
+<li><code>@file nom.extension</code> indique le début du fichier nom.extension</li>
+<li><code>@details blablabla</code> décrit du fichier</li>
+<li><code>@author Jean</code> indique que l'auteur du fichier est Jean</li>
+<li><code>@version v1.0</code> indique la version du fichier</li>
+<li><code>@date 25-04-2020</code> indique la version du fichier</li>
+<li><code>@bug aucun</code> indique un bug encore non-corrigé</li>
+<li><code>@warning aucun</code> indique un comportement utilisateur à risque (par exemple si les input ne sont pas vérifier avant d'être utilisées)</li>
+<li><code>@copyright nom du copyright</code> indique le copyright utilisé (je pense qu'on en aura pas besoin ici)</li>
+<li><code>@note blabla</code> laisse une note aux autres développeurs</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Balises de classes ou d'espace de nom</h2>
+<ul>
+<li><code>@class MaClasse ma_classe.h "mes_header/ma_classe.h"</code> indique le nom, le fichier et l'adresse de la classe depuis la racine du projet</li>
+<li><code>@namespace MonEspace mon_espace.h "mes_header/mon_espace.h"</code> indique le nom, le fichier et l'adresse de l'espace de nom depuis la racine du projet</li>
+<li><code>@brief resume</code> description résumée de la classe</li>
+<li><code>autres informations</code> informations pertinentes concernant la classe</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Balises de méthodes ou d'attributs</h2>
+<ul>
+<li><code>@fn bool MaClasse::isBissextile(unsigned int _a)</code> indique le prototype complet de la fonction</li>
+<li><code>@var domaine MaClasse::attribut</code> indique un attribut de la classe</li>
+<li><code>@brief verifie si une annee est bissextile</code> résumé du comportement de la fonction</li>
+<li><code>@param _a est une annee</code> décrit un paramètre (une balise est nécessaire pour chaque paramètre)</li>
+<li><code>@exception blablabla</code> décrit une exception pouvant être lancée depuis la fonction</li>
+<li><code>@return Un booleen vrai si l'annee est bissextile, faux sinon</code> décrit la valeur de retour de la fonction (pour les constructeurs, destructeurs, et fonction void non nécessaire)</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Balises d'énumération</h2>
+<p>Pour l'énumération</p>
+<ul>
+<li><code>@enum MaClasse::MonEnum</code> indique le nom de l'énumération</li>
+<li><code>@brief blablabla</code> description de l'énumération</li>
+</ul>
+<p>Puis pour chaque variable</p>
+<ul>
+<li><code>@brief blablabla</code> description de la variable </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

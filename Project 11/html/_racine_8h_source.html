@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/Racine.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Racine.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_racine_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RACINE_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RACINE_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../header/PosteCompte.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_racine.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_racine.html">Racine</a>: <span class="keyword">public</span> <a class="code" href="class_poste_compte.html">PosteCompte</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_racine.html#a669d019fd674a7cd9839d0b1cddb37e3">   29</a></span>&#160;    <a class="code" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a> <a class="code" href="class_racine.html#a669d019fd674a7cd9839d0b1cddb37e3">getPoste</a>() const noexcept<span class="keyword"> override </span>{<span class="keywordflow">return</span> RACINE;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_racine.html#adee8d5d84f15a632f6a3e143d6fb50d9">   35</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_racine.html#adee8d5d84f15a632f6a3e143d6fb50d9">getLetter</a>() const noexcept<span class="keyword"> override </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;R&quot;</span>;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_racine.html#a4ffc0e423ef49b2d323585c26dbfb1dc">   41</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_poste_compte.html">PosteCompte</a>&amp; <a class="code" href="class_racine.html#a4ffc0e423ef49b2d323585c26dbfb1dc">getInstance</a>() noexcept {<span class="keywordflow">return</span> <a class="code" href="class_racine.html#a290a08f06a30de8c533534960923cc5c">instance</a>;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_racine.html#a1e8d724498ec44b132a956baaf795c05">debiter</a>(<span class="keywordtype">double</span> *_solde, <span class="keywordtype">double</span> _montant) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_racine.html#a7d7e9952d8a6261c382069edeecad4e9">crediter</a>(<span class="keywordtype">double</span> *_solde, <span class="keywordtype">double</span> _montant) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;     <span class="comment">//attribut</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span>    <span class="comment">//méthodes</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_racine.html#a290a08f06a30de8c533534960923cc5c">   61</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_racine.html">Racine</a> <a class="code" href="class_racine.html#a290a08f06a30de8c533534960923cc5c">instance</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_racine.html#a0ae8793189ecf3c15fdbff6c1f08becc">   66</a></span>&#160;    <a class="code" href="class_racine.html#a0ae8793189ecf3c15fdbff6c1f08becc">Racine</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_racine.html#a021a8c390de2e5950b272ec24a6e0e9b">   71</a></span>&#160;    <a class="code" href="class_racine.html#a021a8c390de2e5950b272ec24a6e0e9b">~Racine</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_racine.html#aeec7e1290ccae2780a10cdca66eb7a21">   76</a></span>&#160;    <a class="code" href="class_racine.html#aeec7e1290ccae2780a10cdca66eb7a21">Racine</a>(<span class="keyword">const</span> <a class="code" href="class_racine.html">Racine</a>&amp; _r) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_racine.html">Racine</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_racine.html">Racine</a>&amp; _r) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif // RACINE_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_poste_compte_html"><div class="ttname"><a href="class_poste_compte.html">PosteCompte</a></div><div class="ttdoc">PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:38</div></div>
+<div class="ttc" id="aclass_racine_html_a290a08f06a30de8c533534960923cc5c"><div class="ttname"><a href="class_racine.html#a290a08f06a30de8c533534960923cc5c">Racine::instance</a></div><div class="ttdeci">static Racine instance</div><div class="ttdoc">instance Racine</div><div class="ttdef"><b>Definition:</b> Racine.h:61</div></div>
+<div class="ttc" id="a_poste_compte_8h_html_ad3978d0aab216bc237be1dcd14aa0644"><div class="ttname"><a href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a></div><div class="ttdeci">Poste</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:21</div></div>
+<div class="ttc" id="aclass_racine_html_a4ffc0e423ef49b2d323585c26dbfb1dc"><div class="ttname"><a href="class_racine.html#a4ffc0e423ef49b2d323585c26dbfb1dc">Racine::getInstance</a></div><div class="ttdeci">static const PosteCompte &amp; getInstance() noexcept</div><div class="ttdoc">Méthode qui permet d'obtenir l'instance Racine.</div><div class="ttdef"><b>Definition:</b> Racine.h:41</div></div>
+<div class="ttc" id="aclass_racine_html_a7d7e9952d8a6261c382069edeecad4e9"><div class="ttname"><a href="class_racine.html#a7d7e9952d8a6261c382069edeecad4e9">Racine::crediter</a></div><div class="ttdeci">void crediter(double *_solde, double _montant) const override</div><div class="ttdoc">Redéfinition de la méthode virtuelle getPoste de PosteCompte : lancement d'une exception,...</div><div class="ttdef"><b>Definition:</b> Racine.cpp:20</div></div>
+<div class="ttc" id="aclass_racine_html_a669d019fd674a7cd9839d0b1cddb37e3"><div class="ttname"><a href="class_racine.html#a669d019fd674a7cd9839d0b1cddb37e3">Racine::getPoste</a></div><div class="ttdeci">Poste getPoste() const noexcept override</div><div class="ttdoc">Redéfinition de la méthode virtuelle getPoste de PosteCompte. Cette méthode retourne le nom du poste ...</div><div class="ttdef"><b>Definition:</b> Racine.h:29</div></div>
+<div class="ttc" id="aclass_racine_html_adee8d5d84f15a632f6a3e143d6fb50d9"><div class="ttname"><a href="class_racine.html#adee8d5d84f15a632f6a3e143d6fb50d9">Racine::getLetter</a></div><div class="ttdeci">string getLetter() const noexcept override</div><div class="ttdoc">Redéfinition de la méthode virtuelle getLetter de PosteCompte. Cette méthode renvoie la première lett...</div><div class="ttdef"><b>Definition:</b> Racine.h:35</div></div>
+<div class="ttc" id="aclass_racine_html_aeec7e1290ccae2780a10cdca66eb7a21"><div class="ttname"><a href="class_racine.html#aeec7e1290ccae2780a10cdca66eb7a21">Racine::Racine</a></div><div class="ttdeci">Racine(const Racine &amp;_r)=delete</div><div class="ttdoc">Supression constructeur par recopie.</div></div>
+<div class="ttc" id="aclass_racine_html"><div class="ttname"><a href="class_racine.html">Racine</a></div><div class="ttdoc">Racine permet de représenter le comportement d'un compte Racine, c'est-à-dire celui qui contient tous...</div><div class="ttdef"><b>Definition:</b> Racine.h:22</div></div>
+<div class="ttc" id="aclass_racine_html_a1e8d724498ec44b132a956baaf795c05"><div class="ttname"><a href="class_racine.html#a1e8d724498ec44b132a956baaf795c05">Racine::debiter</a></div><div class="ttdeci">void debiter(double *_solde, double _montant) const override</div><div class="ttdoc">Redéfinition de la méthode virtuelle getPoste de PosteCompte : lancement d'une exception,...</div><div class="ttdef"><b>Definition:</b> Racine.cpp:15</div></div>
+<div class="ttc" id="aclass_racine_html_a0ae8793189ecf3c15fdbff6c1f08becc"><div class="ttname"><a href="class_racine.html#a0ae8793189ecf3c15fdbff6c1f08becc">Racine::Racine</a></div><div class="ttdeci">Racine()=default</div><div class="ttdoc">Constructeur privé</div></div>
+<div class="ttc" id="aclass_racine_html_a021a8c390de2e5950b272ec24a6e0e9b"><div class="ttname"><a href="class_racine.html#a021a8c390de2e5950b272ec24a6e0e9b">Racine::~Racine</a></div><div class="ttdeci">~Racine()=default</div><div class="ttdoc">Destructeur privé</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

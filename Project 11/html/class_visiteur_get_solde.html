@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app: Référence de la classe VisiteurGetSolde</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_visiteur_get_solde-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe VisiteurGetSolde</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="class_visiteur_get_solde.html" title="VisiteurGetSolde est un visiteur qui permet de libérer la mémoire dans des comptes.">VisiteurGetSolde</a> est un visiteur qui permet de libérer la mémoire dans des comptes.  
+ <a href="class_visiteur_get_solde.html#details">Plus de détails...</a></p>
+
+<p><code>#include &quot;<a class="el" href="_visiteur_get_solde_8h_source.html">VisiteurGetSolde.h</a>&quot;</code></p>
+
+<p>Est dérivée de <a class="el" href="class_visiteur.html">Visiteur</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:ad98ee108e5536516c5d92530cd598ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visiteur_get_solde.html#ad98ee108e5536516c5d92530cd598ef5">visiter</a> (<a class="el" href="class_compte_reel.html">CompteReel</a> &amp;_c) noexcept override</td></tr>
+<tr class="memdesc:ad98ee108e5536516c5d92530cd598ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode qui permet de calculer le solde d'un compte réel.  <a href="class_visiteur_get_solde.html#ad98ee108e5536516c5d92530cd598ef5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad98ee108e5536516c5d92530cd598ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae6243c4b8266bd156f7a2320156f97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visiteur_get_solde.html#a9ae6243c4b8266bd156f7a2320156f97">visiter</a> (<a class="el" href="class_compte_virtuel.html">CompteVirtuel</a> &amp;_c) noexcept override</td></tr>
+<tr class="memdesc:a9ae6243c4b8266bd156f7a2320156f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode qui permet de calculer le solde d'un compte virtuel en faisant la somme des soldes de ses comptes fils.  <a href="class_visiteur_get_solde.html#a9ae6243c4b8266bd156f7a2320156f97">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9ae6243c4b8266bd156f7a2320156f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503bdc3b9587ecb88b0b700346c61ec3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visiteur_get_solde.html#a503bdc3b9587ecb88b0b700346c61ec3">getSolde</a> () const noexcept</td></tr>
+<tr class="memdesc:a503bdc3b9587ecb88b0b700346c61ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode qui permet d'obtenir le solde du compte demandé s'il existe.  <a href="class_visiteur_get_solde.html#a503bdc3b9587ecb88b0b700346c61ec3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a503bdc3b9587ecb88b0b700346c61ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:ad9e7e652050072758dfaf5a969038c92"><td class="memItemLeft" align="right" valign="top"><a id="ad9e7e652050072758dfaf5a969038c92"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visiteur_get_solde.html#ad9e7e652050072758dfaf5a969038c92">VisiteurGetSolde</a> ()</td></tr>
+<tr class="memdesc:ad9e7e652050072758dfaf5a969038c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur privé. <br /></td></tr>
+<tr class="separator:ad9e7e652050072758dfaf5a969038c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e39a03b799edaa5a620d2e6191054ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visiteur_get_solde.html#a1e39a03b799edaa5a620d2e6191054ec">VisiteurGetSolde</a> (const <a class="el" href="class_visiteur_get_solde.html">VisiteurGetSolde</a> &amp;_v)=default</td></tr>
+<tr class="memdesc:a1e39a03b799edaa5a620d2e6191054ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par recopie privé  <a href="class_visiteur_get_solde.html#a1e39a03b799edaa5a620d2e6191054ec">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1e39a03b799edaa5a620d2e6191054ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6e06eb3415bc8cd96c7a5107b38742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_visiteur_get_solde.html">VisiteurGetSolde</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visiteur_get_solde.html#aae6e06eb3415bc8cd96c7a5107b38742">operator=</a> (const <a class="el" href="class_visiteur_get_solde.html">VisiteurGetSolde</a> &amp;_v)=delete</td></tr>
+<tr class="memdesc:aae6e06eb3415bc8cd96c7a5107b38742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suppresion de surcharge de l'opérateur d'affectation privé.  <a href="class_visiteur_get_solde.html#aae6e06eb3415bc8cd96c7a5107b38742">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aae6e06eb3415bc8cd96c7a5107b38742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:ad2f2d1f04c8f644106b85ec6b87fccc8"><td class="memItemLeft" align="right" valign="top"><a id="ad2f2d1f04c8f644106b85ec6b87fccc8"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>CompteManager</b></td></tr>
+<tr class="separator:ad2f2d1f04c8f644106b85ec6b87fccc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61665bd323774c6bc4a2ac7b160a2805"><td class="memItemLeft" align="right" valign="top"><a id="a61665bd323774c6bc4a2ac7b160a2805"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_visiteur_get_solde.html#a61665bd323774c6bc4a2ac7b160a2805">solde</a> = 0.</td></tr>
+<tr class="memdesc:a61665bd323774c6bc4a2ac7b160a2805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solde du compte. <br /></td></tr>
+<tr class="separator:a61665bd323774c6bc4a2ac7b160a2805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="class_visiteur_get_solde.html" title="VisiteurGetSolde est un visiteur qui permet de libérer la mémoire dans des comptes.">VisiteurGetSolde</a> est un visiteur qui permet de libérer la mémoire dans des comptes. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a1e39a03b799edaa5a620d2e6191054ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e39a03b799edaa5a620d2e6191054ec">&#9670;&nbsp;</a></span>VisiteurGetSolde()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisiteurGetSolde::VisiteurGetSolde </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_visiteur_get_solde.html">VisiteurGetSolde</a> &amp;&#160;</td>
+          <td class="paramname"><em>_v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructeur par recopie privé </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_v</td><td>: const <a class="el" href="class_visiteur_get_solde.html" title="VisiteurGetSolde est un visiteur qui permet de libérer la mémoire dans des comptes.">VisiteurGetSolde</a>&amp;, référence constante sur le <a class="el" href="class_visiteur_get_solde.html" title="VisiteurGetSolde est un visiteur qui permet de libérer la mémoire dans des comptes.">VisiteurGetSolde</a> à recopier. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a503bdc3b9587ecb88b0b700346c61ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503bdc3b9587ecb88b0b700346c61ec3">&#9670;&nbsp;</a></span>getSolde()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VisiteurGetSolde::getSolde </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode qui permet d'obtenir le solde du compte demandé s'il existe. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le solde du compte si le nom correspond à un compte existant déclenche une exception sinon. </dd></dl>
+
+</div>
+</div>
+<a id="aae6e06eb3415bc8cd96c7a5107b38742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae6e06eb3415bc8cd96c7a5107b38742">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_visiteur_get_solde.html">VisiteurGetSolde</a> &amp; VisiteurGetSolde::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_visiteur_get_solde.html">VisiteurGetSolde</a> &amp;&#160;</td>
+          <td class="paramname"><em>_v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Suppresion de surcharge de l'opérateur d'affectation privé. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_v</td><td>: const <a class="el" href="class_visiteur_get_solde.html" title="VisiteurGetSolde est un visiteur qui permet de libérer la mémoire dans des comptes.">VisiteurGetSolde</a>&amp;, référence constante sur le <a class="el" href="class_visiteur_get_solde.html" title="VisiteurGetSolde est un visiteur qui permet de libérer la mémoire dans des comptes.">VisiteurGetSolde</a> à affecter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad98ee108e5536516c5d92530cd598ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98ee108e5536516c5d92530cd598ef5">&#9670;&nbsp;</a></span>visiter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VisiteurGetSolde::visiter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_compte_reel.html">CompteReel</a> &amp;&#160;</td>
+          <td class="paramname"><em>_c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode qui permet de calculer le solde d'un compte réel. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_c</td><td>: <a class="el" href="class_compte_reel.html" title="CompteReel représente les compte réels (les comptes sur lequels auront lieu les opérations).">CompteReel</a>&amp; _c,<a class="el" href="class_compte_reel.html" title="CompteReel représente les compte réels (les comptes sur lequels auront lieu les opérations).">CompteReel</a> auquel le visiteur veut avoir accés pour calculer son solde. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_visiteur.html#a88cbef17851e0ccde549033e96644542">Visiteur</a>.</p>
+
+</div>
+</div>
+<a id="a9ae6243c4b8266bd156f7a2320156f97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ae6243c4b8266bd156f7a2320156f97">&#9670;&nbsp;</a></span>visiter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VisiteurGetSolde::visiter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_compte_virtuel.html">CompteVirtuel</a> &amp;&#160;</td>
+          <td class="paramname"><em>_c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Méthode qui permet de calculer le solde d'un compte virtuel en faisant la somme des soldes de ses comptes fils. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_c</td><td>: <a class="el" href="class_compte_virtuel.html" title="CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...">CompteVirtuel</a>&amp; _c,<a class="el" href="class_compte_virtuel.html" title="CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...">CompteVirtuel</a> auquel le visiteur veut avoir accés pour calculer son solde. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_visiteur.html#af06d16d174208e07e0e3d6ac58d909ad">Visiteur</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>lo21_projet/Compte/header/<a class="el" href="_visiteur_get_solde_8h_source.html">VisiteurGetSolde.h</a></li>
+<li>lo21_projet/Compte/source/<a class="el" href="_visiteur_get_solde_8cpp.html">VisiteurGetSolde.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

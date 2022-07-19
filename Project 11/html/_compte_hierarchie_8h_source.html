@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/CompteHierarchie.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CompteHierarchie.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_compte_hierarchie_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef COMPTEHIERARCHIE_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define COMPTEHIERARCHIE_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../header/Recette.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_compte_hierarchie_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">   22</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_compte_hierarchie_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    VIRTUEL = 0,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    REEL = 1</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_hierarchie_builder.html">HierarchieBuilder</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_compte_manager.html">CompteManager</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_visiteur_free.html">VisiteurFree</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;public :</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="class_compte_hierarchie.html#a0978827105042b99d7d9b365a8438739">toString</a>() <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a54e2a9e07d2aa6d7a58439b51366b1ab">   53</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_compte_hierarchie.html#a54e2a9e07d2aa6d7a58439b51366b1ab">accepte</a>(<a class="code" href="class_visiteur.html">Visiteur</a>&amp; _v) noexcept = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a06e05d8df20c8cc1fdff55b249f25893">   60</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_compte_hierarchie.html#a06e05d8df20c8cc1fdff55b249f25893">getNom</a>() const noexcept {<span class="keywordflow">return</span> <a class="code" href="class_compte_hierarchie.html#accf6354e8ddcc236cdc6d4db80367100">nom</a>;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a1d2b4126b14c5ad29cb0e42d3ca1cfac">   67</a></span>&#160;    <a class="code" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a> <a class="code" href="class_compte_hierarchie.html#a1d2b4126b14c5ad29cb0e42d3ca1cfac">getPoste</a>() const noexcept { <span class="keywordflow">return</span> <a class="code" href="class_compte_hierarchie.html#a73cd1c71f4aef82d0f8818865fdbeb91">poste</a>-&gt;<a class="code" href="class_poste_compte.html#a5eb923cd9edb0766b6778149c1e9512c">getPoste</a>();}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a587889d7f6700cf469ccf72980a0a694">   74</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_poste_compte.html">PosteCompte</a>&amp; <a class="code" href="class_compte_hierarchie.html#a587889d7f6700cf469ccf72980a0a694">getPosteCompte</a>() const noexcept {<span class="keywordflow">return</span> *<a class="code" href="class_compte_hierarchie.html#a73cd1c71f4aef82d0f8818865fdbeb91">poste</a>;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a2627a2b9d647aea47874276bcd9c7afc">   81</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="_compte_hierarchie_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> <a class="code" href="class_compte_hierarchie.html#a2627a2b9d647aea47874276bcd9c7afc">getType</a>() const noexcept = 0;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#aa429d374b21ca65b388fcba203ff678f">   89</a></span>&#160;    virtual const set&lt;<a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>*&gt; <a class="code" href="class_compte_hierarchie.html#aa429d374b21ca65b388fcba203ff678f">getFils</a>() const = 0;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a3c8250f86a8e5cd552450bd7eafb4c41">   98</a></span>&#160;    virtual <span class="keywordtype">void</span> <a class="code" href="class_compte_hierarchie.html#a3c8250f86a8e5cd552450bd7eafb4c41">ajouterFils</a>(<a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>* _c) = 0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a65e65245336fb02af593a25f6ef19308">  106</a></span>&#160;    virtual <span class="keywordtype">void</span> <a class="code" href="class_compte_hierarchie.html#a65e65245336fb02af593a25f6ef19308">supprimerFils</a>(<a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>* _c) = 0;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a642064dccd829f10e489aa454e768bbe">  115</a></span>&#160;    virtual <span class="keywordtype">void</span> <a class="code" href="class_compte_hierarchie.html#a642064dccd829f10e489aa454e768bbe">supprimerCompte</a>() = 0;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#add63a1f81032dfa0e1e7baa15ebcc046">  123</a></span>&#160;    virtual <span class="keywordtype">void</span> <a class="code" href="class_compte_hierarchie.html#add63a1f81032dfa0e1e7baa15ebcc046">undo</a>(<a class="code" href="class_originator.html">Originator</a>* _o) = 0;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a64f720bd5674aa64c99d34d4fd2e5492">  131</a></span>&#160;    virtual <span class="keywordtype">void</span> <a class="code" href="class_compte_hierarchie.html#a64f720bd5674aa64c99d34d4fd2e5492">saveState</a>(<a class="code" href="class_originator.html">Originator</a> _o) = 0;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#aa9f3eea2eb9c54fa3c34a1296deca0d2">  138</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_compte_hierarchie.html#aa9f3eea2eb9c54fa3c34a1296deca0d2">getId</a>() const noexcept {<span class="keywordflow">return</span> <a class="code" href="class_compte_hierarchie.html#aeb4dc04083f3018ea8de1367bcc800c3">id</a>;}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a9dee8c1d5ef414055e067ec9d106c6e4">  146</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_memento.html">Memento</a>* <a class="code" href="class_compte_hierarchie.html#a9dee8c1d5ef414055e067ec9d106c6e4">getDernierMemento</a>() = 0;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#afc87afadec4874775886ebfcd7a43638">  154</a></span>&#160;     <span class="keyword">virtual</span> <span class="keyword">const</span> list&lt;Memento*&gt;&amp; <a class="code" href="class_compte_hierarchie.html#afc87afadec4874775886ebfcd7a43638">getMementos</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">//methodes</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"></span>    <a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; _nom, <span class="keyword">const</span> <span class="keywordtype">int</span> _id) noexcept : <a class="code" href="class_compte_hierarchie.html#accf6354e8ddcc236cdc6d4db80367100">nom</a>(_nom), <a class="code" href="class_compte_hierarchie.html#aeb4dc04083f3018ea8de1367bcc800c3">id</a>(_id) {}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a1f9bf1995692d1f6f304f441cb508f85">  170</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_compte_hierarchie.html#a1f9bf1995692d1f6f304f441cb508f85">~CompteHierarchie</a>(){}</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a73cd1c71f4aef82d0f8818865fdbeb91">  176</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_poste_compte.html">PosteCompte</a>* <a class="code" href="class_compte_hierarchie.html#a73cd1c71f4aef82d0f8818865fdbeb91">poste</a>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;private :</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">//attributs</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#accf6354e8ddcc236cdc6d4db80367100">  185</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">string</span> <a class="code" href="class_compte_hierarchie.html#accf6354e8ddcc236cdc6d4db80367100">nom</a>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#aeb4dc04083f3018ea8de1367bcc800c3">  191</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_compte_hierarchie.html#aeb4dc04083f3018ea8de1367bcc800c3">id</a>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a48913a34b9156703bb9e9ab0a381d574">  198</a></span>&#160;    <a class="code" href="class_compte_hierarchie.html#a48913a34b9156703bb9e9ab0a381d574">CompteHierarchie</a> (<span class="keyword">const</span> <a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>&amp; _c) =<span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="class_compte_hierarchie.html#a623c9c0b42f45144a6b85e337ce5412c">  205</a></span>&#160;    <a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>&amp; <a class="code" href="class_compte_hierarchie.html#a623c9c0b42f45144a6b85e337ce5412c">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>&amp; _c) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;};</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#endif // COMPTEHIERARCHIE_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_poste_compte_html"><div class="ttname"><a href="class_poste_compte.html">PosteCompte</a></div><div class="ttdoc">PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:38</div></div>
+<div class="ttc" id="aclass_visiteur_html"><div class="ttname"><a href="class_visiteur.html">Visiteur</a></div><div class="ttdoc">Classe mères des différents visiteurs. Les visiteurs permettent de parcourir la hiérarchie des compte...</div><div class="ttdef"><b>Definition:</b> Visiteur.h:21</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a587889d7f6700cf469ccf72980a0a694"><div class="ttname"><a href="class_compte_hierarchie.html#a587889d7f6700cf469ccf72980a0a694">CompteHierarchie::getPosteCompte</a></div><div class="ttdeci">const PosteCompte &amp; getPosteCompte() const noexcept</div><div class="ttdoc">Methode qui retourne une réference const sur le PosteCompte d'un compte.</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:74</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_add63a1f81032dfa0e1e7baa15ebcc046"><div class="ttname"><a href="class_compte_hierarchie.html#add63a1f81032dfa0e1e7baa15ebcc046">CompteHierarchie::undo</a></div><div class="ttdeci">virtual void undo(Originator *_o)=0</div><div class="ttdoc">Méthode virtuelle qui permettra de restaurer un memento antérieur dans un compte réel.</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a73cd1c71f4aef82d0f8818865fdbeb91"><div class="ttname"><a href="class_compte_hierarchie.html#a73cd1c71f4aef82d0f8818865fdbeb91">CompteHierarchie::poste</a></div><div class="ttdeci">const PosteCompte * poste</div><div class="ttdoc">Pointeur sur un PosteCompte : Racine, Passif,Recette, Depense ou Actif.</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:176</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a0978827105042b99d7d9b365a8438739"><div class="ttname"><a href="class_compte_hierarchie.html#a0978827105042b99d7d9b365a8438739">CompteHierarchie::toString</a></div><div class="ttdeci">virtual string toString() const noexcept</div><div class="ttdoc">Méthode virtuelle qui retournera des informations sur les comptes.</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.cpp:14</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_aeb4dc04083f3018ea8de1367bcc800c3"><div class="ttname"><a href="class_compte_hierarchie.html#aeb4dc04083f3018ea8de1367bcc800c3">CompteHierarchie::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">L'id d'un compte. Il est unique et est géré automatiquement par HierarchieBuilder.</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:191</div></div>
+<div class="ttc" id="a_poste_compte_8h_html_ad3978d0aab216bc237be1dcd14aa0644"><div class="ttname"><a href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a></div><div class="ttdeci">Poste</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:21</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a06e05d8df20c8cc1fdff55b249f25893"><div class="ttname"><a href="class_compte_hierarchie.html#a06e05d8df20c8cc1fdff55b249f25893">CompteHierarchie::getNom</a></div><div class="ttdeci">string getNom() const noexcept</div><div class="ttdoc">Méthode qui permet d'obtenir le nom du compte.</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:60</div></div>
+<div class="ttc" id="aclass_visiteur_free_html"><div class="ttname"><a href="class_visiteur_free.html">VisiteurFree</a></div><div class="ttdoc">VisiteurFree est un visiteur qui permet de libérer la mémoire dans des comptes.</div><div class="ttdef"><b>Definition:</b> VisiteurFree.h:22</div></div>
+<div class="ttc" id="aclass_hierarchie_builder_html"><div class="ttname"><a href="class_hierarchie_builder.html">HierarchieBuilder</a></div><div class="ttdoc">HierarchieBuilder gère la création de la hiérarchie des comptes.</div><div class="ttdef"><b>Definition:</b> HierarchieBuilder.h:22</div></div>
+<div class="ttc" id="aclass_originator_html"><div class="ttname"><a href="class_originator.html">Originator</a></div><div class="ttdoc">Originator permet de manipuler les mementos.</div><div class="ttdef"><b>Definition:</b> Originator.h:21</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a2627a2b9d647aea47874276bcd9c7afc"><div class="ttname"><a href="class_compte_hierarchie.html#a2627a2b9d647aea47874276bcd9c7afc">CompteHierarchie::getType</a></div><div class="ttdeci">virtual Type getType() const noexcept=0</div><div class="ttdoc">Methode qui retourne le type d'un Compte.</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a64f720bd5674aa64c99d34d4fd2e5492"><div class="ttname"><a href="class_compte_hierarchie.html#a64f720bd5674aa64c99d34d4fd2e5492">CompteHierarchie::saveState</a></div><div class="ttdeci">virtual void saveState(Originator _o)=0</div><div class="ttdoc">Méthode virtuelle qui permettra d'ajouter un memento à la liste de memento d'un compte reel.</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_afc87afadec4874775886ebfcd7a43638"><div class="ttname"><a href="class_compte_hierarchie.html#afc87afadec4874775886ebfcd7a43638">CompteHierarchie::getMementos</a></div><div class="ttdeci">virtual const list&lt; Memento * &gt; &amp; getMementos() const =0</div><div class="ttdoc">Méthode virtuelle qui permettra de récupérer la liste de tous les Mementos.</div></div>
+<div class="ttc" id="a_compte_hierarchie_8h_html_a1d1cfd8ffb84e947f82999c682b666a7"><div class="ttname"><a href="_compte_hierarchie_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">représente les deux types de Compte : Virtuel (c'est-à-dire un compte qui n'est destiné qu'à regroupe...</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:22</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a3c8250f86a8e5cd552450bd7eafb4c41"><div class="ttname"><a href="class_compte_hierarchie.html#a3c8250f86a8e5cd552450bd7eafb4c41">CompteHierarchie::ajouterFils</a></div><div class="ttdeci">virtual void ajouterFils(CompteHierarchie *_c)=0</div><div class="ttdoc">Methode qui sera redéfinie. Elle permettra d'ajouter un fils à un CompteVirtuel.</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a9dee8c1d5ef414055e067ec9d106c6e4"><div class="ttname"><a href="class_compte_hierarchie.html#a9dee8c1d5ef414055e067ec9d106c6e4">CompteHierarchie::getDernierMemento</a></div><div class="ttdeci">virtual Memento * getDernierMemento()=0</div><div class="ttdoc">Méthode virtuelle qui permettra de retourner de retourner le dernier Memento enregistré d'un CompteRe...</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_aa9f3eea2eb9c54fa3c34a1296deca0d2"><div class="ttname"><a href="class_compte_hierarchie.html#aa9f3eea2eb9c54fa3c34a1296deca0d2">CompteHierarchie::getId</a></div><div class="ttdeci">int getId() const noexcept</div><div class="ttdoc">Méthode qui permet de retourner l'identifiant d'un compte.</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:138</div></div>
+<div class="ttc" id="aclass_compte_manager_html"><div class="ttname"><a href="class_compte_manager.html">CompteManager</a></div><div class="ttdoc">CompteManager gère l'ensemble des Comptes.</div><div class="ttdef"><b>Definition:</b> CompteManager.h:21</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a65e65245336fb02af593a25f6ef19308"><div class="ttname"><a href="class_compte_hierarchie.html#a65e65245336fb02af593a25f6ef19308">CompteHierarchie::supprimerFils</a></div><div class="ttdeci">virtual void supprimerFils(CompteHierarchie *_c)=0</div><div class="ttdoc">Methode qui sera redéfinie. Elle permettra de retirer un fils à un CompteVirtuel.</div></div>
+<div class="ttc" id="aclass_memento_html"><div class="ttname"><a href="class_memento.html">Memento</a></div><div class="ttdoc">Le Memento permet de sauvegarder la date et le solde du dernier rapprochement.</div><div class="ttdef"><b>Definition:</b> Memento.h:21</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a1f9bf1995692d1f6f304f441cb508f85"><div class="ttname"><a href="class_compte_hierarchie.html#a1f9bf1995692d1f6f304f441cb508f85">CompteHierarchie::~CompteHierarchie</a></div><div class="ttdeci">virtual ~CompteHierarchie()</div><div class="ttdoc">Destructeur.</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:170</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_aa429d374b21ca65b388fcba203ff678f"><div class="ttname"><a href="class_compte_hierarchie.html#aa429d374b21ca65b388fcba203ff678f">CompteHierarchie::getFils</a></div><div class="ttdeci">virtual const set&lt; CompteHierarchie * &gt; getFils() const =0</div><div class="ttdoc">Methode qui permet d'obtenir les fils d'un compte.</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_accf6354e8ddcc236cdc6d4db80367100"><div class="ttname"><a href="class_compte_hierarchie.html#accf6354e8ddcc236cdc6d4db80367100">CompteHierarchie::nom</a></div><div class="ttdeci">string nom</div><div class="ttdoc">Le nom d'un Compte.</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:185</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a623c9c0b42f45144a6b85e337ce5412c"><div class="ttname"><a href="class_compte_hierarchie.html#a623c9c0b42f45144a6b85e337ce5412c">CompteHierarchie::operator=</a></div><div class="ttdeci">CompteHierarchie &amp; operator=(const CompteHierarchie &amp;_c)=delete</div><div class="ttdoc">Supression surcharge de l'opérateur d'affectation privé.</div></div>
+<div class="ttc" id="aclass_poste_compte_html_a5eb923cd9edb0766b6778149c1e9512c"><div class="ttname"><a href="class_poste_compte.html#a5eb923cd9edb0766b6778149c1e9512c">PosteCompte::getPoste</a></div><div class="ttdeci">virtual Poste getPoste() const noexcept=0</div><div class="ttdoc">Méthode qui permet de retourner le nom du poste d'un PosteCompte.</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html"><div class="ttname"><a href="class_compte_hierarchie.html">CompteHierarchie</a></div><div class="ttdoc">CompteHierarchie est la classe mère pour les éléments de la hiérarchie des comptes qui permet de mani...</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:35</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a1d2b4126b14c5ad29cb0e42d3ca1cfac"><div class="ttname"><a href="class_compte_hierarchie.html#a1d2b4126b14c5ad29cb0e42d3ca1cfac">CompteHierarchie::getPoste</a></div><div class="ttdeci">Poste getPoste() const noexcept</div><div class="ttdoc">Methode qui retourne le poste d'un compte.</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:67</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a54e2a9e07d2aa6d7a58439b51366b1ab"><div class="ttname"><a href="class_compte_hierarchie.html#a54e2a9e07d2aa6d7a58439b51366b1ab">CompteHierarchie::accepte</a></div><div class="ttdeci">virtual void accepte(Visiteur &amp;_v) noexcept=0</div><div class="ttdoc">Méthode pour les visiteurs.</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a48913a34b9156703bb9e9ab0a381d574"><div class="ttname"><a href="class_compte_hierarchie.html#a48913a34b9156703bb9e9ab0a381d574">CompteHierarchie::CompteHierarchie</a></div><div class="ttdeci">CompteHierarchie(const CompteHierarchie &amp;_c)=delete</div><div class="ttdoc">Supression constructeur par recopie privé.</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html_a642064dccd829f10e489aa454e768bbe"><div class="ttname"><a href="class_compte_hierarchie.html#a642064dccd829f10e489aa454e768bbe">CompteHierarchie::supprimerCompte</a></div><div class="ttdeci">virtual void supprimerCompte()=0</div><div class="ttdoc">Méthode virtuelle qui permet à l'utilisateur de supprimer le compte.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

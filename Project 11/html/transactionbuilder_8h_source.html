@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Transaction/header/transactionbuilder.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_475f985914df16eb84a0448a3dd2e2bd.html">Transaction</a></li><li class="navelem"><a class="el" href="dir_bdecd92138e73e6359b4ce189ff2232d.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">transactionbuilder.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="transactionbuilder_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TRANSACTIONBUILDER_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TRANSACTIONBUILDER_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../header/transaction.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_transaction_builder.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_transaction_builder.html">TransactionBuilder</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">friend</span> <a class="code" href="class_transaction_manager.html">TransactionManager</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">//methodes=========================</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span>        <a class="code" href="class_transaction_builder.html#ab6561dd623758fc8dfecf328a4de7666">TransactionBuilder</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_transaction_builder.html#a0de601e43816fb79d11471406025a168">~TransactionBuilder</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_transaction_builder.html#a2c9d361d9d40797e2d0d3f57e7e219d9">detruireTransaction</a>(<a class="code" href="class_transaction.html">Transaction</a>* <span class="keyword">const</span> _transaction) noexcept;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_transaction.html">Transaction</a>* <a class="code" href="class_transaction_builder.html#a599c9b44711065c359749aa3d0668bce">creerTransaction</a>(time_t <span class="keyword">const</span>&amp; _date, <span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _ref, <span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _memo, list&lt;Operation*&gt; <span class="keyword">const</span>&amp; _listOperations);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">static</span> list&lt;Transaction*&gt; <a class="code" href="class_transaction_builder.html#ac0192eac8ebc57edfcf9a5b9d3447e6b">creerTransactionAvecFichier</a>(<span class="keywordtype">string</span> <span class="keyword">const</span>&amp; _path);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_operation.html">Operation</a>* <a class="code" href="class_transaction_builder.html#a90200e4218a611a938940cefc39dc2ba">creerOperation</a>(<a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>* <span class="keyword">const</span> _compte,<span class="keywordtype">double</span> <span class="keyword">const</span>&amp; _debit, <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; _credit);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // TRANSACTIONBUILDER_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_transaction_builder_html_a2c9d361d9d40797e2d0d3f57e7e219d9"><div class="ttname"><a href="class_transaction_builder.html#a2c9d361d9d40797e2d0d3f57e7e219d9">TransactionBuilder::detruireTransaction</a></div><div class="ttdeci">static void detruireTransaction(Transaction *const _transaction) noexcept</div><div class="ttdoc">detruit la liste de transaction passée en paramètre.</div><div class="ttdef"><b>Definition:</b> transactionbuilder.cpp:146</div></div>
+<div class="ttc" id="aclass_transaction_html"><div class="ttname"><a href="class_transaction.html">Transaction</a></div><div class="ttdoc">La transaction représente un ensemble d'opérations équilibrées effectuées à une même date entre plusi...</div><div class="ttdef"><b>Definition:</b> transaction.h:24</div></div>
+<div class="ttc" id="aclass_transaction_manager_html"><div class="ttname"><a href="class_transaction_manager.html">TransactionManager</a></div><div class="ttdoc">Le transaction managager permet de gérer les transactions. Elle est basée sur les pattern Manager et ...</div><div class="ttdef"><b>Definition:</b> transactionmanager.h:23</div></div>
+<div class="ttc" id="aclass_transaction_builder_html_ab6561dd623758fc8dfecf328a4de7666"><div class="ttname"><a href="class_transaction_builder.html#ab6561dd623758fc8dfecf328a4de7666">TransactionBuilder::TransactionBuilder</a></div><div class="ttdeci">TransactionBuilder()</div><div class="ttdoc">Constructeur, en tant que singleton ce dernier est privé</div><div class="ttdef"><b>Definition:</b> transactionbuilder.cpp:14</div></div>
+<div class="ttc" id="aclass_transaction_builder_html_a599c9b44711065c359749aa3d0668bce"><div class="ttname"><a href="class_transaction_builder.html#a599c9b44711065c359749aa3d0668bce">TransactionBuilder::creerTransaction</a></div><div class="ttdeci">static Transaction * creerTransaction(time_t const &amp;_date, string const &amp;_ref, string const &amp;_memo, list&lt; Operation * &gt; const &amp;_listOperations)</div><div class="ttdoc">Méthode qui permet d'ajouter une nouvelle transaction.</div><div class="ttdef"><b>Definition:</b> transactionbuilder.cpp:24</div></div>
+<div class="ttc" id="aclass_transaction_builder_html"><div class="ttname"><a href="class_transaction_builder.html">TransactionBuilder</a></div><div class="ttdoc">Le transaction builder permet de construire les transactions. Il utilise le pattern builder et single...</div><div class="ttdef"><b>Definition:</b> transactionbuilder.h:22</div></div>
+<div class="ttc" id="aclass_transaction_builder_html_a90200e4218a611a938940cefc39dc2ba"><div class="ttname"><a href="class_transaction_builder.html#a90200e4218a611a938940cefc39dc2ba">TransactionBuilder::creerOperation</a></div><div class="ttdeci">static Operation * creerOperation(CompteHierarchie *const _compte, double const &amp;_debit, double const &amp;_credit)</div><div class="ttdoc">Méthode qui permet d'ajouter une nouvelle opération.</div><div class="ttdef"><b>Definition:</b> transactionbuilder.cpp:151</div></div>
+<div class="ttc" id="aclass_transaction_builder_html_ac0192eac8ebc57edfcf9a5b9d3447e6b"><div class="ttname"><a href="class_transaction_builder.html#ac0192eac8ebc57edfcf9a5b9d3447e6b">TransactionBuilder::creerTransactionAvecFichier</a></div><div class="ttdeci">static list&lt; Transaction * &gt; creerTransactionAvecFichier(string const &amp;_path)</div><div class="ttdoc">Méthode qui permet de convertir la sauvegarde en une liste de transactions.</div><div class="ttdef"><b>Definition:</b> transactionbuilder.cpp:84</div></div>
+<div class="ttc" id="aclass_operation_html"><div class="ttname"><a href="class_operation.html">Operation</a></div><div class="ttdoc">Objet représentant une opération comptable.</div><div class="ttdef"><b>Definition:</b> operation.h:22</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html"><div class="ttname"><a href="class_compte_hierarchie.html">CompteHierarchie</a></div><div class="ttdoc">CompteHierarchie est la classe mère pour les éléments de la hiérarchie des comptes qui permet de mani...</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:35</div></div>
+<div class="ttc" id="aclass_transaction_builder_html_a0de601e43816fb79d11471406025a168"><div class="ttname"><a href="class_transaction_builder.html#a0de601e43816fb79d11471406025a168">TransactionBuilder::~TransactionBuilder</a></div><div class="ttdeci">~TransactionBuilder()</div><div class="ttdoc">Destructeur.</div><div class="ttdef"><b>Definition:</b> transactionbuilder.cpp:19</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

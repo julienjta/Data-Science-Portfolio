@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/CompteVirtuel.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CompteVirtuel.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_compte_virtuel_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef COMPTEVIRTUEL_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define COMPTEVIRTUEL_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../header/VisiteurRecherche.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_compte_virtuel.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_compte_virtuel.html">CompteVirtuel</a>: <span class="keyword">public</span> <a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_hierarchie_builder.html">HierarchieBuilder</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_compte_manager.html">CompteManager</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_visiteur_free.html">VisiteurFree</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;public :</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_compte_virtuel.html#a82cecbd02ac8f3e1670d83d9f654077d">   32</a></span>&#160;    <a class="code" href="_compte_hierarchie_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> <a class="code" href="class_compte_virtuel.html#a82cecbd02ac8f3e1670d83d9f654077d">getType</a>() const noexcept<span class="keyword"> override </span>{<span class="keywordflow">return</span> VIRTUEL;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_compte_virtuel.html#a22d50a82b0c5f6fab56d215dd1199d8a">accepte</a>(<a class="code" href="class_visiteur.html">Visiteur</a>&amp; _v) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_compte_virtuel.html#ac65f246a9d2188d9ead93b4ea4a863b8">   46</a></span>&#160;    <span class="keyword">const</span> set&lt;CompteHierarchie*&gt; <a class="code" href="class_compte_virtuel.html#ac65f246a9d2188d9ead93b4ea4a863b8">getFils</a>()<span class="keyword"> const override </span>{<span class="keywordflow">return</span> fils;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_compte_virtuel.html#aea3021c42fa1b9cf34b0445f9a7d337d">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_compte_virtuel.html#aea3021c42fa1b9cf34b0445f9a7d337d">ajouterFils</a>(<a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>* _c) noexcept <span class="keyword">override</span> { fils.insert(_c);}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_compte_virtuel.html#a9172b8f3bb9025e42055a372a1cc6f18">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_compte_virtuel.html#a9172b8f3bb9025e42055a372a1cc6f18">supprimerFils</a>(<a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>* _c) noexcept <span class="keyword">override</span> { fils.erase(_c);}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_compte_virtuel.html#a63b71c2c3251e1adce0620aa9e1ab6dd">supprimerCompte</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_compte_virtuel.html#af8de540421e981f1f0a27e9188e3072f">undo</a>(<a class="code" href="class_originator.html">Originator</a>* _o) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_compte_virtuel.html#a48bba2ddd0d5fd82c5b1fe4c47f9ba44">saveState</a>(<a class="code" href="class_originator.html">Originator</a> _o) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="class_memento.html">Memento</a>* <a class="code" href="class_compte_virtuel.html#a1e4e4dbd99507a52af20bee3a4998f38">getDernierMemento</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">const</span> list&lt;Memento*&gt;&amp; <a class="code" href="class_compte_virtuel.html#a3184e530d62dd4672e8c329564be1c6d">getMementos</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;private :</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="class_compte_virtuel.html">CompteVirtuel</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; _nom, <span class="keywordtype">int</span> _id) noexcept : <a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>(_nom,_id) {}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_compte_virtuel.html#a897774cb87ef11bff5c1f139c4234ad1">  110</a></span>&#160;    <a class="code" href="class_compte_virtuel.html#a897774cb87ef11bff5c1f139c4234ad1">~CompteVirtuel</a>() noexcept = default;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_compte_virtuel.html#ae36c0cf170d96c13cd4613472541bc2d">  117</a></span>&#160;    <a class="code" href="class_compte_virtuel.html">CompteVirtuel</a>(const <a class="code" href="class_compte_virtuel.html">CompteVirtuel</a>&amp; _c) = delete;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_compte_virtuel.html#ae1b4f282a4414802888661a563dbec16">  125</a></span>&#160;    <a class="code" href="class_compte_virtuel.html">CompteVirtuel</a>&amp; operator=(const <a class="code" href="class_compte_virtuel.html">CompteVirtuel</a>&amp; _c) = delete;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">//attributs</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"></span>    set&lt;<a class="code" href="class_compte_hierarchie.html">CompteHierarchie</a>*&gt; fils;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif // COMPTEVIRTUEL_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_visiteur_html"><div class="ttname"><a href="class_visiteur.html">Visiteur</a></div><div class="ttdoc">Classe mères des différents visiteurs. Les visiteurs permettent de parcourir la hiérarchie des compte...</div><div class="ttdef"><b>Definition:</b> Visiteur.h:21</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html_a63b71c2c3251e1adce0620aa9e1ab6dd"><div class="ttname"><a href="class_compte_virtuel.html#a63b71c2c3251e1adce0620aa9e1ab6dd">CompteVirtuel::supprimerCompte</a></div><div class="ttdeci">void supprimerCompte() override</div><div class="ttdoc">Redéfinition de supprimerCompte() de CompteHierarchie.</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.cpp:20</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html_af8de540421e981f1f0a27e9188e3072f"><div class="ttname"><a href="class_compte_virtuel.html#af8de540421e981f1f0a27e9188e3072f">CompteVirtuel::undo</a></div><div class="ttdeci">void undo(Originator *_o) override</div><div class="ttdoc">Méthode virtuelle undo redéfinie de CompteHierarchie. On ne peut pas utiliser cette méthode avec un c...</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.cpp:32</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html_a48bba2ddd0d5fd82c5b1fe4c47f9ba44"><div class="ttname"><a href="class_compte_virtuel.html#a48bba2ddd0d5fd82c5b1fe4c47f9ba44">CompteVirtuel::saveState</a></div><div class="ttdeci">void saveState(Originator _o) override</div><div class="ttdoc">Méthode virtuelle qui permettra d'ajouter un memento à la liste de memento d'un compte reel.</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.cpp:37</div></div>
+<div class="ttc" id="aclass_visiteur_free_html"><div class="ttname"><a href="class_visiteur_free.html">VisiteurFree</a></div><div class="ttdoc">VisiteurFree est un visiteur qui permet de libérer la mémoire dans des comptes.</div><div class="ttdef"><b>Definition:</b> VisiteurFree.h:22</div></div>
+<div class="ttc" id="aclass_hierarchie_builder_html"><div class="ttname"><a href="class_hierarchie_builder.html">HierarchieBuilder</a></div><div class="ttdoc">HierarchieBuilder gère la création de la hiérarchie des comptes.</div><div class="ttdef"><b>Definition:</b> HierarchieBuilder.h:22</div></div>
+<div class="ttc" id="aclass_originator_html"><div class="ttname"><a href="class_originator.html">Originator</a></div><div class="ttdoc">Originator permet de manipuler les mementos.</div><div class="ttdef"><b>Definition:</b> Originator.h:21</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html_a897774cb87ef11bff5c1f139c4234ad1"><div class="ttname"><a href="class_compte_virtuel.html#a897774cb87ef11bff5c1f139c4234ad1">CompteVirtuel::~CompteVirtuel</a></div><div class="ttdeci">~CompteVirtuel() noexcept=default</div><div class="ttdoc">Destructeur privé</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html_aea3021c42fa1b9cf34b0445f9a7d337d"><div class="ttname"><a href="class_compte_virtuel.html#aea3021c42fa1b9cf34b0445f9a7d337d">CompteVirtuel::ajouterFils</a></div><div class="ttdeci">void ajouterFils(CompteHierarchie *_c) noexcept override</div><div class="ttdoc">Redéfinition de ajouterFils(CompteHierarchie* _c) de CompteHierarchie. Cette méthode permet d'ajouter...</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.h:53</div></div>
+<div class="ttc" id="a_compte_hierarchie_8h_html_a1d1cfd8ffb84e947f82999c682b666a7"><div class="ttname"><a href="_compte_hierarchie_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">représente les deux types de Compte : Virtuel (c'est-à-dire un compte qui n'est destiné qu'à regroupe...</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:22</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html_a22d50a82b0c5f6fab56d215dd1199d8a"><div class="ttname"><a href="class_compte_virtuel.html#a22d50a82b0c5f6fab56d215dd1199d8a">CompteVirtuel::accepte</a></div><div class="ttdeci">void accepte(Visiteur &amp;_v) noexcept override</div><div class="ttdoc">Redéfinition de la méthode accepte(Visiteur&amp; _v) de CompteHierarchie.</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.cpp:15</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html_a3184e530d62dd4672e8c329564be1c6d"><div class="ttname"><a href="class_compte_virtuel.html#a3184e530d62dd4672e8c329564be1c6d">CompteVirtuel::getMementos</a></div><div class="ttdeci">const list&lt; Memento * &gt; &amp; getMementos() const override</div><div class="ttdoc">Génère une exception car ne peut être lancé que pour un compte réel.</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.cpp:49</div></div>
+<div class="ttc" id="aclass_compte_manager_html"><div class="ttname"><a href="class_compte_manager.html">CompteManager</a></div><div class="ttdoc">CompteManager gère l'ensemble des Comptes.</div><div class="ttdef"><b>Definition:</b> CompteManager.h:21</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html_ac65f246a9d2188d9ead93b4ea4a863b8"><div class="ttname"><a href="class_compte_virtuel.html#ac65f246a9d2188d9ead93b4ea4a863b8">CompteVirtuel::getFils</a></div><div class="ttdeci">const set&lt; CompteHierarchie * &gt; getFils() const override</div><div class="ttdoc">Methode qui permet d'obtenir les fils du compte.</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.h:46</div></div>
+<div class="ttc" id="aclass_memento_html"><div class="ttname"><a href="class_memento.html">Memento</a></div><div class="ttdoc">Le Memento permet de sauvegarder la date et le solde du dernier rapprochement.</div><div class="ttdef"><b>Definition:</b> Memento.h:21</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html_a9172b8f3bb9025e42055a372a1cc6f18"><div class="ttname"><a href="class_compte_virtuel.html#a9172b8f3bb9025e42055a372a1cc6f18">CompteVirtuel::supprimerFils</a></div><div class="ttdeci">void supprimerFils(CompteHierarchie *_c) noexcept override</div><div class="ttdoc">Methode qui sera redéfinie. Elle permettra de retirer un fils à un CompteVirtuel.</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.h:60</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html_a82cecbd02ac8f3e1670d83d9f654077d"><div class="ttname"><a href="class_compte_virtuel.html#a82cecbd02ac8f3e1670d83d9f654077d">CompteVirtuel::getType</a></div><div class="ttdeci">Type getType() const noexcept override</div><div class="ttdoc">Redéfinition de la méthode getType de CompteHierarchie afin qu'elle retourne le type d'un compte virt...</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.h:32</div></div>
+<div class="ttc" id="aclass_compte_hierarchie_html"><div class="ttname"><a href="class_compte_hierarchie.html">CompteHierarchie</a></div><div class="ttdoc">CompteHierarchie est la classe mère pour les éléments de la hiérarchie des comptes qui permet de mani...</div><div class="ttdef"><b>Definition:</b> CompteHierarchie.h:35</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html_a1e4e4dbd99507a52af20bee3a4998f38"><div class="ttname"><a href="class_compte_virtuel.html#a1e4e4dbd99507a52af20bee3a4998f38">CompteVirtuel::getDernierMemento</a></div><div class="ttdeci">Memento * getDernierMemento() override</div><div class="ttdoc">Genère une exception car ne peut être lancé que pour un compte reel.</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.cpp:42</div></div>
+<div class="ttc" id="aclass_compte_virtuel_html"><div class="ttname"><a href="class_compte_virtuel.html">CompteVirtuel</a></div><div class="ttdoc">CompteVirutel représente les Compte Virtuels (comptes destinés à regrouper des sous-compte sans enreg...</div><div class="ttdef"><b>Definition:</b> CompteVirtuel.h:21</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

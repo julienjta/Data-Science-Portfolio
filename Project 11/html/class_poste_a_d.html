@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app: Référence de la classe PosteAD</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="class_poste_a_d-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe PosteAD</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="class_poste_a_d.html" title="PosteAD est la classe mère des postes de compte : Actif et Depense. Elle a pour but de définir les mé...">PosteAD</a> est la classe mère des postes de compte : <a class="el" href="class_actif.html" title="Actif permet de représenter les propriétés des comptes de poste Actif.">Actif</a> et <a class="el" href="class_depense.html" title="Depense permet de représenter les propriétés des comptes de poste Depense.">Depense</a>. Elle a pour but de définir les méthodes créditer et débiter qui sont communes à ces deux classes.  
+ <a href="class_poste_a_d.html#details">Plus de détails...</a></p>
+
+<p><code>#include &quot;<a class="el" href="_poste_a_d_8h_source.html">PosteAD.h</a>&quot;</code></p>
+
+<p>Est dérivée de <a class="el" href="class_poste_compte.html">PosteCompte</a>.</p>
+
+<p>Dérivée par <a class="el" href="class_actif.html">Actif</a>, et <a class="el" href="class_depense.html">Depense</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a85948fb6d0950143c46a1ec91fdfa739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poste_a_d.html#a85948fb6d0950143c46a1ec91fdfa739">debiter</a> (double *_solde, double _montant) const noexcept override</td></tr>
+<tr class="memdesc:a85948fb6d0950143c46a1ec91fdfa739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redéfinition de la méthode debiter de <a class="el" href="class_poste_compte.html" title="PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...">PosteCompte</a>. Cette méthode permet de débiter de l'argent d'un compte actif ou de dépenses, c'est-à-dire qu'elle augmente le solde d'un de ces comptes.  <a href="class_poste_a_d.html#a85948fb6d0950143c46a1ec91fdfa739">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a85948fb6d0950143c46a1ec91fdfa739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afde4fa81e21013a1444051e3675cf9d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poste_a_d.html#afde4fa81e21013a1444051e3675cf9d3">crediter</a> (double *_solde, double _montant) const noexcept override</td></tr>
+<tr class="memdesc:afde4fa81e21013a1444051e3675cf9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redéfinition de la méthode crediter de <a class="el" href="class_poste_compte.html" title="PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...">PosteCompte</a>. Cette méthode permet de créditer de l'argent sur compte actif ou de dépenses, c'est-à-dire qu'elle diminue le solde d'un de ces comptes.  <a href="class_poste_a_d.html#afde4fa81e21013a1444051e3675cf9d3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afde4fa81e21013a1444051e3675cf9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_poste_compte"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_poste_compte')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_poste_compte.html">PosteCompte</a></td></tr>
+<tr class="memitem:a7784e0dfcf95372b262172ebf8a329aa inherit pub_methods_class_poste_compte"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poste_compte.html#a7784e0dfcf95372b262172ebf8a329aa">getLetter</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a7784e0dfcf95372b262172ebf8a329aa inherit pub_methods_class_poste_compte"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode virtuelle qui permettra de renvoyer la première lettre de le nom du poste d'un compte.  <a href="class_poste_compte.html#a7784e0dfcf95372b262172ebf8a329aa">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7784e0dfcf95372b262172ebf8a329aa inherit pub_methods_class_poste_compte"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb923cd9edb0766b6778149c1e9512c inherit pub_methods_class_poste_compte"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poste_compte.html#a5eb923cd9edb0766b6778149c1e9512c">getPoste</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a5eb923cd9edb0766b6778149c1e9512c inherit pub_methods_class_poste_compte"><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode qui permet de retourner le nom du poste d'un <a class="el" href="class_poste_compte.html" title="PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...">PosteCompte</a>.  <a href="class_poste_compte.html#a5eb923cd9edb0766b6778149c1e9512c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5eb923cd9edb0766b6778149c1e9512c inherit pub_methods_class_poste_compte"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="class_poste_a_d.html" title="PosteAD est la classe mère des postes de compte : Actif et Depense. Elle a pour but de définir les mé...">PosteAD</a> est la classe mère des postes de compte : <a class="el" href="class_actif.html" title="Actif permet de représenter les propriétés des comptes de poste Actif.">Actif</a> et <a class="el" href="class_depense.html" title="Depense permet de représenter les propriétés des comptes de poste Depense.">Depense</a>. Elle a pour but de définir les méthodes créditer et débiter qui sont communes à ces deux classes. </p>
+</div><h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="afde4fa81e21013a1444051e3675cf9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afde4fa81e21013a1444051e3675cf9d3">&#9670;&nbsp;</a></span>crediter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PosteAD::crediter </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>_solde</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>_montant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Redéfinition de la méthode crediter de <a class="el" href="class_poste_compte.html" title="PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...">PosteCompte</a>. Cette méthode permet de créditer de l'argent sur compte actif ou de dépenses, c'est-à-dire qu'elle diminue le solde d'un de ces comptes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_solde</td><td>: double*, pointeur sur le solde du compte que l'on veut créditer. </td></tr>
+    <tr><td class="paramname">_montant</td><td>: double, montant que l'on veut créditer sur compte. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_poste_compte.html">PosteCompte</a>.</p>
+
+</div>
+</div>
+<a id="a85948fb6d0950143c46a1ec91fdfa739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85948fb6d0950143c46a1ec91fdfa739">&#9670;&nbsp;</a></span>debiter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PosteAD::debiter </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>_solde</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>_montant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Redéfinition de la méthode debiter de <a class="el" href="class_poste_compte.html" title="PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...">PosteCompte</a>. Cette méthode permet de débiter de l'argent d'un compte actif ou de dépenses, c'est-à-dire qu'elle augmente le solde d'un de ces comptes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_solde</td><td>: double*, pointeur sur le solde du compte que l'on veut débiter. </td></tr>
+    <tr><td class="paramname">_montant</td><td>: double, montant que l'on veut débiter du compte. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="class_poste_compte.html">PosteCompte</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>lo21_projet/Compte/header/<a class="el" href="_poste_a_d_8h_source.html">PosteAD.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

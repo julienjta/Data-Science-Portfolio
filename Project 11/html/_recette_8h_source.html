@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/Recette.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Recette.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_recette_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RECETTE_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RECETTE_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../header/Depense.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_recette.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_recette.html">Recette</a>: <span class="keyword">public</span> <a class="code" href="class_poste_p_r.html">PostePR</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_recette.html#a32ac8b0a67f83bd92659af3418955e3e">   29</a></span>&#160;    <a class="code" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a> <a class="code" href="class_recette.html#a32ac8b0a67f83bd92659af3418955e3e">getPoste</a>() const noexcept<span class="keyword"> override </span>{<span class="keywordflow">return</span> RECETTE;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_recette.html#afaa35f4d7190df9cc8ccde76bca9b42a">   35</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_recette.html#afaa35f4d7190df9cc8ccde76bca9b42a">getLetter</a>() const noexcept<span class="keyword"> override </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;R&quot;</span>;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_recette.html#a4fc7c701dcaf038a4750cef30d5b98d9">   41</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_poste_compte.html">PosteCompte</a>&amp; <a class="code" href="class_recette.html#a4fc7c701dcaf038a4750cef30d5b98d9">getInstance</a>() noexcept {<span class="keywordflow">return</span> <a class="code" href="class_recette.html#ac144d4eaf93eda53f3a81b488243a3db">instance</a>;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//attribut</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span>    <span class="comment">//méthodes</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_recette.html#ac144d4eaf93eda53f3a81b488243a3db">   49</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_recette.html">Recette</a> <a class="code" href="class_recette.html#ac144d4eaf93eda53f3a81b488243a3db">instance</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_recette.html#aec93fafb80e31fe24447a8943be5e56e">   54</a></span>&#160;    <a class="code" href="class_recette.html#aec93fafb80e31fe24447a8943be5e56e">Recette</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_recette.html#a2756531d98e310458516b74060661cc5">   59</a></span>&#160;    <a class="code" href="class_recette.html#a2756531d98e310458516b74060661cc5">~Recette</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_recette.html#a3bd1f492616f28749ee909775ace5568">   65</a></span>&#160;    <a class="code" href="class_recette.html#a3bd1f492616f28749ee909775ace5568">Recette</a> (<span class="keyword">const</span> <a class="code" href="class_recette.html">Recette</a>&amp; _r) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_recette.html#a38dcf0f78aa944c7e5d53ded93ea77ea">   72</a></span>&#160;    <a class="code" href="class_recette.html">Recette</a>&amp; <a class="code" href="class_recette.html#a38dcf0f78aa944c7e5d53ded93ea77ea">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_recette.html">Recette</a>&amp; _r) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // RECETTE_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_poste_compte_html"><div class="ttname"><a href="class_poste_compte.html">PosteCompte</a></div><div class="ttdoc">PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:38</div></div>
+<div class="ttc" id="aclass_recette_html_a38dcf0f78aa944c7e5d53ded93ea77ea"><div class="ttname"><a href="class_recette.html#a38dcf0f78aa944c7e5d53ded93ea77ea">Recette::operator=</a></div><div class="ttdeci">Recette &amp; operator=(const Recette &amp;_r)=default</div><div class="ttdoc">Surcharge de l'opérateur d'affectation privé</div></div>
+<div class="ttc" id="aclass_recette_html_a2756531d98e310458516b74060661cc5"><div class="ttname"><a href="class_recette.html#a2756531d98e310458516b74060661cc5">Recette::~Recette</a></div><div class="ttdeci">~Recette()=default</div><div class="ttdoc">Destructeur privé</div></div>
+<div class="ttc" id="a_poste_compte_8h_html_ad3978d0aab216bc237be1dcd14aa0644"><div class="ttname"><a href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a></div><div class="ttdeci">Poste</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:21</div></div>
+<div class="ttc" id="aclass_recette_html_a32ac8b0a67f83bd92659af3418955e3e"><div class="ttname"><a href="class_recette.html#a32ac8b0a67f83bd92659af3418955e3e">Recette::getPoste</a></div><div class="ttdeci">Poste getPoste() const noexcept override</div><div class="ttdoc">Redéfinition de la méthode virtuelle getPoste de PosteCompte. Cette méthode retourne le nom du poste ...</div><div class="ttdef"><b>Definition:</b> Recette.h:29</div></div>
+<div class="ttc" id="aclass_recette_html_afaa35f4d7190df9cc8ccde76bca9b42a"><div class="ttname"><a href="class_recette.html#afaa35f4d7190df9cc8ccde76bca9b42a">Recette::getLetter</a></div><div class="ttdeci">string getLetter() const noexcept override</div><div class="ttdoc">Redéfinition de la méthode virtuelle getLetter de PosteCompte. Cette méthode renvoie la première lett...</div><div class="ttdef"><b>Definition:</b> Recette.h:35</div></div>
+<div class="ttc" id="aclass_recette_html_aec93fafb80e31fe24447a8943be5e56e"><div class="ttname"><a href="class_recette.html#aec93fafb80e31fe24447a8943be5e56e">Recette::Recette</a></div><div class="ttdeci">Recette()=default</div><div class="ttdoc">Constructeur privé</div></div>
+<div class="ttc" id="aclass_poste_p_r_html"><div class="ttname"><a href="class_poste_p_r.html">PostePR</a></div><div class="ttdoc">PostePR est la classe mère des postes de compte : Recette et Passif. Elle a pour but de définir les m...</div><div class="ttdef"><b>Definition:</b> PostePR.h:22</div></div>
+<div class="ttc" id="aclass_recette_html"><div class="ttname"><a href="class_recette.html">Recette</a></div><div class="ttdoc">Recette permet de représenter le comportement des comptes de poste Recette.</div><div class="ttdef"><b>Definition:</b> Recette.h:22</div></div>
+<div class="ttc" id="aclass_recette_html_a3bd1f492616f28749ee909775ace5568"><div class="ttname"><a href="class_recette.html#a3bd1f492616f28749ee909775ace5568">Recette::Recette</a></div><div class="ttdeci">Recette(const Recette &amp;_r)=default</div><div class="ttdoc">Constructeur par recopie privé</div></div>
+<div class="ttc" id="aclass_recette_html_ac144d4eaf93eda53f3a81b488243a3db"><div class="ttname"><a href="class_recette.html#ac144d4eaf93eda53f3a81b488243a3db">Recette::instance</a></div><div class="ttdeci">static Recette instance</div><div class="ttdoc">instance Recette</div><div class="ttdef"><b>Definition:</b> Recette.h:49</div></div>
+<div class="ttc" id="aclass_recette_html_a4fc7c701dcaf038a4750cef30d5b98d9"><div class="ttname"><a href="class_recette.html#a4fc7c701dcaf038a4750cef30d5b98d9">Recette::getInstance</a></div><div class="ttdeci">static const PosteCompte &amp; getInstance() noexcept</div><div class="ttdoc">Méthode qui permet d'obtenir l'instance Recette.</div><div class="ttdef"><b>Definition:</b> Recette.h:41</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

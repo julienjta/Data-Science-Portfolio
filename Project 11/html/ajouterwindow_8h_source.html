@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/test_interface/ajouterwindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_1974810d7ac75a80196ba3776e74e58c.html">test_interface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ajouterwindow.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ajouterwindow_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AJOUTERWINDOW_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define AJOUTERWINDOW_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QtWidgets&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../Compte/header/CompteManager.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>fenetreAjouterCompte;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classajouterwindow.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classajouterwindow.html">ajouterwindow</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classajouterwindow.html#a16eea24661927e1815e0d3dc6a8c6a67">ajouterwindow</a>(std::list&lt;int&gt; <span class="keyword">const</span> _liste_id,QTreeWidgetItem * _compte_selectionne, <a class="code" href="class_main_window.html">MainWindow</a> *parent);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classajouterwindow.html#a17aa9c7f573d03cea9c300416204b5b4">~ajouterwindow</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;signals:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classajouterwindow.html#a2b26315e4f30596e0c13e734ca881455">ajout</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classajouterwindow.html#a9a61884be7b3c2e77385cf1b61dcd1ee">ajouterCompte</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classajouterwindow.html#a64e3ed1a36785faa9004ada322d41c54">capitauxpropre</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classajouterwindow.html#a5bef8bf2f883521390537082b81d1e4a">nvcapitauxpropre</a>(<span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classajouterwindow.html#a109379e8bac6eb3e4533640eb328e798">   87</a></span>&#160;    <a class="code" href="class_compte_manager.html">CompteManager</a>&amp; <a class="code" href="classajouterwindow.html#a109379e8bac6eb3e4533640eb328e798">cm</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classajouterwindow.html#afa084223df65cb31e4eb256e654c6177">   93</a></span>&#160;    std::list&lt;int&gt; <span class="keyword">const</span> <a class="code" href="classajouterwindow.html#afa084223df65cb31e4eb256e654c6177">liste_id</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classajouterwindow.html#a6da760d12276cfcb74b30c4303accf4f">   99</a></span>&#160;    QComboBox * <a class="code" href="classajouterwindow.html#a6da760d12276cfcb74b30c4303accf4f">selecteurs</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classajouterwindow.html#a3c0ee397309cd23d424e28a9938abf3a">  105</a></span>&#160;    <a class="code" href="class_ui_1_1fenetre_ajouter_compte.html">Ui::fenetreAjouterCompte</a> *<a class="code" href="classajouterwindow.html#a3c0ee397309cd23d424e28a9938abf3a">design</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif // AJOUTERWINDOW_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassajouterwindow_html_a16eea24661927e1815e0d3dc6a8c6a67"><div class="ttname"><a href="classajouterwindow.html#a16eea24661927e1815e0d3dc6a8c6a67">ajouterwindow::ajouterwindow</a></div><div class="ttdeci">ajouterwindow(std::list&lt; int &gt; const _liste_id, QTreeWidgetItem *_compte_selectionne, MainWindow *parent)</div><div class="ttdoc">Constructeur de la fenêtre graphique permettant d'ajouter des comptes.</div><div class="ttdef"><b>Definition:</b> ajouterwindow.cpp:15</div></div>
+<div class="ttc" id="aclassajouterwindow_html_a109379e8bac6eb3e4533640eb328e798"><div class="ttname"><a href="classajouterwindow.html#a109379e8bac6eb3e4533640eb328e798">ajouterwindow::cm</a></div><div class="ttdeci">CompteManager &amp; cm</div><div class="ttdoc">cm représente le CompteManager.</div><div class="ttdef"><b>Definition:</b> ajouterwindow.h:87</div></div>
+<div class="ttc" id="aclassajouterwindow_html_a5bef8bf2f883521390537082b81d1e4a"><div class="ttname"><a href="classajouterwindow.html#a5bef8bf2f883521390537082b81d1e4a">ajouterwindow::nvcapitauxpropre</a></div><div class="ttdeci">void nvcapitauxpropre(const QString &amp;text)</div><div class="ttdoc">Ce slot est appelé lorsque l'utilisateur modifie la valeur courante des listes déroulantes permettant...</div><div class="ttdef"><b>Definition:</b> ajouterwindow.cpp:134</div></div>
+<div class="ttc" id="aclassajouterwindow_html_a6da760d12276cfcb74b30c4303accf4f"><div class="ttname"><a href="classajouterwindow.html#a6da760d12276cfcb74b30c4303accf4f">ajouterwindow::selecteurs</a></div><div class="ttdeci">QComboBox * selecteurs</div><div class="ttdoc">liste déroulante permettant de choisir le père du nouveau compte.</div><div class="ttdef"><b>Definition:</b> ajouterwindow.h:99</div></div>
+<div class="ttc" id="aclassajouterwindow_html_a2b26315e4f30596e0c13e734ca881455"><div class="ttname"><a href="classajouterwindow.html#a2b26315e4f30596e0c13e734ca881455">ajouterwindow::ajout</a></div><div class="ttdeci">void ajout()</div><div class="ttdoc">ajout est un signal qui est émis lorsqu'un compte a été ajouté. Il sera capté par la classe MainWindo...</div><div class="ttdef"><b>Definition:</b> moc_ajouterwindow.cpp:146</div></div>
+<div class="ttc" id="aclass_compte_manager_html"><div class="ttname"><a href="class_compte_manager.html">CompteManager</a></div><div class="ttdoc">CompteManager gère l'ensemble des Comptes.</div><div class="ttdef"><b>Definition:</b> CompteManager.h:21</div></div>
+<div class="ttc" id="aclassajouterwindow_html_a64e3ed1a36785faa9004ada322d41c54"><div class="ttname"><a href="classajouterwindow.html#a64e3ed1a36785faa9004ada322d41c54">ajouterwindow::capitauxpropre</a></div><div class="ttdeci">void capitauxpropre()</div><div class="ttdoc">Ce slot est appelé lorsque l'utilisateur modifie la valeur courante des listes déroulantes permettant...</div><div class="ttdef"><b>Definition:</b> ajouterwindow.cpp:104</div></div>
+<div class="ttc" id="aclassajouterwindow_html_a17aa9c7f573d03cea9c300416204b5b4"><div class="ttname"><a href="classajouterwindow.html#a17aa9c7f573d03cea9c300416204b5b4">ajouterwindow::~ajouterwindow</a></div><div class="ttdeci">~ajouterwindow()</div><div class="ttdoc">Destructeur de la fenêtre graphique permettant d'ajouter des comptes.</div><div class="ttdef"><b>Definition:</b> ajouterwindow.cpp:151</div></div>
+<div class="ttc" id="aclass_ui_1_1fenetre_ajouter_compte_html"><div class="ttname"><a href="class_ui_1_1fenetre_ajouter_compte.html">Ui::fenetreAjouterCompte</a></div><div class="ttdoc">Classe qui représente la fenêtre graphique réalisée sur QTDesginer pour ajouter des comptes.</div><div class="ttdef"><b>Definition:</b> ui_ajouterwindow.h:228</div></div>
+<div class="ttc" id="aclassajouterwindow_html"><div class="ttname"><a href="classajouterwindow.html">ajouterwindow</a></div><div class="ttdoc">ajouterwindow permet de gérer la fenêtre graphique utilisée pour ajouter des comptes.</div><div class="ttdef"><b>Definition:</b> ajouterwindow.h:38</div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdoc">Définit le comportement de la fenêtre principale.</div><div class="ttdef"><b>Definition:</b> mainwindow.h:87</div></div>
+<div class="ttc" id="aclassajouterwindow_html_a9a61884be7b3c2e77385cf1b61dcd1ee"><div class="ttname"><a href="classajouterwindow.html#a9a61884be7b3c2e77385cf1b61dcd1ee">ajouterwindow::ajouterCompte</a></div><div class="ttdeci">void ajouterCompte()</div><div class="ttdoc">Ce slot est appelé lorsque l'utilisateur clique sur le bouton &quot;OK&quot;. Il permet de vérifier les informa...</div><div class="ttdef"><b>Definition:</b> ajouterwindow.cpp:156</div></div>
+<div class="ttc" id="aclassajouterwindow_html_afa084223df65cb31e4eb256e654c6177"><div class="ttname"><a href="classajouterwindow.html#afa084223df65cb31e4eb256e654c6177">ajouterwindow::liste_id</a></div><div class="ttdeci">std::list&lt; int &gt; const liste_id</div><div class="ttdoc">liste_id représente la liste des ids des comptes de la hierarchie.</div><div class="ttdef"><b>Definition:</b> ajouterwindow.h:93</div></div>
+<div class="ttc" id="aclassajouterwindow_html_a3c0ee397309cd23d424e28a9938abf3a"><div class="ttname"><a href="classajouterwindow.html#a3c0ee397309cd23d424e28a9938abf3a">ajouterwindow::design</a></div><div class="ttdeci">Ui::fenetreAjouterCompte * design</div><div class="ttdoc">design représente la fenêtre graphique réalisée sur QTDesginer pour ajouter des compte</div><div class="ttdef"><b>Definition:</b> ajouterwindow.h:105</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

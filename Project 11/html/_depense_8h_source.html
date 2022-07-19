@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/Depense.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Depense.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_depense_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DEPENSE_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DEPENSE_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../header/Actif.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_depense.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_depense.html">Depense</a>: <span class="keyword">public</span> <a class="code" href="class_poste_a_d.html">PosteAD</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_depense.html#a7113393c3b4177d6ad9adb1644f1a578">   29</a></span>&#160;    <a class="code" href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a> <a class="code" href="class_depense.html#a7113393c3b4177d6ad9adb1644f1a578">getPoste</a>() const noexcept<span class="keyword"> override </span>{<span class="keywordflow">return</span> DEPENSE;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_depense.html#aec5c7bb3e9fe329b9bdd99b4383c25da">   35</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_depense.html#aec5c7bb3e9fe329b9bdd99b4383c25da">getLetter</a>() const noexcept<span class="keyword"> override </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;D&quot;</span>;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_depense.html#a884086754538af5c44a16df5d9c8a458">   41</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_poste_compte.html">PosteCompte</a>&amp; <a class="code" href="class_depense.html#a884086754538af5c44a16df5d9c8a458">getInstance</a>() noexcept {<span class="keywordflow">return</span> <a class="code" href="class_depense.html#a05d0484deaf8f8b79c568a486e874fce">instance</a>;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//attribut</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_depense.html#a05d0484deaf8f8b79c568a486e874fce">   48</a></span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <a class="code" href="class_depense.html">Depense</a> <a class="code" href="class_depense.html#a05d0484deaf8f8b79c568a486e874fce">instance</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//méthodes</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_depense.html#a1ed6f2a11f9909a96300d239ef8ebfad">   55</a></span>&#160;<span class="comment"></span>    <a class="code" href="class_depense.html#a1ed6f2a11f9909a96300d239ef8ebfad">Depense</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_depense.html#a8c06d60e5ed4ac6a4632a03d32a9bb7b">   60</a></span>&#160;    <a class="code" href="class_depense.html#a8c06d60e5ed4ac6a4632a03d32a9bb7b">~Depense</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_depense.html#ad581948833165d9c9316f5cc6362b4c9">   66</a></span>&#160;    <a class="code" href="class_depense.html#ad581948833165d9c9316f5cc6362b4c9">Depense</a>(<span class="keyword">const</span> <a class="code" href="class_depense.html">Depense</a>&amp; _d) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_depense.html#af8545014c4f57603fa82ed30ffe9437c">   73</a></span>&#160;    <a class="code" href="class_depense.html">Depense</a>&amp; <a class="code" href="class_depense.html#af8545014c4f57603fa82ed30ffe9437c">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_depense.html">Depense</a>&amp; _d) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // DEPENSE_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_poste_compte_html"><div class="ttname"><a href="class_poste_compte.html">PosteCompte</a></div><div class="ttdoc">PosteCompte est la classe mère des différents postes de compte : Actif et Depense,...</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:38</div></div>
+<div class="ttc" id="a_poste_compte_8h_html_ad3978d0aab216bc237be1dcd14aa0644"><div class="ttname"><a href="_poste_compte_8h.html#ad3978d0aab216bc237be1dcd14aa0644">Poste</a></div><div class="ttdeci">Poste</div><div class="ttdef"><b>Definition:</b> PosteCompte.h:21</div></div>
+<div class="ttc" id="aclass_depense_html_a884086754538af5c44a16df5d9c8a458"><div class="ttname"><a href="class_depense.html#a884086754538af5c44a16df5d9c8a458">Depense::getInstance</a></div><div class="ttdeci">static const PosteCompte &amp; getInstance() noexcept</div><div class="ttdoc">Méthode qui permet d'obtenir l'instance Depense.</div><div class="ttdef"><b>Definition:</b> Depense.h:41</div></div>
+<div class="ttc" id="aclass_depense_html_a8c06d60e5ed4ac6a4632a03d32a9bb7b"><div class="ttname"><a href="class_depense.html#a8c06d60e5ed4ac6a4632a03d32a9bb7b">Depense::~Depense</a></div><div class="ttdeci">~Depense()=default</div><div class="ttdoc">Destructeur privé</div></div>
+<div class="ttc" id="aclass_depense_html"><div class="ttname"><a href="class_depense.html">Depense</a></div><div class="ttdoc">Depense permet de représenter les propriétés des comptes de poste Depense.</div><div class="ttdef"><b>Definition:</b> Depense.h:22</div></div>
+<div class="ttc" id="aclass_depense_html_ad581948833165d9c9316f5cc6362b4c9"><div class="ttname"><a href="class_depense.html#ad581948833165d9c9316f5cc6362b4c9">Depense::Depense</a></div><div class="ttdeci">Depense(const Depense &amp;_d)=default</div><div class="ttdoc">Constructeur par recopie privé.</div></div>
+<div class="ttc" id="aclass_depense_html_aec5c7bb3e9fe329b9bdd99b4383c25da"><div class="ttname"><a href="class_depense.html#aec5c7bb3e9fe329b9bdd99b4383c25da">Depense::getLetter</a></div><div class="ttdeci">string getLetter() const noexcept override</div><div class="ttdoc">Redéfinition de la méthode virtuelle getLetter de PosteCompte. Cette méthode renvoie la première lett...</div><div class="ttdef"><b>Definition:</b> Depense.h:35</div></div>
+<div class="ttc" id="aclass_depense_html_a1ed6f2a11f9909a96300d239ef8ebfad"><div class="ttname"><a href="class_depense.html#a1ed6f2a11f9909a96300d239ef8ebfad">Depense::Depense</a></div><div class="ttdeci">Depense()=default</div><div class="ttdoc">Constructeur privé</div></div>
+<div class="ttc" id="aclass_depense_html_a05d0484deaf8f8b79c568a486e874fce"><div class="ttname"><a href="class_depense.html#a05d0484deaf8f8b79c568a486e874fce">Depense::instance</a></div><div class="ttdeci">static Depense instance</div><div class="ttdoc">instance Depense</div><div class="ttdef"><b>Definition:</b> Depense.h:48</div></div>
+<div class="ttc" id="aclass_poste_a_d_html"><div class="ttname"><a href="class_poste_a_d.html">PosteAD</a></div><div class="ttdoc">PosteAD est la classe mère des postes de compte : Actif et Depense. Elle a pour but de définir les mé...</div><div class="ttdef"><b>Definition:</b> PosteAD.h:23</div></div>
+<div class="ttc" id="aclass_depense_html_af8545014c4f57603fa82ed30ffe9437c"><div class="ttname"><a href="class_depense.html#af8545014c4f57603fa82ed30ffe9437c">Depense::operator=</a></div><div class="ttdeci">Depense &amp; operator=(const Depense &amp;_d)=default</div><div class="ttdoc">Surcharge de l'opérateur d'affectation privé.</div></div>
+<div class="ttc" id="aclass_depense_html_a7113393c3b4177d6ad9adb1644f1a578"><div class="ttname"><a href="class_depense.html#a7113393c3b4177d6ad9adb1644f1a578">Depense::getPoste</a></div><div class="ttdeci">Poste getPoste() const noexcept override</div><div class="ttdoc">Redéfinition de la méthode virtuelle getPoste de PosteCompte. Cette méthode retourne le nom du poste ...</div><div class="ttdef"><b>Definition:</b> Depense.h:29</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

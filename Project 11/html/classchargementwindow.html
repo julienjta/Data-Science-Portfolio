@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app: Référence de la classe chargementwindow</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">Signaux</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-slots">Connecteurs privés</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="classchargementwindow-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe chargementwindow</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>chargementwindow permet de gérer la fenêtre graphique utilisée pour charger un fichier à l'ouverture de l'application.  
+ <a href="classchargementwindow.html#details">Plus de détails...</a></p>
+
+<p><code>#include &quot;<a class="el" href="chargementwindow_8h_source.html">chargementwindow.h</a>&quot;</code></p>
+
+<p>Est dérivée de QDialog.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:a77d5b699bee54e49df9335eb9cd32d91"><td class="memItemLeft" align="right" valign="top"><a id="a77d5b699bee54e49df9335eb9cd32d91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchargementwindow.html#a77d5b699bee54e49df9335eb9cd32d91">initialiser</a> ()</td></tr>
+<tr class="memdesc:a77d5b699bee54e49df9335eb9cd32d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ce signal est émis lorsque l'utilisateur clique sur le bouton "Passer". Il est capté par mainwindow permet d'initialiser l'application : le compte racine est crée, le QTree et le tableau des transactions sont affichés. <br /></td></tr>
+<tr class="separator:a77d5b699bee54e49df9335eb9cd32d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1570972e63abdb923d5c20c2313588"><td class="memItemLeft" align="right" valign="top"><a id="abd1570972e63abdb923d5c20c2313588"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchargementwindow.html#abd1570972e63abdb923d5c20c2313588">chargerFichier</a> (QString)</td></tr>
+<tr class="memdesc:abd1570972e63abdb923d5c20c2313588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ce signal est émis lorsque l'utilisateur clique sur le bouton "Charger" et le chemin du fichier a charger est renseigné. Il est capté par mainwindow et permet de charger le fichier dont le chemin est renseigné et d'initialiser la hiérarchie des comptes et les transactions avec. <br /></td></tr>
+<tr class="separator:abd1570972e63abdb923d5c20c2313588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:af26e102068ddba33c0cad4fccd44fab9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchargementwindow.html#af26e102068ddba33c0cad4fccd44fab9">chargementwindow</a> (<a class="el" href="class_main_window.html">MainWindow</a> *parent)</td></tr>
+<tr class="memdesc:af26e102068ddba33c0cad4fccd44fab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la fenêtre graphique permettant de charger un fichier à l'ouverture de l'application.  <a href="classchargementwindow.html#af26e102068ddba33c0cad4fccd44fab9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af26e102068ddba33c0cad4fccd44fab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Connecteurs privés</h2></td></tr>
+<tr class="memitem:a2823c7a3947729ed230d68d558636653"><td class="memItemLeft" align="right" valign="top"><a id="a2823c7a3947729ed230d68d558636653"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchargementwindow.html#a2823c7a3947729ed230d68d558636653">ouvrirFileDialog</a> ()</td></tr>
+<tr class="memdesc:a2823c7a3947729ed230d68d558636653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ce slot est appelé lorsque l'utilisateur clique sur le bouton "Repertoire". Il permet d'ouvrir un QFileDialog afin que l'utilisateur puisse choisir le fichier qu'il souhaire chargé. <br /></td></tr>
+<tr class="separator:a2823c7a3947729ed230d68d558636653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44f499c2aed1a1e0535b821e8726dea"><td class="memItemLeft" align="right" valign="top"><a id="ab44f499c2aed1a1e0535b821e8726dea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchargementwindow.html#ab44f499c2aed1a1e0535b821e8726dea">verifierChamps</a> ()</td></tr>
+<tr class="memdesc:ab44f499c2aed1a1e0535b821e8726dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ce slot est appelé lorsque l'utilisateur clique sur le bouton "Charger". Si l'utilisateur a renseigné le chemin du fichier un chargé il emet le signal <a class="el" href="classchargementwindow.html#abd1570972e63abdb923d5c20c2313588" title="Ce signal est émis lorsque l&#39;utilisateur clique sur le bouton &quot;Charger&quot; et le chemin du fichier a cha...">chargerFichier(QString)</a> afin d'initiliser l'application grâce au chargement du fichier dont le chemin est renseigné. <br /></td></tr>
+<tr class="separator:ab44f499c2aed1a1e0535b821e8726dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4a0d7e7728cfc3be4502873c9d8280"><td class="memItemLeft" align="right" valign="top"><a id="a1b4a0d7e7728cfc3be4502873c9d8280"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchargementwindow.html#a1b4a0d7e7728cfc3be4502873c9d8280">passer</a> ()</td></tr>
+<tr class="memdesc:a1b4a0d7e7728cfc3be4502873c9d8280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ce slot est appelé lorsque l'utilisateur clique sur le bouton "Charger". Il emet le signal <a class="el" href="classchargementwindow.html#a77d5b699bee54e49df9335eb9cd32d91" title="Ce signal est émis lorsque l&#39;utilisateur clique sur le bouton &quot;Passer&quot;. Il est capté par mainwindow p...">initialiser()</a> afin d'initiliser l'application avec la création du compte racine. <br /></td></tr>
+<tr class="separator:a1b4a0d7e7728cfc3be4502873c9d8280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:af07248b2612b32c0daf885bd0f33470d"><td class="memItemLeft" align="right" valign="top"><a id="af07248b2612b32c0daf885bd0f33470d"></a>
+<a class="el" href="class_ui_1_1fenetre_chargement.html">Ui::fenetreChargement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchargementwindow.html#af07248b2612b32c0daf885bd0f33470d">design</a></td></tr>
+<tr class="memdesc:af07248b2612b32c0daf885bd0f33470d"><td class="mdescLeft">&#160;</td><td class="mdescRight">design représente la fenêtre graphique réalisée sur QTDesigner pour charger un fichier à l'ouverture de l'application. <br /></td></tr>
+<tr class="separator:af07248b2612b32c0daf885bd0f33470d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>chargementwindow permet de gérer la fenêtre graphique utilisée pour charger un fichier à l'ouverture de l'application. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="af26e102068ddba33c0cad4fccd44fab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26e102068ddba33c0cad4fccd44fab9">&#9670;&nbsp;</a></span>chargementwindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">chargementwindow::chargementwindow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_main_window.html">MainWindow</a> *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructeur de la fenêtre graphique permettant de charger un fichier à l'ouverture de l'application. </p>
+<p>Destructeur de la fenêtre graphique permettant de charger un fichier à l'ouverture de l'application.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>: MainWindow*, fenêtre parent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>lo21_projet/test_interface/<a class="el" href="chargementwindow_8h_source.html">chargementwindow.h</a></li>
+<li>lo21_projet/build-test_interface-Desktop_Qt_5_14_2_MinGW_32_bit-Debug/debug/moc_chargementwindow.cpp</li>
+<li>lo21_projet/test_interface/<a class="el" href="chargementwindow_8cpp.html">chargementwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/test_interface/modifiertransaction.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_1974810d7ac75a80196ba3776e74e58c.html">test_interface</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">modifiertransaction.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="modifiertransaction_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MODIFIERTRANSACTION_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MODIFIERTRANSACTION_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QtWidgets&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../Compte/header/CompteManager.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span><a class="code" href="classmodifiertransaction.html">modifiertransaction</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmodifiertransaction.html">modifiertransaction</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classmodifiertransaction.html">modifiertransaction</a>(QString <span class="keyword">const</span> _reference, QStringList <span class="keyword">const</span> _comptes, std::list&lt;int&gt; <span class="keyword">const</span> _liste_id, <a class="code" href="class_main_window.html">MainWindow</a> *parent);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classmodifiertransaction.html#a31f0c0785f818cfada869cdaaa38769d">~modifiertransaction</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;signals:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmodifiertransaction.html#aafefcbe86f1203b692e3868e141248d0">modifiant</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmodifiertransaction.html#aee0916db9b71108573e4ad85af9b5155">ajouterOperation</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> suppressionDernier();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmodifiertransaction.html#a23a42b1748423d33f10f8dcc46b808ec">modifierTransaction</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html#abaa181549508e3991b17b39fe1e6bf0e">   86</a></span>&#160;    <a class="code" href="class_ui_1_1modifiertransaction.html">Ui::modifiertransaction</a> *<a class="code" href="classmodifiertransaction.html#abaa181549508e3991b17b39fe1e6bf0e">design</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html#a12664d65081cb593471ddbe556ce5f58">   92</a></span>&#160;    <a class="code" href="class_compte_manager.html">CompteManager</a>&amp; <a class="code" href="classmodifiertransaction.html#a12664d65081cb593471ddbe556ce5f58">cm</a> = <a class="code" href="class_compte_manager.html#a067cd245cefbaacc43b4baf88e025bdb">CompteManager::getInstance</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html#a922e31e2e60b166c0e64227b4bc4888a">   98</a></span>&#160;    <a class="code" href="class_transaction_manager.html">TransactionManager</a>&amp; <a class="code" href="classmodifiertransaction.html#a922e31e2e60b166c0e64227b4bc4888a">tm</a> = <a class="code" href="class_transaction_manager.html#aa771919ae89cb769e14763f9c0337461">TransactionManager::getInstance</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html#a005daa3b2b402a320ae9791a29f77650">  104</a></span>&#160;    QStringList <span class="keyword">const</span> <a class="code" href="classmodifiertransaction.html#a005daa3b2b402a320ae9791a29f77650">comptes</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html#a4783bffaa8bd885974d6c008a942fdbe">  110</a></span>&#160;    std::list&lt;int&gt; <span class="keyword">const</span> <a class="code" href="classmodifiertransaction.html#a4783bffaa8bd885974d6c008a942fdbe">liste_id</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html#af4d351c2e07e5eade5a5885a9b352b7f">  116</a></span>&#160;    QList&lt;QComboBox*&gt; <a class="code" href="classmodifiertransaction.html#af4d351c2e07e5eade5a5885a9b352b7f">selecteurs</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html#a7873262eef85dfd47163ea5d0f4a9b38">  122</a></span>&#160;    QList&lt;QDoubleSpinBox*&gt; <a class="code" href="classmodifiertransaction.html#a7873262eef85dfd47163ea5d0f4a9b38">credits</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html#a6050ed95cd7749863d4249a900bb05e2">  128</a></span>&#160;    QList&lt;QDoubleSpinBox*&gt; <a class="code" href="classmodifiertransaction.html#a6050ed95cd7749863d4249a900bb05e2">debits</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html#aa2786d785c647dc78f999ac4f72c06e0">  134</a></span>&#160;    QList&lt;QPushButton*&gt; <a class="code" href="classmodifiertransaction.html#aa2786d785c647dc78f999ac4f72c06e0">supprimers</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html#a41ed21f7dd1c2e7bbcba6fe73bb04380">  140</a></span>&#160;    QString <a class="code" href="classmodifiertransaction.html#a41ed21f7dd1c2e7bbcba6fe73bb04380">reference</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classmodifiertransaction.html#a50b244cded0ba6348a0a0f381e5877c1">  145</a></span>&#160;    QString <a class="code" href="classmodifiertransaction.html#a50b244cded0ba6348a0a0f381e5877c1">devise</a> = QString(<span class="stringliteral">&quot;€&quot;</span>);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;};</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif // MODIFIERTRANSACTION_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassmodifiertransaction_html_aa2786d785c647dc78f999ac4f72c06e0"><div class="ttname"><a href="classmodifiertransaction.html#aa2786d785c647dc78f999ac4f72c06e0">modifiertransaction::supprimers</a></div><div class="ttdeci">QList&lt; QPushButton * &gt; supprimers</div><div class="ttdoc">supprimers est une liste de QPushButton*. Chaque QPushButton* correspond au boutton supprimer à la fi...</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:134</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_abaa181549508e3991b17b39fe1e6bf0e"><div class="ttname"><a href="classmodifiertransaction.html#abaa181549508e3991b17b39fe1e6bf0e">modifiertransaction::design</a></div><div class="ttdeci">Ui::modifiertransaction * design</div><div class="ttdoc">design représente la fenêtre graphique réalisée sur QTDesigner pour modifier une transaction.</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:86</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html"><div class="ttname"><a href="classmodifiertransaction.html">modifiertransaction</a></div><div class="ttdoc">modifiertransaction permet de gérer la fenêtre graphique utilisée pour modifier une transaction.</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:37</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_a12664d65081cb593471ddbe556ce5f58"><div class="ttname"><a href="classmodifiertransaction.html#a12664d65081cb593471ddbe556ce5f58">modifiertransaction::cm</a></div><div class="ttdeci">CompteManager &amp; cm</div><div class="ttdoc">cm représente le CompteManager.</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:92</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_a005daa3b2b402a320ae9791a29f77650"><div class="ttname"><a href="classmodifiertransaction.html#a005daa3b2b402a320ae9791a29f77650">modifiertransaction::comptes</a></div><div class="ttdeci">QStringList const comptes</div><div class="ttdoc">compte représente la liste des comptes réels de la hierarchie.</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:104</div></div>
+<div class="ttc" id="aclass_transaction_manager_html"><div class="ttname"><a href="class_transaction_manager.html">TransactionManager</a></div><div class="ttdoc">Le transaction managager permet de gérer les transactions. Elle est basée sur les pattern Manager et ...</div><div class="ttdef"><b>Definition:</b> transactionmanager.h:23</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_a31f0c0785f818cfada869cdaaa38769d"><div class="ttname"><a href="classmodifiertransaction.html#a31f0c0785f818cfada869cdaaa38769d">modifiertransaction::~modifiertransaction</a></div><div class="ttdeci">~modifiertransaction()</div><div class="ttdoc">Destructeur de la fenêtre graphique permettant de modifier une transaction.</div><div class="ttdef"><b>Definition:</b> modifiertransaction.cpp:227</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_a922e31e2e60b166c0e64227b4bc4888a"><div class="ttname"><a href="classmodifiertransaction.html#a922e31e2e60b166c0e64227b4bc4888a">modifiertransaction::tm</a></div><div class="ttdeci">TransactionManager &amp; tm</div><div class="ttdoc">tm représente le TransactionManager.</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:98</div></div>
+<div class="ttc" id="aclass_ui_1_1modifiertransaction_html"><div class="ttname"><a href="class_ui_1_1modifiertransaction.html">Ui::modifiertransaction</a></div><div class="ttdoc">Classe qui représente la fenêtre graphique réalisée sur QTDesginer pour modifier une transaction.</div><div class="ttdef"><b>Definition:</b> ui_modifiertransaction.h:196</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_a50b244cded0ba6348a0a0f381e5877c1"><div class="ttname"><a href="classmodifiertransaction.html#a50b244cded0ba6348a0a0f381e5877c1">modifiertransaction::devise</a></div><div class="ttdeci">QString devise</div><div class="ttdoc">devise représente la devise (€,$,...).</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:145</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_a6050ed95cd7749863d4249a900bb05e2"><div class="ttname"><a href="classmodifiertransaction.html#a6050ed95cd7749863d4249a900bb05e2">modifiertransaction::debits</a></div><div class="ttdeci">QList&lt; QDoubleSpinBox * &gt; debits</div><div class="ttdoc">debits est une liste de QDoubleSpinBox*. Chaque QDoubleSpinBox correspond au débit d'une opération....</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:128</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_a23a42b1748423d33f10f8dcc46b808ec"><div class="ttname"><a href="classmodifiertransaction.html#a23a42b1748423d33f10f8dcc46b808ec">modifiertransaction::modifierTransaction</a></div><div class="ttdeci">void modifierTransaction()</div><div class="ttdoc">Ce slot est appelé lorsque l'utilisateur clique sur le bouton &quot;OK&quot;. Il permet de vérifier les informa...</div><div class="ttdef"><b>Definition:</b> modifiertransaction.cpp:108</div></div>
+<div class="ttc" id="aclass_compte_manager_html_a067cd245cefbaacc43b4baf88e025bdb"><div class="ttname"><a href="class_compte_manager.html#a067cd245cefbaacc43b4baf88e025bdb">CompteManager::getInstance</a></div><div class="ttdeci">static CompteManager &amp; getInstance() noexcept</div><div class="ttdoc">Méthode qui permet d'obtenir l'instance CompteManager.</div><div class="ttdef"><b>Definition:</b> CompteManager.h:28</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_a4783bffaa8bd885974d6c008a942fdbe"><div class="ttname"><a href="classmodifiertransaction.html#a4783bffaa8bd885974d6c008a942fdbe">modifiertransaction::liste_id</a></div><div class="ttdeci">std::list&lt; int &gt; const liste_id</div><div class="ttdoc">liste_id représente la liste des ids des comptes réels de la hierarchie correspondant aux compte : co...</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:110</div></div>
+<div class="ttc" id="aclass_compte_manager_html"><div class="ttname"><a href="class_compte_manager.html">CompteManager</a></div><div class="ttdoc">CompteManager gère l'ensemble des Comptes.</div><div class="ttdef"><b>Definition:</b> CompteManager.h:21</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_af4d351c2e07e5eade5a5885a9b352b7f"><div class="ttname"><a href="classmodifiertransaction.html#af4d351c2e07e5eade5a5885a9b352b7f">modifiertransaction::selecteurs</a></div><div class="ttdeci">QList&lt; QComboBox * &gt; selecteurs</div><div class="ttdoc">selecteur est une liste de QComboBox*. Chaque QComboBox contient la liste des comptes auxquels ont pe...</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:116</div></div>
+<div class="ttc" id="aclass_transaction_manager_html_aa771919ae89cb769e14763f9c0337461"><div class="ttname"><a href="class_transaction_manager.html#aa771919ae89cb769e14763f9c0337461">TransactionManager::getInstance</a></div><div class="ttdeci">static TransactionManager &amp; getInstance() noexcept</div><div class="ttdoc">Méthode qui permet d'accéder à l'instance du singleton.</div><div class="ttdef"><b>Definition:</b> transactionmanager.cpp:36</div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdoc">Définit le comportement de la fenêtre principale.</div><div class="ttdef"><b>Definition:</b> mainwindow.h:87</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_a7873262eef85dfd47163ea5d0f4a9b38"><div class="ttname"><a href="classmodifiertransaction.html#a7873262eef85dfd47163ea5d0f4a9b38">modifiertransaction::credits</a></div><div class="ttdeci">QList&lt; QDoubleSpinBox * &gt; credits</div><div class="ttdoc">credits est une liste de QDoubleSpinBox*. Chaque QDoubleSpinBox correspond au crédit d'une opération....</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:122</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_a41ed21f7dd1c2e7bbcba6fe73bb04380"><div class="ttname"><a href="classmodifiertransaction.html#a41ed21f7dd1c2e7bbcba6fe73bb04380">modifiertransaction::reference</a></div><div class="ttdeci">QString reference</div><div class="ttdoc">reference est la référence de la transaction que l'on modifie.</div><div class="ttdef"><b>Definition:</b> modifiertransaction.h:140</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_aafefcbe86f1203b692e3868e141248d0"><div class="ttname"><a href="classmodifiertransaction.html#aafefcbe86f1203b692e3868e141248d0">modifiertransaction::modifiant</a></div><div class="ttdeci">void modifiant()</div><div class="ttdoc">modifiant est un signal qui est émis lorsqu'une transaction a été modifiée. Il sera capté par la clas...</div><div class="ttdef"><b>Definition:</b> moc_modifiertransaction.cpp:147</div></div>
+<div class="ttc" id="aclassmodifiertransaction_html_aee0916db9b71108573e4ad85af9b5155"><div class="ttname"><a href="classmodifiertransaction.html#aee0916db9b71108573e4ad85af9b5155">modifiertransaction::ajouterOperation</a></div><div class="ttdeci">void ajouterOperation()</div><div class="ttdoc">Ce slot est appelé lorsque l'utilisateur clique sur le bouton &quot;ajouter une opération&quot;....</div><div class="ttdef"><b>Definition:</b> modifiertransaction.cpp:162</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

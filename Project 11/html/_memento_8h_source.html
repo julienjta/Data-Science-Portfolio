@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Business app:  Fichier source de lo21_projet/Compte/header/Memento.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Business app
+   &#160;<span id="projectnumber">1.00</span>
+   </div>
+   <div id="projectbrief">...</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64c05a5704b921f2df4e819b8806c3bb.html">lo21_projet</a></li><li class="navelem"><a class="el" href="dir_86cbb37c7fd4b5f242fc3767007e7472.html">Compte</a></li><li class="navelem"><a class="el" href="dir_8af7132da7a0f75adb0cf17dd6f11ac3.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Memento.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_memento_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MEMENTO_H_INCLUDED</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MEMENTO_H_INCLUDED</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../../Transaction/header/exceptiontransaction.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_memento.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_memento.html">Memento</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;public :</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_memento.html#a26886cd0f34ae26df6bd11cebcf6d0f6">Memento</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> _solde, <span class="keyword">const</span> time_t _date = time(<span class="keyword">nullptr</span>)) noexcept;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_memento.html#a0580a33cac86b78d2e3f8a6108938e23">   33</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_memento.html#a0580a33cac86b78d2e3f8a6108938e23">getSolde</a>() const noexcept {<span class="keywordflow">return</span> <a class="code" href="class_memento.html#a292b03b00f6daab6e445a3560ebf58b1">solde</a>;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_memento.html#a6c6621c52384bcfb21d505c2c4fd3a92">   39</a></span>&#160;    time_t <a class="code" href="class_memento.html#a6c6621c52384bcfb21d505c2c4fd3a92">getDate</a>() const noexcept {<span class="keywordflow">return</span> <a class="code" href="class_memento.html#ac7dcff0488bc23b036043ee452306173">date</a>;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_memento.html#ac7dcff0488bc23b036043ee452306173">   46</a></span>&#160;    time_t <a class="code" href="class_memento.html#ac7dcff0488bc23b036043ee452306173">date</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_memento.html#a292b03b00f6daab6e445a3560ebf58b1">   52</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_memento.html#a292b03b00f6daab6e445a3560ebf58b1">solde</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // MEMENTO_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_memento_html_a26886cd0f34ae26df6bd11cebcf6d0f6"><div class="ttname"><a href="class_memento.html#a26886cd0f34ae26df6bd11cebcf6d0f6">Memento::Memento</a></div><div class="ttdeci">Memento(const double _solde, const time_t _date=time(nullptr)) noexcept</div><div class="ttdoc">Constructeur.</div><div class="ttdef"><b>Definition:</b> Memento.cpp:14</div></div>
+<div class="ttc" id="aclass_memento_html_a0580a33cac86b78d2e3f8a6108938e23"><div class="ttname"><a href="class_memento.html#a0580a33cac86b78d2e3f8a6108938e23">Memento::getSolde</a></div><div class="ttdeci">double getSolde() const noexcept</div><div class="ttdoc">Méthode qui retourne le solde du memento.</div><div class="ttdef"><b>Definition:</b> Memento.h:33</div></div>
+<div class="ttc" id="aclass_memento_html_a6c6621c52384bcfb21d505c2c4fd3a92"><div class="ttname"><a href="class_memento.html#a6c6621c52384bcfb21d505c2c4fd3a92">Memento::getDate</a></div><div class="ttdeci">time_t getDate() const noexcept</div><div class="ttdoc">Méthode qui permet d'obtenir la date du memento.</div><div class="ttdef"><b>Definition:</b> Memento.h:39</div></div>
+<div class="ttc" id="aclass_memento_html_a292b03b00f6daab6e445a3560ebf58b1"><div class="ttname"><a href="class_memento.html#a292b03b00f6daab6e445a3560ebf58b1">Memento::solde</a></div><div class="ttdeci">double solde</div><div class="ttdoc">Solde du memento.</div><div class="ttdef"><b>Definition:</b> Memento.h:52</div></div>
+<div class="ttc" id="aclass_memento_html"><div class="ttname"><a href="class_memento.html">Memento</a></div><div class="ttdoc">Le Memento permet de sauvegarder la date et le solde du dernier rapprochement.</div><div class="ttdef"><b>Definition:</b> Memento.h:21</div></div>
+<div class="ttc" id="aclass_memento_html_ac7dcff0488bc23b036043ee452306173"><div class="ttname"><a href="class_memento.html#ac7dcff0488bc23b036043ee452306173">Memento::date</a></div><div class="ttdeci">time_t date</div><div class="ttdoc">Correspond à la date où l'on enregistre le solde dans le memento.</div><div class="ttdef"><b>Definition:</b> Memento.h:46</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>
