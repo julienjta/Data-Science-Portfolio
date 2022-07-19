@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<save>
+ <CompteManager init="7" nb_cloture="1">
+  <CompteVirtuel poste="R" nom="Racine" id="0">
+   <CompteReel poste="P" nom="Capitaux propres" id="5">
+    <Memento date="0" solde="0"/>
+    <Memento date="1591352284" solde="3992.87"/>
+   </CompteReel>
+   <CompteVirtuel poste="R" nom="Recette" id="3">
+    <CompteReel poste="R" nom="Dons" id="20">
+     <Memento date="0" solde="0"/>
+     <Memento date="1591352055" solde="240"/>
+    </CompteReel>
+    <CompteReel poste="R" nom="Cotisations" id="19">
+     <Memento date="0" solde="0"/>
+     <Memento date="1591350869" solde="1000"/>
+    </CompteReel>
+    <CompteReel poste="R" nom="Subventions" id="22">
+     <Memento date="0" solde="0"/>
+     <Memento date="1591351608" solde="3000"/>
+    </CompteReel>
+    <CompteReel poste="R" nom="Interêts d'épargne" id="21">
+     <Memento date="0" solde="0"/>
+     <Memento date="1591351820" solde="20"/>
+    </CompteReel>
+   </CompteVirtuel>
+   <CompteVirtuel poste="A" nom="Actif" id="1">
+    <CompteReel poste="A" nom="Chèques à encaisser" id="11">
+     <Memento date="0" solde="0"/>
+     <Memento date="1591300557" solde="0"/>
+    </CompteReel>
+    <CompteReel poste="A" nom="Caisse" id="10">
+     <Memento date="0" solde="0"/>
+     <Memento date="1591299577" solde="168.3"/>
+    </CompteReel>
+    <CompteVirtuel poste="A" nom="BigBank" id="7">
+     <CompteReel poste="A" nom="Livret A" id="9">
+      <Memento date="0" solde="0"/>
+      <Memento date="1591351820" solde="3907.7"/>
+     </CompteReel>
+     <CompteReel poste="A" nom="Compte chèque" id="8">
+      <Memento date="0" solde="0"/>
+      <Memento date="1591352284" solde="222.87"/>
+     </CompteReel>
+    </CompteVirtuel>
+   </CompteVirtuel>
+   <CompteVirtuel poste="P" nom="Passif" id="2">
+    <CompteReel poste="P" nom="Emprunt" id="12">
+     <Memento date="0" solde="0"/>
+     <Memento date="1591352144" solde="0"/>
+    </CompteReel>
+   </CompteVirtuel>
+   <CompteVirtuel poste="D" nom="Depense" id="4">
+    <CompteReel poste="D" nom="Matériel" id="18">
+     <Memento date="0" solde="0"/>
+     <Memento date="1591350773" solde="200"/>
+    </CompteReel>
+    <CompteReel poste="D" nom="Frais de personnel" id="17">
+     <Memento date="0" solde="0"/>
+     <Memento date="1591351775" solde="3200"/>
+    </CompteReel>
+    <CompteReel poste="D" nom="Assurance" id="13">
+     <Memento date="0" solde="0"/>
+     <Memento date="1591351203" solde="500"/>
+    </CompteReel>
+    <CompteVirtuel poste="D" nom="Frais bancaires" id="14">
+     <CompteReel poste="D" nom="Tenue de compte" id="15">
+      <Memento date="0" solde="0"/>
+      <Memento date="1591352245" solde="24"/>
+     </CompteReel>
+     <CompteReel poste="D" nom="Interêts d'emprunt" id="16">
+      <Memento date="0" solde="0"/>
+      <Memento date="1591352144" solde="30"/>
+     </CompteReel>
+    </CompteVirtuel>
+   </CompteVirtuel>
+  </CompteVirtuel>
+ </CompteManager>
+ <TransactionManager>
+  <Transaction valide="0" date="1557517899" reference="Sldinit" memo="Solde initial mai 2019">
+   <Operation debit="0" credit="1256.87" id_compte="5"/>
+   <Operation debit="1256.87" credit="0" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1557604386" reference="Plc0519" memo="Placement mai 2019">
+   <Operation debit="650" credit="0" id_compte="9"/>
+   <Operation debit="0" credit="650" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1557691036" reference="Fbnc0519" memo="Frais bancaire mai 2019">
+   <Operation debit="3" credit="0" id_compte="15"/>
+   <Operation debit="0" credit="3" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1558382103" reference="Dchq0519" memo="Dépot chèques mai 2019">
+   <Operation debit="0" credit="70" id_compte="11"/>
+   <Operation debit="70" credit="0" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1558779223" reference="Don0519" memo="Don mai 2019">
+   <Operation debit="30" credit="0" id_compte="8"/>
+   <Operation debit="0" credit="30" id_compte="20"/>
+  </Transaction>
+  <Transaction valide="0" date="1558813634" reference="Rmb0519" memo="Remboursement prêt mai 2019">
+   <Operation debit="200" credit="0" id_compte="12"/>
+   <Operation debit="5" credit="0" id_compte="16"/>
+   <Operation debit="0" credit="205" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1559073799" reference="Sal0519" memo="Salaire mai 2019">
+   <Operation debit="0" credit="400" id_compte="8"/>
+   <Operation debit="400" credit="0" id_compte="17"/>
+  </Transaction>
+  <Transaction valide="0" date="1560368976" reference="Fbnc0619" memo="Frais bancaires juin 2019">
+   <Operation debit="0" credit="3" id_compte="8"/>
+   <Operation debit="3" credit="0" id_compte="15"/>
+  </Transaction>
+  <Transaction valide="0" date="1561061076" reference="Ajmt0619" memo="Ajustement mai 2019">
+   <Operation debit="0" credit="600" id_compte="9"/>
+   <Operation debit="600" credit="0" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1561493143" reference="Rmb0619" memo="Remboursement prêt juin 2019">
+   <Operation debit="200" credit="0" id_compte="12"/>
+   <Operation debit="0" credit="205" id_compte="8"/>
+   <Operation debit="5" credit="0" id_compte="16"/>
+  </Transaction>
+  <Transaction valide="0" date="1561493208" reference="Don0619" memo="Don juin 2019">
+   <Operation debit="30" credit="0" id_compte="8"/>
+   <Operation debit="0" credit="30" id_compte="20"/>
+  </Transaction>
+  <Transaction valide="0" date="1561752457" reference="Sal0619" memo="Salaire juin 2019">
+   <Operation debit="400" credit="0" id_compte="17"/>
+   <Operation debit="0" credit="400" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1562962107" reference="Fbnc0719" memo="Frais bancaires juillet 2019">
+   <Operation debit="3" credit="0" id_compte="15"/>
+   <Operation debit="0" credit="3" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1563653474" reference="Ajmt0719" memo="Ajustement juillet 2019">
+   <Operation debit="550" credit="0" id_compte="8"/>
+   <Operation debit="0" credit="550" id_compte="9"/>
+  </Transaction>
+  <Transaction valide="0" date="1564085539" reference="Rmb0719" memo="Remboursement prêt juillet 2019">
+   <Operation debit="200" credit="0" id_compte="12"/>
+   <Operation debit="5" credit="0" id_compte="16"/>
+   <Operation debit="0" credit="205" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1564085613" reference="Don0719" memo="Don juillet 2019">
+   <Operation debit="30" credit="0" id_compte="8"/>
+   <Operation debit="0" credit="30" id_compte="20"/>
+  </Transaction>
+  <Transaction valide="0" date="1564344851" reference="Sal0719" memo="Salaire juillet 2019">
+   <Operation debit="400" credit="0" id_compte="17"/>
+   <Operation debit="0" credit="400" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1565640946" reference="Fbnc0819" memo="Frais bancaires août 2019">
+   <Operation debit="3" credit="0" id_compte="15"/>
+   <Operation debit="0" credit="3" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1566332202" reference="Ajmt0819" memo="Ajustement août 2019">
+   <Operation debit="0" credit="600" id_compte="9"/>
+   <Operation debit="600" credit="0" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1566764254" reference="Rmb0819" memo="Remboursement prêt août 2019">
+   <Operation debit="0" credit="205" id_compte="8"/>
+   <Operation debit="200" credit="0" id_compte="12"/>
+   <Operation debit="5" credit="0" id_compte="16"/>
+  </Transaction>
+  <Transaction valide="0" date="1566764764" reference="Don0819" memo="Don août 2019">
+   <Operation debit="30" credit="0" id_compte="8"/>
+   <Operation debit="0" credit="30" id_compte="20"/>
+  </Transaction>
+  <Transaction valide="0" date="1567024019" reference="Sal0819" memo="Salaire août 2019">
+   <Operation debit="0" credit="400" id_compte="8"/>
+   <Operation debit="400" credit="0" id_compte="17"/>
+  </Transaction>
+  <Transaction valide="0" date="1568281467" reference="Fbnc0919" memo="Frais bancaire septembre 2019">
+   <Operation debit="3" credit="0" id_compte="15"/>
+   <Operation debit="0" credit="3" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1568541083" reference="Ajmt0919" memo="Ajustement septembre 2019">
+   <Operation debit="160" credit="0" id_compte="8"/>
+   <Operation debit="0" credit="160" id_compte="9"/>
+  </Transaction>
+  <Transaction valide="0" date="1568627535" reference="Mat0919" memo="Matériel septembre 2019">
+   <Operation debit="200" credit="0" id_compte="18"/>
+   <Operation debit="0" credit="200" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1568973221" reference="Cot0919" memo="Cotisations septembre 2019">
+   <Operation debit="0" credit="1000" id_compte="19"/>
+   <Operation debit="1000" credit="0" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1569405270" reference="Rmb0919" memo="Remboursement prêt septembre 2019">
+   <Operation debit="200" credit="0" id_compte="12"/>
+   <Operation debit="0" credit="205" id_compte="8"/>
+   <Operation debit="5" credit="0" id_compte="16"/>
+  </Transaction>
+  <Transaction valide="0" date="1569405331" reference="Don0919" memo="Don septembre 2019">
+   <Operation debit="0" credit="30" id_compte="20"/>
+   <Operation debit="30" credit="0" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1569664571" reference="Sal0919" memo="Salaire septembre 2019">
+   <Operation debit="400" credit="0" id_compte="17"/>
+   <Operation debit="0" credit="400" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1569837410" reference="Ajmt0919-2" memo="Ajustement septembre 2019 2">
+   <Operation debit="100" credit="0" id_compte="8"/>
+   <Operation debit="0" credit="100" id_compte="9"/>
+  </Transaction>
+  <Transaction valide="0" date="1569923962" reference="Ass1019" memo="Assurance octobre 2019">
+   <Operation debit="0" credit="500" id_compte="8"/>
+   <Operation debit="500" credit="0" id_compte="13"/>
+  </Transaction>
+  <Transaction valide="0" date="1570875410" reference="Fbnc1019" memo="Frais bancaires octobre 2019">
+   <Operation debit="0" credit="3" id_compte="8"/>
+   <Operation debit="3" credit="0" id_compte="15"/>
+  </Transaction>
+  <Transaction valide="0" date="1571565644" reference="Ajmt1019" memo="Ajustement octobre 2019">
+   <Operation debit="600" credit="0" id_compte="8"/>
+   <Operation debit="0" credit="600" id_compte="9"/>
+  </Transaction>
+  <Transaction valide="0" date="1571997725" reference="Don1019" memo="Don octobre 2019">
+   <Operation debit="0" credit="30" id_compte="20"/>
+   <Operation debit="30" credit="0" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1571998484" reference="Rmb1019" memo="Remboursement prêt octobre 2019">
+   <Operation debit="5" credit="0" id_compte="16"/>
+   <Operation debit="200" credit="0" id_compte="12"/>
+   <Operation debit="0" credit="205" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1572260557" reference="Sal1019" memo="Salaire octobre 2019">
+   <Operation debit="0" credit="400" id_compte="8"/>
+   <Operation debit="400" credit="0" id_compte="17"/>
+  </Transaction>
+  <Transaction valide="0" date="1573556604" reference="Fbnc1119" memo="Frais bancaires novembre 2019">
+   <Operation debit="3" credit="0" id_compte="15"/>
+   <Operation debit="0" credit="3" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1574247843" reference="Ajmt1119" memo="Ajustement novembre 2019">
+   <Operation debit="0" credit="350" id_compte="9"/>
+   <Operation debit="350" credit="0" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1574679894" reference="Don1119" memo="Don novembre 2019">
+   <Operation debit="30" credit="0" id_compte="8"/>
+   <Operation debit="0" credit="30" id_compte="20"/>
+  </Transaction>
+  <Transaction valide="0" date="1574939122" reference="Sal1119" memo="Salaire novembre 2019">
+   <Operation debit="400" credit="0" id_compte="17"/>
+   <Operation debit="0" credit="400" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1575198355" reference="Sub1219" memo="Subvention décembre 2019">
+   <Operation debit="3000" credit="0" id_compte="8"/>
+   <Operation debit="0" credit="3000" id_compte="22"/>
+  </Transaction>
+  <Transaction valide="0" date="1575284809" reference="Plc1219" memo="Placement décembre 2019">
+   <Operation debit="0" credit="2500" id_compte="8"/>
+   <Operation debit="2500" credit="0" id_compte="9"/>
+  </Transaction>
+  <Transaction valide="0" date="1576148848" reference="Fbnc1219" memo="Frais bancaires décembre 2019">
+   <Operation debit="0" credit="3" id_compte="8"/>
+   <Operation debit="3" credit="0" id_compte="15"/>
+  </Transaction>
+  <Transaction valide="0" date="1577272115" reference="Don1219" memo="Don décembre 2019">
+   <Operation debit="0" credit="30" id_compte="20"/>
+   <Operation debit="30" credit="0" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1577531348" reference="Sal1219" memo="Salaire décembre 2019">
+   <Operation debit="400" credit="0" id_compte="17"/>
+   <Operation debit="0" credit="400" id_compte="8"/>
+  </Transaction>
+  <Transaction valide="0" date="1577704177" reference="Int1219" memo="Interêt décembre 2019">
+   <Operation debit="0" credit="20" id_compte="21"/>
+   <Operation debit="20" credit="0" id_compte="9"/>
+  </Transaction>
+  <Transaction valide="0" date="1591299544" reference="INIT 3" memo="Initialisation Livret A">
+   <Operation debit="0" credit="3697.7" id_compte="5"/>
+   <Operation debit="3697.7" credit="0" id_compte="9"/>
+  </Transaction>
+  <Transaction valide="0" date="1591299577" reference="INIT 4" memo="Initialisation Caisse">
+   <Operation debit="0" credit="168.3" id_compte="5"/>
+   <Operation debit="168.3" credit="0" id_compte="10"/>
+  </Transaction>
+  <Transaction valide="0" date="1591299611" reference="INIT 5" memo="Initialisation Chèques à encaisser">
+   <Operation debit="70" credit="0" id_compte="11"/>
+   <Operation debit="0" credit="70" id_compte="5"/>
+  </Transaction>
+  <Transaction valide="0" date="1591299656" reference="INIT 6" memo="Initialisation Emprunt">
+   <Operation debit="1200" credit="0" id_compte="5"/>
+   <Operation debit="0" credit="1200" id_compte="12"/>
+  </Transaction>
+ </TransactionManager>
+ <contexte devise="€" formatDate="dddd dd mm yyyy"/>
+</save>

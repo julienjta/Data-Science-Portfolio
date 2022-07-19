@@ -1,0 +1,127 @@
+@startuml
+note as N1
+Les comptes peuvent être regroupés logiquement de façon thématique en un seul compte. 
+Un compte racine permet de créer les premiers comptes. 
+Un sous-compte peut lui-même regrouper plusieurs souscomptes.
+Un sous-compte est obligatoirement du même type que le compte parent,
+à l’exception des sous-comptes du compte racine.
+end note
+
+class compte
+{
+virtuel : bool
+soldeDernierRapprochement : float
+calculSoldeCourant()
+}
+
+note right of compte
+Lorsque l’utilisateur souhaite rapprocher un compte, l’application doit 
+lui présenter le solde du compte tel qu’il était après le dernier rapprochement 
+(ou le solde initial si le compte n’a jamais été rapproché)et le solde actuel. 
+L’utilisateur doit ensuite comparer à la main le solde final avec son relevé de banque
+et valider ou refuser le rapprochement.
+end note
+
+class cActif
+class cPassif
+class cDepense
+class cRecette
+
+compte<|--cActif
+compte<|--cPassif
+compte<|--cDepense
+compte<|--cRecette
+
+compte<|-- excedent
+compte<|-- deficit
+
+cActif"1"--"*"cActif: > contient
+cPassif"1"--"*"cPassif: > contient
+cDepense"1"--"*"cDepense: > contient
+cRecette"1"--"*"cRecette: > contient
+
+class cRacine
+{
+creationCompte()
+suppressionCompte()
+hiérarchisationCompte()
+rapprocher()
+cloturer()
+genererBilan()
+genererCompteDeResultat()
+genererResultat()
+faireUneSauvegarde()
+}
+note left of cRacine 
+Singleton
+end note
+
+cRacine*--"*"cActif
+cRacine*--"*"cPassif
+cRacine*--"*"cDepense
+cRacine*--"*"cRecette
+cRacine*--"0..1"excedent
+cRacine*--"0..1"deficit
+
+note bottom of cActif
+Le solde initial d’un compte d’actif est créé à l’aide d’une transaction 
+débitant le nouveau compte et créditant un compte de capitaux propres.
+end note
+
+note bottom of cPassif
+Le solde initial d’un compte de passif est créé à l’aide d’une transaction 
+créditant le nouveau compte et débitant un compte de capitaux propres.
+end note
+
+note left of transaction
+La comptabilité en partie double consiste à écrire chaque opération deux fois : 
+une fois dans un ou plusieurs comptes dit émetteurs et une fois dans un ou plusieurs comptes dits récepteurs. 
+On utilise pour cela la notion de transaction depuis des compte émetteurs vers des comptes récepteurs.
+end note
+
+class transaction
+{
+date: date
+reference: string
+memo: string
+valideeParRapprochement: bool
+}
+transaction"*"--"1..*"compte
+(transaction, compte) .. emeteur
+transaction"*"--"1..*"compte
+(transaction, compte) .. recepteur
+class recepteur
+{
+debit: unsigned float
+credit: unsigned  float
+}
+class emeteur
+{
+debit: unsigned float
+credit: unsigned float
+}
+note right of transaction
+Une transaction est donc constituée des éléments suivants :
+— une date ;
+— une référence (numéro de chèque, de facture. . .) ;
+— un mémo explicatif (« Billet de train pour Paris » par exemple) ;
+— un ensemble de triplets (Compte, Débit, Crédit) 
+qui représentent les comptes prenant part à la transaction
+Une transaction est toujours équilibrée : 
+la somme des débits est égale à la somme des crédits.
+end note
+
+note right of recepteur
+une seule valeur parmi Débit ou Crédit doit être
+strictement positive, l’autre valeur doit être nulle ; 
+si les deux valeurs sont non-nulles, 
+le plus petit montant est retranché des deux valeurs pour respecter la règle
+end note
+
+note left of emeteur
+une seule valeur parmi Débit ou Crédit doit être
+strictement positive, l’autre valeur doit être nulle ; 
+si les deux valeurs sont non-nulles, 
+le plus petit montant est retranché des deux valeurs pour respecter la règle
+end note
+@enduml

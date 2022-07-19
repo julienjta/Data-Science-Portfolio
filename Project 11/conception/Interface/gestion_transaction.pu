@@ -1,0 +1,59 @@
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+package "Gestion des transactions"{
+
+class ajoutertransactionwindows{
+    + ajoutertransactionwindows(_comptes : QStringList const, liste_id : std::list<int> const,parent: MainWindow *)
+    + ~ajoutertransactionwindows()
+    - ajouterOperation() : void
+    - suppressionDernier() : void
+    - verifier() :  void
+    - cm : CompteManager&
+    - tm : TransactionManager&
+    - comptes : QStringList const
+	- liste_id : list<int> const
+    - devise :QString
+    - qdate : QDateEdit *
+    - qtime : QTimeEdit *
+    - selecteurs : QList<QComboBox*>
+    - credits : QList<QDoubleSpinBox*>
+    - debits :QList<QDoubleSpinBox*>
+    - supprimers : QList<QPushButton*>
+    - design : Ui::fenetreAjouterTransaction *
+}
+
+class modifiertransaction{
+    + modifiertransaction(_reference : QString const, _comptes : QStringList const,  _liste_id :  std::list<int> const,parent : MainWindow *)
+    + ~modifiertransaction()
+    - ajouterOperation(): void
+    - suppressionDernier() : void
+    - modifierTransaction() : void
+    - cm : CompteManager&
+    - tm : TransactionManager&
+    - comptes : QStringList const
+    - liste_id : list<int> const
+    - selecteurs : QList<QComboBox*>
+    - credits :QList<QDoubleSpinBox*>
+    - debits : QList<QDoubleSpinBox*>
+    - supprimers : QList<QPushButton*>
+    - reference : QString
+    - devise : QString
+    - design : Ui::modifiertransaction *
+}
+
+namespace Ui{
+    class fenetreAjouterTransaction{}
+    class modifiertransaction{}
+
+}
+
+ajoutertransactionwindows "1"---"1" Ui.fenetreAjouterTransaction :> gere
+modifiertransaction "1" ---- "1" Ui.modifiertransaction :> gere
+}
+
+
+
+@enduml

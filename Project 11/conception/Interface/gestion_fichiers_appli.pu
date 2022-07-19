@@ -1,0 +1,48 @@
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+package "Gestion de l'application"{
+
+class chargementwindow{
+    + chargementwindow(parent : MainWindow *)
+    + ~chargementwindow()
+    - ouvrirFileDialog() ; void
+    - verifierChamps() : void
+    - passer() : void
+    - design : Ui::fenetreChargement *
+}
+
+class parametrewindow{
+    + parametrewindow(parent : MainWindow *)
+    + ~parametrewindow()
+    - registerParams() : void
+    - design : Ui::parametrewindow *
+}
+
+class savewindow{
+    + savewindow(MainWindow *parent)
+    + ~savewindow()
+    - sauver() : void
+    - fermer() : void
+    - ouvrirFileDialog() : void
+    - design : Ui::Sauvegarde *
+}
+
+namespace Ui{
+    class fenetreChargement{}
+    class paramatrewindow{}
+    class Sauvegade {}
+
+}
+
+
+
+chargementwindow "1"---"1" Ui.fenetreChargement :> gere
+savewindow "1" ---- "1" Ui.Sauvegade :> gere
+Ui.paramatrewindow "1" ---- "1" parametrewindow :< gere
+
+}
+
+@enduml

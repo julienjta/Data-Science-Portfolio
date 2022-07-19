@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fenetrePrincipale</class>
+ <widget class="QMainWindow" name="fenetrePrincipale">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>675</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Business App</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ressources.qrc">
+    <normaloff>:/ressources/logo.png</normaloff>:/ressources/logo.png</iconset>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="objetPrincipale">
+   <widget class="QTreeWidgetPerso" name="arborescenceCompte">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>241</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="dragEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="dragDropMode">
+     <enum>QAbstractItemView::DragDrop</enum>
+    </property>
+    <property name="defaultDropAction">
+     <enum>Qt::MoveAction</enum>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="columnCount">
+     <number>2</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>Comptes</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTabWidget" name="groupeOnglets">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>10</y>
+      <width>791</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="ongletCompte">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Compte</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableauCompte">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>761</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>70</number>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>126</number>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Date</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Référence</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Intitulé</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Débit</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Crédit</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Solde</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="nomCompte">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="posteCompte">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>10</y>
+        <width>181</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dateRapprochementCompte">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>191</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ongletTransaction">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="statusTip">
+      <string/>
+     </property>
+     <property name="whatsThis">
+      <string/>
+     </property>
+     <attribute name="title">
+      <string>Transaction</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableauTransaction">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>761</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>70</number>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>126</number>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Date</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Référence</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Intitulé</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Compte</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Débit</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Crédit</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <color>
+         <red>185</red>
+         <green>185</green>
+         <blue>185</blue>
+        </color>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="supprTransacPushButton">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>390</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/ressources/supprimer.png</normaloff>:/ressources/supprimer.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="creerTransacPushButton">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>390</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ajouter</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/ressources/ajouter.png</normaloff>:/ressources/ajouter.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modifTransacPushButton">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>390</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Modifier</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/ressources/modifier.png</normaloff>:/ressources/modifier.png</iconset>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="supprComptePushButton">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>420</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Supprimer</string>
+    </property>
+    <property name="icon">
+     <iconset resource="ressources.qrc">
+      <normaloff>:/ressources/supprimer.png</normaloff>:/ressources/supprimer.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="creerComptePushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ajouter</string>
+    </property>
+    <property name="icon">
+     <iconset resource="ressources.qrc">
+      <normaloff>:/ressources/ajouter.png</normaloff>:/ressources/ajouter.png</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="barStatut"/>
+  <widget class="QMenuBar" name="barMenu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionOuvrirFichier"/>
+    <addaction name="actionEnregistrerFichier"/>
+    <addaction name="actionEnregistrer_sousFichier"/>
+    <addaction name="actionParametresFichier"/>
+   </widget>
+   <widget class="QMenu" name="menuCompte">
+    <property name="title">
+     <string>Compte</string>
+    </property>
+    <addaction name="actionAjouterCompte"/>
+    <addaction name="actionDeplacerCompte2"/>
+    <addaction name="actionSupprimerCompte"/>
+   </widget>
+   <widget class="QMenu" name="menuTransaction">
+    <property name="title">
+     <string>Transaction</string>
+    </property>
+    <addaction name="actionAjouterTransaction"/>
+    <addaction name="actionModifierTransaction"/>
+    <addaction name="actionSupprimerTransaction"/>
+   </widget>
+   <widget class="QMenu" name="menuDocuments">
+    <property name="title">
+     <string>Documents</string>
+    </property>
+    <addaction name="actionFaireCloture"/>
+    <addaction name="actionFaireRapprochement"/>
+    <addaction name="actionFaireReleve"/>
+    <addaction name="actionFaireBilan"/>
+    <addaction name="actionFaireResultat"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuCompte"/>
+   <addaction name="menuTransaction"/>
+   <addaction name="menuDocuments"/>
+  </widget>
+  <action name="actionOuvrirFichier">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/dossier.png</normaloff>:/ressources/dossier.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir</string>
+   </property>
+   <property name="statusTip">
+    <string>Enregistrer ce fichier puis en ouvrir un autre</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionEnregistrerFichier">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/enregistrer.png</normaloff>:/ressources/enregistrer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer</string>
+   </property>
+   <property name="statusTip">
+    <string>Enregistrer le fichier</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionAjouterCompte">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/ajouter.png</normaloff>:/ressources/ajouter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
+   <property name="statusTip">
+    <string>Ajouter un nouveau compte</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionSupprimerCompte">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/supprimer.png</normaloff>:/ressources/supprimer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+   <property name="statusTip">
+    <string>Supprimer le compte</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionAjouterTransaction">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/ajouter.png</normaloff>:/ressources/ajouter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
+   <property name="statusTip">
+    <string>Ajouter une nouvelle transaction</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="actionModifierTransaction">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/modifier.png</normaloff>:/ressources/modifier.png</iconset>
+   </property>
+   <property name="text">
+    <string>Modifier</string>
+   </property>
+   <property name="statusTip">
+    <string>Modifier une transaction</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+M</string>
+   </property>
+  </action>
+  <action name="actionSupprimerTransaction">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/supprimer.png</normaloff>:/ressources/supprimer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+   <property name="statusTip">
+    <string>Supprimer la transaction</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+D</string>
+   </property>
+  </action>
+  <action name="actionFaireRapprochement">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/faireRapprochement.png</normaloff>:/ressources/faireRapprochement.png</iconset>
+   </property>
+   <property name="text">
+    <string>Faire un rapprochement</string>
+   </property>
+   <property name="statusTip">
+    <string>faire une opération de rapprochement</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+A</string>
+   </property>
+  </action>
+  <action name="actionFaireBilan">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/faireBilan.png</normaloff>:/ressources/faireBilan.png</iconset>
+   </property>
+   <property name="text">
+    <string>Faire un bilan</string>
+   </property>
+   <property name="statusTip">
+    <string>Faire une opération de bilan</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+B</string>
+   </property>
+  </action>
+  <action name="actionFaireReleve">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/faireReleve.png</normaloff>:/ressources/faireReleve.png</iconset>
+   </property>
+   <property name="text">
+    <string>Faire un relevé</string>
+   </property>
+   <property name="statusTip">
+    <string>Faire une opération de relevé</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+V</string>
+   </property>
+  </action>
+  <action name="actionFaireCloture">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/cloturerCompte.png</normaloff>:/ressources/cloturerCompte.png</iconset>
+   </property>
+   <property name="text">
+    <string>Faire une clôture</string>
+   </property>
+   <property name="statusTip">
+    <string>Faire une opération de clôture</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+C</string>
+   </property>
+  </action>
+  <action name="actionParametresFichier">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/parametres.png</normaloff>:/ressources/parametres.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paramètres</string>
+   </property>
+   <property name="statusTip">
+    <string>Accéder aux paramètres de l'application</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionDeplacerCompte">
+   <property name="text">
+    <string>Déplacer</string>
+   </property>
+   <property name="statusTip">
+    <string>Déplacer le compte</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer_sousFichier">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/enregistrer.png</normaloff>:/ressources/enregistrer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer sous</string>
+   </property>
+   <property name="statusTip">
+    <string>Enregistrer le fichier sans écraser la sauvegarde précédente</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionFaireResultat">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/faireResultat.png</normaloff>:/ressources/faireResultat.png</iconset>
+   </property>
+   <property name="text">
+    <string>Faire resultat</string>
+   </property>
+   <property name="statusTip">
+    <string>Calculer le résultat</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+R</string>
+   </property>
+  </action>
+  <action name="actionDeplacerCompte2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/ressources/deplacement.png</normaloff>:/ressources/deplacement.png</iconset>
+   </property>
+   <property name="text">
+    <string>Deplacer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QTreeWidgetPerso</class>
+   <extends>QTreeWidget</extends>
+   <header>mainwindow.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

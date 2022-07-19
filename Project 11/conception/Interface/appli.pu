@@ -1,0 +1,21 @@
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+package "Interface graphique"{
+
+}
+
+class TransactionManager{
+}
+
+class CompteManager{
+
+}
+
+
+
+CompteManager "1" -right-"1" "Interface graphique": > manage
+TransactionManager "1" -left-"1" "Interface graphique": > manage
+@enduml

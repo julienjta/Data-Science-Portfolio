@@ -1,0 +1,145 @@
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+class TransactionManager{
+    transactions : list<Transaction*>
+    {static} instance : TransactionManager&
+
+    +charger(in filename : string)
+    +sauver(in filename : string)
+}
+
+class Transaction{
+    valide : bool
+    date : struct tm
+    reference : string
+    titre : string
+    operations : set<Operation*>
+}
+
+class Operation{
+    compte : CompteReel*
+    debit : double
+    credit : double
+    transaction : Transaction*
+}
+
+abstract class CompteHierarchie{
+    numero : string
+    nom : string
+    operations : list<Operation*>
+    enfants : set<CompteHierarchie*>
+
+    +getType()
+
+}
+
+abstract class CompteReel{
+
+}
+
+abstract class CompteVirtuel{
+
+}
+
+class CompteManager{
+    racine : CompteHierarchie*
+    {static} instance : CompteManager&
+
+
+    +charger(in filename : string)
+    +sauver(in filename : string)
+}
+
+abstract class CompteAD{
+
+}
+abstract class ComptePR{
+
+}
+
+class CompteActif{
+
+}
+class CompteDepense{
+
+}
+class ComptePassif{
+
+}
+class CompteRecette{
+
+}
+
+class CompteVirtuelActif{
+
+}
+
+class CompteVirtuelDepense{
+
+}
+
+class CompteVirtuelPassif{
+
+}
+
+class CompteVirtuelRecette{
+
+}
+
+class CompteVirtuelRacine{
+
+}
+
+class HierarchieBuilder{
+    racine : CompteHierarchie*
+}
+
+class MementoSolde{
+    date : struct tm
+    solde : double
+}
+
+
+HierarchieBuilder "1"-right-"1" CompteManager
+HierarchieBuilder -down-"1" CompteVirtuelRacine
+
+CompteManager *-down- "1" CompteVirtuelRacine
+
+CompteHierarchie *-right-"1..*" MementoSolde
+CompteReel -up-|> CompteHierarchie
+CompteVirtuel --|> CompteHierarchie
+CompteVirtuel *-- "      *" CompteHierarchie
+
+TransactionManager *-left- "*" Transaction : Gère >
+
+Transaction *-left-"1..*" Operation : Emmetteur
+Transaction *-left-"1..*" Operation : Recepteur
+
+CompteReel *-right-"*" Operation : Est concerné par >
+
+ComptePR -up-|> CompteReel
+CompteAD -up-|> CompteReel
+
+CompteActif -up-|> CompteAD
+CompteDepense -up-|> CompteAD
+ComptePassif -up-|> ComptePR
+CompteRecette -up-|> ComptePR
+
+CompteVirtuelActif -down-|> CompteVirtuel
+CompteVirtuelPassif -down-|> CompteVirtuel
+CompteVirtuelDepense -down-|> CompteVirtuel
+CompteVirtuelRecette -down-|> CompteVirtuel
+CompteVirtuelRacine -down-|> CompteVirtuel
+
+
+note left of CompteVirtuelRacine: Singleton
+note top of CompteManager: Singleton
+note right of TransactionManager: Singleton
+
+@enduml
+
+
+' Design patterns utilisés : Singleton, Composite, Factory Method, Builder [Possibilité d'utiliser Visitor pour les Comptes]

@@ -1,0 +1,54 @@
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+package "Documents comptables"{
+
+class bilan{
+    + bilan(parent : MainWindow *)
+    + ~bilan()
+    - fairebilan(): void
+    - exporterPDF() : void
+    - affichertableau( _tableau : QTableWidget* const,_liste_comptes: list<CompteHierarchie*> const ) : void
+    - int makeTableForPDF(const _tableau : QTableWidget*,_y_origin : int const,_painter: QPainter* ,_f : QFont*) : int
+    - date : QDateEdit *
+    - devise : QString
+    - est_genere : bool
+    - design : Ui::bilan *
+
+}
+
+class releve{
+    + releve(parent : MainWindow* )
+    + ~releve()
+    - affichertableau( _tableau : QTableWidget* const,_liste_comptes: list<CompteHierarchie*> const ) : void
+    - int makeTableForPDF(const _tableau : QTableWidget*,_y_origin : int const,_painter: QPainter* ,_f : QFont*) : int
+    - debut : QDateEdit *
+    - fin : QDateEdit*
+    - devise : QString
+    - est_genere : bool
+    - design : Ui::releve*
+}
+
+class Resultat{
+    + Resultat( _liste_id : std::list<int> const,parent : MainWindow *)
+    + ~Resultat()
+    - design : Ui::Resultat;
+    - cm : CompteManager&
+    - tm : TransactionManager&
+}
+
+namespace Ui{
+    class bilan{}
+    class releve{}
+    class Resultat{}
+
+}
+
+
+bilan "1"---"1" Ui.bilan :> gere
+releve "1" ---- "1" Ui.releve :> gere
+Ui.Resultat "1" ---- "1" Resultat :< gere
+}
+@enduml

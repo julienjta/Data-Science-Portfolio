@@ -1,0 +1,158 @@
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+class TransactionManager{
+    transactions : list<Transaction*>
+    {static} instance : TransactionManager&
+
+    +charger(in filename : string)
+    +sauver(in filename : string)
+    +afficher()
+    +naviguer(?)
+    +ajouter_transaction(?)
+    +supprimer_transaction(?)
+    +modifier_transaction(?)
+}
+
+class Transaction{
+    valide : bool
+    date : struct tm
+    reference : string
+    titre : string
+    operations : set<Operation*>
+    
+    +afficher()
+    +ajouter_operation(?)
+    +supprimer_operation(?)
+    +modifier_operation(?)
+    +rapprocher_transaction(?)
+}
+
+class Operation{
+    compte : CompteReel*
+    debit : double
+    credit : double
+    transaction : Transaction*
+}
+
+'------------------------------'
+
+abstract class CompteHierarchie{
+    numero : string
+    nom : string
+
+    +getType()
+    +ajouter_fils()
+    +afficher()
+}
+
+class CompteReel{
+    operations : list<Operation*>
+    
+    +afficher()
+    +ajouter_operation(in : Operation*)
+    +supprimer_operation(in : Operation*)
+}
+
+abstract class CompteVirtuel{
+    comptes : list<CompteHierarchie*>
+    
+    +afficher()
+}
+
+class CompteManager{
+    racine : CompteVirtuelRacine*
+    {static} instance : CompteManager&
+
+
+    +charger(in filename : string)
+    +sauver(in filename : string)
+    +afficher()
+    +naviguer()
+    +faireBilan(?)
+    +faireResultat(?)
+    +faireRapprochement(?)
+}
+
+abstract class CompteType{
+    type : enum{ACTIF,PASSIF,RECETTE,DEPENSE}
+    
+    +getType()
+    +crediter(compte : CompteHierarchie, in montant : double)
+    +debiter(compte : CompteHierarchie, in montant : double)
+}
+
+abstract class CompteAD{
+    +crediter(compte : CompteHierarchie, in montant : double)
+    +debiter(compte : CompteHierarchie, in montant : double)
+}
+abstract class ComptePR{
+    +crediter(compte : CompteHierarchie, in montant : double)
+    +debiter(compte : CompteHierarchie, in montant : double)
+}
+
+class CompteActif{
+    +getType()
+}
+class CompteDepense{
+    +getType()
+}
+class ComptePassif{
+    +getType()
+}
+class CompteRecette{
+    +getType()
+}
+
+class CompteVirtuelRacine{
+    +ajouter_fils()
+}
+
+class HierarchieBuilder{
+    racine : CompteVirtuelRacine*
+}
+
+class MementoSolde{
+    date : struct tm
+    solde : double
+}
+
+'-------------------------------'
+
+HierarchieBuilder "1"-right-"1" CompteManager
+HierarchieBuilder -down-"1" CompteVirtuelRacine
+
+CompteManager *-down- "1" CompteVirtuelRacine
+
+CompteHierarchie *-up- "1..*" MementoSolde
+CompteReel -down-|> CompteHierarchie
+CompteVirtuel -up-|> CompteHierarchie
+CompteVirtuel *-up- "      *" CompteHierarchie
+
+TransactionManager *-up- "*" Transaction : Gère >
+
+Transaction *-left-"1..*" Operation : Emmetteur
+Transaction *-left-"1..*" Operation : Recepteur
+
+CompteReel *-right-"*" Operation : Est concerné par >
+
+CompteType *-left- "*" CompteHierarchie
+
+ComptePR -up-|> CompteType
+CompteAD -up-|> CompteType
+
+CompteActif -up-|> CompteAD
+CompteDepense -up-|> CompteAD
+ComptePassif -up-|> ComptePR
+CompteRecette -up-|> ComptePR
+
+CompteVirtuelRacine -right-|> CompteVirtuel
+
+
+note left of CompteVirtuelRacine: Singleton
+note top of CompteManager: Singleton
+note left of TransactionManager: Singleton
+
+@enduml

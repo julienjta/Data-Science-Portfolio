@@ -1,0 +1,292 @@
+'- NOTATION x pour les méthodes virtuelles héritées : surcharger avec un throw Exception
+
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+abstract class CompteHierarchie{
+    friend HierarchieBuilder
+    # nom : string
+    # poste : const PosteCompte*
+    - CompteHierarchie()
+    - CompteHierarchie(n:string,p: const PosteCompte*)
+    - CompteHierarchie(const CompteHierarchie&)
+    - CompteHierarchie& operator=(const CompteHierarchie&)
+    - ~CompteHierarchie()
+    + to_string() : string
+    + accepte(Visiteur& v)
+    + get_nom() : string
+    + get_poste() : enum Poste
+    + get_type() : enum Type
+    + virtual get_fils() : set<CompteHierarchie*>
+    - virtual edit_fils(action : string, compte : CompteHierarchie*)
+    # virtual ~CompteHierarchie()
+}
+
+note bottom of CompteHierarchie : laisser CompteManager responsabilité creation destruction
+
+class CompteReel{
+    - mementos : set<MementoSolde*>
+
+    + get_type() : enum Type
+    + to_string() : string
+    + accepte(Visiteur& v)
+    x get_fils() : set<CompteHierarchie*>
+    x edit_fils(action : string, compte : CompteHierarchie*)
+}
+
+class CompteVirtuel{
+    # fils : set<CompteHierarchie*>
+
+    + get_fils() : set<CompteHierarchie*>
+    + edit_fils(action : string, compte : CompteHierarchie*)
+    + get_type() : enum Type
+    + to_string() : string
+    + accepte(Visiteur& v)
+}
+
+class MementoSolde{
+    - solde : double
+    - date : date
+}
+
+abstract class PosteCompte{
+    + virtual get_letter() : string
+    + virtual get_poste() : enum Poste
+    + virtual crediter(solde : double*, montant : double)
+    + virtual debiter(solde : double*, montant : double)
+}
+
+abstract class PosteAD{
+    + crediter(solde : double*, montant : double)
+    + debiter(solde : double*, montant : double)
+}
+abstract class PostePR{
+    + crediter(solde : double*, montant : double)
+    + debiter(solde : double*, montant : double)
+}
+
+class Actif{
+    - {static} instance : Actif
+    + get_poste() : enum Poste
+    + get_letter() : string
+    + get_instance() : PosteCompte&
+}
+
+class Passif{
+    - {static} instance : Passif
+    + get_poste() : enum Poste
+    + get_letter() : string
+    + get_instance() : PosteCompte&
+}
+
+class Recette{
+    - {static} instance :  Recette
+    + get_poste() : enum Poste
+    + get_letter() : string
+    + get_instance() : PosteCompte&
+}
+
+class Depense{
+    - {static} instance : Depense
+    + get_poste() : enum Poste
+    + get_letter() : string
+    + get_instance() : PosteCompte&
+}
+
+class Racine{
+    - {static} instance : Racine
+    + get_poste() : enum Poste
+    + get_letter() : string
+    + get_instance() : PosteCompte&
+
+    x crediter(solde : double*, montant : double)
+    x debiter(solde : double*, montant : double)
+}
+
+class CompteManager{
+    - {static} instance : CompteManager
+    - racine : CompteHierarchie*
+    - path : string
+
+    - CompteManager()
+    - ~CompteManager()
+    + {static} get_instance() : CompteManager&
+
+    + get_compte(nom : string) : CompteHierarchie*
+    + affiche()
+
+    + ajouter_fils(nom_pere : string, nom_fils : string, t : Type, p : Poste)
+    + supprimer_fils(nom_pere : string, nom_fils : string)
+    + deplacer_fils(nom_pere_actuel : string, nom_futur_pere : string, nom_fils : string)
+
+    + charger(file : string)
+    + sauver(file : string)
+
+    + cloturer()
+    + rapprocher_compte(nom : string)
+    + get_solde(nom : string)
+
+    + bilan()
+    + releve()
+    + resultat()
+}
+
+class HierarchieBuilder{
+    - {static} creer_vide() : CompteHierarchie*
+    - {static} creer_avec_fichier(path : string) : CompteHierarchie*
+    - {static} creer_fils(nom : string, t : Type, p : Poste)
+
+}
+
+class Operation{
+    friend TransactionBuilder
+    - t : Transaction*
+    - compte : CompteReel*
+    - debit : double
+    - credit : double
+    - operation(c : Compte*, d : double, c : double)
+}
+
+
+class Transaction{
+    friend TransactionBuilder
+    - date : date
+    - reference : string
+    - memo : string
+    - valide : bool
+    - operations : list<Operation*>
+    - Transaction()
+    - Transaction (d: date, r : string, m : string, v: bool, o : list<Operation*>)
+    - Transaction(const Transaction&)
+    - Transaction& operator=(const Transaction&)
+    - ~Transaction()
+    + getdate():date
+    + getreference():string
+    + getmemo():string
+    + getvalide():bool
+}
+
+note bottom of Transaction : laisse possibilité transactionmanager construction et destruction transaction
+
+class TransactionManager{
+    - {static} instance : TransactionManager
+    - transactions : list<Transaction*>
+    - path : string
+
+    + get_instance() : TransactionManager&
+    + get_transaction(ref : string) : Transaction*
+    + ajouter_transaction(d: date, r : string, m : string, o : list<Operation*>)
+    + supprimer_transaction(ref : string)
+    + editer_transaction(ancienne_ref : string, d: date, r : string, m : string, o : list<Operation*>)
+
+    + charger(path : string)
+    + sauver(path : string)
+}
+
+class TransactionBuilder{
+    + {static} creer_transaction(d: date, r : string, m : string, o : list<Operation*>)
+    + {static} creer_avec_fichier(path : string) : list<Transaction*>
+}
+
+abstract class Visiteur{
+    + virtual visiter(CompteReel&)
+    + virtual visiter(CompteVirtuel&)
+}
+
+class VisiteurAffichage{
+    - indentation : int
+    + visiter(CompteReel&)
+    + visiter(CompteVirtuel&)
+    - afficher_ligne(l : string)
+}
+
+class VisiteurRecherche{
+    - nom : string
+    - CompteHierarchie* resultat
+
+    + VisiteurRecherche(nom : string)
+    + changer_recherche(nom : string)
+    + visiter(CompteReel&)
+    + visiter(CompteVirtuel&)
+    + get_resultat() : CompteHierarchie*
+}
+
+class VisiteurGetSolde{
+  -nom : string
+  -solde : int
+  +VisiteurGetSolde(nom : string)
+  +changer_comptesolde(nom : string)
+  +visiter(CompteReel &)
+  +visiter(CompteVirtuel&)
+  +get_solde(): int
+}
+
+class VisiteurLiberation{
+    + visiter(CompteReel&)
+    + visiter(CompteVirtuel&)
+}
+
+class Exception{
+    - message : string
+    + get_message() : string
+    # Exception(in message : string)
+}
+
+class Iterators{
+  friend TransactionManager
+  TransactionManager* instance=TransactionManager::get_instance()
+  unsigned int index=0
+  const CompteHierarchie& compte;
+  -Transaction(CompteHierarchie&c)
+  -goToTheNextTransaction()
+  +next()
+  +Done() :bool
+  +currentItem (): const Transaction&
+}
+
+note bottom of Iterators : sur Transaction pour un compte (rapprochement)
+
+class HierarchieException
+
+'---------------------------------------'
+
+
+Actif -up-|> PosteAD
+Depense -up-|> PosteAD
+Passif -up-|> PostePR
+Recette -up-|> PostePR
+
+Racine -up-|> PosteCompte
+PostePR -up-|> PosteCompte
+PosteAD -up-|> PosteCompte
+
+CompteReel -left-|> CompteHierarchie
+CompteVirtuel *-down-"1..*" CompteHierarchie : contient >
+CompteVirtuel -down-|> CompteHierarchie
+
+CompteHierarchie *-- "1" PosteCompte: est de type >
+CompteReel *-up- "1..*" MementoSolde
+
+CompteManager *-right- "1" CompteHierarchie
+CompteManager -up- HierarchieBuilder
+CompteManager -right- CompteHierarchie
+
+TransactionManager *-left- "*" Transaction
+Transaction *-up- "1..*" Operation : Emetteur
+Transaction *-up- "1..*" Operation : Recepteur
+TransactionBuilder -left- TransactionManager
+CompteReel *-right- "*" Operation
+
+TransactionManager -right- Iterators
+
+VisiteurAffichage -up-|> Visiteur
+VisiteurLiberation -right-|> Visiteur
+VisiteurRecherche --|> Visiteur
+VisiteurGetSolde --|>Visiteur
+
+HierarchieException --|> Exception
+
+
+@enduml

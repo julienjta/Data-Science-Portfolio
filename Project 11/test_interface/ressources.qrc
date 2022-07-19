@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>../ressources/ajouter.png</file>
+    <file>../ressources/cloturerCompte.png</file>
+    <file>../ressources/enregistrer.png</file>
+    <file>../ressources/dossier.png</file>
+    <file>../ressources/faireBilan.png</file>
+    <file>../ressources/faireRapprochement.png</file>
+    <file>../ressources/faireReleve.png</file>
+    <file>../ressources/faireResultat.png</file>
+    <file>../ressources/logo.png</file>
+    <file>../ressources/modifier.png</file>
+    <file>../ressources/parametres.png</file>
+    <file>../ressources/supprimer.png</file>
+    <file>../ressources/deplacement.png</file>
+</qresource>
+</RCC>

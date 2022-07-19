@@ -1,0 +1,11 @@
+<!DOCTYPE transaction
+[
+<!ELEMENT save (transaction *)>
+<!ELEMENT transaction (date,ref,memo,valide,operations)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT ref (#PCDATA)>
+<!ELEMENT memo (#PCDATA)>
+<!ELEMENT valide (#PCDATA)>
+<!ELEMENT operations (operation, operation +)>
+<!ELEMENT operation (compte,credit,debit)>
+]>

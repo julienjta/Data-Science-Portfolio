@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<save>
+ <CompteManager nb_cloture="1" init="1">
+  <CompteVirtuel nom="Racine" poste="R" id="0"/>
+ </CompteManager>
+ <contexte devise="€" formatDate="dd/mm/yy"/>
+</save>

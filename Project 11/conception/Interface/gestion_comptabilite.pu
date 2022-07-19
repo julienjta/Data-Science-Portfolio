@@ -1,0 +1,53 @@
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+
+package "Gestion action comptabilité"{
+  class rapprochement{
+      + rapprochement(_comptes : QStringList const, _liste_id : list<int> const, parent : MainWindow *)
+      + ~rapprochement()
+      - changementCompte() : void
+      - validerChoixCompte() : void
+      - ajouterOperation(): void
+      - suppressionDernier() : void
+      - modifierListeTransactions() : void
+      - modifierListeOperations() : void
+      - modifierTransaction() : void
+      - validerCompte() : void
+      - choixCompte() : void
+      - clear() : void
+      - design : Ui::rapprochement*;
+      - cm : CompteManager&
+      - tm : TransactionManager&
+      - comptes : QStringList const
+      - liste_id : list<int> const
+      - devise : QString
+      - selecteurs : QList<QComboBox*>
+      - credits : QList<QDoubleSpinBox*>
+      - debits : QList<QDoubleSpinBox*>
+      - supprimers : QList<QPushButton*>
+  }
+
+  class cloture{
+      + cloture(_liste_id : std::list<int> const,parent :MainWindow *)
+      + ~cloture()
+      - nvcomptecloture(const QString&) :  void
+      - fairecloture() : void
+      - cm : CompteManager&
+      - design : Ui::cloture *
+  }
+
+
+namespace Ui{
+    class rapprochement{}
+    class cloture{}
+
+}
+
+
+rapprochement "1"---"1" Ui.rapprochement :> gere
+cloture "1" ---- "1" Ui.cloture :> gere
+}
+@enduml

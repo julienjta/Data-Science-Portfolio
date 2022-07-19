@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE transaction SYSTEM "transaction.dtd">
+<save>
+<transaction>
+    <date>15136549541665</date>
+    <ref>facture 00AA0000</ref>
+    <memo>ceci est un second memo</memo>
+    <valide>1</valide>
+    <operations>
+        <operation>
+            <compte>0x12e4</compte>
+            <credit>500.20</credit>
+            <debit>0</debit>
+        </operation>
+        <operation>
+            <compte>0x1d91</compte>
+            <credit>482.75</credit>
+            <debit>0</debit>
+        </operation>
+        <operation>
+            <compte>0x1ff7</compte>
+            <credit>0</credit>
+            <debit>17.45</debit>
+        </operation>
+    </operations>
+</transaction>
+<transaction>
+    <date>16551316649545</date>
+    <ref>facture 00AA0001</ref>
+    <memo>ceci est un second memo</memo>
+    <valide>0</valide>
+    <operations>
+        <operation>
+            <compte>0x12e4</compte>
+            <credit>10</credit>
+            <debit>0</debit>
+        </operation>
+        <operation>
+            <compte>0x1874</compte>
+            <credit>0</credit>
+            <debit>10</debit>
+        </operation>
+    </operations>
+</transaction>
+</save>

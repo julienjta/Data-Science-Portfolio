@@ -1,0 +1,86 @@
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+
+package "Interface graphique"{
+  class MainWindow{
+      + MainWindow(parent : QWidget*) explicit
+      + ~MainWindow() override;
+      + getDevise() : QString const
+      + getFormatDate() : QString const
+
+      - afficherFormulaireCompte() :void
+      - afficherFormulaireDeplacerCompte() : void
+      - afficherFormulaireTransaction() : void
+      - afficherFormulaireEnregistrement() : void
+      - afficherFormulaireEnregistrementSous() : void
+      - afficherFormulaireOuvrir_1() : void
+      - afficherFormulaireOuvrir_2() : void
+      - afficherFormulaireModificationTransaction() :void
+      - afficherBilan() : void
+      - afficherReleve() : void
+      - afficherResultat() : void
+      - afficherRapprochement() : void
+      - afficherCloture() : void
+      - afficherParametre() : void
+
+      - selectionnerCompte(_item_compte : QTreeWidgetItem* ) : void
+      - deplacerCompte(_id_bouge : int const, _id_recoit : int const ) : void
+      - selectionnerTransaction(row int, column int);
+
+      - supprimerCompte() : void
+      - supprimerTransaction() : void
+
+      - chargerContexte(_path : string const&) : void
+      - charger(fichier:  QString) : void
+      - initialiser() : void
+      - ajouterContexte(_path : string const&): void
+      - refreshContexte(params QStringList) : void
+      - sauvegarder(fichier QString) : void
+
+      - afficherHierarchie() : void
+      - afficherTransaction() : void
+      - afficherCompte() : void
+
+      - setSizeObjects() : void
+      - resizeEvent(event : QResizeEvent*) ovrride: void
+
+      - design : Ui::fenetrePrincipale*
+      - compte_manager : CompteManager&
+      -  transaction_manager :TransactionManager&
+      -  compte_selectionne : QTreeWidgetItem*
+      - QTableWidgetItem* transac_selectionne
+      - devise  : QString
+      - formatDate : QString
+  }
+
+namespace Ui{
+    class fenetrePrincipale{}
+
+}
+  package "Gestion des transactions"{}
+
+  package "Gestion des comptes"{}
+
+  package "Gestion de l'application"{}
+
+  package "Gestion action comptabilité"{}
+
+  package "Documents comptables"{}
+
+
+    "Gestion des comptes" "1"----"1" MainWindow
+    "Gestion des transactions" "1  "  -"  1" MainWindow
+
+    MainWindow "1  "-right- "  1"  "Gestion de l'application"
+    MainWindow "1"----"1" "Documents comptables"
+    MainWindow "1"----"1" "Gestion action comptabilité"
+    Ui.fenetrePrincipale "1" --- "1" MainWindow :< gere
+
+
+}
+
+
+@enduml

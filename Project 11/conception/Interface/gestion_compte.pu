@@ -1,0 +1,47 @@
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+
+package "Gestion des comptes"{
+
+class QTreeWidgetPerso{
+    + QTreeWidgetPerso( _parent : QWidget*)
+    +  ~QTreeWidgetPerso() override
+    + dropEvent(event : QDropEvent*) override : void
+}
+class ajouterwindow{
+    + ajouterwindow(_liste_id : list<int> const ,  _compte_selectionne : QTreeWidgetItem *, parent : MainWindow *)
+    + ~ajouterwindow()
+    - ajouterCompte() : void
+    - capitauxpropre() : void
+    - nvcapitauxpropre(const QString &text) : void
+    - cm : CompteManager&
+    - liste_id : list<int> const
+    -selecteurs :  QComboBox *
+    - design :  Ui:fenetreAjouterCompte*
+}
+
+class deplacercompte{
+    + deplacercompte(liste_id : list<int> const ,parent :MainWindow *)
+    + ~deplacercompte()
+    - deplacementcompte() : void
+    - liste_id : list<int> const
+    - design : Ui::deplacercompte *
+}
+
+namespace Ui{
+    class deplacercompte{}
+    class fenetreAjouterCompte{}
+
+}
+
+
+
+ajouterwindow "1"---"1" Ui.fenetreAjouterCompte :> gere
+deplacercompte "1" ---- "1" Ui.deplacercompte :> gere
+
+
+}
+@enduml

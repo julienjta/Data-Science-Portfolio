@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<save>
+ <CompteManager nb_cloture="1" init="6">
+  <CompteVirtuel poste="R" nom="Racine" id="0">
+   <CompteReel poste="P" nom="Capitaux Propre" id="3">
+    <Memento date="0" solde="0"/>
+    <Memento date="1592079961" solde="3992.57"/>
+   </CompteReel>
+   <CompteVirtuel poste="R" nom="Recette" id="13"/>
+   <CompteVirtuel poste="D" nom="Dépense" id="12"/>
+   <CompteVirtuel poste="A" nom="Actifs" id="1">
+    <CompteReel poste="A" nom="Chèques à encaisser" id="9">
+     <Memento date="0" solde="0"/>
+     <Memento date="1592079961" solde="70"/>
+    </CompteReel>
+    <CompteReel poste="A" nom="Caisse" id="8">
+     <Memento date="0" solde="0"/>
+     <Memento date="1592079917" solde="168"/>
+    </CompteReel>
+    <CompteVirtuel poste="A" nom="BigBank" id="2">
+     <CompteReel poste="A" nom="Compte chèque" id="4">
+      <Memento date="0" solde="0"/>
+      <Memento date="1592079510" solde="1256.87"/>
+     </CompteReel>
+     <CompteReel poste="A" nom="Livret A" id="5">
+      <Memento date="0" solde="0"/>
+      <Memento date="1592079679" solde="3697.7"/>
+     </CompteReel>
+    </CompteVirtuel>
+   </CompteVirtuel>
+   <CompteVirtuel poste="P" nom="Passifs" id="6">
+    <CompteReel poste="P" nom="Emprunt" id="7">
+     <Memento date="0" solde="0"/>
+     <Memento date="1592079771" solde="1200"/>
+    </CompteReel>
+   </CompteVirtuel>
+  </CompteVirtuel>
+ </CompteManager>
+ <TransactionManager>
+  <Transaction date="1592079510" memo="Initialisation Compte chèque" valide="0" reference="INIT 1">
+   <Operation id_compte="4" credit="0" debit="1256.87"/>
+   <Operation id_compte="3" credit="1256.87" debit="0"/>
+  </Transaction>
+  <Transaction date="1592079679" memo="Initialisation Livret A" valide="0" reference="INIT 2">
+   <Operation id_compte="5" credit="0" debit="3697.7"/>
+   <Operation id_compte="3" credit="3697.7" debit="0"/>
+  </Transaction>
+  <Transaction date="1592079771" memo="Initialisation Emprunt" valide="0" reference="INIT 3">
+   <Operation id_compte="3" credit="0" debit="1200"/>
+   <Operation id_compte="7" credit="1200" debit="0"/>
+  </Transaction>
+  <Transaction date="1592079917" memo="Initialisation Caisse" valide="0" reference="INIT 4">
+   <Operation id_compte="3" credit="168" debit="0"/>
+   <Operation id_compte="8" credit="0" debit="168"/>
+  </Transaction>
+  <Transaction date="1592079961" memo="Initialisation Chèques à encaisser" valide="0" reference="INIT 5">
+   <Operation id_compte="3" credit="70" debit="0"/>
+   <Operation id_compte="9" credit="0" debit="70"/>
+  </Transaction>
+ </TransactionManager>
+ <contexte devise="€" formatDate="dd/mm/yy"/>
+</save>

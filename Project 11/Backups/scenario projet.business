@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<save>
+ <CompteManager nb_cloture="1" init="6">
+  <CompteVirtuel nom="Racine" id="0" poste="R">
+   <CompteReel nom="Capitaux Propres" id="5" poste="P">
+    <Memento solde="0" date="0"/>
+    <Memento solde="6392.87" date="1590440226"/>
+   </CompteReel>
+   <CompteVirtuel nom="Passifs" id="9" poste="P">
+    <CompteReel nom="Emprunt" id="10" poste="P">
+     <Memento solde="0" date="0"/>
+     <Memento solde="-1200" date="1590440226"/>
+    </CompteReel>
+   </CompteVirtuel>
+   <CompteVirtuel nom="Recettes" id="19" poste="R">
+    <CompteReel nom="Interets d'epargne" id="22" poste="R">
+     <Memento solde="0" date="0"/>
+     <Memento solde="0" date="0"/>
+    </CompteReel>
+    <CompteReel nom="Subventions" id="23" poste="R">
+     <Memento solde="0" date="0"/>
+     <Memento solde="0" date="0"/>
+    </CompteReel>
+    <CompteReel nom="Dons" id="21" poste="R">
+     <Memento solde="0" date="0"/>
+     <Memento solde="0" date="0"/>
+    </CompteReel>
+    <CompteReel nom="Cotisations" id="20" poste="R">
+     <Memento solde="0" date="0"/>
+     <Memento solde="0" date="0"/>
+    </CompteReel>
+   </CompteVirtuel>
+   <CompteVirtuel nom="Actifs" id="2" poste="A">
+    <CompteReel nom="Cheques a encaisser" id="8" poste="A">
+     <Memento solde="0" date="0"/>
+     <Memento solde="70" date="1590440167"/>
+    </CompteReel>
+    <CompteReel nom="Caisse" id="7" poste="A">
+     <Memento solde="0" date="0"/>
+     <Memento solde="168.3" date="1590440133"/>
+    </CompteReel>
+    <CompteVirtuel nom="BigBank" id="3" poste="A">
+     <CompteReel nom="Livret A" id="6" poste="A">
+      <Memento solde="0" date="0"/>
+      <Memento solde="3697.7" date="1590440076"/>
+     </CompteReel>
+     <CompteReel nom="Compte cheque" id="4" poste="A">
+      <Memento solde="0" date="0"/>
+      <Memento solde="1256.87" date="1590440040"/>
+     </CompteReel>
+    </CompteVirtuel>
+   </CompteVirtuel>
+   <CompteVirtuel nom="Depenses" id="11" poste="D">
+    <CompteReel nom="Frais de personnel" id="17" poste="D">
+     <Memento solde="0" date="0"/>
+     <Memento solde="0" date="0"/>
+    </CompteReel>
+    <CompteReel nom="Materiel" id="18" poste="D">
+     <Memento solde="0" date="0"/>
+     <Memento solde="0" date="0"/>
+    </CompteReel>
+    <CompteReel nom="Assurance" id="12" poste="D">
+     <Memento solde="0" date="0"/>
+     <Memento solde="0" date="0"/>
+    </CompteReel>
+    <CompteVirtuel nom="Frais bancaires" id="13" poste="D">
+     <CompteReel nom="Interets d'emprunt" id="16" poste="D">
+      <Memento solde="0" date="0"/>
+      <Memento solde="0" date="0"/>
+     </CompteReel>
+     <CompteReel nom="Tenue de compte" id="14" poste="D">
+      <Memento solde="0" date="0"/>
+      <Memento solde="0" date="0"/>
+     </CompteReel>
+    </CompteVirtuel>
+   </CompteVirtuel>
+  </CompteVirtuel>
+ </CompteManager>
+ <TransactionManager>
+  <Transaction reference="INIT 1" memo="Initialisation Compte cheque" valide="0" date="1590440040">
+   <Operation id_compte="5" debit="0" credit="1256.87"/>
+   <Operation id_compte="4" debit="1256.87" credit="0"/>
+  </Transaction>
+  <Transaction reference="INIT 2" memo="Initialisation Livret A" valide="0" date="1590440076">
+   <Operation id_compte="5" debit="0" credit="3697.7"/>
+   <Operation id_compte="6" debit="3697.7" credit="0"/>
+  </Transaction>
+  <Transaction reference="INIT 3" memo="Initialisation Caisse" valide="0" date="1590440133">
+   <Operation id_compte="5" debit="0" credit="168.3"/>
+   <Operation id_compte="7" debit="168.3" credit="0"/>
+  </Transaction>
+  <Transaction reference="INIT 4" memo="Initialisation Cheques a encaisser" valide="0" date="1590440167">
+   <Operation id_compte="5" debit="0" credit="70"/>
+   <Operation id_compte="8" debit="70" credit="0"/>
+  </Transaction>
+  <Transaction reference="INIT 5" memo="Initialisation Emprunt" valide="0" date="1590440226">
+   <Operation id_compte="5" debit="0" credit="1200"/>
+   <Operation id_compte="10" debit="1200" credit="0"/>
+  </Transaction>
+ </TransactionManager>
+ <contexte devise="€" formatDate="dddd dd mm yyyy"/>
+</save>

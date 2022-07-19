@@ -1,0 +1,558 @@
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+enum Poste {
+    ACTIF
+    PASSIF
+    RECETTE
+    DEPENSE
+}
+enum Type {
+    REEL
+    VIRTUEL
+}
+
+
+abstract class CompteHierarchie{
+    friend class HierarchieBuilder
+    friend class CompteManager
+    friend class VisiteurFree
+
+    - nom : string
+    # poste : const PosteCompte*
+    - id : int
+
+    + virtual toString() : string
+    + virtual accepte(_v: Visiteur&)
+    + getNom() : string
+    + getPoste() : enum Poste
+    + getPosteCompte(): PosteCompte&
+    + virtual getType() : enum Type
+    + virtual getFils() : set<CompteHierarchie*>
+    + virtual ajouterFils(_c : CompteHierarchie*)
+    + virtual supprimerFils(_c : CompteHierarchie*)
+    + virtual supprimerCompte()
+    + virtual undo(Originator* _o)
+    + virtual saveState(Originator _o)
+    + getId() : int
+    + virtual getDernierMemento() : Memento*
+    + virtual getMementos() : const list<Memento*>&
+
+    # CompteHierarchie(_nom : string, _id : int)
+    # virtual ~CompteHierarchie()
+
+    - CompteHierarchie( _p:const CompteHierarchie&)
+    - CompteHierarchie& operator=(const CompteHierarchie&)
+}
+
+note bottom of CompteHierarchie : laisser CompteManager responsabilité création destruction
+
+class CompteReel{
+    friend class HierarchieBuilder
+    friend class CompteManager
+    friend class VisiteurFree
+
+    + getType() : Type
+    + accepte(_v : Visiteur&)
+    + getFils() : const set<CompteHierarchie*>
+    + ajouterFils(_c : CompteHierarchie*)
+    + supprimerFils(_c : CompteHierarchie*)
+    + supprimerCompte()
+    + undo(_o : Originator*)
+    + saveState(_o : Originator)
+    + getDernierMemento() : Memento*
+    + getMementos(): list<Memento*>&
+    + getMementos() : const list<Memento*>&
+
+    - CompteReel(_nom : const string&, _id : int)
+    - ~CompteReel()
+    - CompteReel(_c : const CompteReel&)
+    - operator=(_c : const CompteReel&) : CompteReel&
+
+    - mementos : list<Memento*>
+}
+
+class CompteVirtuel{
+    friend class HierarchieBuilder
+    friend class CompteManager
+    friend class VisiteurFree
+
+    + getType() : Type
+    + accepte(_v : Visiteur&)
+    + getFils() : const set<CompteHierarchie*>
+    + ajouterFils(_c : CompteHierarchie*)
+    + supprimerFils(_c : CompteHierarchie*)
+    + supprimerCompte()
+    + undo(_o : Originator*)
+    + saveState(_o : Originator)
+    + getDernierMemento() : Memento*
+    + getMementos(): list<Memento*>&
+    + getMementos() : const list<Memento*>&
+
+    - CompteVirtuel(_nom:const string&, _id:int)
+    - ~CompteVirtuel()
+    - CompteVirtuel(_c : const CompteVirtuel&)= delete
+    - operator=(_c:const CompteVirtuel&) : CompteVirtuel& = delete
+
+    - fils : set<CompteHierarchie*>
+}
+
+class Memento{
+    - solde : double
+    - date : time_t
+
+    + Memento(_solde: double, _date: time_t)
+    + getSolde() : double
+    + getDate() : time_t
+}
+
+abstract class PosteCompte{
+    + virtual getLetter() : string
+    + virtual getPoste() : enum Poste
+    + virtual crediter(_solde : double*, _montant : double)
+    + virtual debiter(_solde : double*, _montant : double)
+}
+
+abstract class PosteAD{
+    + crediter(_solde : double*, _montant : double)
+    + debiter(_solde : double*, _montant : double)
+}
+abstract class PostePR{
+    + crediter(_solde : double*, _montant : double)
+    + debiter(_solde : double*, _montant : double)
+}
+
+class Actif{
+    - {static} instance : Actif
+    + getPoste() : enum Poste
+    + getLetter() : string
+    + {static} getInstance() : PosteCompte&
+    - Passif()
+    - ~Passif()
+    - Passif (_p: Passif&)
+    - operator=(const Passif& _p): Passif&r
+}
+
+class Passif{
+    - {static} instance : Passif
+    + getPoste() : enum Poste
+    + getLetter() : string
+    + {static} getInstance() : PosteCompte&
+}
+
+class Recette{
+    - {static} instance :  Recette
+    + getPoste() : enum Poste
+    + getLetter() : string
+    + {static} getInstance() : PosteCompte&
+    - Recette()
+    - ~Recette()
+    - Recette (_r: Recette&)
+    - operator=(_r: Recette&): Recette&
+}
+
+class Depense{
+    - {static} instance : Depense
+    + getPoste() : enum Poste
+    + getLetter() : string
+    + {static} getInstance() : PosteCompte&
+    - Depense()
+    - ~Depense()
+    - Depense(_d: const Depense&)
+    - operator=(_d: Depense&): Depense&
+}
+
+class Racine{
+    - {static} instance : Racine
+    + getPoste() : enum Poste
+    + getLetter() : string
+    + getInstance() : PosteCompte&
+
+    + crediter(_solde : double*, _montant : double)
+    + debiter(_solde : double*, _montant : double)
+    - Racine()
+    - ~Racine()
+    - Racine(_r: Racine&) = delete
+    - operator=(_r: Racine&): Racine&  = delete
+}
+
+class CompteManager{
+    + {static} getInstance() : CompteManager&
+    + getCompte(_id : int) : CompteHierarchie*
+    + getPere(_c : CompteHierarchie*) : CompteHierarchie*
+    + affiche(_arbre: QTreeWidget*, _devise: QString const&): void
+    + ajouterFils(_id_pere : int, _nom_fils : const string&, _t : Type, _p : Poste)
+    + supprimerCompte(_id : int)
+    + deplacerFils(_id_fils : int, _id_futur_pere : int)
+    + charger()
+    + setPath(_file : const string&)
+    + sauver()
+    + cloturer()
+    + rapprocherCompte(_id : int)
+    + getSolde(_id : int) : double
+    + bilan(_date : time_t)
+    + releve(_debut : time_t, _fin : time_t)
+    + resultat()
+    + crediterCompte(_id : int, _montant : double)
+    + debiterCompte(_id : int, _montant : double)
+    + getOriginator() : Originator*
+    + getListeComptePoste(_p: Poste): list<CompteHierarchie*>
+    + void getListeComptes(_liste_compte: QStringList*, _liste_id: list<int>*, _seul_compte_reel: int const)
+    + getPath(): string&
+    + isDefaultPath(): bool
+    + gestionCompteResultat( _nouveau: bool, _id: int, _nom: QString ): CompteHierarchie*
+    + gestionCapitauxPropre(_nouveau: bool, _id: int, _nom: QString ): CompteHierarchie*
+    - CompteManager()
+    - ~CompteManager()
+    - CompteManager(_c : const CompteManager&)
+    - operator=(_c : const CompteManager&) : CompteManager&
+
+    - {static} instance : CompteManager
+    - racine : CompteHierarchie*
+    - path : string
+    - o : Originator*
+    - {static} init : int
+    - nb_cloture : int
+}
+
+class HierarchieBuilder{
+    friend class CompteManager
+    - {static} idcompte : int
+
+    - {static} creerEmpty() : CompteHierarchie*
+    - {static} creerFils(_nom : string, _t : Type, _p : Poste)
+    - {static} creerAvecFichier(_path : string) : CompteHierarchie*
+}
+
+class Operation{
+    friend TransactionBuilder
+    friend operator<<(_listOperations : list<Operation*>&, _operation : Operation*) : list<Operation*>
+
+    + ~Operation()
+    + isCompte(_id_compte : int const) : bool
+    + getIdCompte() : int
+    + getDebit() : double const
+    + getCredit() : double const
+    + operator<(_operation : Operation&) : bool const
+    + operator<=(_operation : Operation&) : bool const
+    + operator>(_operation : Operation&) : bool const
+    + operator>=(_operation : Operation&) : bool const
+
+    - transaction : Transaction*
+    - compte : CompteHierarchie*
+    - debit : double
+    - credit : double
+    
+    -Operation(_compte: CompteHierarchie* const,_debit: double,_credit: double)
+}
+
+
+class Transaction{
+    friend TransactionBuilder
+    friend CompteManager
+
+    + getDate() : time_t const
+    + getStringDate(format: string const&) : string const
+    + getReference() : string const
+    + getMemo() : string const
+    + getValide() : bool const
+    + getListeOperations() : const list<Operation*>
+    + operator<(_transaction_2: Transaction*) : bool const
+    + operator<=(_transaction : Transaction&) : bool const
+    + operator>(_transaction : Transaction&) : bool const
+    + operator>=(_transaction : Transaction&) : bool const
+
+    - date : time_t
+    - reference_transaction : string
+    - memo : string
+    - valide : bool
+    - operations : list<Operation*>
+
+    - Transaction()
+    - Transaction(_date : time_t, _ref : string, _memo : string, _valide : bool, _listOperations : list<Operation*>)
+    - setValide(_valide : bool)
+    - ~Transaction()
+    + compare(_transaction_1: Transaction* const,_transaction_2: Transaction* const): bool
+
+
+}
+
+note bottom of Transaction : laisse possibilité transactionmanager construction et destruction transaction
+
+class TransactionManager{
+    + {static} getInstance() : TransactionManager&
+    + getListeTransactions() : list<Transaction*> const
+    + getTransaction(_ref : string const) : Transaction*
+    + getListeTransactionsParCompte(_id_compte : int const) : list<Transaction*>
+    + getListeTransactionsParValide(_id_compte : int const, _valide : bool const) : list<Transaction*>
+    + ajouterOperation(_liste : list<Operation*>*, _compte:CompteHierarchie* ,_debit:double ,_credit:double): void
+    + ajouterTransaction(_date : time_t, _ref : string, _memo : string, _listOperations : list<Operation*>)
+    + editerTransaction(_ancienne_ref : string const, _date : time_t, _ref : string, _memo : string, _listOperations : list<Operation*>)
+    + supprimerTransaction(_ref : string const)
+    + charger(_path : string const)
+    + sauver(_path : string const)
+    + affiche(_tableau: QTableWidget* const,_devise: QString const&,_format: QString const& ): void
+    + affiche(_tableau: QTableWidget* const,_compte: CompteHierarchie*,_devise: QString const&,_format: QString const& ): void
+    + getTransactionParReference(_ref: string const&): Transaction*
+    + emptyTransactionsParCompte(_id_compte: int const&):bool
+    - {static} instance : TransactionManager
+    - {static} transactions : list<Transaction*>
+
+    - TransactionManager()
+    - ~TransactionManager()
+}
+
+class TransactionBuilder{
+    friend TransactionManager
+
+    - TransactionBuilder()
+    - ~TransactionBuilder()
+    - {static} detruireTransaction(_transaction : Transaction*)
+    - {static} creerTransaction(_date : time_t, _ref : string, _memo : string, _listOperations : list<Operation*>) : Transaction*
+    - {static} creerTransactionAvecFichier(_path : string const) : list<Transaction*>
+    - {static} creerOperation(_compte : CompteHierarchie*, _debit : double, _credit : double) : Operation*
+}
+
+abstract class Visiteur{
+    + virtual visiter(_c: CompteReel&)
+    + virtual visiter(_c: CompteVirtuel&)
+}
+
+class VisiteurAffichage{
+    friend class CompteManager
+    
+    + fillItem(_c: CompteHierarchie&, _item: QTreeWidgetItem*): void
+    + VisiteurAffichage(_arbre: QTreeWidget* const,_devise: QString const& )
+    + visiter(_c: CompteReel&)
+    + visiter(_c: CompteVirtuel&)
+    
+    - arbre: QTreeWidget*
+    - devise: QString
+    - actual_widget: QTreeWidgetItem* 
+    - afficherLigne(_s : string)
+    - VisiteurAffichage()
+    - ~VisiteurAffichage()
+    - VisiteurAffichage(_v : const VisiteurAffichage&)
+    - operator=(_v : const VisiteurAffichage&) : VisiteurAffichage&
+}
+
+class VisiteurRecherche{
+    friend class CompteManager
+
+    + visiter(_c : CompteReel&)
+    + visiter(_c : CompteVirtuel&)
+    + getResultat() : CompteHierarchie*
+
+    - idcompte : int
+    - nomcompte : string
+    - CompteHierarchie* resultat
+    - VisiteurRecherhe(_id : int)
+    - VisiteurRecherche(_nom : const string&)
+    - VisiteurRecherche(_v : const VisiteurRecherche&)
+    - operator=(_v : const VisiteurRecherche&) : VisiteurRecherche&
+}
+
+class VisiteurGetSolde{
+    friend class CompteManager
+
+    + visiter(_c : CompteReel &)
+    + visiter(_c : CompteVirtuel&)
+    + getSolde() : double
+
+    - solde : double
+    - VisiteurGetSolde()
+    - VisiteurGetSolde(_v : const VisiteurGetSolde&)
+    - operator=(_v : const VisiteurGetSolde&) : VisiteurGetSolde&
+}
+
+class VisiteurFree{
+    friend class CompteManager
+
+    + visiter(_c: CompteReel&)
+    + visiter(_c: CompteVirtuel&)
+
+    - VisiteurFree()
+    - VisiteurFree(_v : const VisiteurFree&)
+    - operator=(_v : const VisiteurFree&) : VisiteurFree&
+}
+
+class VisiteurPere{
+    friend class CompteManager
+
+    + visiter(_c : CompteReel&)
+    + visiter(_c : CompteVirtuel&)
+    + getResultat() : CompteHierarchie*
+
+    - recherche : CompteHierarchie*
+    - resultat : CompteHierarchie*
+    - VisiteurPere(_recherche : CompteHierarchie*)
+    - VisiteurPere(_v : const VisiteurPere&)
+    - operator=(_v : const VisiteurPere&) : VisiteurPere&
+}
+
+class VisiteurPoste{
+    friend class CompteManager
+
+    + visiter(_c : CompteReel&)
+    + visiter(_c : CompteVirtuel&)
+    + getResultat() : list<CompteHierarchie*>
+    + changePoste(_p : Poste)
+
+    - p : Poste
+    - resultat : list<CompteHierarchie*>
+    - VisiteurPoste(_p : Poste)
+    - VisiteurPoste(_v : const VisiteurPoste&)
+    - operator=(_v : const VisiteurPoste&) : VisiteurPoste&
+}
+
+class VisiteurListeCompte{
+    friend class CompteManager
+    + visiter(_c: CompteReel&): void
+    + visiter(_c: CompteVirtuel&): void
+    - fillListe(_c: CompteHierarchie&): void
+    - VisiteurListeCompte(_liste: QStringList*, _liste_id: list<int>*, _seul_reel: int)
+    - VisiteurListeCompte (_v: VisiteurListeCompte&)
+    - operator=(_v: VisiteurListeCompte&): VisiteurListeCompte& = delete
+    - ~VisiteurListeCompte()
+    - liste: QStringList*
+    - liste_id: list<int>*
+    - seul_reel: int
+}
+    
+
+class Originator{
+    + Originator()
+    + setSolde(_solde : double)
+    + getSolde() : double
+    + getDate() : const time_t&
+    + saveState() : Memento*
+    + restoreMemento(_memento : Memento)
+
+    - date : time_t
+    - solde : double
+}
+
+
+class Exception{
+    - message : string
+    - code_erreur : int
+
+    + getMessage() : string
+    + getCode() : int
+    # Exception(_s : string, _code_erreur : int)
+}
+
+class ExceptionHierarchie{
+    + ExceptionHierarchie(_s : string, _code_erreur : CodeExcepHierarchie = UKNW_EXC_H)
+}
+
+class ExceptionComptabilite{
+    + ExceptionComptabilite(_s : string, _code_erreur : CodeExcepHierarchie = UKNW_EXC_C)
+}
+
+class ExceptionTransaction{
+    + ExceptionTransaction(_message : string, _code_erreur : CodeExcepTransaction = UKWN_EXC_T)
+}
+
+class ExceptionFichier{
+    + ExceptionFichier(_message : string, _code_erreur : CodeExcepFichier = UKWN_EXC_F)
+}
+enum CodeExcepHierarchie {
+    UKNW_EXC_H = 0
+    TYPE_EXC_H = 1
+    POSTE_EXC_H = 2
+    RULE_EXC_H = 3
+    IDNF_EXC_H = 4
+    FLSR_EXC_H = 5
+    COMPT_EXC_H = 6
+    CAPP_EXC_H = 7
+    CLOT_EXC_H = 8
+    EXCE_EXC_H = 9
+    DEFI_EXC_H = 10
+    DSON_EXC_H = 11
+    DSELF_EXC_H = 12
+}
+
+enum CodeExcepComptabilite {
+    UNKW_EXC_C = 20
+    MEMV_EXC_C = 21
+    ROOT_EXC_C = 22
+    SUPVIR_EXC_C = 23
+    SUPREL_EXC_C = 24
+    RELEV_EXC_C = 25
+}
+
+enum CodeExcepTransaction {
+    UKWN_EXC_T = 40
+    MEMO_EXC_T = 41
+    RULE_EXC_T = 42
+    NULL_EXC_T = 43
+    SRCH_EXC_T = 44
+}
+
+enum CodeExcepFichier {
+    UKWN_EXC_F = 60
+    UFND_EXC_F = 61
+    SNTX_EXC_F = 62
+}
+
+'---------------------------------------'
+
+note as noteOR
+    OR
+endnote
+
+'---------------------------------------'
+
+Actif -up-|> PosteAD
+Depense -up-|> PosteAD
+Passif -up-|> PostePR
+Recette -up-|> PostePR
+
+Racine -up-|> PosteCompte
+PostePR -up-|> PosteCompte
+PosteAD -up-|> PosteCompte
+
+CompteReel -left-|> CompteHierarchie
+CompteVirtuel o-down-"1..*" CompteHierarchie
+CompteVirtuel -down-|> CompteHierarchie
+
+CompteHierarchie "*"-- "1" PosteCompte: est de type >
+CompteReel *-up- "1..*" Memento
+
+CompteManager *-right- "*" CompteHierarchie
+CompteManager -up- HierarchieBuilder
+CompteManager -right-"1" CompteHierarchie : racine
+
+TransactionManager *-left- "*" Transaction
+Transaction *-down- "1..*" Operation : Débit
+Transaction *-down- "1..*" Operation : Crédit
+(Transaction,Operation) -left- noteOR
+noteOR -left- (Transaction,Operation)
+TransactionBuilder "1"-left-"1" TransactionManager
+CompteReel o-right- "*" Operation
+
+
+VisiteurAffichage -up-|> Visiteur
+VisiteurFree -right-|> Visiteur
+VisiteurRecherche --|> Visiteur
+VisiteurGetSolde --|> Visiteur
+VisiteurPere --|> Visiteur
+VisiteurPoste --|> Visiteur
+VisiteurListeCompte --|> Visiteur
+
+ExceptionHierarchie --|> Exception
+ExceptionComptabilite --|> Exception
+ExceptionTransaction --|> Exception
+ExceptionFichier --|> Exception
+
+CodeExcepHierarchie -down- ExceptionHierarchie: > code exception
+CodeExcepFichier -down- ExceptionFichier: > code exception
+CodeExcepTransaction -down- ExceptionTransaction: > code exception
+CodeExcepComptabilite -down- ExceptionComptabilite: > code exception
+
+Originator"1" -- "1"CompteManager
+
+@enduml

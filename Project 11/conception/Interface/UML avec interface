@@ -1,0 +1,315 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class TransactionManager{
+    + {static} getInstance() : TransactionManager&
+    + getListeTransactions() : list<Transaction*> const
+    + getTransaction(_ref : string const) : Transaction*
+    + getListeTransactionsParCompte(_id_compte : int const) : list<Transaction*>
+    + getListeTransactionsParValide(_id_compte : int const, _valide : bool const) : list<Transaction*>
+    + ajouterOperation(_liste : list<Operation*>*, _compte:CompteHierarchie* ,_debit:double ,_credit:double): void
+    + ajouterTransaction(_date : time_t, _ref : string, _memo : string, _listOperations : list<Operation*>)
+    + editerTransaction(_ancienne_ref : string const, _date : time_t, _ref : string, _memo : string, _listOperations : list<Operation*>)
+    + supprimerTransaction(_ref : string const)
+    + charger(_path : string const)
+    + sauver(_path : string const)
+
+    - {static} instance : TransactionManager
+    - {static} transactions : list<Transaction*>
+    - path : string
+
+    - TransactionManager()
+    - ~TransactionManager()
+}
+
+class CompteManager{
+    + {static} getInstance() : CompteManager&
+    + getCompte(_id : int) : CompteHierarchie*
+    + getPere(_c : CompteHierarchie*) : CompteHierarchie*
+    + affiche()
+    + ajouterFils(_id_pere : int, _nom_fils : const string&, _t : Type, _p : Poste)
+    + supprimerCompte(_id : int)
+    + deplacerFils(_id_fils : int, _id_futur_pere : int)
+    + charger()
+    + setPath(_file : const string&)
+    + sauver()
+    + cloturer()
+    + rapprocherCompte(_id : int)
+    + getSolde(_id : int) : double
+    + bilan(_date : time_t)
+    + releve(_debut : time_t, _fin : time_t)
+    + resultat()
+    + crediterCompte(_id : int, _montant : double)
+    + debiterCompte(_id : int, _montant : double)
+    + getOriginator() : Originator*
+
+    - CompteManager()
+    - ~CompteManager()
+    - CompteManager(_c : const CompteManager&)
+    - operator=(_c : const CompteManager&) : CompteManager&
+    - CompteHierarchie* gestionCompteResultat
+
+    - {static} instance : CompteManager
+    - racine : CompteHierarchie*
+    - path : string
+    - o : Originator*
+    - init : int
+    - nb_cloture : int
+}
+
+class MainWindow{
+    + getDevise() 
+    + getFormatDate()
+    
+    - afficherFormulaireCompte()
+    - afficherFormulaireDeplacerCompte()
+    - afficherFormulaireTransaction()
+    - afficherFormulaireEnregistrement()
+    - afficherFormulaireEnregistrementSous()
+    - afficherFormulaireOuvrir_1()
+    - afficherFormulaireOuvrir_2()
+    - afficherFormulaireModificationTransaction()
+    - afficherBilan()
+    - afficherReleve()
+    - afficherResultat()
+    - afficherRapprochement()
+    - afficherCloture()
+    - afficherParametre()
+
+    - selectionnerCompte(_item_compte QTreeWidgetItem* )
+    - deplacerCompte(_id_bouge int const, _id_recoit int const )
+    - selectionnerTransaction(row int, column int);
+
+    - supprimerCompte()
+    - supprimerTransaction()
+
+    - chargerContexte(_path string const&)
+    - charger(fichier QString)
+    - initialiser()
+    - ajouterContexte(_path string const&)
+    - refreshContexte(params QStringList)
+    - sauvegarder(fichier QString)
+
+    - afficherHierarchie()
+    - afficherTransaction()
+    - afficherCompte()
+    
+    - setSizeObjects();
+    - resizeEvent(event QResizeEvent*)
+    
+    - fenetrePrincipale *design
+    - CompteManager& compte_manager
+    - TransactionManager& transaction_manager
+    - QTreeWidgetItem* compte_selectionne
+    - QTableWidgetItem* transac_selectionne
+    - QString devise = QString("€");
+    - QString formatDate = QString("dd/mm/yy")
+}
+
+package "Gestion des transactions"{
+
+class ajoutertransactionwindows{
+    + ajoutertransactionwindows(QStringList const _comptes, std::list<int> const liste_id, MainWindow *parent)
+    + ~ajoutertransactionwindows()
+    - void ajouterOperation()
+    - void suppressionDernier()
+    - void verifier()
+    - CompteManager& cm
+    - TransactionManager& tm
+    - QStringList const comptes
+	- list<int> const liste_id
+    - QString devise
+    - QDateEdit *qdate
+    - QTimeEdit *qtime
+    - QList<QComboBox*> selecteurs
+    - QList<QDoubleSpinBox*> credits
+    - QList<QDoubleSpinBox*> debits
+    - QList<QPushButton*> supprimers
+    - fenetreAjouterTransaction *design
+}
+
+class modifiertransaction{
+    + modifiertransaction(QString const _reference, QStringList const _comptes, std::list<int> const _liste_id, MainWindow *parent)
+    + ~modifiertransaction()
+    - void ajouterOperation()
+    - void suppressionDernier()
+    - void modifierTransaction()
+    - CompteManager& cm
+    - TransactionManager& tm
+    - QStringList const comptes
+    - list<int> const liste_id
+    - QList<QComboBox*> selecteurs
+    - QList<QDoubleSpinBox*> credits
+    - QList<QDoubleSpinBox*> debits
+    - QList<QPushButton*> supprimers
+    - QString reference
+    - QString devise = QString("€")
+    - modifiertransaction *design
+}
+
+}
+
+package "Gestion des comptes"{
+
+class ajouterwindow{
+    + ajouterwindow(list<int> const _liste_id, QTreeWidgetItem * _compte_selectionne, MainWindow *parent)
+    + ~ajouterwindow()
+    - void ajouterCompte()
+    - void capitauxpropre()
+    - void nvcapitauxpropre(const QString &text)
+    - CompteManager& cm
+    - list<int> const liste_id
+    - QComboBox * selecteurs
+    - fenetreAjouterCompte *design
+}
+
+class deplacercompte{
+    + deplacercompte(list<int> const _liste_id,MainWindow *parent)
+    + ~deplacercompte()
+    - void deplacementcompte()
+    - list<int> const liste_id
+    - deplacercompte *design
+}
+
+}
+
+package "Gestion de l'application"{
+
+class chargementwindow{
+    + chargementwindow(MainWindow *parent)
+    + ~chargementwindow()
+    - void ouvrirFileDialog()
+    - void verifierChamps()
+    - void passer()
+    - fenetreChargement *design
+}
+
+class parametrewindow{
+    + parametrewindow(MainWindow *parent)
+    + ~parametrewindow()
+    - void registerParams()
+    - QWidget parent
+    - parametrewindow *design
+}
+
+class savewindow{
+    + savewindow(MainWindow *parent)
+    + ~savewindow()
+    - void sauver()
+    - void fermer()
+    - void ouvrirFileDialog()
+    - Sauvegarde *design
+}
+
+}
+
+package "Gestion comptable"{
+
+class rapprochement{
+    + rapprochement(QStringList const _comptes, list<int> const _liste_id, MainWindow *parent)
+    + ~rapprochement()
+    - void changementCompte()
+    - void validerChoixCompte()
+    - void ajouterOperation()
+    - void suppressionDernier()
+    - void modifierListeTransactions()
+    - void modifierListeOperations()
+    - void modifierTransaction()
+    - void validerCompte()
+    - void choixCompte()
+    - void clear()
+    - rapprochement *design;
+    - CompteManager& cm
+    - TransactionManager& tm 
+    - QStringList const comptes
+    - list<int> const liste_id
+    - QString devise = QString("€")
+    - QList<QComboBox*> selecteurs
+    - QList<QDoubleSpinBox*> credits
+    - QList<QDoubleSpinBox*> debits
+    - QList<QPushButton*> supprimers
+}
+
+class cloture{
+    + cloture(std::list<int> const _liste_id, MainWindow *parent)
+    + ~cloture()
+    - void nvcomptecloture(const QString&)
+    - void fairecloture()
+    - CompteManager& cm
+    - cloture *design
+}
+
+}
+
+package "Documents comptables"{
+
+class bilan{
+    + bilan(MainWindow *parent)
+    + ~bilan()
+    - void fairebilan()
+    - void exporterPDF()
+    - QDateEdit *date
+    - QString devise
+    - bool est_genere = false
+    - bilan *design
+
+}
+
+class releve{
+    + releve(MainWindow* parent)
+    + ~releve()
+    - void affichertableau(QTableWidget* const _tableau, list<CompteHierarchie*> const _liste_comptes)
+    - int makeTableForPDF(QTableWidget* const _tableau, int const _y_origin, QPainter* _painter, QFont* _f)
+    - QDateEdit *debut
+    - QDateEdit* fin
+    - QString devise
+    - bool est_genere
+    - releve *design
+    - 
+}
+
+class Resultat{
+    + Resultat(std::list<int> const _liste_id,MainWindow *parent)
+    + ~Resultat()
+    - Resultat *design;
+    - CompteManager& cm 
+    - TransactionManager& tm 
+}
+
+}
+
+package "Autres classes liées à la gestion des comptes"{
+note as n1
+Voir l'UML détaillant les relations entre comptes
+end note
+}
+package "Autres classes liées à la gestion des transactions"{
+note as n2
+Voir l'UML détaillant les relations entre transactions
+end note
+}
+
+
+CompteManager"1" -right-"1" MainWindow : > obéit à
+TransactionManager"1" -left-"1" MainWindow : > obéit à
+
+CompteManager --  "Autres classes liées à la gestion des comptes" : < utilise
+TransactionManager --  "Autres classes liées à la gestion des transactions" : < utilise
+
+
+MainWindow "1"--"1" savewindow: > demande de sauvegarder l'état de l'application
+MainWindow "1"--"1" Resultat: > demande de caculer le résultat
+MainWindow "1"--"1" releve: > demande d'éditer un relevé
+MainWindow "1"--"1" rapprochement: > demande de rapprocher des transactions
+MainWindow "1"--"1" parametrewindow: > demande de changer les paramètres de l'application
+MainWindow "1"--"1" modifiertransaction: > demande de modifier une transaction
+MainWindow "1"--"1" deplacercompte: > demande de déplacer un compte
+MainWindow "1"--"1" cloture: > demande de cloturer les comptes
+MainWindow "1"--"1" bilan: > demande de faire le bilan des comptes
+MainWindow "1"--"1" chargementwindow: > demande d'ouvrir une autre sauvegarde
+MainWindow "1"--"1" savewindow: > demande de sauvegarder l'état de l'application
+MainWindow "1"--"1" ajouterwindow: > demande d'ajouter un compte
+MainWindow "1"--"1" ajoutertransactionwindows: > demande d'ajouter une transaction
+
+
+@enduml
