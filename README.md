@@ -17,7 +17,7 @@ Always looking for performance, improvement and new knowledge in the data enviro
 - ✅: Project done
 - ⌛️: Project in progress (working on it right now)
 - 📌: Project to do
-- 📥: Project to add (already done)
+- 📥: Project to upload (already done)
 - 🎓: University project
 
 ---
