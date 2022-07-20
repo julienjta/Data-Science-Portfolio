@@ -44,7 +44,7 @@ Always looking for performance, improvement and new knowledge in the data enviro
 
 ## Logic Programming
 
-- **Project 8 - Minesweeper Game Solver**: Python, Gophersat 🎓📥
+- **Project 8 - [Minesweeper Game Solver](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%208)**: Python, Gophersat 🎓✅
 
 ## Others
 
