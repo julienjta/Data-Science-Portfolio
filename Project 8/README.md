@@ -17,6 +17,8 @@ The boxes without animals have information about the animals in the vicinity, in
 3 actions are possible each turn: **discover** a tile (discover), **guess** a tiger or a shark or a crocodile (guess) and finally discover at once all the undiscovered squares around a square where all the animals have already been found (**chord**).
 Any error results in the death of the explorer and the end of the map.
 
+## Aim
+
 We ask to realize an artificial player able to communicate with a referee server, to communicate its moves and to take into account the information provided in return, in order to guess the location of all the animals and to discover all the other squares.
 The chosen solution is the use of a SAT (Propositional Satisfiability Problem) solver driven by a program written in Python.
 
