@@ -40,7 +40,7 @@ Always looking for performance, improvement and new knowledge in the data enviro
 
 ## Natural Language Processing
 
-- **Project 7 - Fake News Detection**: --- 📌
+- **Project 7 - Fake News Detection**: --- ⌛️
 
 ## Logic Programming
 
