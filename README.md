@@ -35,7 +35,7 @@ Always looking for performance, improvement and new knowledge in the data enviro
 ## Deep Learning
 
 - **Project 5 - Detection of Brain Tumor**: Keras 📌
-- **Project 6 - Predictive Maintenance using Accoustic Emissions**: Time Series, Wavelet Transform, Convolutional Neural Network, Scaleograms 🎓📥
+- **Project 6 - Predictive Maintenance using Accoustic Emissions**: Time Series, Wavelet Transform, Convolutional Neural Network, Scaleograms 🎓✅
 
 
 ## Natural Language Processing
