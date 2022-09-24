@@ -3,7 +3,7 @@ Repository containing portfolio of data science projects completed for academic,
 
 ## About me
 
-Young Data Scientist just graduated from the University of Technology of Compiègne as a computer engineer specialized in data science and artificial intelligence.
+Young Data Scientist just graduated from the University of Technology of Compiègne as a computer engineer specialized in Data Science and Artificial Intelligence and currently working at Canal+ as a Data Scientist in the marketing department.
 
 Always looking for performance, improvement and new knowledge in the data environment, this portfolio gathers some projects on which I had the opportunity to think and work either in collaboration with other students or independently.
 
