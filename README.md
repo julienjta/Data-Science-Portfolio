@@ -11,6 +11,8 @@ Always looking for performance, improvement and new knowledge in the data enviro
 
 - *Visualisation*: NumPy, Pandas, Seaborn, Matplotlib, Ploty, Yellowbrick.
 - *Machine Learning*: Scikit-Learn, XGBoost.
+- *Deep Learning*: Keras, TensorFlow.
+- *Anomaly Detection*: ADTK.
 
 ## Symbols
 
