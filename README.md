@@ -37,7 +37,7 @@ Always looking for performance, improvement and new knowledge in the data enviro
 ## Deep Learning
 
 - **Project 5 - Detection of Brain Tumor**: Keras 📌
-- **Project 6 - [Predictive Maintenance using Accoustic Emissions](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%206)**: Time Series, Wavelet Transform, Audio Data, Convolutional Neural Network, Scaleograms, Feature Extraction, Combinated CNN 🎓✅
+- **Project 6 - [Predictive Maintenance using Accoustic Emissions](https://github.com/julienjta/Data-Science-Portfolio/tree/main/Project%206)**: Time Series, Wavelet Transform, Audio Data, Convolutional Neural Network, Scaleograms, Feature Extraction, Combinated CNN, Keras 🎓✅
 
 
 ## Natural Language Processing
